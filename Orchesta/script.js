@@ -42,7 +42,7 @@ Character.prototype.printStats = function () {
     nick.innerHTML = this.name;
     img.innerHTML = `<img src=${this.image}>`;
     att.innerHTML = `Attack: ${this.attack}`;
-    def.innerHTML = `Defense: ${this.defense}`;
+    def.innerHTML = `<b>Defense: ${this.defense}</b>`;
     coin.innerHTML = `Coins: ${this.coins}`;
     fac.innerHTML = `Facility: ${this.facility}`;
     inton.innerHTML = `Intonation: ${this.intonation}`;
@@ -80,4 +80,6 @@ const warrior = new Character(
     75
 );
 
-warrior.printStats();
+let students = [warrior];
+
+students[0].printStats();
