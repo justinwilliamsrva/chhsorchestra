@@ -97,4 +97,18 @@ const evilhead = new Character(
 
 let students = [warrior, evilhead];
 
-students[1].printStats();
+// students[1].printStats();
+// Prompt
+
+function initialPrompt() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    var passowrd = prompt("What is your password");
+    if (person == J && password == "chhs") {
+        students[0].printStats();
+    }
+    if (person == "evilhead") {
+        students[1].printStats();
+    }
+}
+
+initialPrompt();
