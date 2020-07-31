@@ -27,6 +27,8 @@ window.onload = function () {
         this.attack = facility + intonation + shifting;
         this.defense = bowControl + rhythm + musicality;
         this.totalScore = this.attack + this.defense + coins;
+
+        this.level1 = [0, 0, 0, 0, 0];
     }
 
     const warrior = new Character(
@@ -82,20 +84,6 @@ window.onload = function () {
         bow.innerHTML = `Bow Control: ${this.bowControl}`;
         rhythm.innerHTML = `Rhythm: ${this.rhythm}`;
         music.innerHTML = `Musicality: ${this.musicality}`;
-
-        console.log(
-            "Name: " +
-                this.name +
-                "\nProfession: " +
-                this.level +
-                "\nGender: " +
-                this.coins +
-                "\nAge: " +
-                this.attack +
-                "\nStrength: " +
-                this.defense
-        );
-        console.log("\n-------------\n");
     };
     // let students = [warrior, evilhead];
 
@@ -111,25 +99,37 @@ window.onload = function () {
     }
     initialPrompt();
 
-    Character.prototype.assignment1 = function (score) {
-        const assign1 = document.getElementById("assignment");
-
-        if (score == 4) {
-            console.log("hi");
-            this.facility = this.facility + 4;
-            this.printStats();
-        } else {
-            console.log("hi");
-            this.facility = this.facility + 500;
-            a.innerHTML = "0";
-            students[0].printStats();
+    Character.prototype.l111 = function (score) {
+        let assign1 = document.getElementById("assignment");
+        switch (score) {
+            case 4:
+                this.facility = this.facility + 4;
+                this.level1[0] = 4;
+                assign1.innerHTML = `Assignment 1: ${this.level1[0]}`;
+                this.printStats();
+                break;
+            case 3:
+                this.facility = this.facility + 3;
+                this.level1[0] = 3;
+                assign1.innerHTML = `Assignment 1: ${this.level1[0]}`;
+                this.printStats();
+                break;
+            case 2:
+                this.facility = this.facility + 2;
+                this.level1[0] = 2;
+                assign1.innerHTML = `Assignment 1: ${this.level1[0]}`;
+                this.printStats();
+                break;
+            case 1:
+                this.facility = this.facility + 1;
+                this.level1[0] = 1;
+                assign1.innerHTML = `Assignment 1: ${this.level1[0]}`;
+                this.printStats();
+                break;
         }
-        // else if () { }
-        // else if () { }
-        // else if () { }
     };
 
-    warrior.assignment1(4);
+    warrior.l111(4);
 
     var level1 = document.getElementById("level1");
     level1.addEventListener("click", function () {
@@ -137,13 +137,13 @@ window.onload = function () {
         currentLevel.innerHTML = "Level 1";
         console.log(person);
 
-        if (person == "warrior") {
-            if(score = 4)
-        }
+        // if (person == "warrior") {
+        //     if(score = 4)
+        // }
 
-        if (person == "evilhead") {
-            evilhead.assignment1(4);
-        }
+        // if (person == "evilhead") {
+        //     evilhead.assignment1(4);
+        // }
     });
 
     // students[1].printStats();
