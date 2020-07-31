@@ -1,9 +1,14 @@
-rsection {
+section {
     width: 100%;
     height: 96vh;
     background-color: teal;
     color: white;
     box-sizing: border-box;
+}
+
+button {
+    width: 20%;
+    color: white;
 }
 
 #grid {
@@ -43,19 +48,25 @@ rsection {
 }
 #grid :nth-child(6) {
     background-color: black;
-r    grid-column: 2/4;
+    grid-column: 2/4;
     grid-row: 6/7;
     cursor: pointer;
+    display: flex;
+    /* justify-content: space-evenly; */
 }
 #grid :nth-child(7) {
     background-color: black;
     grid-column: 2/4;
     grid-row: 7/8;
+    cursor: pointer;
+    display: flex;
 }
 #grid :nth-child(8) {
     background-color: black;
     grid-column: 2/4;
     grid-row: 8/9;
+    cursor: pointer;
+    display: flex;
 }
 
 #grid :nth-child(9) {

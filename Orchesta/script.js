@@ -97,7 +97,8 @@ window.onload = function () {
             evilhead.printStats();
         }
     }
-    initialPrompt();
+    // initialPrompt();
+    warrior.printStats();
 
     Character.prototype.l111 = function (score) {
         let assign1 = document.getElementById("assignment");
@@ -136,16 +137,5 @@ window.onload = function () {
         var currentLevel = document.getElementById("currentLevel");
         currentLevel.innerHTML = "Level 1";
         console.log(person);
-
-        // if (person == "warrior") {
-        //     if(score = 4)
-        // }
-
-        // if (person == "evilhead") {
-        //     evilhead.assignment1(4);
-        // }
     });
-
-    // students[1].printStats();
-    // Prompt
 };
