@@ -127,20 +127,22 @@ window.onload = function () {
     };
 
     warrior.l111(4);
- 
-    var level1 = document.getElementById("level1");
+
+    var level1 = document.getElementById("lvl1");
+    var assign1 = document.getElementById("assignment");
+    var currentLevel = document.getElementById("currentLevel");
+
     level1.addEventListener("click", function () {
-        var assign1 = document.getElementById("assignment");
-        var currentLevel = document.getElementById("currentLevel");
         currentLevel.innerHTML = `Level 1`;
         assign1.innerHTML = `Assignment 1: ${warrior.level1[0]}`;
         console.log(person);
     });
 
-    var level1 = document.getElementById("level1");
-    level1.addEventListener("click", function () {
-        var currentLevel = document.getElementById("currentLevel");
-        currentLevel.innerHTML = "Level 1";
+    var level2 = document.getElementById("lvl2");
+    level2.addEventListener("click", function () {
+        currentLevel.innerHTML = `Level 2`;
+        assign1.innerHTML = `Assignment 1: ${warrior.level1[1]}`;
+
         console.log(person);
     });
 };
