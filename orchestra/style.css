@@ -19,14 +19,13 @@ button {
 }
 
 #nameGame,
-#topTen,#name {
+#topTen,
+#name {
     border-bottom: 5px solid teal;
 }
 
-#nameGameChild{
-
-font-size: large;
-
+#nameGame {
+    background-color: teal;
 }
 
 #grid {
@@ -77,7 +76,7 @@ font-size: large;
 }
 
 #grid :nth-of-type(8) {
-    background-color: black;
+    /* background-color: black; */
     grid-column: 4/5;
     grid-row: 1/3;
 }
