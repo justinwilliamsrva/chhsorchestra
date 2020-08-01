@@ -189,14 +189,9 @@ button:hover {
 }
 
 /*Box id tags  */
-#image {
+img {
     width: 100%;
     height: 100%;
-}
-
-#logo {
-    width: 100%;
-    height: auto;
 }
 
 #name {
@@ -216,4 +211,9 @@ button:hover {
 #coinage {
     justify-content: center;
     align-items: center;
+}
+
+.unworthy {
+    cursor: not-allowed;
+    
 }
