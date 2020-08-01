@@ -146,7 +146,7 @@ function leval2() {
     assign1.innerHTML = `Assignment 1: ${warrior.level1[1]}`;
 }
 Character.prototype.evaluate = function () {
-    alert(this.totalScore);
+    // alert(this.totalScore);
     if (this.totalScore < 5000) {
         level2.removeEventListener("click", leval2);
         level2.classList.add("unworthy");
