@@ -34,7 +34,7 @@ button:hover {
     /* background-color: teal; */
     background-image: url("../assets/logo2.png");
     background-repeat: no-repeat;
-    background-size: 75% 150%;
+    background-size: 100% 175%;
     /* background-attachment: fixed; */
     background-position: center;
 }
