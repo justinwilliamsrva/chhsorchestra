@@ -104,13 +104,23 @@ let studentsString = ["warrior", "evilhead"];
 let personage = "";
 
 function initialPrompt() {
-    person = prompt("Please enter your name", "Harry Potter");
-    // var password = prompt("What is your password");
-    for (i = 0; i < studentsString.length; i++) {
-        if (person == studentsString[i]) {
-            personage = students[i];
-            personage.printStats();
-            personage.evaluate();
+    console.log(typeof localStorage.getItem("person"));
+
+    if (typeof localStorage.getItem("person") == "string") {
+        var j = parseInt(localStorage.getItem("person"));
+        personage = students[j];
+        personage.printStats();
+        personage.evaluate();
+    } else {
+        person = prompt("Please enter your name", "Harry Potter");
+        // var password = prompt("What is your password");
+        for (i = 0; i < studentsString.length; i++) {
+            if (person == studentsString[i]) {
+                personage = students[i];
+                localStorage.setItem("person", i);
+                personage.printStats();
+                personage.evaluate();
+            }
         }
     }
 }
