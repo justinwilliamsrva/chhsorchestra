@@ -29,7 +29,18 @@ function Character(
     this.defense = bowControl + rhythm + musicality;
     this.totalScore = this.attack + this.defense + coins;
 
-    this.level1 = [0, 0, 0, 0, 0];
+    this.level1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level4 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level5 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level6 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level7 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level9 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level10 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.challenges = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.raids = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
 
 const warrior = new Character(
@@ -79,7 +90,7 @@ Character.prototype.printStats = function () {
     att.innerHTML = `Attack: ${this.attack}`;
     def.innerHTML = `<b>Defense: ${this.defense}</b>`;
     coin.innerHTML = `Coins: ${this.coins}`;
-    level.innerHTML = `Level: ${this.level}`;
+    level.innerHTML = `Level: ${this.level2}`;
     fac.innerHTML = `Facility: ${this.facility}`;
     inton.innerHTML = `Intonation: ${this.intonation}`;
     shift.innerHTML = `Shifting: ${this.shifting}`;
