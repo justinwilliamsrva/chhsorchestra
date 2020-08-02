@@ -101,26 +101,31 @@ Character.prototype.printStats = function () {
 };
 let students = [warrior, evilhead];
 let studentsString = ["warrior", "evilhead"];
+let personage = "";
 
 function initialPrompt() {
     person = prompt("Please enter your name", "Harry Potter");
     // var password = prompt("What is your password");
     for (i = 0; i < studentsString.length; i++) {
         if (person == studentsString[i]) {
-            students[i].printStats();
-            students[i].evaluate();
+            personage = students[i];
+            personage.printStats();
+            personage.evaluate();
         }
     }
 }
-//     if (person == "warrior") {
-//         warrior.printStats();
-//     }
-//     if (person == "evilhead") {
-//         evilhead.printStats();
-//     }
-// }
-initialPrompt();
-// warrior.printStats();
+
+var level1 = document.getElementById("lvl1");
+var assign1 = document.getElementById("assignment");
+var currentLevel = document.getElementById("currentLevel");
+console.log(personage);
+// console.log(students[i].level1[0]);
+
+level1.addEventListener("click", function () {
+    currentLevel.innerHTML = `Level 1`;
+    assign1.innerHTML = `Assignment 1: ${personage.level1[0]}`;
+    console.log(person);
+});
 
 Character.prototype.l111 = function (score) {
     switch (score) {
@@ -148,16 +153,6 @@ Character.prototype.l111 = function (score) {
     }
 };
 
-var level1 = document.getElementById("lvl1");
-var assign1 = document.getElementById("assignment");
-var currentLevel = document.getElementById("currentLevel");
-
-level1.addEventListener("click", function () {
-    currentLevel.innerHTML = `Level 1`;
-    assign1.innerHTML = `Assignment 1: ${warrior.level1[0]}`;
-    console.log(person);
-});
-
 var level2 = document.getElementById("lvl2");
 level2.addEventListener("click", leval2);
 
@@ -175,3 +170,5 @@ Character.prototype.evaluate = function () {
 
 // warrior.l111(4);
 // warrior.evaluate();
+
+initialPrompt();
