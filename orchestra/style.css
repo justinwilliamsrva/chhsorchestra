@@ -30,6 +30,12 @@ button:hover {
     border-bottom: 5px solid teal;
 }
 
+#nickName,
+#topTen,
+#teamRank {
+    text-align: center;
+}
+
 #nameGame {
     /* background-color: teal; */
     background-image: url("../assets/logo2.png");
@@ -37,22 +43,6 @@ button:hover {
     background-size: 100% 175%;
     /* background-attachment: fixed; */
     background-position: center;
-}
-
-#name {
-    display: grid;
-    /* grid-template-columns: 1fr; */
-    grid-template-rows: repeat(2, 1fr);
-}
-
-#name :nth-of-type(1) {
-    /* grid-column: 1/2; */
-    grid-row: 1/2;
-}
-
-#name :nth-of-type(2) {
-    /* grid-column: 1/2; */
-    grid-row: 2/3;
 }
 
 #grid {
@@ -66,13 +56,11 @@ button:hover {
     background-color: black;
     grid-column: 1/2;
     grid-row: 4/5;
-    text-align: center;
 }
 #grid :nth-of-type(2) {
     background-color: black;
     grid-column: 1/2;
     grid-row: 5/6;
-    text-align: center;
 }
 #grid :nth-of-type(3) {
     background-color: black;
@@ -202,19 +190,13 @@ img {
     height: 100%;
 }
 
-/* #team {
-    /* color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* background-color: yellow;
-    background-image: url("../assets/logo.png");
+.team1 {
+    background-color: yellow;
+    background-image: url("../assets/logo3.png");
     background-repeat: no-repeat;
     background-size: 50% 200%;
-    /* background-attachment: fixed; */
-/* background-position: center; */
-/* } */
+    background-position: center;
+}
 
 #coinpicture {
     width: 50%;
