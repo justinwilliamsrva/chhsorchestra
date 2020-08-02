@@ -10,6 +10,7 @@ button {
     width: 20%;
     color: white;
     display: inline;
+    background-color: black;
 }
 
 button:hover {
@@ -20,16 +21,24 @@ button:hover {
 #level2,
 #level3 {
     display: flex;
+    background-color: black;
 }
 
 #nameGame,
 #topTen,
 #name,
-#team,
-#image {
+#image,
+#console,
+#teamRank {
+    border-bottom: 5px solid teal;
+    background-color: black;
+}
+#team {
     border-bottom: 5px solid teal;
 }
-
+.stats {
+    background-color: black;
+}
 #nickName,
 #topTen,
 #teamRank {
@@ -53,61 +62,50 @@ button:hover {
 }
 
 #grid :nth-of-type(1) {
-    background-color: black;
     grid-column: 1/2;
     grid-row: 4/5;
 }
 #grid :nth-of-type(2) {
-    background-color: black;
     grid-column: 1/2;
     grid-row: 5/6;
 }
 #grid :nth-of-type(3) {
-    background-color: black;
     grid-column: 1/2;
     grid-row: 1/4;
 }
 #grid :nth-of-type(4) {
-    background-color: black;
     grid-column: 1/2;
     grid-row: 6/9;
     z-index: 10;
 }
 
 #grid :nth-of-type(5) {
-    background-color: black;
     grid-column: 2/4;
     grid-row: 1/6;
     z-index: 10;
 }
 #grid :nth-of-type(6) {
-    background-color: black;
     grid-column: 2/4;
     grid-row: 6/7;
 }
 #grid :nth-of-type(7) {
-    background-color: black;
     grid-column: 2/4;
     grid-row: 7/8;
 }
 #grid :nth-of-type(8) {
-    background-color: black;
     grid-column: 2/4;
     grid-row: 8/9;
 }
 
 #grid :nth-of-type(9) {
-    background-color: black;
     grid-column: 4/5;
     grid-row: 1/3;
 }
 #grid :nth-of-type(10) {
-    background-color: black;
     grid-column: 4/5;
     grid-row: 3/6;
 }
 #grid :nth-of-type(11) {
-    background-color: black;
     grid-column: 4/5;
     grid-row: 6/9;
 }
@@ -119,10 +117,10 @@ button:hover {
     /* font-size: 10px; */
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 #statGrid > p {
     text-align: center;
-    background-color: black;
 }
 
 #level,
@@ -180,7 +178,9 @@ button:hover {
     font-weight: bold;
 }
 #attack,
-#defense {
+#defense,
+#level,
+# {
     /* border-bottom: 1px solid teal; */
 }
 
@@ -191,7 +191,7 @@ img {
 }
 
 .team1 {
-    background-color: yellow;
+    background-color: blue;
     background-image: url("../assets/logo3.png");
     background-repeat: no-repeat;
     background-size: 50% 200%;
