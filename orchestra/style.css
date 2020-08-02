@@ -129,6 +129,10 @@ button:hover {
 #defense {
     font-size: large;
 }
+#nickName{
+    font-size: x-large;
+    color: yellow
+}
 
 #statGrid :nth-of-type(1) {
     grid-column: 1/2;
@@ -180,7 +184,7 @@ button:hover {
 #attack,
 #defense,
 #level,
-# {
+
     /* border-bottom: 1px solid teal; */
 }
 
