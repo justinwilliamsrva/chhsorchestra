@@ -117,6 +117,7 @@ function initialPrompt() {
         for (i = 0; i < studentsString.length; i++) {
             if (person == studentsString[i]) {
                 personage = students[i];
+
                 localStorage.setItem("person", i);
                 personage.printStats();
                 personage.evaluate();
@@ -124,6 +125,11 @@ function initialPrompt() {
         }
     }
 }
+var signout = document.getElementById("signout");
+signout.addEventListener("click", function () {
+    localStorage.removeItem("person");
+    initialPrompt();
+});
 
 var level1 = document.getElementById("lvl1");
 var assign1 = document.getElementById("assignment");
