@@ -1,219 +1,437 @@
-section {
-    width: 100%;
-    height: 96vh;
-    background-color: teal;
-    color: white;
-    box-sizing: border-box;
-}
+@media only screen and (min-width: 769px) {
+    section {
+        width: 100%;
+        height: 96vh;
+        background-color: teal;
+        color: white;
+        box-sizing: border-box;
+    }
 
-button {
-    width: 20%;
-    color: white;
-    display: inline;
-    background-color: black;
-}
+    button {
+        width: 20%;
+        color: white;
+        display: inline;
+        background-color: black;
+    }
 
-button:hover {
-    background-color: teal;
-}
+    button:hover {
+        background-color: teal;
+    }
 
-#level1,
-#level2,
-#level3 {
-    display: flex;
-    background-color: black;
-}
+    #level1,
+    #level2,
+    #level3 {
+        display: flex;
+        background-color: black;
+    }
 
-#nameGame,
-#topTen,
-#name,
-#image,
-#console,
-#teamRank {
-    border-bottom: 5px solid teal;
-    background-color: black;
-}
-#team {
-    border-bottom: 5px solid teal;
-}
-.stats {
-    background-color: black;
-}
-#nickName,
-#topTen,
-#teamRank {
-    text-align: center;
-}
+    #nameGame,
+    #topTen,
+    #name,
+    #image,
+    #console,
+    #teamRank {
+        border-bottom: 5px solid teal;
+        background-color: black;
+    }
+    #team {
+        border-bottom: 5px solid teal;
+    }
+    .stats {
+        background-color: black;
+    }
+    #nickName,
+    #topTen,
+    #teamRank {
+        text-align: center;
+    }
 
-#nameGame {
-    /* background-color: teal; */
-    background-image: url("../assets/logo2.png");
-    background-repeat: no-repeat;
-    background-size: 100% 175%;
-    /* background-attachment: fixed; */
-    background-position: center;
-}
+    #nameGame {
+        /* background-color: teal; */
+        background-image: url("../assets/logo2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 175%;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
 
-#grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 5px;
-}
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 5px;
+    }
 
-#grid :nth-of-type(1) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-#grid :nth-of-type(2) {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-#grid :nth-of-type(3) {
-    grid-column: 1/2;
-    grid-row: 1/4;
-}
-#grid :nth-of-type(4) {
-    grid-column: 1/2;
-    grid-row: 6/9;
-    z-index: 10;
-}
+    #grid :nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #grid :nth-of-type(2) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #grid :nth-of-type(3) {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    #grid :nth-of-type(4) {
+        grid-column: 1/2;
+        grid-row: 6/9;
+        z-index: 10;
+    }
 
-#grid :nth-of-type(5) {
-    grid-column: 2/4;
-    grid-row: 1/6;
-    z-index: 10;
-}
-#grid :nth-of-type(6) {
-    grid-column: 2/4;
-    grid-row: 6/7;
-}
-#grid :nth-of-type(7) {
-    grid-column: 2/4;
-    grid-row: 7/8;
-}
-#grid :nth-of-type(8) {
-    grid-column: 2/4;
-    grid-row: 8/9;
-}
+    #grid :nth-of-type(5) {
+        grid-column: 2/4;
+        grid-row: 1/6;
+        z-index: 10;
+    }
+    #grid :nth-of-type(6) {
+        grid-column: 2/4;
+        grid-row: 6/7;
+    }
+    #grid :nth-of-type(7) {
+        grid-column: 2/4;
+        grid-row: 7/8;
+    }
+    #grid :nth-of-type(8) {
+        grid-column: 2/4;
+        grid-row: 8/9;
+    }
 
-#grid :nth-of-type(9) {
-    grid-column: 4/5;
-    grid-row: 1/3;
-}
-#grid :nth-of-type(10) {
-    grid-column: 4/5;
-    grid-row: 3/6;
-}
-#grid :nth-of-type(11) {
-    grid-column: 4/5;
-    grid-row: 6/9;
-}
-/* StatGride */
-#statGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 20%);
-    /* font-size: 10px; */
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-#statGrid > p {
-    text-align: center;
-}
+    #grid :nth-of-type(9) {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    #grid :nth-of-type(10) {
+        grid-column: 4/5;
+        grid-row: 3/6;
+    }
+    #grid :nth-of-type(11) {
+        grid-column: 4/5;
+        grid-row: 6/9;
+    }
+    /* StatGride */
+    #statGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 20%);
+        /* font-size: 10px; */
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    #statGrid > p {
+        text-align: center;
+    }
 
-#level,
-#coins,
-#attack,
-#defense {
-    font-size: large;
-}
-#nickName{
-    font-size: x-large;
-    color: yellow
-}
+    #level,
+    #coins,
+    #attack,
+    #defense {
+        font-size: large;
+    }
+    #nickName {
+        font-size: x-large;
+        color: yellow;
+    }
 
-#statGrid :nth-of-type(1) {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-weight: bold;
-}
-#statGrid :nth-of-type(2) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: center;
-    font-weight: bold;
-}
-#statGrid :nth-of-type(3) {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-#statGrid :nth-of-type(4) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-#statGrid :nth-of-type(5) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-#statGrid :nth-of-type(6) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-weight: bold;
-    display: inline;
-}
+    #statGrid :nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-weight: bold;
+    }
+    #statGrid :nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+        font-weight: bold;
+    }
+    #statGrid :nth-of-type(3) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #statGrid :nth-of-type(4) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #statGrid :nth-of-type(5) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #statGrid :nth-of-type(6) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-weight: bold;
+        display: inline;
+    }
 
-#statGrid :nth-of-type(7) {
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
-#statGrid :nth-of-type(8) {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-#statGrid :nth-of-type(9) {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-#statGrid :nth-of-type(10) {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-weight: bold;
-}
-#attack,
+    #statGrid :nth-of-type(7) {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    #statGrid :nth-of-type(8) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #statGrid :nth-of-type(9) {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #statGrid :nth-of-type(10) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-weight: bold;
+    }
+    #attack,
 #defense,
 #level,
 
     /* border-bottom: 1px solid teal; */
-}
+
 
 /*Box id tags  */
 img {
-    width: 100%;
-    height: 100%;
-}
+        width: 100%;
+        height: 100%;
+    }
 
-.team1 {
-    background-color: blue;
-    background-image: url("../assets/logo3.png");
-    background-repeat: no-repeat;
-    background-size: 50% 200%;
-    background-position: center;
-}
+    .team1 {
+        background-color: blue;
+        background-image: url("../assets/logo3.png");
+        background-repeat: no-repeat;
+        background-size: 50% 200%;
+        background-position: center;
+    }
 
-#coinpicture {
-    width: 50%;
-    height: 50%;
-    position: relative;
-    right: 0;
-}
+    #coinpicture {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        right: 0;
+    }
 
-#coinage {
-    justify-content: center;
-    align-items: center;
-}
+    #coinage {
+        justify-content: center;
+        align-items: center;
+    }
 
-.unworthy {
-    cursor: not-allowed;
+    .unworthy {
+        cursor: not-allowed;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    section {
+        width: 100%;
+        /* height: 96vh; */
+        background-color: teal;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(19, 10%);
+        grid-row-gap: 5px;
+    }
+
+    #grid :nth-of-type(1) {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    #grid :nth-of-type(2) {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    #grid :nth-of-type(3) {
+        grid-column: 1/3;
+        grid-row: 2/5;
+    }
+    #grid :nth-of-type(4) {
+        grid-column: 1/3;
+        grid-row: 7/10;
+        /* z-index: 10; */
+    }
+
+    #grid :nth-of-type(5) {
+        grid-column: 1/3;
+        grid-row: 10/15;
+        /* z-index: 10; */
+    }
+    #grid :nth-of-type(6) {
+        grid-column: 1/3;
+        grid-row: 15/16;
+    }
+    #grid :nth-of-type(7) {
+        grid-column: 1/3;
+        grid-row: 16/17;
+    }
+    #grid :nth-of-type(8) {
+        grid-column: 1/3;
+        grid-row: 17/18;
+    }
+
+    #grid :nth-of-type(9) {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #grid :nth-of-type(10) {
+        grid-column: 1/3;
+        grid-row: 18/19;
+    }
+    #grid :nth-of-type(11) {
+        grid-column: 1/3;
+        grid-row: 19/20;
+    }
+    #statGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 20%);
+        /* font-size: 10px; */
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    #statGrid > p {
+        text-align: center;
+    }
+
+    #level,
+    #coins,
+    #attack,
+    #defense {
+        font-size: large;
+    }
+    #nickName {
+        font-size: x-large;
+        color: yellow;
+    }
+
+    #statGrid :nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-weight: bold;
+    }
+    #statGrid :nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+        font-weight: bold;
+    }
+    #statGrid :nth-of-type(3) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #statGrid :nth-of-type(4) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #statGrid :nth-of-type(5) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #statGrid :nth-of-type(6) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-weight: bold;
+        display: inline;
+    }
+
+    #statGrid :nth-of-type(7) {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    #statGrid :nth-of-type(8) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #statGrid :nth-of-type(9) {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #statGrid :nth-of-type(10) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-weight: bold;
+    }
+
+    #nameGame {
+        /* background-color: teal; */
+        background-image: url("../assets/logo2.png");
+        background-repeat: no-repeat;
+        background-size: 75% 225%;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .team1 {
+        background-color: blue;
+        background-image: url("../assets/logo3.png");
+        background-repeat: no-repeat;
+        background-size: 50% 200%;
+        background-position: center;
+    }
+
+    #coinpicture {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        right: 0;
+    }
+
+    #coinage {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .unworthy {
+        cursor: not-allowed;
+    }
+
+    button {
+        width: 20%;
+        color: white;
+        display: inline;
+        background-color: black;
+    }
+
+    button:hover {
+        background-color: teal;
+    }
+
+    #level1,
+    #level2,
+    #level3 {
+        display: flex;
+        background-color: black;
+    }
+
+    #nameGame,
+    #topTen,
+    #name,
+    #image,
+    #console,
+    #teamRank {
+        border-bottom: 5px solid teal;
+        background-color: black;
+    }
+    #team {
+        border-bottom: 5px solid teal;
+    }
+    .stats {
+        background-color: black;
+    }
+    #nickName,
+    #topTen,
+    #teamRank {
+        text-align: center;
+    }
 }
