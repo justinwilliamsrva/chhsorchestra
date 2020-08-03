@@ -1,5 +1,11 @@
 var person = "";
 
+let studentsString = ["warrior", "evilhead"];
+let personage = "";
+var level1 = document.getElementById("lvl1");
+var assign1 = document.getElementById("assignment");
+var currentLevel = document.getElementById("currentLevel");
+
 function Character(
     name,
     team,
@@ -71,7 +77,7 @@ const evilhead = new Character(
     12,
     46
 );
-
+let students = [warrior, evilhead];
 Character.prototype.printStats = function () {
     let nick = document.getElementById("nickName");
     let team = document.getElementById("team");
@@ -101,10 +107,32 @@ Character.prototype.printStats = function () {
     rhythm.innerHTML = `Rhythm: ${this.rhythm}`;
     music.innerHTML = `Musicality: ${this.musicality}`;
 };
-let students = [warrior, evilhead];
-let studentsString = ["warrior", "evilhead"];
-let personage = "";
 
+Character.prototype.l111 = function (score) {
+    switch (score) {
+        case 4:
+            this.facility = this.facility + 4;
+            this.level1[0] = 4;
+            console.log(this.level1[0]);
+            this.printStats();
+            return this.level1[0];
+        case 3:
+            this.facility = this.facility + 3;
+            this.level1[0] = 3;
+            this.printStats();
+            break;
+        case 2:
+            this.facility = this.facility + 2;
+            this.level1[0] = 2;
+            this.printStats();
+            break;
+        case 1:
+            this.facility = this.facility + 1;
+            this.level1[0] = 1;
+            this.printStats();
+            break;
+    }
+};
 function initialPrompt() {
     console.log(typeof localStorage.getItem("person"));
 
@@ -133,9 +161,7 @@ signout.addEventListener("click", function () {
     initialPrompt();
 });
 
-var level1 = document.getElementById("lvl1");
-var assign1 = document.getElementById("assignment");
-var currentLevel = document.getElementById("currentLevel");
+
 console.log(personage);
 // console.log(students[i].level1[0]);
 
@@ -145,33 +171,18 @@ level1.addEventListener("click", function () {
     console.log(person);
 });
 
-Character.prototype.l111 = function (score) {
-    switch (score) {
-        case 4:
-            this.facility = this.facility + 4;
-            this.level1[0] = 4;
-            console.log(this.level1[0]);
-            this.printStats();
-            return this.level1[0];
-        case 3:
-            this.facility = this.facility + 3;
-            this.level1[0] = 3;
-            this.printStats();
-            break;
-        case 2:
-            this.facility = this.facility + 2;
-            this.level1[0] = 2;
-            this.printStats();
-            break;
-        case 1:
-            this.facility = this.facility + 1;
-            this.level1[0] = 1;
-            this.printStats();
-            break;
-    }
-};
+
+
+
 
 var level2 = document.getElementById("lvl2");
+var level2 = document.getElementById("lvl2");
+var level2 = document.getElementById("lvl2");
+var level2 = document.getElementById("lvl2");
+var level2 = document.getElementById("lvl2");
+var level2 = document.getElementById("lvl2");
+var level2 = document.getElementById("lvl2");
+
 level2.addEventListener("click", leval2);
 
 function leval2() {
@@ -179,11 +190,17 @@ function leval2() {
     assign1.innerHTML = `Assignment 1: ${warrior.level1[1]}`;
 }
 Character.prototype.evaluate = function () {
-    // alert(this.totalScore);
-    if (this.totalScore < 5000) {
+    // alert(this.coins);
+    if (this.coins < 27) {
         level2.removeEventListener("click", leval2);
-        level2.classList.add("unworthy");
+        level2.classList.add("invisible");
     }
+
+    // else if (this.totalScore < 50) { }
+    // else if () { }
+    // else if () { }
+    // else if () { }
+    // else if () { }
 };
 
 // warrior.l111(4);

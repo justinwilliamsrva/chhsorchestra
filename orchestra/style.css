@@ -215,8 +215,8 @@ img {
         align-items: center;
     }
 
-    .unworthy {
-        cursor: not-allowed;
+    .invisible {
+        visibility: hidden;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -392,8 +392,8 @@ img {
         align-items: center;
     }
 
-    .unworthy {
-        cursor: not-allowed;
+    .invisible {
+        visibility: hidden;
     }
 
     button {
@@ -433,5 +433,9 @@ img {
     #topTen,
     #teamRank {
         text-align: center;
+    }
+
+    #lvl12 {
+        visibility: hidden;
     }
 }
