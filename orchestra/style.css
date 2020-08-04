@@ -216,7 +216,8 @@ img {
     }
 
     .invisible {
-        color: red;
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 }
 @media only screen and (max-width: 768px) {

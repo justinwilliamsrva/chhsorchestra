@@ -225,8 +225,8 @@ level8.addEventListener("click", leval8);
 level9.addEventListener("click", leval9);
 level10.addEventListener("click", evil);
 Character.prototype.evaluate = function () {
-    // alert(this.coins);
-    if (this.coins < 6) {
+    alert(this.coins);
+    if (this.coins < 27) {
         level2.classList.add("invisible");
         level3.classList.add("invisible");
         level4.classList.add("invisible");
@@ -287,3 +287,4 @@ Character.prototype.evaluate = function () {
 // warrior.evaluate();
 
 initialPrompt();
+// warrior.evaluate();
