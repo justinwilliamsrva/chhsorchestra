@@ -227,29 +227,60 @@ level10.addEventListener("click", evil);
 Character.prototype.evaluate = function () {
     // alert(this.coins);
     if (this.coins < 6) {
-        level2.removeEventListener("click", leval2);
         level2.classList.add("invisible");
-        level3.removeEventListener("click", leval3);
         level3.classList.add("invisible");
-        level4.removeEventListener("click", leval4);
+        level4.classList.add("invisible");
         level5.classList.add("invisible");
-        level6.removeEventListener("click", leval5);
         level6.classList.add("invisible");
-        level7.removeEventListener("click", leval6);
         level7.classList.add("invisible");
-        level8.removeEventListener("click", leval7);
         level8.classList.add("invisible");
-        level9.removeEventListener("click", leval8);
         level9.classList.add("invisible");
-        level10.removeEventListener("click", leval20);
+        level10.classList.add("invisible");
+    } else if (this.coins < 12) {
+        level3.classList.add("invisible");
+        level4.classList.add("invisible");
+        level5.classList.add("invisible");
+        level6.classList.add("invisible");
+        level7.classList.add("invisible");
+        level8.classList.add("invisible");
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 20) {
+        level4.classList.add("invisible");
+        level5.classList.add("invisible");
+        level6.classList.add("invisible");
+        level7.classList.add("invisible");
+        level8.classList.add("invisible");
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 25) {
+        level5.classList.add("invisible");
+        level6.classList.add("invisible");
+        level7.classList.add("invisible");
+        level8.classList.add("invisible");
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 30) {
+        level6.classList.add("invisible");
+        level7.classList.add("invisible");
+        level8.classList.add("invisible");
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 30) {
+        level7.classList.add("invisible");
+        level8.classList.add("invisible");
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 40) {
+        level8.classList.add("invisible");
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 350) {
+        level9.classList.add("invisible");
+        level10.classList.add("invisible");
+    } else if (this.coins < 300) {
         level10.classList.add("invisible");
     }
-
-    // else if (this.totalScore < 50) { }
-    // else if () { }
-    // else if () { }
-    // else if () { }
-    // else if () { }
 };
 
 // warrior.l111(4);

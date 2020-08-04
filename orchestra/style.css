@@ -216,7 +216,7 @@ img {
     }
 
     .invisible {
-        visibility: hidden;
+        color: red;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -393,7 +393,7 @@ img {
     }
 
     .invisible {
-        visibility: hidden;
+        color: red;
     }
 
     button {
