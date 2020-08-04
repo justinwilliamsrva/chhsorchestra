@@ -2,7 +2,16 @@ var person = "";
 
 let studentsString = ["warrior", "evilhead"];
 let personage = "";
-var level1 = document.getElementById("lvl1");
+var level = document.getElementById("lvl1");
+var level2 = document.getElementById("lvl2");
+var level3 = document.getElementById("lvl3");
+var level4 = document.getElementById("lvl4");
+var level5 = document.getElementById("lvl5");
+var level6 = document.getElementById("lvl6");
+var level7 = document.getElementById("lvl7");
+var level8 = document.getElementById("lvl8");
+var level9 = document.getElementById("lvl9");
+var level10 = document.getElementById("lvl10");
 var assign1 = document.getElementById("assignment");
 var currentLevel = document.getElementById("currentLevel");
 
@@ -108,7 +117,7 @@ Character.prototype.printStats = function () {
     music.innerHTML = `Musicality: ${this.musicality}`;
 };
 
-Character.prototype.l111 = function (score) {
+Character.prototype.a1 = function (score) {
     switch (score) {
         case 4:
             this.facility = this.facility + 4;
@@ -161,39 +170,79 @@ signout.addEventListener("click", function () {
     initialPrompt();
 });
 
-
 console.log(personage);
 // console.log(students[i].level1[0]);
 
-level1.addEventListener("click", function () {
+function level1() {
     currentLevel.innerHTML = `Level 1`;
     assign1.innerHTML = `Assignment 1: ${personage.level1[0]}`;
-    console.log(person);
-});
-
-
-
-
-
-var level2 = document.getElementById("lvl2");
-var level2 = document.getElementById("lvl2");
-var level2 = document.getElementById("lvl2");
-var level2 = document.getElementById("lvl2");
-var level2 = document.getElementById("lvl2");
-var level2 = document.getElementById("lvl2");
-var level2 = document.getElementById("lvl2");
-
-level2.addEventListener("click", leval2);
-
+}
 function leval2() {
     currentLevel.innerHTML = `Level 2`;
-    assign1.innerHTML = `Assignment 1: ${warrior.level1[1]}`;
+    assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
 }
+function leval3() {
+    currentLevel.innerHTML = `Level 3`;
+    assign1.innerHTML = `Assignment 1: ${personage.level3[0]}`;
+}
+function leval4() {
+    currentLevel.innerHTML = `Level 4`;
+    assign1.innerHTML = `Assignment 1: ${personage.level4[0]}`;
+}
+function leval5() {
+    currentLevel.innerHTML = `Level 5`;
+    assign1.innerHTML = `Assignment 1:${personage.level5[0]}`;
+}
+function leval6() {
+    currentLevel.innerHTML = `Level 6`;
+    assign1.innerHTML = `Assignment 1: ${personage.level6[0]}`;
+}
+function leval7() {
+    currentLevel.innerHTML = `Level 7`;
+    assign1.innerHTML = `Assignment 1: ${personage.level7[0]}`;
+}
+function leval8() {
+    currentLevel.innerHTML = `Level 8`;
+    assign1.innerHTML = `Assignment 1: ${personage.level8[0]}`;
+}
+function leval9() {
+    currentLevel.innerHTML = `Level 9`;
+    assign1.innerHTML = `Assignment 1: ${personage.level9[0]}`;
+}
+function evil() {
+    currentLevel.innerHTML = `Level 10`;
+    assign1.innerHTML = `Assignment 1: ${personage.level10[0]}`;
+}
+
+level.addEventListener("click", level1);
+level2.addEventListener("click", leval2);
+level3.addEventListener("click", leval3);
+level4.addEventListener("click", leval4);
+level5.addEventListener("click", leval5);
+level6.addEventListener("click", leval6);
+level7.addEventListener("click", leval7);
+level8.addEventListener("click", leval8);
+level9.addEventListener("click", leval9);
+level10.addEventListener("click", evil);
 Character.prototype.evaluate = function () {
     // alert(this.coins);
-    if (this.coins < 27) {
+    if (this.coins < 6) {
         level2.removeEventListener("click", leval2);
         level2.classList.add("invisible");
+        level3.removeEventListener("click", leval3);
+        level3.classList.add("invisible");
+        level4.removeEventListener("click", leval4);
+        level5.classList.add("invisible");
+        level6.removeEventListener("click", leval5);
+        level6.classList.add("invisible");
+        level7.removeEventListener("click", leval6);
+        level7.classList.add("invisible");
+        level8.removeEventListener("click", leval7);
+        level8.classList.add("invisible");
+        level9.removeEventListener("click", leval8);
+        level9.classList.add("invisible");
+        level10.removeEventListener("click", leval20);
+        level10.classList.add("invisible");
     }
 
     // else if (this.totalScore < 50) { }
