@@ -6,6 +6,33 @@
         color: white;
         box-sizing: border-box;
     }
+/* #currentLevel,#upload{
+
+text-align: center;
+
+}
+#upload{
+
+    justify-content: center;
+
+} */
+
+#header{
+
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+#taskList,#instructions{
+
+float: left;
+height: 90%;
+width: 50%;
+
+}
+
+
+
 
     button {
         width: 20%;
@@ -229,7 +256,11 @@ img {
     body {
         background-color: lightblue;
     }
+    #currentLevel, #upload{
 
+        text-align: center;
+
+        }
     section {
         width: 100%;
         /* height: 96vh; */
@@ -238,60 +269,75 @@ img {
         box-sizing: border-box;
     }
 
+
+#header{
+
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+#taskList,#instructions{
+
+float: left;
+height: 90%;
+width: 50%;
+
+}
+
     #grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(19, 10%);
+        grid-template-rows: repeat(22, 10%);
         grid-row-gap: 5px;
     }
 
     #grid :nth-of-type(1) {
         grid-column: 1/3;
-        grid-row: 5/6;
+        grid-row: 6/7;
     }
     #grid :nth-of-type(2) {
         grid-column: 1/3;
-        grid-row: 6/7;
+        grid-row: 7/8;
     }
     #grid :nth-of-type(3) {
         grid-column: 1/3;
-        grid-row: 2/5;
+        grid-row: 3/6;
     }
     #grid :nth-of-type(4) {
         grid-column: 1/3;
-        grid-row: 7/10;
+        grid-row: 8/11;
         /* z-index: 10; */
     }
 
     #grid :nth-of-type(5) {
         grid-column: 1/3;
-        grid-row: 10/15;
+        grid-row: 11/16;
         /* z-index: 10; */
     }
     #grid :nth-of-type(6) {
         grid-column: 1/3;
-        grid-row: 15/16;
+        grid-row: 16/17;
     }
     #grid :nth-of-type(7) {
         grid-column: 1/3;
-        grid-row: 16/17;
+        grid-row: 17/18;
     }
     #grid :nth-of-type(8) {
         grid-column: 1/3;
-        grid-row: 17/18;
+        grid-row: 18/19;
     }
 
     #grid :nth-of-type(9) {
         grid-column: 1/3;
-        grid-row: 1/2;
+        grid-row: 1/3;
     }
     #grid :nth-of-type(10) {
         grid-column: 1/3;
-        grid-row: 18/19;
+        grid-row: 19/21;
     }
     #grid :nth-of-type(11) {
         grid-column: 1/3;
-        grid-row: 19/20;
+        grid-row: 21/23;
     }
     #statGrid {
         display: flex;
@@ -353,9 +399,13 @@ img {
     }
 
     .invisible {
-        color: red;
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 
+    .invisible:hover {
+        background-color: black;
+    }
     button {
         width: 20%;
         color: white;
