@@ -76,10 +76,10 @@ function Character(
 }
 
 const jaden = new Character(
-    "Crusher",
+    "Cluck Norris",
     "team1",
     1,
-    "https://media.giphy.com/media/oC0dO39ULoVhe/giphy.gif",
+    "https://media0.giphy.com/media/ghHDuqJ1uh9vP2gKdC/giphy.gif",
     0,
     0,
     0,
@@ -323,6 +323,7 @@ signout.addEventListener("click", function () {
 function level1() {
     currentLevel.innerHTML = `Level 1`;
     assign1.innerHTML = `Assignment 1: ${personage.level1[0]}`;
+
     upload.innerHTML = "Upload a Recording";
     upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
     upload.style.cursor = "pointer";
@@ -442,7 +443,7 @@ level10.addEventListener("click", evil);
 initialPrompt();
 console.log(person);
 if (person == "jaden") {
-  
+
 } else if (person == "evilhead") {
     evilhead.a1(1);
 }
