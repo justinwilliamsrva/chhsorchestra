@@ -14,6 +14,7 @@ var level9 = document.getElementById("lvl9");
 var level10 = document.getElementById("lvl10");
 var assign1 = document.getElementById("assignment");
 var currentLevel = document.getElementById("currentLevel");
+var upload = document.getElementById("upload");
 
 function Character(
     name,
@@ -176,42 +177,102 @@ console.log(personage);
 function level1() {
     currentLevel.innerHTML = `Level 1`;
     assign1.innerHTML = `Assignment 1: ${personage.level1[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval2() {
     currentLevel.innerHTML = `Level 2`;
     assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval3() {
     currentLevel.innerHTML = `Level 3`;
     assign1.innerHTML = `Assignment 1: ${personage.level3[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval4() {
     currentLevel.innerHTML = `Level 4`;
     assign1.innerHTML = `Assignment 1: ${personage.level4[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval5() {
     currentLevel.innerHTML = `Level 5`;
     assign1.innerHTML = `Assignment 1:${personage.level5[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval6() {
     currentLevel.innerHTML = `Level 6`;
     assign1.innerHTML = `Assignment 1: ${personage.level6[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval7() {
     currentLevel.innerHTML = `Level 7`;
     assign1.innerHTML = `Assignment 1: ${personage.level7[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval8() {
     currentLevel.innerHTML = `Level 8`;
     assign1.innerHTML = `Assignment 1: ${personage.level8[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function leval9() {
     currentLevel.innerHTML = `Level 9`;
     assign1.innerHTML = `Assignment 1: ${personage.level9[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 function evil() {
     currentLevel.innerHTML = `Level 10`;
     assign1.innerHTML = `Assignment 1: ${personage.level10[0]}`;
+    upload.innerHTML = "Upload a Recording";
+    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.style.cursor = "pointer";
+    upload.addEventListener("click", function () {
+        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
 }
 
 level.addEventListener("click", level1);
@@ -225,8 +286,16 @@ level8.addEventListener("click", leval8);
 level9.addEventListener("click", leval9);
 level10.addEventListener("click", evil);
 Character.prototype.evaluate = function () {
-    alert(this.coins);
     if (this.coins < 27) {
+        level2.removeEventListener("click", leval2);
+        level3.removeEventListener("click", leval3);
+        level4.removeEventListener("click", leval4);
+        level5.removeEventListener("click", leval5);
+        level6.removeEventListener("click", leval6);
+        level7.removeEventListener("click", leval7);
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level2.classList.add("invisible");
         level3.classList.add("invisible");
         level4.classList.add("invisible");
@@ -236,7 +305,15 @@ Character.prototype.evaluate = function () {
         level8.classList.add("invisible");
         level9.classList.add("invisible");
         level10.classList.add("invisible");
-    } else if (this.coins < 12) {
+    } else if (this.coins < 29) {
+        level3.removeEventListener("click", leval3);
+        level4.removeEventListener("click", leval4);
+        level5.removeEventListener("click", leval5);
+        level6.removeEventListener("click", leval6);
+        level7.removeEventListener("click", leval7);
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level3.classList.add("invisible");
         level4.classList.add("invisible");
         level5.classList.add("invisible");
@@ -245,7 +322,14 @@ Character.prototype.evaluate = function () {
         level8.classList.add("invisible");
         level9.classList.add("invisible");
         level10.classList.add("invisible");
-    } else if (this.coins < 20) {
+    } else if (this.coins < 30) {
+        level4.removeEventListener("click", leval4);
+        level5.removeEventListener("click", leval5);
+        level6.removeEventListener("click", leval6);
+        level7.removeEventListener("click", leval7);
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level4.classList.add("invisible");
         level5.classList.add("invisible");
         level6.classList.add("invisible");
@@ -254,31 +338,52 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 25) {
+        level5.removeEventListener("click", leval5);
+        level6.removeEventListener("click", leval6);
+        level7.removeEventListener("click", leval7);
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level5.classList.add("invisible");
         level6.classList.add("invisible");
         level7.classList.add("invisible");
         level8.classList.add("invisible");
         level9.classList.add("invisible");
         level10.classList.add("invisible");
-    } else if (this.coins < 30) {
+    } else if (this.coins < 31) {
+        level6.removeEventListener("click", leval6);
+        level7.removeEventListener("click", leval7);
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level6.classList.add("invisible");
         level7.classList.add("invisible");
         level8.classList.add("invisible");
         level9.classList.add("invisible");
         level10.classList.add("invisible");
-    } else if (this.coins < 30) {
+    } else if (this.coins < 32) {
+        level7.removeEventListener("click", leval7);
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level7.classList.add("invisible");
         level8.classList.add("invisible");
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 40) {
+        level8.removeEventListener("click", leval8);
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level8.classList.add("invisible");
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 350) {
+        level9.removeEventListener("click", leval9);
+        level10.removeEventListener("click", evil);
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 300) {
+        level10.removeEventListener("click", evil);
         level10.classList.add("invisible");
     }
 };
