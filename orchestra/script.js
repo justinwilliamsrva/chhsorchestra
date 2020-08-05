@@ -290,7 +290,7 @@ function level1() {
     upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
     upload.style.cursor = "pointer";
     upload.addEventListener("click", function () {
-        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+        alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
     });
     assign1.addEventListener("click", function () {
         instruct.innerHTML =
