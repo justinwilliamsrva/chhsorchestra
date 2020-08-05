@@ -6,31 +6,33 @@
         color: white;
         box-sizing: border-box;
     }
-/* #currentLevel,#upload{
 
-text-align: center;
 
-}
-#upload{
-
-    justify-content: center;
-
-} */
 
 #header{
-
+    box-sizing: border-box;
     text-align: center;
     width: 100%;
     height: 10%;
 }
 #taskList,#instructions{
-
+box-sizing: border-box;
 float: left;
-height: 90%;
+height: 87%;
 width: 50%;
+/* border: 2px solid aqua */
 
 }
+#taskList{
 
+    border-right: 2px dashed teal;
+}
+h1,h2{
+
+margin:0;
+padding:0;
+
+}
 .assignments{
 
 color: yellow;
@@ -39,7 +41,7 @@ text-decoration: underline;
 
 }
 #console{
-
+box-sizing: border-box;
     text-align: center;
 }
 
