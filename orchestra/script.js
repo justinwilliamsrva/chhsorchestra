@@ -442,7 +442,7 @@ level10.addEventListener("click", evil);
 initialPrompt();
 console.log(person);
 if (person == "jaden") {
-    jaden.a1(4, "Excellent Work!");
+  
 } else if (person == "evilhead") {
     evilhead.a1(1);
 }
