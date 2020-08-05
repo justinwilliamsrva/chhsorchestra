@@ -233,24 +233,30 @@ Character.prototype.a1 = function (score) {
     switch (score) {
         case 4:
             this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.coins = this.coins + 4;
             this.level1[0] = 4;
             this.printStats();
             this.evaluate();
             return this.level1[0];
         case 3:
             this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 1;
+            this.coins = this.coins + 3;
             this.level1[0] = 3;
             this.printStats();
             this.evaluate();
             break;
         case 2:
             this.intonation = this.intonation + 2;
+            this.coins = this.coins + 2;
             this.level1[0] = 2;
             this.printStats();
             this.evaluate();
             break;
         case 1:
             this.intonation = this.facility + 1;
+            this.coins = this.coins + 1;
             this.level1[0] = 1;
             this.printStats();
             this.evaluate();
@@ -410,8 +416,7 @@ initialPrompt();
 console.log(person);
 if (person == "jaden") {
     jaden.a1(4);
-}
-if (person == "evilhead") {
+} else if (person == "evilhead") {
     evilhead.a1(1);
 }
 
