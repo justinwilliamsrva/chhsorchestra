@@ -126,7 +126,7 @@ Character.prototype.printStats = function () {
 };
 
 Character.prototype.evaluate = function () {
-    alert(this.coins);
+
     if (this.coins < 22) {
         level2.removeEventListener("click", leval2);
         level3.removeEventListener("click", leval3);
@@ -147,6 +147,7 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 44) {
+        this.level = 2;
         level3.removeEventListener("click", leval3);
         level4.removeEventListener("click", leval4);
         level5.removeEventListener("click", leval5);
@@ -164,6 +165,7 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 66) {
+        this.level = 3;
         level4.removeEventListener("click", leval4);
         level5.removeEventListener("click", leval5);
         level6.removeEventListener("click", leval6);
@@ -179,6 +181,7 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 88) {
+        this.level = 4;
         level5.removeEventListener("click", leval5);
         level6.removeEventListener("click", leval6);
         level7.removeEventListener("click", leval7);
@@ -192,6 +195,7 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 110) {
+        this.level = 5;
         level6.removeEventListener("click", leval6);
         level7.removeEventListener("click", leval7);
         level8.removeEventListener("click", leval8);
@@ -203,6 +207,7 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 132) {
+        this.level = 6;
         level7.removeEventListener("click", leval7);
         level8.removeEventListener("click", leval8);
         level9.removeEventListener("click", leval9);
@@ -212,6 +217,7 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 154) {
+        this.level = 7;
         level8.removeEventListener("click", leval8);
         level9.removeEventListener("click", leval9);
         level10.removeEventListener("click", evil);
@@ -219,13 +225,17 @@ Character.prototype.evaluate = function () {
         level9.classList.add("invisible");
         level10.classList.add("invisible");
     } else if (this.coins < 176) {
+        this.level = 8;
         level9.removeEventListener("click", leval9);
         level10.removeEventListener("click", evil);
         level9.classList.add("invisible");
         level10.classList.add("invisible");
-    } else {
+    } else if (this.coins < 198) {
+        this.level = 9;
         level10.removeEventListener("click", evil);
         level10.classList.add("invisible");
+    } else {
+        this.level = 10;
     }
 };
 
@@ -306,7 +316,7 @@ function level1() {
     assign1.addEventListener("click", function () {
         instruct.innerHTML =
             "<a target='_blank' href='https://drive.google.com/file/d/1BEZ8ESkjr1-2H7UU0GUfzMzUquDdHtrv/view?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
-        reward.innerHTML = "Reward: Intonation + Shifting";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(2)";
         recording.innerHTML = " Recording: Coming Soon";
     });
 }
@@ -415,7 +425,7 @@ level10.addEventListener("click", evil);
 initialPrompt();
 console.log(person);
 if (person == "jaden") {
-    jaden.a1(4);
+
 } else if (person == "evilhead") {
     evilhead.a1(1);
 }
