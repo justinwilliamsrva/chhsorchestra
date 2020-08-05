@@ -1,6 +1,6 @@
 var person = "";
 
-let studentsString = ["warrior", "evilhead"];
+let studentsString = ["jaden", "evilhead"];
 let personage = "";
 var level = document.getElementById("lvl1");
 var level2 = document.getElementById("lvl2");
@@ -62,19 +62,19 @@ function Character(
     this.raids = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
 
-const warrior = new Character(
+const jaden = new Character(
     "Crusher",
     "team1",
-    2,
+    1,
     "https://media.giphy.com/media/oC0dO39ULoVhe/giphy.gif",
-    25,
-    10,
-    50,
-    50,
-    50,
-    50,
-    50,
-    50
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
 );
 const evilhead = new Character(
     "Smash",
@@ -90,7 +90,7 @@ const evilhead = new Character(
     12,
     46
 );
-let students = [warrior, evilhead];
+let students = [jaden, evilhead];
 
 Character.prototype.printStats = function () {
     let nick = document.getElementById("nickName");
@@ -219,7 +219,7 @@ Character.prototype.evaluate = function () {
         level10.removeEventListener("click", evil);
         level9.classList.add("invisible");
         level10.classList.add("invisible");
-    } else if (this.coins < 300) {
+    } else {
         level10.removeEventListener("click", evil);
         level10.classList.add("invisible");
     }
@@ -283,13 +283,14 @@ function level1() {
     currentLevel.innerHTML = `Level 1`;
     assign1.innerHTML = `Assignment 1: ${personage.level1[0]}`;
     upload.innerHTML = "Upload a Recording";
-    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
     upload.style.cursor = "pointer";
     upload.addEventListener("click", function () {
         alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
     });
     assign1.addEventListener("click", function () {
-        instruct.innerHTML = "Quest: Complete Numbers 5,6,11 and 12";
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1BEZ8ESkjr1-2H7UU0GUfzMzUquDdHtrv/view?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
         reward.innerHTML = "Reward: Intonation + Shifting";
         recording.innerHTML = " Recording: Coming Soon";
     });
