@@ -44,9 +44,9 @@ function Character(
     this.rhythm = rhythm;
     this.musicality = musicality;
 
-    this.attack = facility + intonation + shifting;
-    this.defense = bowControl + rhythm + musicality;
-    this.totalScore = this.attack + this.defense + coins;
+    this.attack = this.facility + this.intonation + this.shifting;
+    this.defense = this.bowControl + this.rhythm + this.musicality;
+    this.totalScore = this.attack + this.defense + this.coins;
 
     this.level1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.level2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -106,6 +106,9 @@ Character.prototype.printStats = function () {
     let bow = document.getElementById("bowControl");
     let rhythm = document.getElementById("rhythm");
     let music = document.getElementById("musicality");
+    this.attack = this.facility + this.intonation + this.shifting;
+    this.defense = this.bowControl + this.rhythm + this.musicality;
+    this.totalScore = this.attack + this.defense + this.coins;
 
     nick.innerHTML = this.name;
     team.classList.add(`${this.team}`);
@@ -231,6 +234,7 @@ Character.prototype.a1 = function (score) {
             this.facility = this.facility + 4;
             this.level1[0] = 4;
             console.log(this.level1[0]);
+            console.log(jaden);
             this.printStats();
             return this.level1[0];
         case 3:
@@ -397,7 +401,7 @@ level8.addEventListener("click", leval8);
 level9.addEventListener("click", leval9);
 level10.addEventListener("click", evil);
 
-// warrior.l111(4);
+jaden.a1(4);
 initialPrompt();
 
 module.export = Character;
