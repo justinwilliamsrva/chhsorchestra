@@ -31,6 +31,17 @@ width: 50%;
 
 }
 
+.assignments{
+
+color: yellow;
+cursor: pointer;
+text-decoration: underline;
+
+}
+#console{
+
+    text-align: center;
+}
 
 
 
@@ -256,11 +267,9 @@ img {
     body {
         background-color: lightblue;
     }
-    #currentLevel, #upload{
 
-        text-align: center;
 
-        }
+
     section {
         width: 100%;
         /* height: 96vh; */

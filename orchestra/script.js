@@ -12,9 +12,12 @@ var level7 = document.getElementById("lvl7");
 var level8 = document.getElementById("lvl8");
 var level9 = document.getElementById("lvl9");
 var level10 = document.getElementById("lvl10");
-var assign1 = document.getElementById("assignment");
+var assign1 = document.getElementById("assignment1");
 var currentLevel = document.getElementById("currentLevel");
 var upload = document.getElementById("upload");
+var instruct = document.getElementById("instruct");
+var reward = document.getElementById("reward");
+var recording = document.getElementById("recording");
 
 function Character(
     name,
@@ -88,8 +91,6 @@ const evilhead = new Character(
     46
 );
 let students = [warrior, evilhead];
-
-
 
 Character.prototype.printStats = function () {
     let nick = document.getElementById("nickName");
@@ -286,6 +287,11 @@ function level1() {
     upload.style.cursor = "pointer";
     upload.addEventListener("click", function () {
         alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+    });
+    assign1.addEventListener("click", function () {
+        instruct.innerHTML = "Quest: Complete Numbers 5,6,11 and 12";
+        reward.innerHTML = "Reward: Intonation + Shifting";
+        recording.innerHTML = " Recording: Coming Soon";
     });
 }
 function leval2() {
