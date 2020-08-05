@@ -223,14 +223,8 @@ box-sizing: border-box;
         grid-row: 2/3;
         font-weight: bold;
     } */
-    #attack,
-#defense,
-#level,
-
-    /* border-bottom: 1px solid teal; */
 
 
-/*Box id tags  */
 img {
         width: 100%;
         height: 100%;
@@ -269,8 +263,31 @@ img {
     body {
         background-color: lightblue;
     }
+    .assignments{
 
+        color: yellow;
+        cursor: pointer;
+        text-decoration: underline;
 
+        }
+
+    #taskList,#instructions{
+        box-sizing: border-box;
+        float: left;
+        height: 87%;
+        width: 50%;
+        /* border: 2px solid aqua */
+
+        }
+        #taskList{
+
+            border-right: 2px dashed teal;
+        }
+        h1,h2{
+
+        margin:0;
+        padding:0;
+        }
 
     section {
         width: 100%;
@@ -279,7 +296,10 @@ img {
         color: white;
         box-sizing: border-box;
     }
+#console{
 
+    text-align: center;
+}
 
 #header{
 

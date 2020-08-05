@@ -300,7 +300,7 @@ function initialPrompt() {
         personage.printStats();
         personage.evaluate();
     } else {
-        person = prompt("Please enter your name", "warrior");
+        person = prompt("Please enter your name", "jaden");
         // var password = prompt("What is your password");
         for (i = 0; i < studentsString.length; i++) {
             if (person == studentsString[i]) {
