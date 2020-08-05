@@ -12,6 +12,7 @@
         color: white;
         display: inline;
         background-color: black;
+        cursor: pointer;
     }
 
     button:hover {
@@ -360,6 +361,8 @@ img {
         color: white;
         display: inline;
         background-color: black;
+        cursor: pointer;
+    }
     }
 
     button:hover {
