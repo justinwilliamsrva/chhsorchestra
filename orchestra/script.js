@@ -12,6 +12,7 @@ var level7 = document.getElementById("lvl7");
 var level8 = document.getElementById("lvl8");
 var level9 = document.getElementById("lvl9");
 var level10 = document.getElementById("lvl10");
+var comment = document.getElementById("comment");
 var assign1 = document.getElementById("assignment1");
 var currentLevel = document.getElementById("currentLevel");
 var upload = document.getElementById("upload");
@@ -49,6 +50,18 @@ function Character(
     this.totalScore = this.attack + this.defense + this.coins;
 
     this.level1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.level1COM = [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+    ];
     this.level2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.level3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.level4 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -126,7 +139,6 @@ Character.prototype.printStats = function () {
 };
 
 Character.prototype.evaluate = function () {
-
     if (this.coins < 22) {
         level2.removeEventListener("click", leval2);
         level3.removeEventListener("click", leval3);
@@ -239,13 +251,14 @@ Character.prototype.evaluate = function () {
     }
 };
 
-Character.prototype.a1 = function (score) {
+Character.prototype.a1 = function (score, comments) {
     switch (score) {
         case 4:
             this.intonation = this.intonation + 4;
             this.shifting = this.shifting + 2;
             this.coins = this.coins + 4;
-            this.level1[0] = 4;
+            this.level1[0] = score;
+            this.level1COM[0] = comments;
             this.printStats();
             this.evaluate();
             return this.level1[0];
@@ -253,21 +266,24 @@ Character.prototype.a1 = function (score) {
             this.intonation = this.intonation + 3;
             this.shifting = this.shifting + 1;
             this.coins = this.coins + 3;
-            this.level1[0] = 3;
+            this.level1[0] = score;
+            this.level1COM[0] = comments;
             this.printStats();
             this.evaluate();
             break;
         case 2:
             this.intonation = this.intonation + 2;
             this.coins = this.coins + 2;
-            this.level1[0] = 2;
+            this.level1[0] = score;
+            this.level1COM[0] = comments;
             this.printStats();
             this.evaluate();
             break;
         case 1:
             this.intonation = this.facility + 1;
             this.coins = this.coins + 1;
-            this.level1[0] = 1;
+            this.level1[0] = score;
+            this.level1COM[0] = comments;
             this.printStats();
             this.evaluate();
             break;
@@ -318,6 +334,7 @@ function level1() {
             "<a target='_blank' href='https://drive.google.com/file/d/1BEZ8ESkjr1-2H7UU0GUfzMzUquDdHtrv/view?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
         reward.innerHTML = "Reward: Intonation(4) + Shifting(2)";
         recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[0]}`;
     });
 }
 function leval2() {
@@ -425,7 +442,7 @@ level10.addEventListener("click", evil);
 initialPrompt();
 console.log(person);
 if (person == "jaden") {
-
+    jaden.a1(4, "Excellent Work!");
 } else if (person == "evilhead") {
     evilhead.a1(1);
 }
