@@ -337,13 +337,10 @@ Character.prototype.a2 = function (score, comments) {
     }
 };
 function initialPrompt() {
-    console.log(typeof localStorage.getItem("person"));
-
     if (typeof localStorage.getItem("person") == "string") {
         var j = parseInt(localStorage.getItem("person"));
         personage = students[j];
         person = studentsString[j];
-        console.log(personage);
         personage.printStats();
         personage.evaluate();
     } else {
@@ -352,7 +349,7 @@ function initialPrompt() {
         for (i = 0; i < studentsString.length; i++) {
             if (person == studentsString[i]) {
                 personage = students[i];
-                console.log(personage);
+                personage;
                 localStorage.setItem("person", i);
                 personage.printStats();
                 personage.evaluate();
@@ -504,10 +501,10 @@ level9.addEventListener("click", leval9);
 level10.addEventListener("click", evil);
 
 initialPrompt();
-console.log(person);
+
 if (person == "jaden") {
 } else if (person == "evilhead") {
-    evilhead.a1(1);
+    evilhead.a1(4,"Keep up the great work");
 }
 
-module.export = Character;
+module.exports = Character;

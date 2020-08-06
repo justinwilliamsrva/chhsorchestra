@@ -33,10 +33,16 @@
  }
 
 
-#taskList{
+#taskList {
 
     border-right: 2px dashed teal;
 }
+#taskList > p{
+
+height: 9%;
+}
+
+
 h1,h2{
 
 margin:0;
@@ -48,6 +54,9 @@ padding:0;
 color: yellow;
 cursor: pointer;
 text-decoration: underline;
+margin:0;
+padding:0;
+/* height: 10%; */
 
 }
 #console{
