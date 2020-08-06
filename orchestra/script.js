@@ -14,6 +14,15 @@ var level9 = document.getElementById("lvl9");
 var level10 = document.getElementById("lvl10");
 var comment = document.getElementById("comment");
 var assign1 = document.getElementById("assignment1");
+var assign2 = document.getElementById("assignment2");
+var assign3 = document.getElementById("assignment3");
+var assign4 = document.getElementById("assignment4");
+var assign5 = document.getElementById("assignment5");
+var assign6 = document.getElementById("assignment6");
+var assign7 = document.getElementById("assignment7");
+var assign8 = document.getElementById("assignment8");
+var assign9 = document.getElementById("assignment9");
+var assign10 = document.getElementById("assignment10");
 var currentLevel = document.getElementById("currentLevel");
 var upload = document.getElementById("upload");
 var instruct = document.getElementById("instruct");
@@ -323,6 +332,15 @@ signout.addEventListener("click", function () {
 function level1() {
     currentLevel.innerHTML = `Level 1`;
     assign1.innerHTML = `Assignment 1: ${personage.level1[0]}`;
+    assign2.innerHTML = `Assignment 2: ${personage.level1[1]}`;
+    assign3.innerHTML = `Assignment 3: ${personage.level1[2]}`;
+    assign4.innerHTML = `Assignment 4: ${personage.level1[3]}`;
+    assign5.innerHTML = `Assignment 5: ${personage.level1[4]}`;
+    assign6.innerHTML = `Assignment 6: ${personage.level1[5]}`;
+    assign7.innerHTML = `Assignment 7: ${personage.level1[6]}`;
+    assign8.innerHTML = `Assignment 8: ${personage.level1[7]}`;
+    assign9.innerHTML = `Assignment 9: ${personage.level1[8]}`;
+    assign10.innerHTML = `Assignment 10: ${personage.level1[9]}`;
 
     upload.innerHTML = "Upload a Recording";
     upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
@@ -443,7 +461,6 @@ level10.addEventListener("click", evil);
 initialPrompt();
 console.log(person);
 if (person == "jaden") {
-
 } else if (person == "evilhead") {
     evilhead.a1(1);
 }
