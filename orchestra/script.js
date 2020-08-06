@@ -298,6 +298,44 @@ Character.prototype.a1 = function (score, comments) {
             break;
     }
 };
+Character.prototype.a2 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.coins = this.coins + 4;
+            this.level1[1] = score;
+            this.level1COM[1] = comments;
+            this.printStats();
+            this.evaluate();
+            break;
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 1;
+            this.coins = this.coins + 3;
+            this.level1[1] = score;
+            this.level1COM[1] = comments;
+            this.printStats();
+            this.evaluate();
+            break;
+        case 2:
+            this.intonation = this.intonation + 2;
+            this.coins = this.coins + 2;
+            this.level1[1] = score;
+            this.level1COM[1] = comments;
+            this.printStats();
+            this.evaluate();
+            break;
+        case 1:
+            this.intonation = this.facility + 1;
+            this.coins = this.coins + 1;
+            this.level1[1] = score;
+            this.level1COM[1] = comments;
+            this.printStats();
+            this.evaluate();
+            break;
+    }
+};
 function initialPrompt() {
     console.log(typeof localStorage.getItem("person"));
 
@@ -354,6 +392,13 @@ function level1() {
         reward.innerHTML = "Reward: Intonation(4) + Shifting(2)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level1COM[0]}`;
+    });
+    assign2.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1BEZ8ESkjr1-2H7UU0GUfzMzUquDdHtrv/view?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(2)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[1]}`;
     });
 }
 function leval2() {
