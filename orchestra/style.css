@@ -93,7 +93,7 @@ box-sizing: border-box;
     #lvl1:hover {
         background-image: url("../assets/1.png");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 150% 150%;
         opacity: 1;
         border: 3px solid yellow;
         /* background-attachment: fixed; */
@@ -170,6 +170,24 @@ box-sizing: border-box;
         border: 1px solid yellow;
         /* background-attachment: fixed; */
         background-position: center;
+    }
+
+    #signout{
+        background-image: url("../assets/Log\ out.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #signout:hover{
+
+        border: 3px solid yellow;
+        background-size: 150% 150%;
+
+    }
+
+
+
+
     }
     #level1,
     #level2,
