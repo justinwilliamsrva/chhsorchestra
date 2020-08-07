@@ -188,7 +188,7 @@ box-sizing: border-box;
 
 
 
-    }
+
     #level1,
     #level2,
     #level3 {
@@ -383,11 +383,16 @@ img {
     .invisible {
         opacity: 0.4;
         cursor: not-allowed;
-
+        color: black;
+      background-image:none ;
     }
 
 
 }
+
+
+
+
 @media only screen and (max-width: 768px) {
     body {
         background-color: lightblue;
