@@ -135,8 +135,8 @@ Character.prototype.printStats = function () {
     nick.innerHTML = this.name;
     team.classList.add(`${this.team}`);
     img.innerHTML = `<img src=${this.image}>`;
-    att.innerHTML = `Attack: ${this.attack}`;
-    def.innerHTML = `<b>Defense: ${this.defense}</b>`;
+    att.innerHTML = `<img id="attackPng" src="../assets/Attack-1.png"> ${this.attack}`;
+    def.innerHTML = `<img id="attackPng" src="../assets/Defense-1.png"> ${this.defense}</b>`;
     coin.innerHTML = `Coins: ${this.coins}`;
     level.innerHTML = `Level: ${this.level}`;
     fac.innerHTML = `Facility: ${this.facility}`;
@@ -504,7 +504,7 @@ initialPrompt();
 
 if (person == "jaden") {
 } else if (person == "evilhead") {
-    evilhead.a1(4,"Keep up the great work");
+    evilhead.a1(4, "Keep up the great work");
 }
 
 module.exports = Character;

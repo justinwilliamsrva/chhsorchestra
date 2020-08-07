@@ -74,10 +74,103 @@ box-sizing: border-box;
         cursor: pointer;
     }
 
-    button:hover {
-        background-color: teal;
+    #attackPng,#defensePng{
+
+        width:25%;
+
+
     }
 
+#lvl1{
+    background-image: url("../assets/1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+
+    #lvl1:hover {
+        background-image: url("../assets/1.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: 1;
+        border: 3px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl2:hover {
+        background-image: url("../assets/2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl3:hover {
+        background-image: url("../assets/3.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl4:hover {
+        background-image: url("../assets/4.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl5:hover {
+        background-image: url("../assets/5.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl6:hover {
+        background-image: url("../assets/6.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl7:hover {
+        background-image: url("../assets/7.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl8:hover {
+        background-image: url("../assets/8.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl9:hover {
+        background-image: url("../assets/9.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+    #lvl10:hover {
+        background-image: url("../assets/10.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid yellow;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
     #level1,
     #level2,
     #level3 {
@@ -270,13 +363,12 @@ img {
     }
 
     .invisible {
-        opacity: 0.5;
+        opacity: 0.4;
         cursor: not-allowed;
+
     }
 
-    .invisible:hover {
-        background-color: black;
-    }
+
 }
 @media only screen and (max-width: 768px) {
     body {
