@@ -686,9 +686,5 @@ function assignments() {
             evilhead.a1(4, "Keep up the great work");
             break;
     }
-
-    // if (person == "jaden") {
-    // } else if (person == "evilhead") {
-    // }
 }
 // module.exports = Character;
