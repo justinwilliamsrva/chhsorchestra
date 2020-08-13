@@ -39,7 +39,7 @@
 }
 #taskList > p{
 
-height: 9%;
+height: 8%;
 }
 
 
@@ -73,6 +73,11 @@ box-sizing: border-box;
         background-color: black;
         cursor: pointer;
     }
+    button:hover{
+
+
+        border: 3px solid yellow;
+    }
 
     #attackPng,#defensePng{
 
@@ -88,9 +93,15 @@ box-sizing: border-box;
     background-position: center;
     font-size: 20px
 }
+#lvl2{
+    background-image: url("../assets/2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    font-size: 20px
+}
 
-
-
+/*
     #lvl1:hover {
         background-image: url("../assets/1.png");
         background-repeat: no-repeat;
@@ -100,7 +111,7 @@ box-sizing: border-box;
         /* background-attachment: fixed; */
         background-position: center;
         font-size: 30px;
-    }
+
     #lvl2:hover {
         background-image: url("../assets/2.png");
         background-repeat: no-repeat;
@@ -181,13 +192,13 @@ box-sizing: border-box;
         background-position: center;
         font-size: 20px;
     }
-    #signout:hover{
+    /* #signout:hover{
 
         border: 3px solid yellow;
         background-size: 150% 150%;
         font-size: 30px;
 
-    }
+    } */
 
 
 
@@ -388,7 +399,7 @@ img {
         opacity: 0.4;
         cursor: not-allowed;
         color: black;
-      background-image:none ;
+      background-color: black ;
     }
 
 
