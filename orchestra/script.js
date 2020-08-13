@@ -558,19 +558,94 @@ function leval1() {
     upload.addEventListener("click", function () {
         alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
     });
+    // A1
     assign1.addEventListener("click", function () {
         instruct.innerHTML =
             "<a target='_blank' href='https://drive.google.com/file/d/1BEZ8ESkjr1-2H7UU0GUfzMzUquDdHtrv/view?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
-        reward.innerHTML = "Reward: Intonation(4) + Shifting(2)";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level1COM[0]}`;
     });
+    // A2
     assign2.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/1BEZ8ESkjr1-2H7UU0GUfzMzUquDdHtrv/view?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
-        reward.innerHTML = "Reward: Intonation(4) + Shifting(2)";
+            "<a target='_blank' href='https://drive.google.com/file/d/1DvlNkWVRH9sqmHYXGkSapp2Wmmfyi-pb/view?usp=sharing'>Quest: Complete Numbers 15+16+17</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level1COM[1]}`;
+    });
+    // A3
+    assign3.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1Cguo_oVQiulWuXbNYbjzotckQWhO2vNF/view?usp=sharing'>Quest: Complete Number18</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Bow Control(2) + Rhythm(2)+ Coins(4) ";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[2]}`;
+    });
+    // A4
+    assign4.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href=https://drive.google.com/file/d/1D9PmwS7ESuV9TNh9QVDtX4NoGBjXfIoK/view?usp=sharing'>Quest: Complete Numbers 101+102</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2)+ Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[3]}`;
+    });
+    // A5
+    assign5.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1DTBs7iLURSyZtSNbRzdtKlQLRy-mUWeX/view?usp=sharing'>Quest: Complete Number 103 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4)+ Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[4]}`;
+    });
+    6;
+    // A6
+    assign6.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1DgA8MfT4PWe2Ujjvm2aGbwdn1rKJXhzO/view?usp=sharing'>Quest: Complete Numbers 107 and 108</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[5]}`;
+    });
+    // A7
+    assign7.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1DjIHsf2_x0zjECamo3s_XT-LY7evTFrP/view?usp=sharing'>Quest: Complete Numbers 110 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[6]}`;
+    });
+    // A8
+    assign8.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1Dmi3UwgC55qMGlUOvEUFiHe-t_Qpqisp/view?usp=sharing'>Quest: Complete Number 109 at 60BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Bow Control(4) + Rhythm(2) + Musicality(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[7]}`;
+    });
+    // A9
+    assign9.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/1DfwRxQU6M-opP_WidOx4JuT61JjckNBu/view?usp=sharing'>Quest: Complete Number 104 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4 ) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[8]}`;
+    });
+    // A10
+    assign10.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/11zdUfRv8wPD2yOIDSXTvPhvi5cFmXpfO/view?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
+        reward.innerHTML =
+            "Reward: Rhythm(12) + Shifting(4) + Intonation(4) + Bow Control(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[9]}`;
     });
 }
 function leval2() {
