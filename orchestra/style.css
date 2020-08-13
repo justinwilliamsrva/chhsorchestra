@@ -461,6 +461,15 @@ img {
     body {
         background-color: lightblue;
     }
+
+
+
+    #attackPng,#defensePng{
+
+        width:25%;
+
+
+    }
     .assignments{
 
         color: yellow;
