@@ -464,7 +464,7 @@ Character.prototype.a1 = function (score, comments) {
             this.printStats();
             break;
         case 1:
-            this.intonation = this.facility + 1;
+            this.intonation = this.intonation + 1;
             this.coins = this.coins + 1;
             this.level1[0] = "CS";
             this.level1COM[0] = comments;
@@ -479,38 +479,78 @@ Character.prototype.a2 = function (score, comments) {
             this.intonation = this.intonation + 4;
             this.shifting = this.shifting + 2;
             this.coins = this.coins + 4;
-            this.level1[1] = score;
+            this.level1[1] = "A+";
             this.level1COM[1] = comments;
-            this.printStats();
             this.evaluate();
-            break;
+            this.printStats();
+            return this.level1[1];
         case 3:
             this.intonation = this.intonation + 3;
             this.shifting = this.shifting + 1;
             this.coins = this.coins + 3;
-            this.level1[1] = score;
+            this.level1[1] = "A-";
             this.level1COM[1] = comments;
-            this.printStats();
             this.evaluate();
+            this.printStats();
             break;
         case 2:
             this.intonation = this.intonation + 2;
             this.coins = this.coins + 2;
-            this.level1[1] = score;
+            this.level1[1] = "B";
             this.level1COM[1] = comments;
-            this.printStats();
             this.evaluate();
+            this.printStats();
             break;
         case 1:
-            this.intonation = this.facility + 1;
+            this.intonation = this.intonation + 1;
             this.coins = this.coins + 1;
-            this.level1[1] = score;
+            this.level1[1] = "CS";
             this.level1COM[1] = comments;
-            this.printStats();
             this.evaluate();
+            this.printStats();
             break;
     }
 };
+Character.prototype.a3 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.bowControl = this.bowControl + 2;
+            this.coins = this.coins + 4;
+            this.level1[1] = "A+";
+            this.level1COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            return this.level1[1];
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 1;
+            this.coins = this.coins + 3;
+            this.level1[1] = "A-";
+            this.level1COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.intonation = this.intonation + 2;
+            this.coins = this.coins + 2;
+            this.level1[1] = "B";
+            this.level1COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.coins = this.coins + 1;
+            this.level1[1] = "CS";
+            this.level1COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+
 function initialPrompt() {
     if (typeof localStorage.getItem("person") == "string") {
         var j = parseInt(localStorage.getItem("person"));
