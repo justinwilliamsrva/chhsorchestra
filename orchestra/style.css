@@ -93,7 +93,7 @@ box-sizing: border-box;
     background-position: center;
     font-size: 20px
 }
-#lvl2{
+.lvl2{
     background-image: url("../assets/2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -101,16 +101,6 @@ box-sizing: border-box;
     font-size: 20px
 }
 
-/*
-    #lvl1:hover {
-        background-image: url("../assets/1.png");
-        background-repeat: no-repeat;
-        background-size: 150% 150%;
-        opacity: 1;
-        border: 3px solid yellow;
-        /* background-attachment: fixed; */
-        background-position: center;
-        font-size: 30px;
 
     #lvl2:hover {
         background-image: url("../assets/2.png");
@@ -305,7 +295,7 @@ box-sizing: border-box;
     #statGrid > p {
         text-align: center;
         flex: 0 0 50%;
-        padding: 0;
+        /* padding: 0; */
         margin: 0;
         height: 20%;
     }
@@ -315,6 +305,7 @@ box-sizing: border-box;
     #attack,
     #defense {
         font-size: large;
+        /* padding: 5px 0px */
     }
     #nickName {
         font-size: x-large;
@@ -399,7 +390,7 @@ img {
         opacity: 0.4;
         cursor: not-allowed;
         color: black;
-      background-color: black ;
+      /* background-color: black ; */
     }
 
 
