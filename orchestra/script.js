@@ -28,6 +28,7 @@ var upload = document.getElementById("upload");
 var instruct = document.getElementById("instruct");
 var reward = document.getElementById("reward");
 var recording = document.getElementById("recording");
+var raidBtn = document.getElementById("raids");
 
 function Character(
     name,
@@ -1132,15 +1133,14 @@ function leval10() {
         alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
     });
 }
-function raid() {
+function raidFunc() {
     clearAll();
     currentLevel.innerHTML = `Raids`;
     assign1.innerHTML = `Two Duets(r1): ${personage.raids[0]}`;
 
     // R!
     assign1.addEventListener("click", function () {
-        instruct.innerHTML =
-            "<a target='_blank' href=''>Quest: Play Numbers 105 and 111 with a partner</a>";
+        instruct.innerHTML = "<p>Quest: Record Numbers 105 and 111 with a partner</p>";
         reward.innerHTML =
             "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -1187,7 +1187,8 @@ lvl7.addEventListener("click", leval7);
 lvl8.addEventListener("click", leval8);
 lvl9.addEventListener("click", leval9);
 lvl10.addEventListener("click", leval10);
-
+lvl10.addEventListener("click", leval10);
+raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
 assignments();
 
