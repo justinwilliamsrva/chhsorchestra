@@ -554,7 +554,7 @@
         background-repeat: no-repeat;
         background-size: 175% 125%;
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl2 {
@@ -563,7 +563,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl3 {
@@ -572,7 +572,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl4 {
@@ -581,7 +581,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl5 {
@@ -590,7 +590,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl6 {
@@ -599,7 +599,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl7 {
@@ -608,7 +608,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl8 {
@@ -617,7 +617,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl9 {
@@ -626,7 +626,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #lvl10 {
@@ -635,7 +635,7 @@
         background-size: 175% 125%;
 
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
 
     #raids {
@@ -643,14 +643,14 @@
         background-repeat: no-repeat;
         background-size: 250% 150%;
         background-position: center;
-        font-size: 20px
+        font-size: 15px
     }
     #signout {
         background-image: url("../assets/Log\ out.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
-        font-size: 20px;
+        font-size: 15px;
     }
 
 
