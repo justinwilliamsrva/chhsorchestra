@@ -232,7 +232,7 @@ function Character(
 
 const jaden = new Character(
     "Cluck Norris",
-    "team1",
+    "heretics",
     1,
     "https://media0.giphy.com/media/ghHDuqJ1uh9vP2gKdC/giphy.gif",
     0,

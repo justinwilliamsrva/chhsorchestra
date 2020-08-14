@@ -488,11 +488,39 @@
         height: 100%;
     }
 
-    .team1 {
-        background-color:black;
+    .romantic {
+        background-color:gold;
         background-image: url("../assets/teamRomantic.png");
         background-repeat: no-repeat;
         background-size: 60% 150%;
+        background-position: center;
+    }
+    .baroque {
+        background-color:maroon;
+        background-image: url("../assets/teamBaroque.png");
+        background-repeat: no-repeat;
+        background-size: 60% 200%;
+        background-position: center;
+    }
+    .classical {
+        background-color:lightgreen;
+        background-image: url("../assets/teamClassical.png");
+        background-repeat: no-repeat;
+        background-size: 50% 200%;
+        background-position: center;
+    }
+    .century {
+        background-color:lightblue;
+        background-image: url("../assets/team21.png");
+        background-repeat: no-repeat;
+        background-size: 40% 125%;
+        background-position: center;
+    }
+    .heretics {
+        background-color:firebrick;
+        background-image: url("../assets/teamHeretics.png");
+        /* background-repeat: no-repeat; */
+        background-size: 30% 75%;
         background-position: center;
     }
 
