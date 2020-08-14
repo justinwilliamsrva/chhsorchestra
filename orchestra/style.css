@@ -93,6 +93,7 @@ box-sizing: border-box;
 
     #attackPng,#defensePng{
 
+        height:100%;
         width:25%;
 
 
