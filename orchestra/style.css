@@ -498,6 +498,8 @@ img {
         color: yellow;
         cursor: pointer;
         text-decoration: underline;
+        margin:0;
+padding:0;
 
         }
 
@@ -519,12 +521,19 @@ img {
          }
          #taskList > p{
 
-            height: 3%;
+            height: 8%;
+            font-size: 10px;
             }
 
         #taskList{
 
             border-right: 2px dashed teal;
+        }
+
+        #assignment1{
+
+margin-top:5px
+
         }
         h1,h2{
 
