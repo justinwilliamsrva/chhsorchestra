@@ -466,7 +466,7 @@ Character.prototype.a1 = function (score, comments) {
         case 1:
             this.intonation = this.intonation + 1;
             this.coins = this.coins + 1;
-            this.level1[0] = "CS";
+            this.level1[0] = "C";
             this.level1COM[0] = comments;
             this.evaluate();
             this.printStats();
@@ -504,7 +504,7 @@ Character.prototype.a2 = function (score, comments) {
         case 1:
             this.intonation = this.intonation + 1;
             this.coins = this.coins + 1;
-            this.level1[1] = "CS";
+            this.level1[1] = "C";
             this.level1COM[1] = comments;
             this.evaluate();
             this.printStats();
@@ -517,34 +517,36 @@ Character.prototype.a3 = function (score, comments) {
             this.intonation = this.intonation + 4;
             this.shifting = this.shifting + 2;
             this.bowControl = this.bowControl + 2;
+            this.rhythm = this.rhythm + 2;
             this.coins = this.coins + 4;
-            this.level1[1] = "A+";
-            this.level1COM[1] = comments;
+            this.level1[2] = "A+";
+            this.level1COM[2] = comments;
             this.evaluate();
             this.printStats();
-            return this.level1[1];
         case 3:
             this.intonation = this.intonation + 3;
             this.shifting = this.shifting + 1;
+            this.bowControl = this.bowControl + 1;
+            this.rhythm = this.rhythm + 1;
             this.coins = this.coins + 3;
-            this.level1[1] = "A-";
-            this.level1COM[1] = comments;
+            this.level1[2] = "A-";
+            this.level1COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
         case 2:
             this.intonation = this.intonation + 2;
             this.coins = this.coins + 2;
-            this.level1[1] = "B";
-            this.level1COM[1] = comments;
+            this.level1[2] = "B";
+            this.level1COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
         case 1:
             this.intonation = this.intonation + 1;
             this.coins = this.coins + 1;
-            this.level1[1] = "CS";
-            this.level1COM[1] = comments;
+            this.level1[2] = "C";
+            this.level1COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -796,9 +798,11 @@ assignments();
 function assignments() {
     switch (person) {
         case "jaden":
+            jaden.a1(4,"Wonderufl tone")
             break;
         case "evilhead":
             evilhead.a1(4, "Keep up the great work");
+            evilhead.a3(3, "More forte");
             break;
     }
 }
