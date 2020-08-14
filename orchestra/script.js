@@ -1039,6 +1039,7 @@ function leval1() {
     });
 }
 function leval2() {
+    clearInstructions();
     currentLevel.innerHTML = `Level 2`;
     assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
     upload.innerHTML = "Upload a Recording";
@@ -1128,6 +1129,26 @@ function leval10() {
         alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
     });
 }
+function raid() {
+    currentLevel.innerHTML = `Raids`;
+    assign1.innerHTML = `Positions(a1): ${personage.level1[0]}`;
+    assign2.innerHTML = `More Positions(a2): ${personage.level1[1]}`;
+    assign3.innerHTML = `SOLO-Brahms(a3): ${personage.level1[2]}`;
+    assign4.innerHTML = `CM scale and Arrpegio(a4): ${personage.level1[3]}`;
+    assign5.innerHTML = `CM in thirds(a5): ${personage.level1[4]}`;
+    assign6.innerHTML = `GM scale and Arrpegio(a6): ${personage.level1[5]}`;
+    assign7.innerHTML = `GM in thirds(a7): ${personage.level1[6]}`;
+    assign8.innerHTML = `SOLO-Dona Nobis(a8): ${personage.level1[7]}`;
+    assign9.innerHTML = `SOLO-British Grenadiers(a9): ${personage.level1[8]}`;
+    assign10.innerHTML = `Rhythm+Scales(a10): ${personage.level1[9]}`;
+}
+function clearInstructions() {
+    instruct.innerHTML = "";
+    reward.innerHTML = "";
+    recording.innerHTML = "";
+    comment.innerHTML = "";
+}
+function clearQuests() {}
 // Level Click Event Listeners
 lvl.addEventListener("click", leval1);
 lvl2.addEventListener("click", leval2);
