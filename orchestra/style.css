@@ -489,10 +489,10 @@
     }
 
     .team1 {
-        background-color: blue;
-        background-image: url("../assets/logo3.png");
+        background-color:black;
+        background-image: url("../assets/teamRomantic.png");
         background-repeat: no-repeat;
-        background-size: 50% 200%;
+        background-size: 60% 150%;
         background-position: center;
     }
 
