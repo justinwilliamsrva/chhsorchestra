@@ -906,6 +906,7 @@ function initialPrompt() {
         var j = parseInt(localStorage.getItem("person"));
         personage = students[j];
         person = studentsString[j];
+        clearAll();
         personage.evaluate();
         personage.printStats();
     } else {
@@ -916,6 +917,7 @@ function initialPrompt() {
                 personage = students[i];
                 personage;
                 localStorage.setItem("person", i);
+                clearAll();
                 personage.evaluate();
                 personage.printStats();
             }
@@ -925,6 +927,7 @@ function initialPrompt() {
 var signout = document.getElementById("signout");
 signout.addEventListener("click", function () {
     localStorage.removeItem("person");
+
     initialPrompt();
 });
 
@@ -1039,6 +1042,7 @@ function leval1() {
     });
 }
 function leval2() {
+    clearQuests();
     clearInstructions();
     currentLevel.innerHTML = `Level 2`;
     assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
@@ -1148,7 +1152,29 @@ function clearInstructions() {
     recording.innerHTML = "";
     comment.innerHTML = "";
 }
-function clearQuests() {}
+function clearQuests() {
+    currentLevel.innerHTML = "CHHS ORCHESTRA RPG<br>BETA VERSION 1.31";
+    assign1.innerHTML = "";
+    assign2.innerHTML = "";
+    assign3.innerHTML = "";
+    assign4.innerHTML = "";
+    assign5.innerHTML = "";
+    assign6.innerHTML = "";
+    assign7.innerHTML = "";
+    assign8.innerHTML = "";
+    assign9.innerHTML = "";
+    assign10.innerHTML = "";
+    upload.innerHTML = "";
+    upload.href = "";
+    upload.style.cursor = "default";
+    upload.removeEventListener("click", function () {
+        alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+    });
+}
+function clearAll() {
+    clearInstructions();
+    clearQuests();
+}
 // Level Click Event Listeners
 lvl.addEventListener("click", leval1);
 lvl2.addEventListener("click", leval2);
