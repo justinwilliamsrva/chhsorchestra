@@ -1128,6 +1128,7 @@ function initialPrompt() {
         personage = students[j];
         person = studentsString[j];
         clearAll();
+        assignments();
         personage.evaluate();
         personage.printStats();
     } else {
@@ -1139,6 +1140,7 @@ function initialPrompt() {
                 personage;
                 localStorage.setItem("person", i);
                 clearAll();
+                assignments();
                 personage.evaluate();
                 personage.printStats();
             }
@@ -1410,6 +1412,5 @@ lvl10.addEventListener("click", leval10);
 lvl10.addEventListener("click", leval10);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
-assignments();
 
 module.exports = Character;
