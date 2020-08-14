@@ -853,7 +853,7 @@
     }
 
     .invisible {
-        opacity: 0.1;
+        opacity: 0.30;
         cursor: not-allowed;
     }
 
