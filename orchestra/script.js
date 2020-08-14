@@ -233,6 +233,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
     } else if (this.coins < 88) {
         this.level = 4;
@@ -260,6 +261,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
     } else if (this.coins < 110) {
@@ -287,6 +289,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
@@ -314,6 +317,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
@@ -336,6 +340,7 @@ Character.prototype.evaluate = function () {
         lvl5.addEventListener("click", leval5);
         lvl6.addEventListener("click", leval6);
         lvl7.addEventListener("click", leval7);
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
@@ -365,6 +370,7 @@ Character.prototype.evaluate = function () {
         lvl6.addEventListener("click", leval6);
         lvl7.addEventListener("click", leval7);
         lvl8.addEventListener("click", leval8);
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
@@ -396,6 +402,7 @@ Character.prototype.evaluate = function () {
         lvl9.addEventListener("click", leval9);
         lvl10.removeEventListener("click", leval10);
         lvl10.classList.add("invisible");
+        lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
@@ -802,9 +809,9 @@ Character.prototype.a9 = function (score, comments) {
             this.facility = this.facility + 0;
             this.intonation = this.intonation + 3;
             this.shifting = this.shifting + 1;
-            this.bowControl = this.bowControl + 3
+            this.bowControl = this.bowControl + 3;
             this.rhythm = this.rhythm + 1;
-            this.musicality = this.musicality + 3
+            this.musicality = this.musicality + 3;
             this.coins = this.coins + 3;
             this.level1[8] = "A-";
             this.level1COM[8] = comments;
