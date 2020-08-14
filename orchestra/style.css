@@ -1,7 +1,15 @@
 @media only screen and (min-width: 769px) {
+body{
+
+margin:0
+
+}
+
+
+
     section {
         width: 100%;
-        height: 96vh;
+        height: 100vh;
         background-color: teal;
         color: white;
         box-sizing: border-box;
@@ -464,6 +472,9 @@ img {
 @media only screen and (max-width: 768px) {
     body {
         background-color: lightblue;
+        margin:0;
+
+
     }
 
 
