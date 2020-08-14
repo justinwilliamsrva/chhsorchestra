@@ -1042,8 +1042,7 @@ function leval1() {
     });
 }
 function leval2() {
-    clearQuests();
-    clearInstructions();
+    clearAll();
     currentLevel.innerHTML = `Level 2`;
     assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
     upload.innerHTML = "Upload a Recording";
@@ -1134,17 +1133,19 @@ function leval10() {
     });
 }
 function raid() {
+    clearAll();
     currentLevel.innerHTML = `Raids`;
-    assign1.innerHTML = `Positions(a1): ${personage.level1[0]}`;
-    assign2.innerHTML = `More Positions(a2): ${personage.level1[1]}`;
-    assign3.innerHTML = `SOLO-Brahms(a3): ${personage.level1[2]}`;
-    assign4.innerHTML = `CM scale and Arrpegio(a4): ${personage.level1[3]}`;
-    assign5.innerHTML = `CM in thirds(a5): ${personage.level1[4]}`;
-    assign6.innerHTML = `GM scale and Arrpegio(a6): ${personage.level1[5]}`;
-    assign7.innerHTML = `GM in thirds(a7): ${personage.level1[6]}`;
-    assign8.innerHTML = `SOLO-Dona Nobis(a8): ${personage.level1[7]}`;
-    assign9.innerHTML = `SOLO-British Grenadiers(a9): ${personage.level1[8]}`;
-    assign10.innerHTML = `Rhythm+Scales(a10): ${personage.level1[9]}`;
+    assign1.innerHTML = `Two Duets(r1): ${personage.raids[0]}`;
+
+    // R!
+    assign1.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href=''>Quest: Play Numbers 105 and 111 with a partner</a>";
+        reward.innerHTML =
+            "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level1COM[9]}`;
+    });
 }
 function clearInstructions() {
     instruct.innerHTML = "";
