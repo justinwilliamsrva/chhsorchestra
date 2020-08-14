@@ -1,3 +1,16 @@
+function assignments() {
+    switch (person) {
+        case "jaden":
+            jaden.a1(4, "Wonderufl tone");
+            break;
+        case "evilhead":
+            evilhead.a1(4, "Keep up the great work");
+            evilhead.a3(4, "More forte");
+
+            break;
+    }
+}
+
 var person = "";
 
 let studentsString = ["jaden", "evilhead"];
@@ -1399,16 +1412,4 @@ raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
 assignments();
 
-function assignments() {
-    switch (person) {
-        case "jaden":
-            jaden.a1(4, "Wonderufl tone");
-            break;
-        case "evilhead":
-            evilhead.a1(4, "Keep up the great work");
-            evilhead.a3(4, "More forte");
-            evilhead.r1(4, "Great work");
-            break;
-    }
-}
-// module.exports = Character;
+module.exports = Character;
