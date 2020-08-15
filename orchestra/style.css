@@ -862,8 +862,9 @@
         cursor: pointer;
     }
 
-    button:hover {
-        background-color: teal;
+    
+    button:focus {
+        border: 5px solid red;
     }
 
     #level1,
