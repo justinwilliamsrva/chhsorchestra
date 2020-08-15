@@ -279,6 +279,11 @@ Character.prototype.printStats = function () {
     this.totalScore = this.attack + this.defense + this.coins;
 
     nick.innerHTML = this.name;
+    team.classList.remove("heretics");
+    team.classList.remove("romantic");
+    team.classList.remove("baroque");
+    team.classList.remove("century");
+    team.classList.remove("classical");
     team.classList.add(`${this.team}`);
     img.innerHTML = `<img src=${this.image}>`;
     att.innerHTML = `<img id="attackPng" src="../assets/Attack-1.png"> ${this.attack}`;
