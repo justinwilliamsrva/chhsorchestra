@@ -86,8 +86,8 @@
     #levelPng,
     #defensePng,
     #coinPng {
-        height: 85%;
-        width: 35%;
+        height: 90%;
+        width: 40%;
     }
 
     #lvl1 {
@@ -862,7 +862,7 @@
         cursor: pointer;
     }
 
-    
+
     button:focus {
         border: 5px solid red;
     }
