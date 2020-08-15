@@ -519,8 +519,8 @@
     .heretics {
         background-color:firebrick;
         background-image: url("../assets/teamHeretics.png");
-        /* background-repeat: no-repeat; */
-        background-size: 30% 75%;
+        background-repeat: repeat-x;
+        background-size: 35% 75%;
         background-position: center;
     }
 
