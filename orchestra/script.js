@@ -282,9 +282,9 @@ Character.prototype.printStats = function () {
     team.classList.add(`${this.team}`);
     img.innerHTML = `<img src=${this.image}>`;
     att.innerHTML = `<img id="attackPng" src="../assets/Attack-1.png"> ${this.attack}`;
-    def.innerHTML = `<img id="attackPng" src="../assets/Defense-1.png"> ${this.defense}</b>`;
-    coin.innerHTML = `Coins: ${this.coins}`;
-    level.innerHTML = `Level: ${this.level}`;
+    def.innerHTML = `<img id="defensePng" src="../assets/Defense-1.png"> ${this.defense}`;
+    coin.innerHTML = `<img id="coinPng" src="../assets/coin.jpg"> ${this.coins}`;
+    level.innerHTML = `<img id="levelPng" src="../assets/LEVEL.png"> ${this.level}`;
     fac.innerHTML = `Facility: ${this.facility}`;
     inton.innerHTML = `Intonation: ${this.intonation}`;
     shift.innerHTML = `Shifting: ${this.shifting}`;
