@@ -7,24 +7,24 @@ function assignments() {
             evilhead.a1(4, "Keep up the great work");
             evilhead.a2(4, "Keep up the great work");
             evilhead.a3(4, "More forte");
-            evilhead.a4(4, "Keep up the great work");
-            evilhead.a5(4, "Keep up the great work");
-            evilhead.a6(4, "Keep up the great work");
-            evilhead.a7(4, "Keep up the great work");
-            evilhead.a8(4, "Keep up the great work");
-            evilhead.a9(4, "Keep up the great work");
-            evilhead.a10(4, "Keep up the great work");
-            evilhead.b1(4, "Keep up the great work1");
-            evilhead.b2(4, "Keep up the great work2");
-            evilhead.b3(3, "More forte3");
-            evilhead.b4(2, "Keep up the great work4");
-            evilhead.b5(1, "Keep up the great work5");
-            evilhead.b6(4, "Keep up the great work6");
-            evilhead.b7(3, "Keep up the great work7");
-            evilhead.b8(2, "Keep up the great work8");
-            evilhead.b9(1, "Keep up the great work9");
-            evilhead.b10(4, "Keep up the great work10");
-            break;
+        // evilhead.a4(4, "Keep up the great work");
+        // evilhead.a5(4, "Keep up the great work");
+        // evilhead.a6(4, "Keep up the great work");
+        // evilhead.a7(4, "Keep up the great work");
+        // evilhead.a8(4, "Keep up the great work");
+        // evilhead.a9(4, "Keep up the great work");
+        // evilhead.a10(4, "Keep up the great work");
+        // evilhead.b1(4, "Keep up the great work1");
+        // evilhead.b2(4, "Keep up the great work2");
+        // evilhead.b3(3, "More forte3");
+        // evilhead.b4(2, "Keep up the great work4");
+        // evilhead.b5(1, "Keep up the great work5");
+        // evilhead.b6(4, "Keep up the great work6");
+        // evilhead.b7(3, "Keep up the great work7");
+        // evilhead.b8(2, "Keep up the great work8");
+        // evilhead.b9(1, "Keep up the great work9");
+        // evilhead.b10(4, "Keep up the great work10");
+        // break;
     }
 }
 
@@ -1630,6 +1630,63 @@ Character.prototype.r1 = function (score, comments) {
             break;
     }
 };
+Character.prototype.r2 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.facility = this.facility + 4;
+            this.intonation = this.intonation + 8;
+            this.shifting = this.shifting + 4;
+            this.bowControl = this.bowControl + 4;
+            this.rhythm = this.rhythm + 8;
+            this.musicality = this.musicality + 4;
+            this.coins = this.coins + 8;
+            this.raids[1] = "A+";
+            this.raidsCOM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.facility = this.facility + 3;
+            this.intonation = this.intonation + 6;
+            this.shifting = this.shifting + 3;
+            this.bowControl = this.bowControl + 3;
+            this.rhythm = this.rhythm + 6;
+            this.musicality = this.musicality + 3;
+            this.coins = this.coins + 6;
+            this.raids[1] = "A-";
+            this.raidsCOM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.facility = this.facility + 2;
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.bowControl = this.bowControl + 2;
+            this.rhythm = this.rhythm + 4;
+            this.musicality = this.musicality + 2;
+            this.coins = this.coins + 4;
+            this.raids[1] = "B";
+            this.raidsCOM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.facility = this.facility + 1;
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 1;
+            this.bowControl = this.bowControl + 1;
+            this.rhythm = this.rhythm + 2;
+            this.musicality = this.musicality + 1;
+            this.coins = this.coins + 2;
+            this.raids[1] = "C";
+            this.raidsCOM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
 function initialPrompt() {
     if (typeof localStorage.getItem("person") == "string") {
         var j = parseInt(localStorage.getItem("person"));
@@ -1964,7 +2021,8 @@ function leval10() {
 function raidFunc() {
     clearAll();
     currentLevel.innerHTML = `Raids`;
-    assign1.innerHTML = `Two Duets(r1): ${personage.raids[0]}`;
+    assign1.innerHTML = `Two Duets CM and GM(r1): ${personage.raids[0]}`;
+    assign2.innerHTML = `Two Duets DM and AM(r2): ${personage.raids[1]}`;
 
     // R!
     assign1.addEventListener("click", function () {
@@ -1972,9 +2030,26 @@ function raidFunc() {
         reward.innerHTML =
             "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
         recording.innerHTML = " Recording: Coming Soon";
-        comment.innerHTML = `Teacher Comments: ${personage.level1COM[9]}`;
+        comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[0]}`;
     });
+
+    // R!
+    assign2.addEventListener("click", raid2);
+
+    if (personage.coins < 22) {
+        assign2.innerHTML = "";
+        assign2.removeEventListener("click", raid2);
+    }
 }
+
+function raid2() {
+    instruct.innerHTML = "<p>Quest: Record Numbers 117 and 123 with a partner</p>";
+    reward.innerHTML =
+        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+    recording.innerHTML = " Recording: Coming Soon";
+    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[1]}`;
+}
+
 function clearInstructions() {
     instruct.innerHTML = "";
     reward.innerHTML = "";
