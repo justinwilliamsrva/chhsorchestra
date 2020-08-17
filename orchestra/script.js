@@ -5,8 +5,25 @@ function assignments() {
             break;
         case "evilhead":
             evilhead.a1(4, "Keep up the great work");
+            evilhead.a2(4, "Keep up the great work");
             evilhead.a3(4, "More forte");
-
+            evilhead.a4(4, "Keep up the great work");
+            evilhead.a5(4, "Keep up the great work");
+            evilhead.a6(4, "Keep up the great work");
+            evilhead.a7(4, "Keep up the great work");
+            evilhead.a8(4, "Keep up the great work");
+            evilhead.a9(4, "Keep up the great work");
+            evilhead.a10(4, "Keep up the great work");
+            evilhead.b1(4, "Keep up the great work1");
+            evilhead.b2(4, "Keep up the great work2");
+            evilhead.b3(3, "More forte3");
+            evilhead.b4(2, "Keep up the great work4");
+            evilhead.b5(1, "Keep up the great work5");
+            evilhead.b6(4, "Keep up the great work6");
+            evilhead.b7(3, "Keep up the great work7");
+            evilhead.b8(2, "Keep up the great work8");
+            evilhead.b9(1, "Keep up the great work9");
+            evilhead.b10(4, "Keep up the great work10");
             break;
     }
 }
@@ -54,7 +71,8 @@ function Character(
     shifting,
     bowControl,
     rhythm,
-    musicality
+    musicality,
+    instrument
 ) {
     this.name = name;
     this.team = team;
@@ -67,6 +85,7 @@ function Character(
     this.bowControl = bowControl;
     this.rhythm = rhythm;
     this.musicality = musicality;
+    this.instrument = instrument;
 
     this.attack = this.facility + this.intonation + this.shifting;
     this.defense = this.bowControl + this.rhythm + this.musicality;
@@ -242,7 +261,8 @@ const jaden = new Character(
     0,
     0,
     0,
-    0
+    0,
+    "violin"
 );
 const evilhead = new Character(
     "Smash",
@@ -256,7 +276,8 @@ const evilhead = new Character(
     0,
     0,
     0,
-    0
+    0,
+    "bass"
 );
 let students = [jaden, evilhead];
 
@@ -327,7 +348,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
-    } else if (this.coins < 44) {
+    } else if (this.coins < 62) {
         this.level = 2;
         lvl2.addEventListener("click", leval2);
         lvl3.removeEventListener("click", leval3);
@@ -356,7 +377,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
-    } else if (this.coins < 66) {
+    } else if (this.coins < 102) {
         this.level = 3;
 
         lvl2.classList.remove("invisible");
@@ -386,7 +407,7 @@ Character.prototype.evaluate = function () {
         lvl10.classList.add("invisible");
         lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
-    } else if (this.coins < 88) {
+    } else if (this.coins < 142) {
         this.level = 4;
         lvl2.classList.remove("invisible");
         lvl3.classList.remove("invisible");
@@ -415,7 +436,7 @@ Character.prototype.evaluate = function () {
         lvl2.classList.add("lvl2");
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
-    } else if (this.coins < 110) {
+    } else if (this.coins < 182) {
         this.level = 5;
         lvl2.classList.remove("invisible");
         lvl3.classList.remove("invisible");
@@ -444,7 +465,7 @@ Character.prototype.evaluate = function () {
         lvl3.classList.add("lvl3");
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
-    } else if (this.coins < 132) {
+    } else if (this.coins < 222) {
         this.level = 6;
         lvl2.classList.remove("invisible");
         lvl3.classList.remove("invisible");
@@ -473,7 +494,7 @@ Character.prototype.evaluate = function () {
         lvl4.classList.add("lvl4");
         lvl5.classList.add("lvl5");
         lvl6.classList.add("lvl6");
-    } else if (this.coins < 154) {
+    } else if (this.coins < 262) {
         this.level = 7;
         lvl7.classList.add("lvl7");
         lvl2.classList.remove("invisible");
@@ -503,7 +524,7 @@ Character.prototype.evaluate = function () {
         lvl8.classList.add("invisible");
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
-    } else if (this.coins < 176) {
+    } else if (this.coins < 302) {
         this.level = 8;
         lvl2.classList.remove("invisible");
         lvl3.classList.remove("invisible");
@@ -532,7 +553,7 @@ Character.prototype.evaluate = function () {
         lvl10.removeEventListener("click", leval10);
         lvl9.classList.add("invisible");
         lvl10.classList.add("invisible");
-    } else if (this.coins < 198) {
+    } else if (this.coins < 342) {
         this.level = 9;
         lvl2.classList.remove("invisible");
         lvl3.classList.remove("invisible");
@@ -1070,6 +1091,488 @@ Character.prototype.a10 = function (score, comments) {
             break;
     }
 };
+Character.prototype.b1 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 4;
+            this.coins = this.coins + 4;
+            this.level2[0] = "A+";
+            this.level2COM[0] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 3;
+            this.coins = this.coins + 3;
+            this.level2[0] = "A-";
+            this.level2COM[0] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 2;
+
+            this.coins = this.coins + 2;
+            this.level2[0] = "B";
+            this.level2COM[0] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.shifting = this.shifting + 1;
+            this.coins = this.coins + 1;
+            this.level2[0] = "C";
+            this.level2COM[0] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b2 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 4;
+            this.coins = this.coins + 4;
+            this.level2[1] = "A+";
+            this.level2COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 3;
+            this.coins = this.coins + 3;
+            this.level2[1] = "A-";
+            this.level2COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 2;
+
+            this.coins = this.coins + 2;
+            this.level2[1] = "B";
+            this.level2COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.shifting = this.shifting + 1;
+            this.coins = this.coins + 1;
+            this.level2[1] = "C";
+            this.level2COM[1] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b3 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.coins = this.coins + 4;
+            this.level2[2] = "A+";
+            this.level2COM[2] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 1;
+            this.coins = this.coins + 3;
+            this.level2[2] = "A-";
+            this.level2COM[2] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.intonation = this.intonation + 2;
+            this.coins = this.coins + 2;
+            this.level2[2] = "B";
+            this.level2COM[2] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.coins = this.coins + 1;
+            this.level2[2] = "C";
+            this.level2COM[2] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b4 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.facility = this.facility + 2;
+            this.rhythm = this.rhythm + 2;
+            this.coins = this.coins + 4;
+            this.level2[3] = "A+";
+            this.level2COM[3] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 1;
+            this.facility = this.facility + 1;
+            this.rhythm = this.rhythm + 1;
+            this.coins = this.coins + 3;
+            this.level2[3] = "A-";
+            this.level2COM[3] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.intonation = this.intonation + 3;
+            this.coins = this.coins + 2;
+            this.level2[3] = "B";
+            this.level2COM[3] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.coins = this.coins + 1;
+            this.level2[3] = "C";
+            this.level2COM[3] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+
+Character.prototype.b5 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.facility = this.facility + 8;
+            this.bowControl = this.bowControl + 4;
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 4;
+            this.rhythm = this.rhythm + 2;
+            this.coins = this.coins + 4;
+            this.level2[4] = "A+";
+            this.level2COM[4] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.facility = this.facility + 6;
+            this.bowControl = this.bowControl + 3;
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 3;
+            this.rhythm = this.rhythm + 1;
+            this.coins = this.coins + 3;
+            this.level2[4] = "A-";
+            this.level2COM[4] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.facility = this.facility + 4;
+            this.bowControl = this.bowControl + 2;
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 2;
+            this.coins = this.coins + 2;
+            this.level2[4] = "B";
+            this.level2COM[4] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.bowControl = this.bowControl + 1;
+            this.shifting = this.shifting + 1;
+            this.facility = this.facility + 2;
+            this.coins = this.coins + 1;
+            this.level2[4] = "C";
+            this.level2COM[4] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b6 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 2;
+            this.bowControl = this.bowControl + 2;
+            this.rhythm = this.rhythm + 2;
+            this.coins = this.coins + 4;
+            this.level2[5] = "A+";
+            this.level2COM[5] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 1;
+            this.bowControl = this.bowControl + 1;
+            this.rhythm = this.rhythm + 1;
+            this.coins = this.coins + 3;
+            this.level2[5] = "A-";
+            this.level2COM[5] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.intonation = this.intonation + 2;
+            this.coins = this.coins + 2;
+            this.level2[5] = "B";
+            this.level2COM[5] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.coins = this.coins + 1;
+            this.level2[5] = "C";
+            this.level2COM[5] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b7 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.facility = this.facility + 8;
+            this.bowControl = this.bowControl + 4;
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 4;
+            this.rhythm = this.rhythm + 2;
+            this.coins = this.coins + 4;
+            this.level2[6] = "A+";
+            this.level2COM[6] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.facility = this.facility + 6;
+            this.bowControl = this.bowControl + 3;
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 3;
+            this.rhythm = this.rhythm + 1;
+            this.coins = this.coins + 3;
+            this.level2[6] = "A-";
+            this.level2COM[6] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.facility = this.facility + 4;
+            this.bowControl = this.bowControl + 2;
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 2;
+            this.coins = this.coins + 2;
+            this.level2[6] = "B";
+            this.level2COM[6] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.bowControl = this.bowControl + 1;
+            this.shifting = this.shifting + 1;
+            this.facility = this.facility + 2;
+            this.coins = this.coins + 1;
+            this.level2[6] = "C";
+            this.level2COM[6] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b8 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.bowControl = this.bowControl + 4;
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 0;
+            this.musicality = this.musicality + 4;
+            this.rhythm = this.rhythm + 4;
+            this.coins = this.coins + 4;
+            this.level2[7] = "A+";
+            this.level2COM[7] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.bowControl = this.bowControl + 3;
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 0;
+            this.rhythm = this.rhythm + 3;
+            this.musicality = this.musicality + 3;
+
+            this.coins = this.coins + 3;
+            this.level2[7] = "A-";
+            this.level2COM[7] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.bowControl = this.bowControl + 2;
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 0;
+            this.musicality = this.musicality + 2;
+            this.rhythm = this.rhythm + 2;
+
+            this.coins = this.coins + 2;
+            this.level2[7] = "B";
+            this.level2COM[7] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.bowControl = this.bowControl + 1;
+            this.musicality = this.musicality + 1;
+            this.rhythm = this.rhythm + 1;
+
+            this.shifting = this.shifting + 0;
+            this.coins = this.coins + 1;
+            this.level2[7] = "C";
+            this.level2COM[7] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b9 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.bowControl = this.bowControl + 4;
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 0;
+            this.musicality = this.musicality + 4;
+            this.rhythm = this.rhythm + 4;
+            this.coins = this.coins + 4;
+            this.level2[8] = "A+";
+            this.level2COM[8] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.bowControl = this.bowControl + 3;
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 0;
+            this.rhythm = this.rhythm + 3;
+            this.musicality = this.musicality + 3;
+
+            this.coins = this.coins + 3;
+            this.level2[8] = "A-";
+            this.level2COM[8] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.bowControl = this.bowControl + 2;
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 0;
+            this.musicality = this.musicality + 2;
+            this.rhythm = this.rhythm + 2;
+
+            this.coins = this.coins + 2;
+            this.level2[8] = "B";
+            this.level2COM[8] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.intonation = this.intonation + 1;
+            this.bowControl = this.bowControl + 1;
+            this.musicality = this.musicality + 1;
+            this.rhythm = this.rhythm + 1;
+
+            this.shifting = this.shifting + 0;
+            this.coins = this.coins + 1;
+            this.level2[8] = "C";
+            this.level2COM[8] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+Character.prototype.b10 = function (score, comments) {
+    switch (score) {
+        case 4:
+            this.facility = this.facility + 0;
+            this.intonation = this.intonation + 4;
+            this.shifting = this.shifting + 4;
+            this.bowControl = this.bowControl + 2;
+            this.rhythm = this.rhythm + 2;
+            this.musicality = this.musicality + 4;
+            this.coins = this.coins + 4;
+            this.level2[9] = "A+";
+            this.level2COM[9] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+
+        case 3:
+            this.facility = this.facility + 0;
+            this.intonation = this.intonation + 3;
+            this.shifting = this.shifting + 3;
+            this.bowControl = this.bowControl + 1;
+            this.rhythm = this.rhythm + 1;
+            this.musicality = this.musicality + 3;
+            this.coins = this.coins + 3;
+            this.level2[9] = "A-";
+            this.level2COM[9] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 2:
+            this.facility = this.facility + 0;
+            this.intonation = this.intonation + 2;
+            this.shifting = this.shifting + 2;
+            this.bowControl = this.bowControl + 0;
+            this.rhythm = this.rhythm + 0;
+            this.musicality = this.musicality + 2;
+            this.coins = this.coins + 2;
+            this.level2[9] = "B";
+            this.level2COM[9] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+        case 1:
+            this.facility = this.facility + 0;
+            this.intonation = this.intonation + 1;
+            this.shifting = this.shifting + 1;
+            this.bowControl = this.bowControl + 0;
+            this.rhythm = this.rhythm + 0;
+            this.musicality = this.musicality + 1;
+            this.coins = this.coins + 1;
+            this.level2[9] = "C";
+            this.level2COM[9] = comments;
+            this.evaluate();
+            this.printStats();
+            break;
+    }
+};
+
 Character.prototype.r1 = function (score, comments) {
     switch (score) {
         case 4:
@@ -1272,12 +1775,110 @@ function leval1() {
 function leval2() {
     clearAll();
     currentLevel.innerHTML = `Level 2`;
-    assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
+    assign1.innerHTML = `Harmonics(b1): ${personage.level2[0]}`;
+    assign2.innerHTML = `Shifting(b2): ${personage.level2[1]}`;
+    assign3.innerHTML = `Postions(b3): ${personage.level2[2]}`;
+    assign4.innerHTML = `DM scale and Arrpegio(b4): ${personage.level2[3]}`;
+    assign5.innerHTML = `DM in thirds(b5): ${personage.level2[4]}`;
+    assign6.innerHTML = `AM scale and Arrpegio(b6): ${personage.level2[5]}`;
+    assign7.innerHTML = `AM in thirds(b7): ${personage.level2[6]}`;
+    assign8.innerHTML = `SOLO-Shenandoah(b8): ${personage.level2[7]}`;
+    assign9.innerHTML = `SOLO-Yellow Rose of Texas(b9): ${personage.level2[8]}`;
+    assign10.innerHTML = `Rhythm+Scales(b10): ${personage.level2[9]}`;
+
     upload.innerHTML = "Upload a Recording";
-    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
     upload.style.cursor = "pointer";
     upload.addEventListener("click", function () {
-        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+        alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+    });
+    // A1
+    assign1.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/141mC4xBmLgn16_9i40pf46FDhzudNNQH/view?usp=sharing'>Quest: Complete Numbers 19,21 and 23</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[0]}`;
+    });
+    // A2
+    assign2.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/145AaTXjEXIanK8zKwSqJl6kIh2Ts2imS/view?usp=sharing'>Quest: Complete Numbers 26,28 and 32</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[1]}`;
+    });
+    // A3
+    assign3.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/145G5iTT75NCMX5sfg1JDpzdMGf99EUOd/view?usp=sharing'>Quest: Complete Numbers 38,39 and 40</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(2) + Coins(4) ";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[2]}`;
+    });
+    // A4
+    assign4.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14746t6pnImLyp3vsMtCi0B9cDbJLDjaR/view?usp=sharing'>Quest: Complete Numbers 113 and 114</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[3]}`;
+    });
+    // A5
+    assign5.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 115 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[4]}`;
+    });
+    6;
+    // A6
+    assign6.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14A0mfXa3s_nyCX6fzTHFEEsoI7_EQ3im/view?usp=sharing'>Quest: Complete Numbers 119 and 120</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[5]}`;
+    });
+    // A7
+    assign7.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Numbers 121 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[6]}`;
+    });
+    // A8
+    assign8.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 116 at 70BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[7]}`;
+    });
+    // A9
+    assign9.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 122 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[8]}`;
+    });
+    // A10
+    assign10.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/11zdUfRv8wPD2yOIDSXTvPhvi5cFmXpfO/view?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
+        reward.innerHTML =
+            "Reward: Rhythm(12) + Shifting(4) + Intonation(4) + Bow Control(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[9]}`;
     });
 }
 function leval3() {
