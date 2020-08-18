@@ -2,18 +2,20 @@ function assignments() {
     switch (person) {
         case "jaden":
             jaden.a1(4, "Wonderufl tone");
+            jaden.a2(2, "Wonderful tone");
+            jaden.a3(3, "Wonderful tone");
             break;
         case "evilhead":
             evilhead.a1(4, "Keep up the great work");
             evilhead.a2(4, "Keep up the great work");
             evilhead.a3(4, "More forte");
-        evilhead.a4(4, "Keep up the great work");
-        evilhead.a5(4, "Keep up the great work");
-        evilhead.a6(4, "Keep up the great work");
-        evilhead.a7(4, "Keep up the great work");
-        evilhead.a8(4, "Keep up the great work");
-        evilhead.a9(4, "Keep up the great work");
-        evilhead.a10(4, "Keep up the great work");
+            evilhead.a4(4, "Keep up the great work");
+            evilhead.a5(4, "Keep up the great work");
+            evilhead.a6(4, "Keep up the great work");
+            evilhead.a7(4, "Keep up the great work");
+            evilhead.a8(4, "Keep up the great work");
+            evilhead.a9(4, "Keep up the great work");
+            evilhead.a10(4, "Keep up the great work");
         // evilhead.b1(4, "Keep up the great work1");
         // evilhead.b2(4, "Keep up the great work2");
         // evilhead.b3(3, "More forte3");
@@ -250,10 +252,10 @@ function Character(
 }
 
 const jaden = new Character(
-    "Cluck Norris",
-    "heretics",
+    "Violin Learning",
+    "baroque",
     1,
-    "https://media0.giphy.com/media/ghHDuqJ1uh9vP2gKdC/giphy.gif",
+    "https://media.giphy.com/media/10h3idv6iEAzyo/giphy.gif",
     0,
     0,
     0,
@@ -2057,7 +2059,7 @@ function clearInstructions() {
     comment.innerHTML = "";
 }
 function clearQuests() {
-    currentLevel.innerHTML = "CHHS ORCHESTRA RPG<br>BETA VERSION 1.31";
+    currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING ACTIVITIES<br>BETA VERSION 1.32";
     assign1.innerHTML = "";
     assign2.innerHTML = "";
     assign3.innerHTML = "";
