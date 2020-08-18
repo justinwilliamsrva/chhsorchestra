@@ -2094,4 +2094,4 @@ lvl10.addEventListener("click", leval10);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
 
-module.exports = Character;
+// module.exports = Character;

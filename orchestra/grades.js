@@ -1,3 +1,38 @@
+const Character = require("./script.js");
+
+
+var person = "";
+let studentsString = ["jaden", "evilhead"];
+let personage = "";
+var lvl = document.getElementById("lvl1");
+var lvl2 = document.getElementById("lvl2");
+var lvl3 = document.getElementById("lvl3");
+var lvl4 = document.getElementById("lvl4");
+var lvl5 = document.getElementById("lvl5");
+var lvl6 = document.getElementById("lvl6");
+var lvl7 = document.getElementById("lvl7");
+var lvl8 = document.getElementById("lvl8");
+var lvl9 = document.getElementById("lvl9");
+var lvl10 = document.getElementById("lvl10");
+var comment = document.getElementById("comment");
+var assign1 = document.getElementById("assignment1");
+var assign2 = document.getElementById("assignment2");
+var assign3 = document.getElementById("assignment3");
+var assign4 = document.getElementById("assignment4");
+var assign5 = document.getElementById("assignment5");
+var assign6 = document.getElementById("assignment6");
+var assign7 = document.getElementById("assignment7");
+var assign8 = document.getElementById("assignment8");
+var assign9 = document.getElementById("assignment9");
+var assign10 = document.getElementById("assignment10");
+var currentLevel = document.getElementById("currentLevel");
+var upload = document.getElementById("upload");
+var instruct = document.getElementById("instruct");
+var reward = document.getElementById("reward");
+var recording = document.getElementById("recording");
+var raidBtn = document.getElementById("raids");
+
+
 function assignments() {
     switch (person) {
         case "jaden":
@@ -9,8 +44,6 @@ function assignments() {
             break;
     }
 }
-
-const Character = require("./script");
 
 const jaden = new Character(
     "Cluck Norris",
@@ -47,6 +80,7 @@ function initialPrompt() {
         personage = students[j];
         person = studentsString[j];
         clearAll();
+        assignments();
         personage.evaluate();
         personage.printStats();
     } else {
@@ -58,13 +92,13 @@ function initialPrompt() {
                 personage;
                 localStorage.setItem("person", i);
                 clearAll();
+                assignments();
                 personage.evaluate();
                 personage.printStats();
             }
         }
     }
 }
-
 var signout = document.getElementById("signout");
 signout.addEventListener("click", function () {
     localStorage.removeItem("person");
@@ -185,12 +219,110 @@ function leval1() {
 function leval2() {
     clearAll();
     currentLevel.innerHTML = `Level 2`;
-    assign1.innerHTML = `Assignment 1: ${personage.level2[0]}`;
+    assign1.innerHTML = `Harmonics(b1): ${personage.level2[0]}`;
+    assign2.innerHTML = `Shifting(b2): ${personage.level2[1]}`;
+    assign3.innerHTML = `Postions(b3): ${personage.level2[2]}`;
+    assign4.innerHTML = `DM scale and Arrpegio(b4): ${personage.level2[3]}`;
+    assign5.innerHTML = `DM in thirds(b5): ${personage.level2[4]}`;
+    assign6.innerHTML = `AM scale and Arrpegio(b6): ${personage.level2[5]}`;
+    assign7.innerHTML = `AM in thirds(b7): ${personage.level2[6]}`;
+    assign8.innerHTML = `SOLO-Shenandoah(b8): ${personage.level2[7]}`;
+    assign9.innerHTML = `SOLO-Yellow Rose of Texas(b9): ${personage.level2[8]}`;
+    assign10.innerHTML = `Rhythm+Scales(b10): ${personage.level2[9]}`;
+
     upload.innerHTML = "Upload a Recording";
-    upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
+    upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
     upload.style.cursor = "pointer";
     upload.addEventListener("click", function () {
-        alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+        alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+    });
+    // A1
+    assign1.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/141mC4xBmLgn16_9i40pf46FDhzudNNQH/view?usp=sharing'>Quest: Complete Numbers 19,21 and 23</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[0]}`;
+    });
+    // A2
+    assign2.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/145AaTXjEXIanK8zKwSqJl6kIh2Ts2imS/view?usp=sharing'>Quest: Complete Numbers 26,28 and 32</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[1]}`;
+    });
+    // A3
+    assign3.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/145G5iTT75NCMX5sfg1JDpzdMGf99EUOd/view?usp=sharing'>Quest: Complete Numbers 38,39 and 40</a>";
+        reward.innerHTML = "Reward: Intonation(4) + Shifting(2) + Coins(4) ";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[2]}`;
+    });
+    // A4
+    assign4.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14746t6pnImLyp3vsMtCi0B9cDbJLDjaR/view?usp=sharing'>Quest: Complete Numbers 113 and 114</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[3]}`;
+    });
+    // A5
+    assign5.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 115 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[4]}`;
+    });
+    6;
+    // A6
+    assign6.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14A0mfXa3s_nyCX6fzTHFEEsoI7_EQ3im/view?usp=sharing'>Quest: Complete Numbers 119 and 120</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[5]}`;
+    });
+    // A7
+    assign7.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Numbers 121 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[6]}`;
+    });
+    // A8
+    assign8.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 116 at 70BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[7]}`;
+    });
+    // A9
+    assign9.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 122 at 120BPM</a>";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[8]}`;
+    });
+    // A10
+    assign10.addEventListener("click", function () {
+        instruct.innerHTML =
+            "<a target='_blank' href='https://drive.google.com/file/d/11zdUfRv8wPD2yOIDSXTvPhvi5cFmXpfO/view?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
+        reward.innerHTML =
+            "Reward: Rhythm(12) + Shifting(4) + Intonation(4) + Bow Control(2) + Coins(4)";
+        recording.innerHTML = " Recording: Coming Soon";
+        comment.innerHTML = `Teacher Comments: ${personage.level2COM[9]}`;
     });
 }
 function leval3() {
@@ -276,7 +408,8 @@ function leval10() {
 function raidFunc() {
     clearAll();
     currentLevel.innerHTML = `Raids`;
-    assign1.innerHTML = `Two Duets(r1): ${personage.raids[0]}`;
+    assign1.innerHTML = `Two Duets CM and GM(r1): ${personage.raids[0]}`;
+    assign2.innerHTML = `Two Duets DM and AM(r2): ${personage.raids[1]}`;
 
     // R!
     assign1.addEventListener("click", function () {
@@ -284,9 +417,26 @@ function raidFunc() {
         reward.innerHTML =
             "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
         recording.innerHTML = " Recording: Coming Soon";
-        comment.innerHTML = `Teacher Comments: ${personage.level1COM[9]}`;
+        comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[0]}`;
     });
+
+    // R!
+    assign2.addEventListener("click", raid2);
+
+    if (personage.coins < 22) {
+        assign2.innerHTML = "";
+        assign2.removeEventListener("click", raid2);
+    }
 }
+
+function raid2() {
+    instruct.innerHTML = "<p>Quest: Record Numbers 117 and 123 with a partner</p>";
+    reward.innerHTML =
+        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+    recording.innerHTML = " Recording: Coming Soon";
+    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[1]}`;
+}
+
 function clearInstructions() {
     instruct.innerHTML = "";
     reward.innerHTML = "";
@@ -330,6 +480,3 @@ lvl10.addEventListener("click", leval10);
 lvl10.addEventListener("click", leval10);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
-assignments();
-
-
