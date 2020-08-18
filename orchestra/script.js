@@ -4,6 +4,9 @@ function assignments() {
             jaden.a1(4, "Wonderufl tone");
             jaden.a2(2, "Wonderful tone");
             jaden.a3(3, "Wonderful tone");
+            jaden.a4(3, "Wonderful tone");
+            jaden.a5(3, "Great use of bow");
+            jaden.a6(2, "Work on intonation ");
             break;
         case "evilhead":
             evilhead.a1(4, "Keep up the great work");
