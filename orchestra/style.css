@@ -305,6 +305,8 @@
     #nameGame {
         /* background-color: teal; */
         background-image: url("../assets/logo2.png");
+        background-color: royalblue;
+
         background-repeat: no-repeat;
         background-size: 100% 250%;
         /* background-attachment: fixed; */
@@ -818,6 +820,7 @@
     #nameGame {
         /* background-color: teal; */
         background-image: url("../assets/logo2.png");
+        background-color: royalblue;
         background-repeat: no-repeat;
         background-size: 75% 225%;
         /* background-attachment: fixed; */
@@ -862,7 +865,6 @@
         cursor: pointer;
     }
 
-
     button:focus {
         border: 5px solid red;
     }
@@ -897,8 +899,6 @@
     #teamRank {
         text-align: center;
     }
-
-
 
     .romantic {
         background-color: gold;
