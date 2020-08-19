@@ -1639,8 +1639,8 @@ Character.prototype.c2 = function (score, comments) {
             this.rhythm = this.rhythm + 2;
             this.musicality = this.musicality + 2;
             this.coins = this.coins + 4;
-            this.level1[9] = "A+";
-            this.level3COM[9] = comments;
+            this.level3[1] = "A+";
+            this.level3COM[1] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1653,8 +1653,8 @@ Character.prototype.c2 = function (score, comments) {
             this.rhythm = this.rhythm + 1;
             this.musicality = this.musicality + 1;
             this.coins = this.coins + 3;
-            this.level3[9] = "A-";
-            this.level3COM[9] = comments;
+            this.level3[1] = "A-";
+            this.level3COM[1] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1666,8 +1666,8 @@ Character.prototype.c2 = function (score, comments) {
             this.rhythm = this.rhythm + 0;
             this.musicality = this.musicality + 0;
             this.coins = this.coins + 2;
-            this.level3[9] = "B";
-            this.level3COM[9] = comments;
+            this.level3[1] = "B";
+            this.level3COM[1] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1679,8 +1679,8 @@ Character.prototype.c2 = function (score, comments) {
             this.rhythm = this.rhythm + 0;
             this.musicality = this.musicality + 0;
             this.coins = this.coins + 1;
-            this.level3[9] = "C";
-            this.level3COM[9] = comments;
+            this.level3[1] = "C";
+            this.level3COM[1] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1696,8 +1696,8 @@ Character.prototype.c3 = function (score, comments) {
             this.rhythm = this.rhythm + 0;
             this.musicality = this.musicality + 0;
             this.coins = this.coins + 4;
-            this.level3[9] = "A+";
-            this.level3COM[9] = comments;
+            this.level3[2] = "A+";
+            this.level3COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1710,8 +1710,8 @@ Character.prototype.c3 = function (score, comments) {
             this.rhythm = this.rhythm + 0;
             this.musicality = this.musicality + 0;
             this.coins = this.coins + 3;
-            this.level3[9] = "A-";
-            this.level3COM[9] = comments;
+            this.level3[2] = "A-";
+            this.level3COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1723,8 +1723,8 @@ Character.prototype.c3 = function (score, comments) {
             this.rhythm = this.rhythm + 0;
             this.musicality = this.musicality + 0;
             this.coins = this.coins + 2;
-            this.level3[9] = "B";
-            this.level3COM[9] = comments;
+            this.level3[2] = "B";
+            this.level3COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
@@ -1736,8 +1736,8 @@ Character.prototype.c3 = function (score, comments) {
             this.rhythm = this.rhythm + 0;
             this.musicality = this.musicality + 0;
             this.coins = this.coins + 1;
-            this.level3[9] = "C";
-            this.level3COM[9] = comments;
+            this.level3[2] = "C";
+            this.level3COM[2] = comments;
             this.evaluate();
             this.printStats();
             break;
