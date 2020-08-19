@@ -89,6 +89,12 @@
         height: 90%;
         width: 40%;
     }
+    #instruct > p,
+    #reward > p,
+    #recording > p,
+    #comment > p {
+        margin: 0;
+    }
 
     #lvl1 {
         background-image: url("../assets/1.png");
@@ -723,6 +729,13 @@
         float: left;
         height: 90%;
         width: 50%;
+    }
+
+    #instruct,
+    #reward,
+    #recording,
+    #comment {
+        margin: 0;
     }
 
     #grid {
