@@ -2702,7 +2702,7 @@ function clearInstructions() {
     comment.innerHTML = "";
 }
 function clearQuests() {
-    currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING ACTIVITIES<br>BETA VERSION 1.32";
+    currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.32";
     assign1.innerHTML = "";
     assign2.innerHTML = "";
     assign3.innerHTML = "";
