@@ -387,7 +387,7 @@
     }
 
     #statGrid > p {
-        text-align: center;
+        /* text-align: center; */
         flex: 0 0 50%;
         /* padding: 0; */
         margin: 0;
@@ -798,7 +798,7 @@
     }
 
     #statGrid > p {
-        text-align: center;
+        /* text-align: center; */
         flex: 0 0 50%;
         padding: 0;
         /* margin: 0; */
