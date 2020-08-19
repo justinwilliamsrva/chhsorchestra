@@ -2490,7 +2490,7 @@ function leval3() {
     // A1
     assign1.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/141mC4xBmLgn16_9i40pf46FDhzudNNQH/view?usp=sharing'>Quest: Complete Numbers 56,57 and 58</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Numbers 56,57 and 58</a>";
         reward.innerHTML = "Reward: Intonation(4) + Shifting(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level3COM[0]}`;
@@ -2498,7 +2498,7 @@ function leval3() {
     // A2
     assign2.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/145AaTXjEXIanK8zKwSqJl6kIh2Ts2imS/view?usp=sharing'>Quest: Complete Number 41</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 41</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(2) + Bow Control(4) + Rhythm(2) + Musicality(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2507,7 +2507,7 @@ function leval3() {
     // A3
     assign3.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/145G5iTT75NCMX5sfg1JDpzdMGf99EUOd/view?usp=sharing'>Quest: Complete Number 42 at BPM 160</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 42 at BPM 160</a>";
         reward.innerHTML =
             "Reward: Intonation(2) + Shifting(2) +  Facility(4) + Bow Control(4) + Musicality(2) + Coins(4) ";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2516,7 +2516,7 @@ function leval3() {
     // A4
     assign4.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14746t6pnImLyp3vsMtCi0B9cDbJLDjaR/view?usp=sharing'>Quest: Complete Numbers 125 and 126</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Numbers 125 and 126</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2525,7 +2525,7 @@ function leval3() {
     // A5
     assign5.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 127 at 120BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 127 at 120BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2535,7 +2535,7 @@ function leval3() {
     // A6
     assign6.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14A0mfXa3s_nyCX6fzTHFEEsoI7_EQ3im/view?usp=sharing'>Quest: Complete Numbers 131 and 132</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Numbers 131 and 132</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2544,7 +2544,7 @@ function leval3() {
     // A7
     assign7.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Number 133 at 120BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 133 at 120BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2553,7 +2553,7 @@ function leval3() {
     // A8
     assign8.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 128 at 100BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 128 at 100BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2562,7 +2562,7 @@ function leval3() {
     // A9
     assign9.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 134 at 90BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 134 at 90BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2571,7 +2571,7 @@ function leval3() {
     // A10
     assign10.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/11zdUfRv8wPD2yOIDSXTvPhvi5cFmXpfO/view?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
+            "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
         reward.innerHTML =
             "Reward: Rhythm(12) + Shifting(4) + Intonation(4) + Bow Control(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
