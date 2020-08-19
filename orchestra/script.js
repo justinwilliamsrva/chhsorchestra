@@ -2652,8 +2652,9 @@ function leval10() {
 function raidFunc() {
     clearAll();
     currentLevel.innerHTML = `Raids`;
-    assign1.innerHTML = `Two Duets CM and GM(r1): ${personage.raids[0]}`;
-    assign2.innerHTML = `Two Duets DM and AM(r2): ${personage.raids[1]}`;
+    assign1.innerHTML = `Two Duets in CM and GM(r1): ${personage.raids[0]}`;
+    assign2.innerHTML = `Two Duets in DM and AM(r2): ${personage.raids[1]}`;
+    assign3.innerHTML = `Two Duets in FM and BbM(r3): ${personage.raids[2]}`;
 
     // R!
     assign1.addEventListener("click", function () {
@@ -2666,10 +2667,16 @@ function raidFunc() {
 
     // R!
     assign2.addEventListener("click", raid2);
+    assign3.addEventListener("click", raid3);
 
     if (personage.coins < 22) {
         assign2.innerHTML = "";
         assign2.removeEventListener("click", raid2);
+        assign3.innerHTML = "";
+        assign3.removeEventListener("click", raid3);
+    } else if (personage.coins < 62) {
+        assign3.innerHTML = "";
+        assign3.removeEventListener("click", raid3);
     }
 }
 
@@ -2679,6 +2686,13 @@ function raid2() {
         "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
     recording.innerHTML = " Recording: Coming Soon";
     comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[1]}`;
+}
+function raid3() {
+    instruct.innerHTML = "<p>Quest: Record Numbers 129 and 135 with a partner</p>";
+    reward.innerHTML =
+        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+    recording.innerHTML = " Recording: Coming Soon";
+    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[2]}`;
 }
 
 function clearInstructions() {
