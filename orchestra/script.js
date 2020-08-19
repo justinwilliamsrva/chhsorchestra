@@ -19,17 +19,28 @@ function assignments() {
             evilhead.a8(4, "Keep up the great work");
             evilhead.a9(4, "Keep up the great work");
             evilhead.a10(4, "Keep up the great work");
-        // evilhead.b1(4, "Keep up the great work1");
-        // evilhead.b2(4, "Keep up the great work2");
-        // evilhead.b3(3, "More forte3");
-        // evilhead.b4(2, "Keep up the great work4");
-        // evilhead.b5(1, "Keep up the great work5");
-        // evilhead.b6(4, "Keep up the great work6");
-        // evilhead.b7(3, "Keep up the great work7");
-        // evilhead.b8(2, "Keep up the great work8");
-        // evilhead.b9(1, "Keep up the great work9");
-        // evilhead.b10(4, "Keep up the great work10");
-        // break;
+            evilhead.b1(4, "Keep up the great work1");
+            evilhead.b2(4, "Keep up the great work2");
+            evilhead.b3(3, "More forte3");
+            evilhead.b4(2, "Keep up the great work4");
+            evilhead.b5(1, "Keep up the great work5");
+            evilhead.b6(4, "Keep up the great work6");
+            evilhead.b7(3, "Keep up the great work7");
+            evilhead.b8(2, "Keep up the great work8");
+            evilhead.b9(1, "Keep up the great work9");
+            evilhead.b10(4, "Keep up the great work10");
+            evilhead.c1(4, "Keep up the great work1");
+            evilhead.c2(4, "Keep up the great work2");
+            evilhead.c3(3, "More forte3");
+            evilhead.c4(2, "Keep up the great work4");
+            evilhead.c5(1, "Keep up the great work5");
+            evilhead.c6(4, "Keep up the great work6");
+            evilhead.c7(3, "Keep up the great work7");
+            evilhead.c8(2, "Keep up the great work8");
+            evilhead.c9(1, "Keep up the great work9");
+            evilhead.c10(4, "Keep up the great work10");
+            break;
+            break;
     }
 }
 
@@ -2091,7 +2102,6 @@ Character.prototype.c10 = function (score, comments) {
     }
 };
 
-
 Character.prototype.r1 = function (score, comments) {
     switch (score) {
         case 4:
@@ -2463,12 +2473,12 @@ function leval3() {
     assign1.innerHTML = `Positions(c1): ${personage.level3[0]}`;
     assign2.innerHTML = `SOLO - French Folk Song(c2): ${personage.level3[1]}`;
     assign3.innerHTML = `SOLO - Can Can(c3): ${personage.level3[2]}`;
-    assign4.innerHTML = `DM scale and Arrpegio(c4): ${personage.level3[3]}`;
-    assign5.innerHTML = `DM in thirds(c5): ${personage.level3[4]}`;
-    assign6.innerHTML = `AM scale and Arrpegio(c6): ${personage.level3[5]}`;
-    assign7.innerHTML = `AM in thirds(c7): ${personage.level3[6]}`;
-    assign8.innerHTML = `SOLO-Shenandoah(c8): ${personage.level3[7]}`;
-    assign9.innerHTML = `SOLO-Yellow Rose of Texas(c9): ${personage.level3[8]}`;
+    assign4.innerHTML = `FM scale and Arrpegio(c4): ${personage.level3[3]}`;
+    assign5.innerHTML = `FM in thirds(c5): ${personage.level3[4]}`;
+    assign6.innerHTML = `BbM scale and Arrpegio(c6): ${personage.level3[5]}`;
+    assign7.innerHTML = `BbM in thirds(c7): ${personage.level3[6]}`;
+    assign8.innerHTML = `SOLO-Bella-Bocca Polka(c8): ${personage.level3[7]}`;
+    assign9.innerHTML = `SOLO-John Peel(c9): ${personage.level3[8]}`;
     assign10.innerHTML = `Rhythm+Scales(c10): ${personage.level3[9]}`;
 
     upload.innerHTML = "Upload a Recording";
@@ -2489,22 +2499,24 @@ function leval3() {
     assign2.addEventListener("click", function () {
         instruct.innerHTML =
             "<a target='_blank' href='https://drive.google.com/file/d/145AaTXjEXIanK8zKwSqJl6kIh2Ts2imS/view?usp=sharing'>Quest: Complete Number 41</a>";
-        reward.innerHTML = "Reward: Intonation(4) + Shifting(2) + Bow Control(4) + Rhythm(2) + Musicality(2) + Coins(4)";
+        reward.innerHTML =
+            "Reward: Intonation(4) + Shifting(2) + Bow Control(4) + Rhythm(2) + Musicality(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level3COM[1]}`;
     });
     // A3
     assign3.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/145G5iTT75NCMX5sfg1JDpzdMGf99EUOd/view?usp=sharing'>Quest: Complete Numbers 38,39 and 40</a>";
-        reward.innerHTML = "Reward: Intonation(2) + Shifting(2) +  Facility(4) + Bow Control(4) + Musicality(2) + Coins(4) ";
+            "<a target='_blank' href='https://drive.google.com/file/d/145G5iTT75NCMX5sfg1JDpzdMGf99EUOd/view?usp=sharing'>Quest: Complete Number 42 at BPM 160</a>";
+        reward.innerHTML =
+            "Reward: Intonation(2) + Shifting(2) +  Facility(4) + Bow Control(4) + Musicality(2) + Coins(4) ";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level3COM[2]}`;
     });
     // A4
     assign4.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14746t6pnImLyp3vsMtCi0B9cDbJLDjaR/view?usp=sharing'>Quest: Complete Numbers 113 and 114</a>";
+            "<a target='_blank' href='https://drive.google.com/file/d/14746t6pnImLyp3vsMtCi0B9cDbJLDjaR/view?usp=sharing'>Quest: Complete Numbers 125 and 126</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2513,7 +2525,7 @@ function leval3() {
     // A5
     assign5.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 115 at 120BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 127 at 120BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2523,7 +2535,7 @@ function leval3() {
     // A6
     assign6.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14A0mfXa3s_nyCX6fzTHFEEsoI7_EQ3im/view?usp=sharing'>Quest: Complete Numbers 119 and 120</a>";
+            "<a target='_blank' href='https://drive.google.com/file/d/14A0mfXa3s_nyCX6fzTHFEEsoI7_EQ3im/view?usp=sharing'>Quest: Complete Numbers 131 and 132</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(2) + Facility(2) + Rhythm(2) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2532,7 +2544,7 @@ function leval3() {
     // A7
     assign7.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Numbers 121 at 120BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Number 133 at 120BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Shifting(4) + Facility(8) + Bow Control(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2541,7 +2553,7 @@ function leval3() {
     // A8
     assign8.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 116 at 70BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 128 at 100BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2550,7 +2562,7 @@ function leval3() {
     // A9
     assign9.addEventListener("click", function () {
         instruct.innerHTML =
-            "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 122 at 120BPM</a>";
+            "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 134 at 90BPM</a>";
         reward.innerHTML =
             "Reward: Intonation(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
         recording.innerHTML = " Recording: Coming Soon";
@@ -2565,6 +2577,8 @@ function leval3() {
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.level3COM[9]}`;
     });
+}
+
 function leval4() {
     currentLevel.innerHTML = `Level 4`;
     assign1.innerHTML = `Assignment 1: ${personage.level4[0]}`;
