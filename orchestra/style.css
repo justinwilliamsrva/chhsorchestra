@@ -684,6 +684,20 @@
         background-position: center;
         font-size: 15px;
     }
+    #options {
+        background-image: url("../assets/Options.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 200%;
+        background-position: center;
+        font-size: 15px;
+    }
+    #completeStats {
+        background-image: url("../assets/Stats.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        font-size: 15px;
+    }
 
     #flexb {
         display: flex;
