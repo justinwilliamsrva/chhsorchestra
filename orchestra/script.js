@@ -2741,8 +2741,8 @@ function optionFunc() {
 function completeStatsFunc() {
     clearAll();
     currentLevel.innerHTML = `Complete Stats`;
-    assign1.innerHTML = `Current Grade: ${personage.totalScore}`;
-    assign1.innerHTML = `Current Grade: ${personage.totalScore}`;
+    assign1.innerHTML = `Total Score: ${personage.totalScore}`;
+    assign2.innerHTML = `Current Rank: Coming Soon`;
 
     personage.grading();
 }
