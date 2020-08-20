@@ -1,12 +1,57 @@
+function jadenScore() {
+    jaden.a1(4, "Wonderufl tone");
+    jaden.a2(2, "Wonderful tone");
+    jaden.a3(2, "Wonderful tone");
+    // jaden.a4(2, "Wonderful tone");
+    // jaden.a5(2, "Great use of bow");
+    // jaden.a6(2, "Work on intonation ");
+}
+function evilheadScore() {
+    evilhead.a1(4, "Keep up the great work");
+    evilhead.a2(4, "Keep up the great work");
+    evilhead.a3(4, "More forte");
+    evilhead.a4(4, "Keep up the great work");
+    evilhead.a5(4, "Keep up the great work");
+    evilhead.a6(4, "Keep up the great work");
+    evilhead.a7(4, "Keep up the great work");
+    evilhead.a8(4, "Keep up the great work");
+    evilhead.a9(4, "Keep up the great work");
+    evilhead.a10(4, "Keep up the great work");
+    evilhead.b1(4, "Keep up the great work1");
+    evilhead.b2(4, "Keep up the great work2");
+    evilhead.b3(3, "More forte3");
+    evilhead.b4(2, "Keep up the great work4");
+    evilhead.b5(1, "Keep up the great work5");
+    evilhead.b6(4, "Keep up the great work6");
+    evilhead.b7(3, "Keep up the great work7");
+    evilhead.b8(2, "Keep up the great work8");
+    evilhead.b9(1, "Keep up the great work9");
+    evilhead.b10(4, "Keep up the great work10");
+    evilhead.c1(4, "Keep up the great work1");
+    evilhead.c2(4, "Keep up the great work2");
+    evilhead.c3(3, "More forte3");
+    evilhead.c4(2, "Keep up the great work4");
+    evilhead.c5(1, "Keep up the great work5");
+    evilhead.c6(4, "Keep up the great work6");
+    evilhead.c7(3, "Keep up the great work7");
+    evilhead.c8(2, "Keep up the great work8");
+    evilhead.c9(1, "Keep up the great work9");
+    evilhead.c10(4, "Keep up the great work10");
+    //
+}
 function assignments() {
     switch (person) {
+        // case "admin":
+        //     jadenScore();
+        //     evilheadScore();
+        //     break;
         case "jaden":
             jaden.a1(4, "Wonderufl tone");
-            jaden.a2(3, "Wonderful tone");
-            jaden.a3(3, "Wonderful tone");
-            jaden.a4(4, "Wonderful tone");
-            jaden.a5(4, "Great use of bow");
-            jaden.a6(4, "Work on intonation ");
+            jaden.a2(2, "Wonderful tone");
+            jaden.a3(2, "Wonderful tone");
+            // jaden.a4(2, "Wonderful tone");
+            // jaden.a5(2, "Great use of bow");
+            // jaden.a6(2, "Work on intonation ");
             break;
         case "evilhead":
             evilhead.a1(4, "Keep up the great work");
@@ -29,23 +74,23 @@ function assignments() {
             evilhead.b8(2, "Keep up the great work8");
             evilhead.b9(1, "Keep up the great work9");
             evilhead.b10(4, "Keep up the great work10");
-            evilhead.c1(4, "Keep up the great work1");
-            evilhead.c2(4, "Keep up the great work2");
-            evilhead.c3(3, "More forte3");
-            evilhead.c4(2, "Keep up the great work4");
-            evilhead.c5(1, "Keep up the great work5");
-            evilhead.c6(4, "Keep up the great work6");
-            evilhead.c7(3, "Keep up the great work7");
-            evilhead.c8(2, "Keep up the great work8");
-            evilhead.c9(1, "Keep up the great work9");
-            evilhead.c10(4, "Keep up the great work10");
-            break;
+            // evilhead.c1(4, "Keep up the great work1");
+            // evilhead.c2(4, "Keep up the great work2");
+            // evilhead.c3(3, "More forte3");
+            // evilhead.c4(2, "Keep up the great work4");
+            // evilhead.c5(1, "Keep up the great work5");
+            // evilhead.c6(4, "Keep up the great work6");
+            // evilhead.c7(3, "Keep up the great work7");
+            // evilhead.c8(2, "Keep up the great work8");
+            // evilhead.c9(1, "Keep up the great work9");
+            // evilhead.c10(4, "Keep up the great work10");
             break;
     }
 }
 
 var person = "";
-let days = 1;
+let days = 6 / 2;
+// let daysfresh = 3 / 2;
 let studentsString = ["jaden", "evilhead"];
 let personage = "";
 var lvl = document.getElementById("lvl1");
@@ -267,6 +312,22 @@ function Character(
         "none",
     ];
 }
+
+const admin = new Character(
+    "Admin",
+    "classical",
+    1,
+    "https://media.giphy.com/media/10h3idv6iEAzyo/giphy.gif",
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    "violin"
+);
 
 const jaden = new Character(
     "Violin Learning",
@@ -2220,7 +2281,7 @@ Character.prototype.r2 = function (score, comments) {
     }
 };
 Character.prototype.grading = function () {
-    this.grade = this.coins / 3;
+    this.grade = this.coins / days;
     // alert(this.grade);
 
     if (this.grade >= 7.2) {
@@ -2246,6 +2307,38 @@ Character.prototype.grading = function () {
     } else if (this.grade >= 1) {
         assign3.innerHTML = "Current Grade: D";
     } else if (this.grade >= 0.5) {
+        assign3.innerHTML = "Current Grade: D-";
+    } else {
+        assign3.innerHTML = "Current Grade: F";
+    }
+};
+Character.prototype.freshGrading = function () {
+    this.grade = this.coins / days;
+    // alert(this.grade);
+
+    if (this.grade >= 3.66) {
+        assign3.innerHTML = "Current Grade: A+";
+    } else if (this.grade >= 3.33) {
+        assign3.innerHTML = "Current Grade: A";
+    } else if (this.grade >= 3) {
+        assign3.innerHTML = "Current Grade: A-";
+    } else if (this.grade >= 2.5) {
+        assign3.innerHTML = "Current Grade: B+";
+    } else if (this.grade >= 2.0) {
+        assign3.innerHTML = "Current Grade: B";
+    } else if (this.grade >= 1.66) {
+        assign3.innerHTML = "Current Grade: B-";
+    } else if (this.grade >= 1.33) {
+        assign3.innerHTML = "Current Grade: C+";
+    } else if (this.grade >= 1.0) {
+        assign3.innerHTML = "Current Grade: C";
+    } else if (this.grade >= 0.8) {
+        assign3.innerHTML = "Current Grade: C-";
+    } else if (this.grade >= 0.6) {
+        assign3.innerHTML = "Current Grade: D+";
+    } else if (this.grade >= 0.4) {
+        assign3.innerHTML = "Current Grade: D";
+    } else if (this.grade >= 0.2) {
         assign3.innerHTML = "Current Grade: D-";
     } else {
         assign3.innerHTML = "Current Grade: F";
@@ -2743,8 +2836,14 @@ function completeStatsFunc() {
     currentLevel.innerHTML = `Complete Stats`;
     assign1.innerHTML = `Total Score: ${personage.totalScore}`;
     assign2.innerHTML = `Current Rank: Coming Soon`;
+    if (person == "jaden") {
+        personage.freshGrading();
+    } else if (person == "evilhead") {
+        personage.grading();
+    }
 
-    personage.grading();
+    assign5.innerHTML = `Rank on Team: sComing Soon`;
+    assign6.innerHTML = `Rank on Instrument: Coming Soon`;
 }
 
 function clearInstructions() {
@@ -2776,6 +2875,13 @@ function clearAll() {
     clearInstructions();
     clearQuests();
 }
+
+function topScore() {
+    let topScore = [];
+    topScore.push({ jaden: jaden.totalScore }, { evilhead: evilhead.totalScore });
+    // console.log(jaden.coins);
+    console.log(topScore);
+}
 // Level Click Event Listeners
 lvl.addEventListener("click", leval1);
 lvl2.addEventListener("click", leval2);
@@ -2792,5 +2898,7 @@ options.addEventListener("click", optionFunc);
 completeStats.addEventListener("click", completeStatsFunc);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
+// topScore();
+// console.log(evilhead.coins);
 
 // module.exports = Character;
