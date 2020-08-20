@@ -74,6 +74,7 @@ var upload = document.getElementById("upload");
 var instruct = document.getElementById("instruct");
 var reward = document.getElementById("reward");
 var recording = document.getElementById("recording");
+var options = document.getElementById("options");
 var raidBtn = document.getElementById("raids");
 
 function Character(
@@ -2695,6 +2696,13 @@ function raid3() {
     comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[2]}`;
 }
 
+function optionFunc() {
+    clearAll();
+    currentLevel.innerHTML = `Options`;
+    assign1.innerHTML = `<a href="../index.html">Return to Home Screen</a>`;
+    assign2.innerHTML = ` <a href="https://github.com/justinwilliamsrva/chhsorchestra/issues">Submit an Issue via Github</a>`;
+}
+
 function clearInstructions() {
     instruct.innerHTML = "";
     reward.innerHTML = "";
@@ -2736,6 +2744,7 @@ lvl8.addEventListener("click", leval8);
 lvl9.addEventListener("click", leval9);
 lvl10.addEventListener("click", leval10);
 lvl10.addEventListener("click", leval10);
+options.addEventListener("click", optionFunc);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
 

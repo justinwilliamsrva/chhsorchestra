@@ -272,6 +272,13 @@
         background-position: center;
         font-size: 20px;
     }
+    #options {
+        background-image: url("../assets/Options.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 200%;
+        background-position: center;
+        font-size: 20px;
+    }
 
     /* #signout:hover{
 
