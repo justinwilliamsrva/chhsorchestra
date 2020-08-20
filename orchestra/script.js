@@ -2,11 +2,11 @@ function assignments() {
     switch (person) {
         case "jaden":
             jaden.a1(4, "Wonderufl tone");
-            jaden.a2(2, "Wonderful tone");
+            jaden.a2(3, "Wonderful tone");
             jaden.a3(3, "Wonderful tone");
-            jaden.a4(3, "Wonderful tone");
-            jaden.a5(3, "Great use of bow");
-            jaden.a6(2, "Work on intonation ");
+            jaden.a4(4, "Wonderful tone");
+            jaden.a5(4, "Great use of bow");
+            jaden.a6(4, "Work on intonation ");
             break;
         case "evilhead":
             evilhead.a1(4, "Keep up the great work");
@@ -45,7 +45,7 @@ function assignments() {
 }
 
 var person = "";
-
+let days = 1;
 let studentsString = ["jaden", "evilhead"];
 let personage = "";
 var lvl = document.getElementById("lvl1");
@@ -75,6 +75,7 @@ var instruct = document.getElementById("instruct");
 var reward = document.getElementById("reward");
 var recording = document.getElementById("recording");
 var options = document.getElementById("options");
+var completeStats = document.getElementById("completeStats");
 var raidBtn = document.getElementById("raids");
 
 function Character(
@@ -107,6 +108,7 @@ function Character(
     this.attack = this.facility + this.intonation + this.shifting;
     this.defense = this.bowControl + this.rhythm + this.musicality;
     this.totalScore = this.attack + this.defense + this.coins;
+    // this.grade = coins / 3;
 
     this.level1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.level1COM = [
@@ -2217,6 +2219,39 @@ Character.prototype.r2 = function (score, comments) {
             break;
     }
 };
+Character.prototype.grading = function () {
+    this.grade = this.coins / 3;
+    // alert(this.grade);
+
+    if (this.grade >= 7.2) {
+        assign3.innerHTML = "Current Grade: A+";
+    } else if (this.grade >= 6.4) {
+        assign3.innerHTML = "Current Grade: A";
+    } else if (this.grade >= 5.6) {
+        assign3.innerHTML = "Current Grade: A-";
+    } else if (this.grade >= 4.8) {
+        assign3.innerHTML = "Current Grade: B+";
+    } else if (this.grade >= 4.0) {
+        assign3.innerHTML = "Current Grade: B";
+    } else if (this.grade >= 3.33) {
+        assign3.innerHTML = "Current Grade: B-";
+    } else if (this.grade >= 2.66) {
+        assign3.innerHTML = "Current Grade: C+";
+    } else if (this.grade >= 2.0) {
+        assign3.innerHTML = "Current Grade: C";
+    } else if (this.grade >= 1.66) {
+        assign3.innerHTML = "Current Grade: C-";
+    } else if (this.grade >= 1.33) {
+        assign3.innerHTML = "Current Grade: D+";
+    } else if (this.grade >= 1) {
+        assign3.innerHTML = "Current Grade: D";
+    } else if (this.grade >= 0.5) {
+        assign3.innerHTML = "Current Grade: D-";
+    } else {
+        assign3.innerHTML = "Current Grade: F";
+    }
+};
+
 function initialPrompt() {
     if (typeof localStorage.getItem("person") == "string") {
         var j = parseInt(localStorage.getItem("person"));
@@ -2703,6 +2738,15 @@ function optionFunc() {
     assign2.innerHTML = ` <a href="https://github.com/justinwilliamsrva/chhsorchestra/issues">Submit an Issue via Github</a>`;
 }
 
+function completeStatsFunc() {
+    clearAll();
+    currentLevel.innerHTML = `Complete Stats`;
+    assign1.innerHTML = `Current Grade: ${personage.totalScore}`;
+    assign1.innerHTML = `Current Grade: ${personage.totalScore}`;
+
+    personage.grading();
+}
+
 function clearInstructions() {
     instruct.innerHTML = "";
     reward.innerHTML = "";
@@ -2710,7 +2754,7 @@ function clearInstructions() {
     comment.innerHTML = "";
 }
 function clearQuests() {
-    currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.32";
+    currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.40";
     assign1.innerHTML = "";
     assign2.innerHTML = "";
     assign3.innerHTML = "";
@@ -2745,6 +2789,7 @@ lvl9.addEventListener("click", leval9);
 lvl10.addEventListener("click", leval10);
 lvl10.addEventListener("click", leval10);
 options.addEventListener("click", optionFunc);
+completeStats.addEventListener("click", completeStatsFunc);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
 
