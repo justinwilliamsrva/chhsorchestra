@@ -2354,7 +2354,7 @@ function initialPrompt() {
         assignments();
         personage.evaluate();
         personage.printStats();
-        
+
     } else {
         person = prompt("Please enter your name", "name");
         // var password = prompt("What is your password");
@@ -2833,20 +2833,20 @@ function optionFunc() {
     assign2.innerHTML = ` <a href="https://github.com/justinwilliamsrva/chhsorchestra/issues">Submit an Issue via Github</a>`;
 }
 
-// function completeStatsFunc() {
-//     clearAll();
-//     currentLevel.innerHTML = `Complete Stats`;
-//     assign1.innerHTML = `Total Score: ${personage.totalScore}`;
-//     assign2.innerHTML = `Current Rank: Coming Soon`;
-//     if (person == "jaden") {
-//         personage.freshGrading();
-//     } else if (person == "evilhead") {
-//         personage.grading();
-//     }
+function completeStatsFunc() {
+    clearAll();
+    currentLevel.innerHTML = `Complete Stats`;
+    assign1.innerHTML = `Total Score: ${personage.totalScore}`;
+    assign2.innerHTML = `Current Rank: Coming Soon`;
+    if (person == "jaden") {
+        personage.freshGrading();
+    } else if (person == "evilhead") {
+        personage.grading();
+    }
 
-//     assign5.innerHTML = `Rank on Team: sComing Soon`;
-//     assign6.innerHTML = `Rank on Instrument: Coming Soon`;
-// }
+    assign5.innerHTML = `Rank on Team: sComing Soon`;
+    assign6.innerHTML = `Rank on Instrument: Coming Soon`;
+}
 
 function clearInstructions() {
     instruct.innerHTML = "";
@@ -2897,7 +2897,7 @@ lvl9.addEventListener("click", leval9);
 lvl10.addEventListener("click", leval10);
 lvl10.addEventListener("click", leval10);
 options.addEventListener("click", optionFunc);
-// completeStats.addEventListener("click", completeStatsFunc);
+completeStats.addEventListener("click", completeStatsFunc);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
 // topScore();
