@@ -24,8 +24,8 @@ body {
     width: 95%;
     margin-top: 7px;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 
     /* height: 20vh; */
 }
@@ -34,6 +34,9 @@ body {
     list-style-type: none;
     text-align: center;
     list-style-position: outside;
+}
+a {
+    color: green;
 }
 
 #heading {

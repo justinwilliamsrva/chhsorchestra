@@ -2354,7 +2354,6 @@ function initialPrompt() {
         assignments();
         personage.evaluate();
         personage.printStats();
-
     } else {
         person = prompt("Please enter your name", "name");
         // var password = prompt("What is your password");
@@ -2381,6 +2380,7 @@ signout.addEventListener("click", function () {
 
 // Level click functions
 function leval1() {
+    clearAll();
     currentLevel.innerHTML = `Level 1`;
     assign1.innerHTML = `Positions(a1): ${personage.level1[0]}`;
     assign2.innerHTML = `More Positions(a2): ${personage.level1[1]}`;
