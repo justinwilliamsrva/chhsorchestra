@@ -330,10 +330,10 @@ const admin = new Character(
 );
 
 const jaden = new Character(
-    "Violin Learning",
+    "Cluck Norris",
     "baroque",
     1,
-    "https://media.giphy.com/media/10h3idv6iEAzyo/giphy.gif",
+    "https://media0.giphy.com/media/ghHDuqJ1uh9vP2gKdC/giphy.gif",
     0,
     0,
     0,
