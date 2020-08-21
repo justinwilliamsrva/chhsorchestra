@@ -1,11 +1,12 @@
 @media only screen and (min-width: 769px) {
     body {
         margin: 0;
+        border: 3px solid teal;
     }
 
     section {
         width: 100%;
-        height: 99.9vh;
+        height: 98vh;
         background-color: teal;
         color: white;
         box-sizing: border-box;
@@ -337,7 +338,9 @@
         /* background-attachment: fixed; */
         background-position: center;
     }
-
+    .box3 {
+        overflow: hidden;
+    }
     #grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -409,6 +412,7 @@
         width: 100%;
         height: 100%;
         background-color: black;
+        overflow: hidden;
     }
 
     #statGrid > p {
