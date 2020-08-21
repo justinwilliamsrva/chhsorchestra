@@ -41,39 +41,41 @@ function evilheadScore() {
 }
 function assignments() {
     switch (person) {
-        // case "admin":
-        //     jadenScore();
-        //     evilheadScore();
-        //     break;
+        case "admin":
+            jadenScore();
+            evilheadScore();
+            break;
         case "jaden":
-            jaden.a1(4, "Wonderufl tone");
-            jaden.a2(2, "Wonderful tone");
-            jaden.a3(2, "Wonderful tone");
+            jadenScore();
+            // jaden.a1(4, "Wonderufl tone");
+            // jaden.a2(2, "Wonderful tone");
+            // jaden.a3(2, "Wonderful tone");
             // jaden.a4(2, "Wonderful tone");
             // jaden.a5(2, "Great use of bow");
             // jaden.a6(2, "Work on intonation ");
             break;
         case "evilhead":
-            evilhead.a1(4, "Keep up the great work");
-            evilhead.a2(4, "Keep up the great work");
-            evilhead.a3(4, "More forte");
-            evilhead.a4(4, "Keep up the great work");
-            evilhead.a5(4, "Keep up the great work");
-            evilhead.a6(4, "Keep up the great work");
-            evilhead.a7(4, "Keep up the great work");
-            evilhead.a8(4, "Keep up the great work");
-            evilhead.a9(4, "Keep up the great work");
-            evilhead.a10(4, "Keep up the great work");
-            evilhead.b1(4, "Keep up the great work1");
-            evilhead.b2(4, "Keep up the great work2");
-            evilhead.b3(3, "More forte3");
-            evilhead.b4(2, "Keep up the great work4");
-            evilhead.b5(1, "Keep up the great work5");
-            evilhead.b6(4, "Keep up the great work6");
-            evilhead.b7(3, "Keep up the great work7");
-            evilhead.b8(2, "Keep up the great work8");
-            evilhead.b9(1, "Keep up the great work9");
-            evilhead.b10(4, "Keep up the great work10");
+            evilheadScore();
+            // evilhead.a1(4, "Keep up the great work");
+            // evilhead.a2(4, "Keep up the great work");
+            // evilhead.a3(4, "More forte");
+            // evilhead.a4(4, "Keep up the great work");
+            // evilhead.a5(4, "Keep up the great work");
+            // evilhead.a6(4, "Keep up the great work");
+            // evilhead.a7(4, "Keep up the great work");
+            // evilhead.a8(4, "Keep up the great work");
+            // evilhead.a9(4, "Keep up the great work");
+            // evilhead.a10(4, "Keep up the great work");
+            // evilhead.b1(4, "Keep up the great work1");
+            // evilhead.b2(4, "Keep up the great work2");
+            // evilhead.b3(3, "More forte3");
+            // evilhead.b4(2, "Keep up the great work4");
+            // evilhead.b5(1, "Keep up the great work5");
+            // evilhead.b6(4, "Keep up the great work6");
+            // evilhead.b7(3, "Keep up the great work7");
+            // evilhead.b8(2, "Keep up the great work8");
+            // evilhead.b9(1, "Keep up the great work9");
+            // evilhead.b10(4, "Keep up the great work10");
             // evilhead.c1(4, "Keep up the great work1");
             // evilhead.c2(4, "Keep up the great work2");
             // evilhead.c3(3, "More forte3");
@@ -91,7 +93,7 @@ function assignments() {
 var person = "";
 let days = 6 / 2;
 // let daysfresh = 3 / 2;
-let studentsString = ["jaden", "evilhead"];
+let studentsString = ["jaden", "evilhead", "admin"];
 let personage = "";
 var lvl = document.getElementById("lvl1");
 var lvl2 = document.getElementById("lvl2");
@@ -135,7 +137,8 @@ function Character(
     bowControl,
     rhythm,
     musicality,
-    instrument
+    instrument,
+    realname
 ) {
     this.name = name;
     this.team = team;
@@ -149,6 +152,7 @@ function Character(
     this.rhythm = rhythm;
     this.musicality = musicality;
     this.instrument = instrument;
+    this.realname = realname;
 
     this.attack = this.facility + this.intonation + this.shifting;
     this.defense = this.bowControl + this.rhythm + this.musicality;
@@ -314,7 +318,7 @@ function Character(
 }
 
 const admin = new Character(
-    "Admin",
+    "admin",
     "classical",
     1,
     "https://media.giphy.com/media/10h3idv6iEAzyo/giphy.gif",
@@ -326,7 +330,8 @@ const admin = new Character(
     0,
     0,
     0,
-    "violin"
+    "violin",
+    "admin"
 );
 
 const jaden = new Character(
@@ -341,8 +346,8 @@ const jaden = new Character(
     0,
     0,
     0,
-    0,
-    "violin"
+    "violin",
+    "jaden"
 );
 const evilhead = new Character(
     "Smash",
@@ -356,10 +361,10 @@ const evilhead = new Character(
     0,
     0,
     0,
-    0,
-    "bass"
+    "bass",
+    "evilhead"
 );
-let students = [jaden, evilhead];
+let students = [jaden, evilhead, admin];
 
 Character.prototype.printStats = function () {
     let nick = document.getElementById("nickName");
@@ -2371,6 +2376,7 @@ function initialPrompt() {
         }
     }
 }
+
 var signout = document.getElementById("signout");
 signout.addEventListener("click", function () {
     localStorage.removeItem("person");
@@ -2811,21 +2817,6 @@ function raidFunc() {
     }
 }
 
-function raid2() {
-    instruct.innerHTML = "<p>Quest: Record Numbers 117 and 123 with a partner</p>";
-    reward.innerHTML =
-        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
-    recording.innerHTML = " Recording: Coming Soon";
-    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[1]}`;
-}
-function raid3() {
-    instruct.innerHTML = "<p>Quest: Record Numbers 129 and 135 with a partner</p>";
-    reward.innerHTML =
-        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
-    recording.innerHTML = " Recording: Coming Soon";
-    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[2]}`;
-}
-
 function optionFunc() {
     clearAll();
     currentLevel.innerHTML = `Options`;
@@ -2878,12 +2869,21 @@ function clearAll() {
     clearQuests();
 }
 
-function topScore() {
-    let topScore = [];
-    topScore.push({ jaden: jaden.totalScore }, { evilhead: evilhead.totalScore });
-    // console.log(jaden.coins);
-    console.log(topScore);
+function raid2() {
+    instruct.innerHTML = "<p>Quest: Record Numbers 117 and 123 with a partner</p>";
+    reward.innerHTML =
+        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+    recording.innerHTML = " Recording: Coming Soon";
+    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[1]}`;
 }
+function raid3() {
+    instruct.innerHTML = "<p>Quest: Record Numbers 129 and 135 with a partner</p>";
+    reward.innerHTML =
+        "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+    recording.innerHTML = " Recording: Coming Soon";
+    comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[2]}`;
+}
+
 // Level Click Event Listeners
 lvl.addEventListener("click", leval1);
 lvl2.addEventListener("click", leval2);
@@ -2900,7 +2900,23 @@ options.addEventListener("click", optionFunc);
 completeStats.addEventListener("click", completeStatsFunc);
 raidBtn.addEventListener("click", raidFunc);
 initialPrompt();
-// topScore();
+
+let topScore = [];
+function topScoreFunc(item) {
+    topScore.push({
+        name: item.name,
+        team: item.team,
+        instrument: item.instrument,
+        total_score: item.totalScore,
+    });
+    // topScore.push(
+    //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
+    //     { evilhead: evilhead.totalScore, instrument: jaden.instrument, team: evilhead.team }
+    // );
+    // console.log(jaden.coins);
+}
+students.forEach(topScoreFunc);
+console.log(topScore);
 // console.log(evilhead.coins);
 
 // module.exports = Character;
