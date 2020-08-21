@@ -2360,18 +2360,23 @@ function initialPrompt() {
         personage.evaluate();
         personage.printStats();
     } else {
-        person = prompt("Please enter your name", "name");
-        // var password = prompt("What is your password");
-        for (i = 0; i < studentsString.length; i++) {
-            if (person == studentsString[i]) {
-                personage = students[i];
-                personage;
-                localStorage.setItem("person", i);
-                clearAll();
-                assignments();
-                personage.evaluate();
-                personage.printStats();
-                location.reload();
+        if (confirm("Do you need to create a new character?")) {
+            window.location.href =
+                "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
+        } else {
+            person = prompt("Please enter your name", "name");
+            // var password = prompt("What is your password");
+            for (i = 0; i < studentsString.length; i++) {
+                if (person == studentsString[i]) {
+                    personage = students[i];
+                    personage;
+                    localStorage.setItem("person", i);
+                    clearAll();
+                    assignments();
+                    personage.evaluate();
+                    personage.printStats();
+                    location.reload();
+                }
             }
         }
     }
@@ -2882,6 +2887,9 @@ function raid3() {
         "Reward: Intonation(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
     recording.innerHTML = " Recording: Coming Soon";
     comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[2]}`;
+}
+function createCharacater() {
+    alert("You created a character!");
 }
 
 // Level Click Event Listeners
