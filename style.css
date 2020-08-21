@@ -58,3 +58,9 @@ h2 {
 .content :nth-of-type(even) {
     background-color: grey;
 }
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
