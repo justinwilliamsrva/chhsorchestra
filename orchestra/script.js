@@ -2844,7 +2844,7 @@ function completeStatsFunc() {
         personage.grading();
     }
 
-    assign5.innerHTML = `Rank on Team: sComing Soon`;
+    assign5.innerHTML = `Rank on Team: Coming Soon`;
     assign6.innerHTML = `Rank on Instrument: Coming Soon`;
 }
 
