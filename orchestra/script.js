@@ -124,6 +124,7 @@ var recording = document.getElementById("recording");
 var options = document.getElementById("options");
 var completeStats = document.getElementById("completeStats");
 var raidBtn = document.getElementById("raids");
+var side = document.getElementById("sideQuests")
 
 function Character(
     name,
@@ -2357,6 +2358,7 @@ function initialPrompt() {
         person = studentsString[j];
         clearAll();
         assignments();
+        side.classList.remove("side");
         personage.evaluate();
         personage.printStats();
     } else {
@@ -2373,6 +2375,7 @@ function initialPrompt() {
                     localStorage.setItem("person", i);
                     clearAll();
                     assignments();
+                    side.classList.remove("side");
                     personage.evaluate();
                     personage.printStats();
                     location.reload();
