@@ -124,7 +124,7 @@ var recording = document.getElementById("recording");
 var options = document.getElementById("options");
 var completeStats = document.getElementById("completeStats");
 var raidBtn = document.getElementById("raids");
-var side = document.getElementById("sideQuests")
+var side = document.getElementById("sideQuests");
 
 function Character(
     name,
@@ -2928,6 +2928,12 @@ function topScoreFunc(item) {
 }
 students.forEach(topScoreFunc);
 console.log(topScore);
+var highScore = _.sortBy(topScore, function (people) {
+    return people.total_score * -1;
+});
+
+console.log(highScore[0].name);
+
 // console.log(miami.coins);
 
 // module.exports = Character;
