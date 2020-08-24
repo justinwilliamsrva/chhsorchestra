@@ -2934,6 +2934,7 @@ function topScoreFunc(item) {
 }
 students.forEach(topScoreFunc);
 console.log(topScore);
+
 var highScore = _.sortBy(topScore, function (people) {
     return people.total_score * -1;
 });
