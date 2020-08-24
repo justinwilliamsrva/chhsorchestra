@@ -32,8 +32,39 @@
         flex: 0 0 50%;
         padding: 0;
         margin: 0;
-        height: 85%;
+        height: 90%;
         /* border: 2px solid aqua */
+    }
+
+    #topTenChild {
+        margin-bottom: 5px;
+    }
+
+    #topscore1 {
+        color: gold;
+        font-size: 30px;
+    }
+
+    #topscore2 {
+        color: silver;
+        font-size: 25px;
+    }
+    #topscore3 {
+        color: orangered;
+        font-size: 20px;
+    }
+    #topscore4 {
+        color: green;
+        font-size: 15px;
+    }
+    #topscore5 {
+        color: blue;
+        font-size: 10px;
+    }
+
+    .topscores {
+        margin: 5px 0px;
+        height: 15%;
     }
 
     #taskList {
@@ -56,6 +87,7 @@
 
     #instructions {
         overflow: auto;
+        font-size: 14px;
     }
 
     .assignments {
@@ -457,7 +489,7 @@
     p#attack,
     p#defense {
         font-size: 30px;
-        padding: 5px 0px
+        padding: 5px 0px;
     }
 
     #nickName {
@@ -587,7 +619,7 @@
         font-size: 50px;
         margin-top: 10px;
         margin-bottom: 0px;
-        padding: 5px 0px
+        padding: 5px 0px;
     }
 
     #attackPng,

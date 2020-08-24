@@ -125,7 +125,11 @@ var options = document.getElementById("options");
 var completeStats = document.getElementById("completeStats");
 var raidBtn = document.getElementById("raids");
 var side = document.getElementById("sideQuests");
-
+var top1 = document.getElementById("topscore1");
+var top2 = document.getElementById("topscore2");
+var top3 = document.getElementById("topscore3");
+var top4 = document.getElementById("topscore4");
+var top5 = document.getElementById("topscore5");
 function Character(
     name,
     team,
@@ -2932,7 +2936,13 @@ var highScore = _.sortBy(topScore, function (people) {
     return people.total_score * -1;
 });
 
-console.log(highScore[0].name);
+top1.innerHTML = `${highScore[0].name} - ${highScore[0].total_score}`;
+top2.innerHTML = `${highScore[1].name} - ${highScore[1].total_score}`;
+top3.innerHTML = `${highScore[2].name} - ${highScore[2].total_score}`;
+top4.innerHTML = `${highScore[3].name} - ${highScore[3].total_score}`;
+top5.innerHTML = `${highScore[4].name} - ${highScore[4].total_score}`;
+
+console.log(highScore[0].name, highScore[1].name);
 
 // console.log(miami.coins);
 
