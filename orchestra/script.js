@@ -1,3 +1,8 @@
+
+
+
+
+
 function jadenScore() {
     jaden.a1(4, "Wonderufl tone");
     jaden.a2(2, "Wonderful tone");
@@ -42,8 +47,8 @@ function miamiScore() {
 function assignments() {
     // switch (person) {
     //     case "admin":
-            jadenScore();
-            miamiScore();
+    jadenScore();
+    miamiScore();
     //         break;
     //     case "jaden":
     //         jadenScore();
