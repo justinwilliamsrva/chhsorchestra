@@ -40,54 +40,56 @@ function miamiScore() {
     //
 }
 function assignments() {
-    switch (person) {
-        case "admin":
+    // switch (person) {
+    //     case "admin":
             jadenScore();
             miamiScore();
-            break;
-        case "jaden":
-            jadenScore();
-            // jaden.a1(4, "Wonderufl tone");
-            // jaden.a2(2, "Wonderful tone");
-            // jaden.a3(2, "Wonderful tone");
-            // jaden.a4(2, "Wonderful tone");
-            // jaden.a5(2, "Great use of bow");
-            // jaden.a6(2, "Work on intonation ");
-            break;
-        case "miami":
-            miamiScore();
-            // miami.a1(4, "Keep up the great work");
-            // miami.a2(4, "Keep up the great work");
-            // miami.a3(4, "More forte");
-            // miami.a4(4, "Keep up the great work");
-            // miami.a5(4, "Keep up the great work");
-            // miami.a6(4, "Keep up the great work");
-            // miami.a7(4, "Keep up the great work");
-            // miami.a8(4, "Keep up the great work");
-            // miami.a9(4, "Keep up the great work");
-            // miami.a10(4, "Keep up the great work");
-            // miami.b1(4, "Keep up the great work1");
-            // miami.b2(4, "Keep up the great work2");
-            // miami.b3(3, "More forte3");
-            // miami.b4(2, "Keep up the great work4");
-            // miami.b5(1, "Keep up the great work5");
-            // miami.b6(4, "Keep up the great work6");
-            // miami.b7(3, "Keep up the great work7");
-            // miami.b8(2, "Keep up the great work8");
-            // miami.b9(1, "Keep up the great work9");
-            // miami.b10(4, "Keep up the great work10");
-            // miami.c1(4, "Keep up the great work1");
-            // miami.c2(4, "Keep up the great work2");
-            // miami.c3(3, "More forte3");
-            // miami.c4(2, "Keep up the great work4");
-            // miami.c5(1, "Keep up the great work5");
-            // miami.c6(4, "Keep up the great work6");
-            // miami.c7(3, "Keep up the great work7");
-            // miami.c8(2, "Keep up the great work8");
-            // miami.c9(1, "Keep up the great work9");
-            // miami.c10(4, "Keep up the great work10");
-            break;
-    }
+    //         break;
+    //     case "jaden":
+    //         jadenScore();
+
+    //         // jaden.a1(4, "Wonderufl tone");
+    //         // jaden.a2(2, "Wonderful tone");
+    //         // jaden.a3(2, "Wonderful tone");
+    //         // jaden.a4(2, "Wonderful tone");
+    //         // jaden.a5(2, "Great use of bow");
+    //         // jaden.a6(2, "Work on intonation ");
+    //         break;
+    //     case "miami":
+    //         jadenScore();
+    //         miamiScore();
+    //         // miami.a1(4, "Keep up the great work");
+    //         // miami.a2(4, "Keep up the great work");
+    //         // miami.a3(4, "More forte");
+    //         // miami.a4(4, "Keep up the great work");
+    //         // miami.a5(4, "Keep up the great work");
+    //         // miami.a6(4, "Keep up the great work");
+    //         // miami.a7(4, "Keep up the great work");
+    //         // miami.a8(4, "Keep up the great work");
+    //         // miami.a9(4, "Keep up the great work");
+    //         // miami.a10(4, "Keep up the great work");
+    //         // miami.b1(4, "Keep up the great work1");
+    //         // miami.b2(4, "Keep up the great work2");
+    //         // miami.b3(3, "More forte3");
+    //         // miami.b4(2, "Keep up the great work4");
+    //         // miami.b5(1, "Keep up the great work5");
+    //         // miami.b6(4, "Keep up the great work6");
+    //         // miami.b7(3, "Keep up the great work7");
+    //         // miami.b8(2, "Keep up the great work8");
+    //         // miami.b9(1, "Keep up the great work9");
+    //         // miami.b10(4, "Keep up the great work10");
+    //         // miami.c1(4, "Keep up the great work1");
+    //         // miami.c2(4, "Keep up the great work2");
+    //         // miami.c3(3, "More forte3");
+    //         // miami.c4(2, "Keep up the great work4");
+    //         // miami.c5(1, "Keep up the great work5");
+    //         // miami.c6(4, "Keep up the great work6");
+    //         // miami.c7(3, "Keep up the great work7");
+    //         // miami.c8(2, "Keep up the great work8");
+    //         // miami.c9(1, "Keep up the great work9");
+    //         // miami.c10(4, "Keep up the great work10");
+    //         break;
+    // }
 }
 
 var person = "";
