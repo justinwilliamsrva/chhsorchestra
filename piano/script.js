@@ -7,11 +7,14 @@ window.onload = function() {
         jaden.a1(4, "Wonderufl tone");
         jaden.a2(2, "Wonderful tone");
         jaden.a3(2, "Wonderful tone");
-        // jaden.a4(2, "Wonderful tone");
-        // jaden.a5(2, "Great use of bow");
-        // jaden.a6(2, "Work on intonation ");
+
     }
     function miamiScore() {
+
+
+    }
+    function assignments() {
+
         miami.a1(4, "Keep up the great work");
         miami.a2(4, "Keep up the great work");
         miami.a3(4, "More forte");
@@ -22,6 +25,9 @@ window.onload = function() {
         miami.a8(4, "Keep up the great work");
         miami.a9(4, "Keep up the great work");
         miami.a10(4, "Keep up the great work");
+        jaden.a1(4, "Wonderufl tone");
+        jaden.a2(2, "Wonderful tone");
+        jaden.a3(2, "Wonderful tone");
         miami.b1(4, "Keep up the great work1");
         miami.b2(4, "Keep up the great work2");
         miami.b3(3, "More forte3");
@@ -43,12 +49,9 @@ window.onload = function() {
         miami.c9(1, "Keep up the great work9");
         miami.c10(4, "Keep up the great work10");
         //
-    }
-    function assignments() {
         // switch (person) {
         //     case "admin":
-        jadenScore();
-        miamiScore();
+
         //         break;
         //     case "jaden":
         //         jadenScore();
@@ -2865,7 +2868,7 @@ window.onload = function() {
         comment.innerHTML = "";
     }
     function clearQuests() {
-        currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.40";
+        currentLevel.innerHTML = "CHHS Piano RPG<br>BETA VERSION 1.40";
         assign1.innerHTML = "";
         assign2.innerHTML = "";
         assign3.innerHTML = "";
