@@ -89,7 +89,8 @@ window.onload = function () {
         musicality,
         instrument,
         realname,
-        currentClass
+        currentClass,
+        orchestra
     ) {
         this.name = name;
         this.team = team;
@@ -105,6 +106,8 @@ window.onload = function () {
         this.instrument = instrument;
         this.realname = realname;
         this.currentClass = currentClass;
+        this.orchestra = orchestra;
+
 
         this.attack = this.facility + this.intonation + this.shifting;
         this.defense = this.bowControl + this.rhythm + this.musicality;
