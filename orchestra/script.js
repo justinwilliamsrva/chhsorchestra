@@ -1,17 +1,5 @@
-
-
-
-window.onload = function() {
-
-    function jadenScore() {
-        jaden.a1(4, "Wonderufl tone");
-        jaden.a2(2, "Wonderful tone");
-        jaden.a3(2, "Wonderful tone");
-        // jaden.a4(2, "Wonderful tone");
-        // jaden.a5(2, "Great use of bow");
-        // jaden.a6(2, "Work on intonation ");
-    }
-    function miamiScore() {
+window.onload = function () {
+    function assignments() {
         miami.a1(4, "Keep up the great work");
         miami.a2(4, "Keep up the great work");
         miami.a3(4, "More forte");
@@ -42,65 +30,15 @@ window.onload = function() {
         miami.c8(2, "Keep up the great work8");
         miami.c9(1, "Keep up the great work9");
         miami.c10(4, "Keep up the great work10");
-        //
-    }
-    function assignments() {
-        // switch (person) {
-        //     case "admin":
-        jadenScore();
-        miamiScore();
-        //         break;
-        //     case "jaden":
-        //         jadenScore();
-
-        //         // jaden.a1(4, "Wonderufl tone");
-        //         // jaden.a2(2, "Wonderful tone");
-        //         // jaden.a3(2, "Wonderful tone");
-        //         // jaden.a4(2, "Wonderful tone");
-        //         // jaden.a5(2, "Great use of bow");
-        //         // jaden.a6(2, "Work on intonation ");
-        //         break;
-        //     case "miami":
-        //         jadenScore();
-        //         miamiScore();
-        //         // miami.a1(4, "Keep up the great work");
-        //         // miami.a2(4, "Keep up the great work");
-        //         // miami.a3(4, "More forte");
-        //         // miami.a4(4, "Keep up the great work");
-        //         // miami.a5(4, "Keep up the great work");
-        //         // miami.a6(4, "Keep up the great work");
-        //         // miami.a7(4, "Keep up the great work");
-        //         // miami.a8(4, "Keep up the great work");
-        //         // miami.a9(4, "Keep up the great work");
-        //         // miami.a10(4, "Keep up the great work");
-        //         // miami.b1(4, "Keep up the great work1");
-        //         // miami.b2(4, "Keep up the great work2");
-        //         // miami.b3(3, "More forte3");
-        //         // miami.b4(2, "Keep up the great work4");
-        //         // miami.b5(1, "Keep up the great work5");
-        //         // miami.b6(4, "Keep up the great work6");
-        //         // miami.b7(3, "Keep up the great work7");
-        //         // miami.b8(2, "Keep up the great work8");
-        //         // miami.b9(1, "Keep up the great work9");
-        //         // miami.b10(4, "Keep up the great work10");
-        //         // miami.c1(4, "Keep up the great work1");
-        //         // miami.c2(4, "Keep up the great work2");
-        //         // miami.c3(3, "More forte3");
-        //         // miami.c4(2, "Keep up the great work4");
-        //         // miami.c5(1, "Keep up the great work5");
-        //         // miami.c6(4, "Keep up the great work6");
-        //         // miami.c7(3, "Keep up the great work7");
-        //         // miami.c8(2, "Keep up the great work8");
-        //         // miami.c9(1, "Keep up the great work9");
-        //         // miami.c10(4, "Keep up the great work10");
-        //         break;
-        // }
+        jaden.a1(4, "Wonderufl tone");
+        jaden.a2(2, "Wonderful tone");
+        jaden.a3(2, "Wonderful tone");
     }
 
     var person = "";
     let days = 6 / 2;
     // let daysfresh = 3 / 2;
-    let studentsString = ["jaden", "miami", "admin"];
+    let studentsString = ["jaden", "miami", "admin", "justin", "max"];
     let personage = "";
     var lvl = document.getElementById("lvl1");
     var lvl2 = document.getElementById("lvl2");
@@ -151,7 +89,7 @@ window.onload = function() {
         musicality,
         instrument,
         realname,
-        currentClass,
+        currentClass
     ) {
         this.name = name;
         this.team = team;
@@ -347,7 +285,6 @@ window.onload = function() {
         "violin",
         "admin",
         "junior"
-
     );
 
     const jaden = new Character(
@@ -382,7 +319,39 @@ window.onload = function() {
         "miami",
         "junior"
     );
-    let students = [jaden, miami, admin];
+    const justin = new Character(
+        "2nd place",
+        "classical",
+        0,
+        "https://media.giphy.com/media/eMstc0q4Jh9tavfvKs/giphy.gif",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Violin",
+        "justin",
+        "Junior"
+    );
+    const max = new Character(
+        "Meseek",
+        "baroque",
+        0,
+        "https://media.giphy.com/media/DgLsbUL7SG3kI/giphy.gif",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Viola",
+        "max",
+        "Freshman"
+    );
+    let students = [jaden, miami, admin, justin, max];
 
     Character.prototype.printStats = function () {
         let nick = document.getElementById("nickName");
@@ -2427,7 +2396,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
         // A1
         assign1.addEventListener("click", function () {
@@ -2537,7 +2508,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
         // A1
         assign1.addEventListener("click", function () {
@@ -2646,7 +2619,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
         // A1
         assign1.addEventListener("click", function () {
@@ -2747,7 +2722,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval5() {
@@ -2757,7 +2734,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval6() {
@@ -2767,7 +2746,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval7() {
@@ -2777,7 +2758,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval8() {
@@ -2787,7 +2770,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval9() {
@@ -2797,7 +2782,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval10() {
@@ -2807,7 +2794,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function raidFunc() {
@@ -2885,7 +2874,9 @@ window.onload = function() {
         upload.href = "";
         upload.style.cursor = "default";
         upload.removeEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
     }
     function clearAll() {
