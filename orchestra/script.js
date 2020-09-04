@@ -150,7 +150,8 @@ window.onload = function() {
         rhythm,
         musicality,
         instrument,
-        realname
+        realname,
+        currentClass,
     ) {
         this.name = name;
         this.team = team;
@@ -165,6 +166,7 @@ window.onload = function() {
         this.musicality = musicality;
         this.instrument = instrument;
         this.realname = realname;
+        this.currentClass = currentClass;
 
         this.attack = this.facility + this.intonation + this.shifting;
         this.defense = this.bowControl + this.rhythm + this.musicality;
@@ -343,7 +345,9 @@ window.onload = function() {
         0,
         0,
         "violin",
-        "admin"
+        "admin",
+        "junior"
+
     );
 
     const jaden = new Character(
@@ -359,7 +363,8 @@ window.onload = function() {
         0,
         0,
         "violin",
-        "jaden"
+        "jaden",
+        "junior"
     );
     const miami = new Character(
         "Smash",
@@ -374,7 +379,8 @@ window.onload = function() {
         0,
         0,
         "bass",
-        "miami"
+        "miami",
+        "junior"
     );
     let students = [jaden, miami, admin];
 
@@ -792,7 +798,6 @@ window.onload = function() {
     Character.prototype.a3 = function (score, comments) {
         switch (score) {
             case 4:
-                console.log("4");
                 this.intonation = this.intonation + 4;
                 this.shifting = this.shifting + 2;
                 this.bowControl = this.bowControl + 2;
