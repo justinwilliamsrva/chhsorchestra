@@ -15,7 +15,7 @@ color: yellow
         color: white;
         box-sizing: border-box;
     }
-   
+
     #header {
         box-sizing: border-box;
         text-align: center;
@@ -496,7 +496,7 @@ color: yellow
     }
 
     #nickName {
-        font-size: x-large;
+        /* font-size: x-large; */
         color: yellow;
     }
 
