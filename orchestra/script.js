@@ -108,7 +108,6 @@ window.onload = function () {
         this.currentClass = currentClass;
         this.orchestra = orchestra;
 
-
         this.attack = this.facility + this.intonation + this.shifting;
         this.defense = this.bowControl + this.rhythm + this.musicality;
         this.totalScore = this.attack + this.defense + this.coins;
@@ -2838,6 +2837,13 @@ window.onload = function () {
         currentLevel.innerHTML = `Options`;
         assign1.innerHTML = `<a href="../index.html">Return to Home Screen</a>`;
         assign2.innerHTML = ` <a href="https://github.com/justinwilliamsrva/chhsorchestra/issues">Submit an Issue via Github</a>`;
+        assign3.innerHTML = `Origins to Ensemble Empires`;
+        assign4.innerHTML = "Contributors";
+        assign3.addEventListener("click", function () {
+            clearInstructions();
+            instruct.innerHTML =
+                "<div style='20px';><p>Long forgotten until the Second Symphonic Age laid the Golden Era of Harmony, a time when musician in every nation dwelt in peace. In each nation was a different people and reign of power: the Baroque Kingdom, the Classical Reign, the Romantic Dynasty, and the 21st Centurions; each separate in culture, beliefs , and practices. Any non-musician might say they were destined to fall to war but in the early days, the alliance of the four empires reigned supreme. Dissonance among people was rare, and many delighted in the changes of knowledge and customs.</p> <br> <p>There were those , however, who found chaos in the commingling, and dissenters form each nation orchestra a plan to destroy the foundation of trust and understanding. In a single night, before the break of dawn, the dissenters that came to be known as the Heretic of Hive had eliminated each nation principal and the people clashed against each other, drawing bow and sounds horns, calling he sounds of war </p><br><p>Peace must be restored among this world, for because of the blind assault, music cannot fow as freely as it once did. As a musician of much knowledge and incredible passion, you must help bring an end to this war whether for your nation, or the good of all nation. The flight for coalesces will be grating, tiresome and may even seem impossible at time but only hearts like yours can bring rest to the pain and resolve the unrest.</p></div>";
+        });
     }
 
     function completeStatsFunc() {
