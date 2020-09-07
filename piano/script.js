@@ -1,13 +1,5 @@
-
-
-
-window.onload = function() {
-
-
-
-
+window.onload = function () {
     function assignments() {
-
         miami.a1(4, "Keep up the great work");
         miami.a2(4, "Keep up the great work");
         miami.a3(4, "More forte");
@@ -18,7 +10,7 @@ window.onload = function() {
         miami.a8(4, "Keep up the great work");
         miami.a9(4, "Keep up the great work");
         miami.a10(4, "Keep up the great work");
-        jaden.a1(4, "Wonderufl tone");
+        jaden.a1(4, "Wonderful tone");
         jaden.a2(2, "Wonderful tone");
         jaden.a3(2, "Wonderful tone");
         miami.b1(4, "Keep up the great work1");
@@ -41,7 +33,7 @@ window.onload = function() {
         miami.c8(2, "Keep up the great work8");
         miami.c9(1, "Keep up the great work9");
         miami.c10(4, "Keep up the great work10");
-
+        jaden.a1("f");
     }
 
     var person = "";
@@ -98,7 +90,7 @@ window.onload = function() {
         musicality,
         instrument,
         realname,
-        currentClass,
+        currentClass
     ) {
         this.name = name;
         this.team = team;
@@ -360,7 +352,7 @@ window.onload = function() {
         fac.innerHTML = `Facility: ${this.facility}`;
         inton.innerHTML = `Accuracy: ${this.accuracy}`;
         shift.innerHTML = `Coordination: ${this.coordination}`;
-        bow.innerHTML = `Bow Control: ${this.theory}`;
+        bow.innerHTML = `Theory: ${this.theory}`;
         rhythm.innerHTML = `Rhythm: ${this.rhythm}`;
         music.innerHTML = `Musicality: ${this.musicality}`;
     };
@@ -663,8 +655,12 @@ window.onload = function() {
     Character.prototype.a1 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 2;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination;
+                this.theory = this.theory + 2;
+                this.rhythm = this.rhythm + 4;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 4;
                 this.level1[0] = "A+";
                 this.level1COM[0] = comments;
@@ -673,8 +669,12 @@ window.onload = function() {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 1;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination;
+                this.theory = this.theory + 1;
+                this.rhythm = this.rhythm + 3;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 3;
                 this.level1[0] = "A-";
                 this.level1COM[0] = comments;
@@ -682,7 +682,12 @@ window.onload = function() {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy;
+                this.coordination = this.coordination;
+                this.theory = this.theory;
+                this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 2;
                 this.level1[0] = "B";
                 this.level1COM[0] = comments;
@@ -690,10 +695,30 @@ window.onload = function() {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy;
+                this.coordination = this.coordination;
+                this.theory = this.theory;
+                this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 1;
                 this.level1[0] = "C";
                 this.level1COM[0] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "s":
+                this.coordination = this.coordination = 4;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -2324,7 +2349,7 @@ window.onload = function() {
         } else {
             if (confirm("Do you need to create a new character?")) {
                 window.location.href =
-                    "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
+                    "https://docs.google.com/forms/d/e/1FAIpQLSeOSPjV-B9o5q1JdDIJGET1XrIEUFZeZCYxjJ5a9aN8xog9fg/viewform?usp=sf_link";
             } else {
                 person = prompt("Please enter your name", "name");
                 // var password = prompt("What is your password");
@@ -2356,28 +2381,28 @@ window.onload = function() {
     function leval1() {
         clearAll();
         currentLevel.innerHTML = `Level 1`;
-        assign1.innerHTML = `Positions(a1): ${personage.level1[0]}`;
-        assign2.innerHTML = `More Positions(a2): ${personage.level1[1]}`;
-        assign3.innerHTML = `SOLO-Brahms(a3): ${personage.level1[2]}`;
-        assign4.innerHTML = `CM scale and Arrpegio(a4): ${personage.level1[3]}`;
-        assign5.innerHTML = `CM in thirds(a5): ${personage.level1[4]}`;
-        assign6.innerHTML = `GM scale and Arrpegio(a6): ${personage.level1[5]}`;
-        assign7.innerHTML = `GM in thirds(a7): ${personage.level1[6]}`;
-        assign8.innerHTML = `SOLO-Dona Nobis(a8): ${personage.level1[7]}`;
-        assign9.innerHTML = `SOLO-British Grenadiers(a9): ${personage.level1[8]}`;
-        assign10.innerHTML = `Rhythm+Scales(a10): ${personage.level1[9]}`;
+        assign1.innerHTML = `Merrily We Roll Along(a1) ${personage.level1[0]}`;
+        assign2.innerHTML = `Two Warm-ups(a2): ${personage.level1[1]}`;
+        assign3.innerHTML = `Ode to Joy(a3): ${personage.level1[2]}`;
+        assign4.innerHTML = `Yankee Doodle(a4): ${personage.level1[3]}`;
+        assign5.innerHTML = `Russian Folk Song(a5): ${personage.level1[4]}`;
+        assign6.innerHTML = `Midnight Ride(a6): ${personage.level1[5]}`;
+        assign7.innerHTML = `Chant for Monks(a7): ${personage.level1[6]}`;
+        assign8.innerHTML = `Shining Stars(a8): ${personage.level1[7]}`;
+        assign9.innerHTML = `Roman Trumpets(a9): ${personage.level1[8]}`;
+        assign10.innerHTML = `Scales C-G-D(a10): ${personage.level1[9]}`;
 
-        upload.innerHTML = "Upload a Recording";
-        upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
-        upload.style.cursor = "pointer";
-        upload.addEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
-        });
+        // upload.innerHTML = "Upload a Recording";
+        // upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
+        // upload.style.cursor = "pointer";
+        // upload.addEventListener("click", function () {
+        //     alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+        // });
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Complete Numbers 5,6,11 and 12</a>";
-            reward.innerHTML = "Reward: accuracy(4) + coordination(2) + Coins(4)";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'><p>Quest:Merrily We Roll Along<br>(DM,120)</p></a>";
+            reward.innerHTML = "Reward: Accuracy(2) + Theory(2) + Rhythm(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[0]}`;
         });
@@ -2394,7 +2419,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Complete Number18</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(2) + Bow Control(2) + Rhythm(2) + Coins(4) ";
+                "Reward: accuracy(4) + coordination(2) + Theory(2) + Rhythm(2) + Coins(4) ";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[2]}`;
         });
@@ -2412,7 +2437,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Complete Number 103 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(4) + Facility(8) + Bow Control(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[4]}`;
         });
@@ -2431,7 +2456,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Complete Numbers 110 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(4) + Facility(8) + Bow Control(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[6]}`;
         });
@@ -2440,7 +2465,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Complete Number 109 at 60BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(2) + Bow Control(4) + Rhythm(2) + Musicality(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(2) + Theory(4) + Rhythm(2) + Musicality(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[7]}`;
         });
@@ -2449,7 +2474,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Complete Number 104 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + Bow Control(4) + Rhythm(4) + Musicality(4 ) + Coins(4)";
+                "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4 ) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[8]}`;
         });
@@ -2458,7 +2483,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
             reward.innerHTML =
-                "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Bow Control(2) + Coins(4)";
+                "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Theory(2) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level1COM[9]}`;
         });
@@ -2481,7 +2506,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
         // A1
         assign1.addEventListener("click", function () {
@@ -2521,7 +2548,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 115 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(4) + Facility(8) + Bow Control(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[4]}`;
         });
@@ -2540,7 +2567,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Numbers 121 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(4) + Facility(8) + Bow Control(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[6]}`;
         });
@@ -2549,7 +2576,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 116 at 70BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+                "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[7]}`;
         });
@@ -2558,7 +2585,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 122 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+                "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[8]}`;
         });
@@ -2567,7 +2594,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/file/d/16hYXmV00RlTojF55RbwXdnmkf3ZThngU/view?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
             reward.innerHTML =
-                "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Bow Control(2) + Coins(4)";
+                "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Theory(2) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[9]}`;
         });
@@ -2590,13 +2617,15 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Numbers 56,57 and 58</a>";
-            reward.innerHTML = "Reward: accuracy(4) + coordination(2) + Coins(4)";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest:Merrily We Roll Along(DM,120)</a>";
+            reward.innerHTML = "Reward: Accuracy(2) + Theory(2) + Rhythm(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[0]}`;
         });
@@ -2605,7 +2634,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 41</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(2) + Bow Control(4) + Rhythm(2) + Musicality(2) + Coins(4)";
+                "Reward: accuracy(4) + coordination(2) + Theory(4) + Rhythm(2) + Musicality(2) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[1]}`;
         });
@@ -2614,7 +2643,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 42 at BPM 160</a>";
             reward.innerHTML =
-                "Reward: accuracy(2) + coordination(2) +  Facility(4) + Bow Control(4) + Musicality(2) + Coins(4) ";
+                "Reward: accuracy(2) + coordination(2) +  Facility(4) + Theory(4) + Musicality(2) + Coins(4) ";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[2]}`;
         });
@@ -2632,7 +2661,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 127 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(4) + Facility(8) + Bow Control(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[4]}`;
         });
@@ -2651,7 +2680,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 133 at 120BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + coordination(4) + Facility(8) + Bow Control(4) + Coins(4)";
+                "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[6]}`;
         });
@@ -2660,7 +2689,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 128 at 100BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+                "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[7]}`;
         });
@@ -2669,7 +2698,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 134 at 90BPM</a>";
             reward.innerHTML =
-                "Reward: accuracy(4) + Bow Control(4) + Rhythm(4) + Musicality(4) + Coins(4)";
+                "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[8]}`;
         });
@@ -2678,7 +2707,7 @@ window.onload = function() {
             instruct.innerHTML =
                 "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
             reward.innerHTML =
-                "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Bow Control(2) + Coins(4)";
+                "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Theory(2) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[9]}`;
         });
@@ -2691,7 +2720,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval5() {
@@ -2701,7 +2732,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval6() {
@@ -2711,7 +2744,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval7() {
@@ -2721,7 +2756,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval8() {
@@ -2731,7 +2768,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval9() {
@@ -2741,7 +2780,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function leval10() {
@@ -2751,7 +2792,9 @@ window.onload = function() {
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
         upload.addEventListener("click", function () {
-            alert("Remember to include your Real Name and Assignment Number(s) in the Name Section");
+            alert(
+                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
+            );
         });
     }
     function raidFunc() {
@@ -2765,7 +2808,7 @@ window.onload = function() {
         assign1.addEventListener("click", function () {
             instruct.innerHTML = "<p>Quest: Record Numbers 105 and 111 with a partner</p>";
             reward.innerHTML =
-                "Reward: accuracy(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+                "Reward: accuracy(8) + Facility(4) + Theory(4) + Rhythm(8) + Musicality(4) + Coins(8)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[0]}`;
         });
@@ -2829,7 +2872,9 @@ window.onload = function() {
         upload.href = "";
         upload.style.cursor = "default";
         upload.removeEventListener("click", function () {
-            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+            alert(
+                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
+            );
         });
     }
     function clearAll() {
@@ -2840,14 +2885,14 @@ window.onload = function() {
     function raid2() {
         instruct.innerHTML = "<p>Quest: Record Numbers 117 and 123 with a partner</p>";
         reward.innerHTML =
-            "Reward: accuracy(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+            "Reward: accuracy(8) + Facility(4) + Theory(4) + Rhythm(8) + Musicality(4) + Coins(8)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[1]}`;
     }
     function raid3() {
         instruct.innerHTML = "<p>Quest: Record Numbers 129 and 135 with a partner</p>";
         reward.innerHTML =
-            "Reward: accuracy(8) + Facility(4) + Bow Control(4) + Rhythm(8) + Musicality(4) + Coins(8)";
+            "Reward: accuracy(8) + Facility(4) + Theory(4) + Rhythm(8) + Musicality(4) + Coins(8)";
         recording.innerHTML = " Recording: Coming Soon";
         comment.innerHTML = `Teacher Comments: ${personage.raidsCOM[2]}`;
     }
