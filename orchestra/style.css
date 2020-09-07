@@ -3,10 +3,14 @@
         margin: 0;
         border: 3px solid teal;
     }
+b{
 
+color: yellow
+
+}
     section {
         width: 100%;
-        height: 98vh;                                                                            
+        height: 98vh;
         background-color: teal;
         color: white;
         box-sizing: border-box;
