@@ -350,7 +350,7 @@ window.onload = function () {
         img.innerHTML = `<img src=${this.image}>`;
         att.innerHTML = `<img id="attackPng" src="../assets/Attack-1.png"> ${this.attack}`;
         def.innerHTML = `<img id="defensePng" src="../assets/Defense-1.png"> ${this.defense}`;
-        coin.innerHTML = `<img id="coinPng" src="../assets/coin.jpg"> ${this.coins}`;
+        coin.innerHTML = `XP ${this.coins}`;
         level.innerHTML = `<img id="levelPng" src="../assets/LEVEL.png"> ${this.level}`;
         fac.innerHTML = `Facility: ${this.facility}`;
         inton.innerHTML = `Intonation: ${this.intonation}`;
