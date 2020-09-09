@@ -912,7 +912,7 @@ window.onload = function () {
         "Aryris",
         "romantic",
         1,
-        "https://drive.google.com/file/d/1WiTUAOIt0QmIxUr8NrdpTfEaTXHGdo4d/view?usp=sharing",
+        "../assets/angelica.jpg",
         0,
         0,
         0,
