@@ -3012,10 +3012,10 @@ window.onload = function () {
             personage.evaluate();
             personage.printStats();
         } else {
-            if (confirm("Do you need to create a new character?")) {
-                window.location.href =
-                    "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
-            } else {
+            // if (confirm("Do you need to create a new character?")) {
+            //     window.location.href =
+            //         "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
+            // } else {
                 person = prompt("Please enter your name", "name");
                 // var password = prompt("What is your password");
                 for (i = 0; i < studentsString.length; i++) {
@@ -3033,7 +3033,7 @@ window.onload = function () {
                 }
             }
         }
-    }
+    
 
     var signout = document.getElementById("signout");
     signout.addEventListener("click", function () {
