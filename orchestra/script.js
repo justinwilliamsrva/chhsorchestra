@@ -4,7 +4,7 @@ window.onload = function () {
     }
 
     var person = "";
-    let days = 6 / 2;
+    let days = 1 / 2;
     // let daysfresh = 3 / 2;
     let studentsString = [
         "jane",
@@ -1046,7 +1046,7 @@ window.onload = function () {
         img.innerHTML = `<img src=${this.image}>`;
         att.innerHTML = `<img id="attackPng" src="../assets/Attack-1.png"> ${this.attack}`;
         def.innerHTML = `<img id="defensePng" src="../assets/Defense-1.png"> ${this.defense}`;
-        coin.innerHTML = `XP ${this.coins}`;
+        coin.innerHTML = `<img id="coinPng" src="../assets/EXP_1.jpg"> ${this.coins}`;
         level.innerHTML = `<img id="levelPng" src="../assets/LEVEL.png"> ${this.level}`;
         fac.innerHTML = `Facility: ${this.facility}`;
         inton.innerHTML = `Intonation: ${this.intonation}`;

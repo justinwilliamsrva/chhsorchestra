@@ -3,11 +3,9 @@
         margin: 0;
         border: 3px solid teal;
     }
-b{
-
-color: yellow
-
-}
+    b {
+        color: yellow;
+    }
     section {
         width: 100%;
         height: 98vh;
@@ -126,10 +124,12 @@ color: yellow
     #attackPng,
     #levelPng,
     #defensePng,
-    #coinPng {
+    #coinPng{
         height: 90%;
         width: 40%;
     }
+
+
     #instruct > p,
     #reward > p,
     #recording > p,
