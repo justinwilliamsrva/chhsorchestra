@@ -301,7 +301,7 @@ window.onload = function () {
         "Freshman"
     );
     const josendo = new Character(
-        "Wolgang",
+        "Wolfgang",
         "century",
         1,
         "https://static.jojowiki.com/images/6/69/latest/20200315224143/Jotaro_SC_Infobox_Manga.png",
@@ -2620,10 +2620,6 @@ window.onload = function () {
             personage.evaluate();
             personage.printStats();
         } else {
-            if (confirm("Do you need to create a new character?")) {
-                window.location.href =
-                    "https://docs.google.com/forms/d/e/1FAIpQLSeOSPjV-B9o5q1JdDIJGET1XrIEUFZeZCYxjJ5a9aN8xog9fg/viewform?usp=sf_link";
-            } else {
                 person = prompt("Please enter your name", "name");
                 // var password = prompt("What is your password");
                 for (i = 0; i < studentsString.length; i++) {
@@ -2641,7 +2637,7 @@ window.onload = function () {
                 }
             }
         }
-    }
+
 
     var signout = document.getElementById("signout");
     signout.addEventListener("click", function () {
