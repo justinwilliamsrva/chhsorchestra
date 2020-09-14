@@ -1,6 +1,15 @@
 window.onload = function () {
     function assignments() {
         jude.a1(4, "Good connection and intonation");
+        olivia.a1(4, "Good. More sound if you can")
+        olivia.a2(4, "Good")
+        olivia.a3(3, "Funny note at the end")
+        tristan.a1(4, "good")
+        angela.a1(4)
+        angela.a2(4)
+        angela.a4(4)
+        angela.a6(4)
+        
     }
 
     var person = "";
