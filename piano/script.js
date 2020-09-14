@@ -6,6 +6,8 @@ window.onload = function () {
         rodrick.a1(4, "Good")
         rodrick.a1("t")
         rodrick.a1("c")
+        brady.a1(4, "Correct")
+        jacob.a1(2,"not the correct notes")
 
 
     }

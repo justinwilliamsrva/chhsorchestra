@@ -1,5 +1,9 @@
 window.onload = function () {
-    function assignments() {}
+    function assignments() {
+
+jude.a1(4,"Good connection and intonation")
+
+    }
 
     var person = "";
     let days = 1 / 2;
