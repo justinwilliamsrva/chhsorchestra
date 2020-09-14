@@ -16,12 +16,17 @@ window.onload = function () {
         brady.a2(4,"Good. Try to connect the notes more if you can to make the music more lyrical and less choppy")
         reuben.a1(4, "Good")
         victoria.a1(3, "It sounds like you either played it all with one hand or moved your left hand to take the same place as your right hand. THe two hand should be in different places")
-
-
+        rebecca.a2(2, "in the both There are too many breaks between the measures. Go slow enough that you don't need time to think")
+        jada.a1(4, "Good")
+        // joseph.a2(4,"You don\'t need to repeat")
+        somros.a2(3,"Good except your rhythm is off on your long notes. Most of the time you hold them for longer than asked.")
+        rebecca.a1(4, "Correct")
+        rodrick.a2(4)
+        rodrick.a2("c")
     }
 
     var person = "";
-    let days = 1;
+    let days = .5;
     // let daysfresh = 3 / 2;
     let studentsString = [
         "nick",
