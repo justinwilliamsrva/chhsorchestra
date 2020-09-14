@@ -1,34 +1,41 @@
 window.onload = function () {
     function assignments() {
-jada.a4(3,"Should be played an octave lower")
+        jada.a4(3, "Should be played an octave lower");
+        jaden.a1(4, "Burger King");
+        ken.a1(4, "That's the song");
+        rodrick.a1(4, "Good")
+        rodrick.a1("t")
+        rodrick.a1("c")
 
 
     }
 
     var person = "";
-    let days = 6 / 2;
+    let days = 1;
     // let daysfresh = 3 / 2;
-    let studentsString = ['nick',
-    'victoria',
-    'brady',
-    'josendo',
-    'rodrick',
-    'laskey',
-    'jada',
-    'trinity',
-    'kyle ',
-    'rebecca',
-    'jabari',
-    'somros',
-    'ken',
-    'jaden',
-    'jacob',
-    'jamari',
-    'tyler',
-    'melissa',
-    'Andrew',
-    'reuben',
-    'sierra',];
+    let studentsString = [
+        "nick",
+        "victoria",
+        "brady",
+        "josendo",
+        "rodrick",
+        "laskey",
+        "jada",
+        "trinity",
+        "kyle ",
+        "rebecca",
+        "jabari",
+        "somros",
+        "ken",
+        "jaden",
+        "jacob",
+        "jamari",
+        "tyler",
+        "melissa",
+        "Andrew",
+        "reuben",
+        "sierra",
+    ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
     var lvl2 = document.getElementById("lvl2");
@@ -572,7 +579,8 @@ jada.a4(3,"Should be played an octave lower")
         "sierra",
         "Freshman"
     );
-    let students = [nick,
+    let students = [
+        nick,
         victoria,
         brady,
         josendo,
@@ -580,7 +588,7 @@ jada.a4(3,"Should be played an octave lower")
         laskey,
         jada,
         trinity,
-        kyle ,
+        kyle,
         rebecca,
         jabari,
         somros,
@@ -592,7 +600,8 @@ jada.a4(3,"Should be played an octave lower")
         melissa,
         Andrew,
         reuben,
-        sierra,];
+        sierra,
+    ];
 
     Character.prototype.printStats = function () {
         let nick = document.getElementById("nickName");
@@ -992,7 +1001,7 @@ jada.a4(3,"Should be played an octave lower")
                 this.evaluate();
                 this.printStats();
                 break;
-            case "s":
+            case "c":
                 this.coordination = this.coordination = 4;
                 this.evaluate();
                 this.printStats();
@@ -2551,31 +2560,31 @@ jada.a4(3,"Should be played an octave lower")
         // alert(this.grade);
 
         if (this.grade >= 7.2) {
-            assign3.innerHTML = "Current Grade: A+";
+            assign5.innerHTML = "Current Grade: A+";
         } else if (this.grade >= 6.4) {
-            assign3.innerHTML = "Current Grade: A";
+            assign5.innerHTML = "Current Grade: A";
         } else if (this.grade >= 5.6) {
-            assign3.innerHTML = "Current Grade: A-";
+            assign5.innerHTML = "Current Grade: A-";
         } else if (this.grade >= 4.8) {
-            assign3.innerHTML = "Current Grade: B+";
+            assign5.innerHTML = "Current Grade: B+";
         } else if (this.grade >= 4.0) {
-            assign3.innerHTML = "Current Grade: B";
+            assign5.innerHTML = "Current Grade: B";
         } else if (this.grade >= 3.33) {
-            assign3.innerHTML = "Current Grade: B-";
+            assign5.innerHTML = "Current Grade: B-";
         } else if (this.grade >= 2.66) {
-            assign3.innerHTML = "Current Grade: C+";
+            assign5.innerHTML = "Current Grade: C+";
         } else if (this.grade >= 2.0) {
-            assign3.innerHTML = "Current Grade: C";
+            assign5.innerHTML = "Current Grade: C";
         } else if (this.grade >= 1.66) {
-            assign3.innerHTML = "Current Grade: C-";
+            assign5.innerHTML = "Current Grade: C-";
         } else if (this.grade >= 1.33) {
-            assign3.innerHTML = "Current Grade: D+";
+            assign5.innerHTML = "Current Grade: D+";
         } else if (this.grade >= 1) {
-            assign3.innerHTML = "Current Grade: D";
+            assign5.innerHTML = "Current Grade: D";
         } else if (this.grade >= 0.5) {
-            assign3.innerHTML = "Current Grade: D-";
+            assign5.innerHTML = "Current Grade: D-";
         } else {
-            assign3.innerHTML = "Current Grade: F";
+            assign5.innerHTML = "Current Grade: F";
         }
     };
     Character.prototype.freshGrading = function () {
@@ -2583,31 +2592,31 @@ jada.a4(3,"Should be played an octave lower")
         // alert(this.grade);
 
         if (this.grade >= 3.66) {
-            assign3.innerHTML = "Current Grade: A+";
+            assign5.innerHTML = "Current Grade: A+";
         } else if (this.grade >= 3.33) {
-            assign3.innerHTML = "Current Grade: A";
+            assign5.innerHTML = "Current Grade: A";
         } else if (this.grade >= 3) {
-            assign3.innerHTML = "Current Grade: A-";
+            assign5.innerHTML = "Current Grade: A-";
         } else if (this.grade >= 2.5) {
-            assign3.innerHTML = "Current Grade: B+";
+            assign5.innerHTML = "Current Grade: B+";
         } else if (this.grade >= 2.0) {
-            assign3.innerHTML = "Current Grade: B";
+            assign5.innerHTML = "Current Grade: B";
         } else if (this.grade >= 1.66) {
-            assign3.innerHTML = "Current Grade: B-";
+            assign5.innerHTML = "Current Grade: B-";
         } else if (this.grade >= 1.33) {
-            assign3.innerHTML = "Current Grade: C+";
+            assign5.innerHTML = "Current Grade: C+";
         } else if (this.grade >= 1.0) {
-            assign3.innerHTML = "Current Grade: C";
+            assign5.innerHTML = "Current Grade: C";
         } else if (this.grade >= 0.8) {
-            assign3.innerHTML = "Current Grade: C-";
+            assign5.innerHTML = "Current Grade: C-";
         } else if (this.grade >= 0.6) {
-            assign3.innerHTML = "Current Grade: D+";
+            assign5.innerHTML = "Current Grade: D+";
         } else if (this.grade >= 0.4) {
-            assign3.innerHTML = "Current Grade: D";
+            assign5.innerHTML = "Current Grade: D";
         } else if (this.grade >= 0.2) {
-            assign3.innerHTML = "Current Grade: D-";
+            assign5.innerHTML = "Current Grade: D-";
         } else {
-            assign3.innerHTML = "Current Grade: F";
+            assign5.innerHTML = "Current Grade: F";
         }
     };
 
@@ -2622,24 +2631,23 @@ jada.a4(3,"Should be played an octave lower")
             personage.evaluate();
             personage.printStats();
         } else {
-                person = prompt("Please enter your name", "name");
-                // var password = prompt("What is your password");
-                for (i = 0; i < studentsString.length; i++) {
-                    if (person == studentsString[i]) {
-                        personage = students[i];
-                        personage;
-                        localStorage.setItem("person", i);
-                        clearAll();
-                        assignments();
-                        side.classList.remove("side");
-                        personage.evaluate();
-                        personage.printStats();
-                        location.reload();
-                    }
+            person = prompt("Please enter your name", "name");
+            // var password = prompt("What is your password");
+            for (i = 0; i < studentsString.length; i++) {
+                if (person == studentsString[i]) {
+                    personage = students[i];
+                    personage;
+                    localStorage.setItem("person", i);
+                    clearAll();
+                    assignments();
+                    side.classList.remove("side");
+                    personage.evaluate();
+                    personage.printStats();
+                    location.reload();
                 }
             }
         }
-
+    }
 
     var signout = document.getElementById("signout");
     signout.addEventListener("click", function () {
@@ -3111,14 +3119,11 @@ jada.a4(3,"Should be played an octave lower")
         currentLevel.innerHTML = `Complete Stats`;
         assign1.innerHTML = `Total Score: ${personage.totalScore}`;
         assign2.innerHTML = `Current Rank: Coming Soon`;
-        if (person == "jaden") {
-            personage.freshGrading();
-        } else if (person == "miami") {
-            personage.grading();
-        }
+        personage.grading();
 
-        assign5.innerHTML = `Rank on Team: Coming Soon`;
-        assign6.innerHTML = `Rank on Instrument: Coming Soon`;
+
+        assign3.innerHTML = `Rank on Team: Coming Soon`;
+
     }
 
     function clearInstructions() {
