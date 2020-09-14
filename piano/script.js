@@ -10,7 +10,12 @@ window.onload = function () {
         jacob.a1(2,"not the correct notes")
         reuben.a2(4, "Good")
         // joseph.a1(4," Good you don't have to repeat")
-      
+        // samuel.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
+        rodrick.a3(4)
+        rodrick.a3("c")
+        brady.a2(4,"Good. Try to connect the notes more if you can to make the music more lyrical and less choppy")
+        reuben.a1(4, "Good")
+        victoria.a1(3, "It sounds like you either played it all with one hand or moved your left hand to take the same place as your right hand. THe two hand should be in different places")
 
 
     }
