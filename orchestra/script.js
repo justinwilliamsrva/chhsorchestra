@@ -9,7 +9,19 @@ window.onload = function () {
         angela.a2(4)
         angela.a4(4)
         angela.a6(4)
-        
+        connor.a1(4)
+        connor.a2(3, "B natural were flat")
+        connor.a3(4)
+        connor.a4(4)
+        connor.a5(4)
+        connor.a6(4)
+        connor.a7(4)
+        connor.a8(4)
+        connor.a9(3,"There were two notes I think A on the E string with the wrong rhyhtm")
+
+
+
+
     }
 
     var person = "";
