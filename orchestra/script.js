@@ -3,21 +3,29 @@ window.onload = function () {
         jude.a1(4, "Good connection and intonation");
         olivia.a1(4, "Good. More sound if you can")
         olivia.a2(4, "Good")
-        olivia.a3(3, "Funny note at the end")
+        olivia.a3(3,"Funny note at the end")
         tristan.a1(4, "good")
         angela.a1(4)
         angela.a2(4)
         angela.a4(4)
         angela.a6(4)
         connor.a1(4)
-        connor.a2(3, "B natural were flat")
+        connor.a2(3, "B naturals were flat")
         connor.a3(4)
         connor.a4(4)
         connor.a5(4)
         connor.a6(4)
         connor.a7(4)
         connor.a8(4)
-        connor.a9(3,"There were two notes I think A on the E string with the wrong rhyhtm")
+        connor.a9(3, "There were two notes I think A on the E string with the wrong rhythm")
+        tristan.a3(4)
+        amyr.a2(4)
+        tristan.a4(4)
+        amyr.a1(4)
+        olivia.a4(4)
+        amyr.a3(3, "Third finger is sometimes too low. Vibrate everything longer than a quarter")
+        tristan.a2(4)
+
 
 
 
