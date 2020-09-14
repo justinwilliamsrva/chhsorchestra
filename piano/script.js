@@ -23,6 +23,9 @@ window.onload = function () {
         rebecca.a1(4, "Correct")
         rodrick.a2(4)
         rodrick.a2("c")
+        jaden.a2(4)
+        kyle.a1(4)
+
     }
 
     var person = "";
