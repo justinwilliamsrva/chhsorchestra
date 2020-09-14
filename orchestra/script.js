@@ -1,8 +1,6 @@
 window.onload = function () {
     function assignments() {
-
-jude.a1(4,"Good connection and intonation")
-
+        jude.a1(4, "Good connection and intonation");
     }
 
     var person = "";
@@ -55,6 +53,10 @@ jude.a1(4,"Good connection and intonation")
         "tristan",
         "brian",
         "jaden",
+        "amy",
+        "amyr",
+        "trinity",
+        "caroline"
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -1024,6 +1026,70 @@ jude.a1(4,"Good connection and intonation")
         "violin",
         "jaden"
     );
+    const amy = new Character(
+        "Peppa Pig",
+        "romantic",
+        1,
+        "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASERASEBAQERIWFREQEhASEBASEhAQFRUWFhUSFRUYHSggGBolGxUTITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0fHR8rLSstKy0tLS0tLSstLS0tLS0tKy0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLTctN//AABEIAPsAyQMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EAEIQAAIBAwAFCQUFBQcFAAAAAAABAgMEEQUSITFRBiIyQVJhcZGhBxOBscEUI0Jy0RUWYqLwJDNTVJLh8UNEZILS/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAECAwQFBgf/xAAvEQEAAgIBAwIFAwMFAQAAAAAAAQIDEQQSITETUQUUIjJBFVJxBmGxI0KBodGR/9oADAMBAAIRAxEAPwD7iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAh6SvlSitmZPcvqTEbbYcPqT/ZVLSdxvwscNUtqHX6GLws9HaQVXY9klvX6ETGnLmwTj7/hOKsAAAAAAAAAAAAAAAAAAAAAADxsDyNRPc0/iEzWY8sghRab/AL2Gd2F8y9fDv4v2SARZvUqRmtm3b9SfMNYjrpNZdNF5SfxM3lz2egAAAAAAAAAAAAAAAAAAAAAc9pCvKpUcE8Rj/WTSI1D0cNIx06vzLQ7ZrbCTyTtp6kT2mFporSLlzJ9JbnxKWhyZ8EV+qvhjp+jmMZr8L9GKp4lu8190anLKTJazGpRr/ciYa4vyulpClGMU5rOFu29XcV1Lh9C9pnUNFTTkPwxkyehpHEt+ZaZaZqPo0/mOmF44tI8y1vSNw9yS+CJ1C3oYoYVL+4Sy2l8ENQtGHFPaGpXVxJZUpeeBqFvTxV/DKF9cQ3ttd+0aiUThxWWlhpWNTZLmy9H4FZrpy5ePNO8d4WJVzAAAAAAAAAAAAAc3KOrWmn1t4NPw9OJ6scS3kM0W6Ti4zjvTJhrT6omsrmteUnSzNrElu6/IrqduKuK8X1X8KClWazGO3bsLzD0bVie8spUJya1v+BtWL1iOzfC1iurPiRtSclpYKTb1aUcvwH8p1ERu8vJzqwfPjs8PqT2lMRS/2ykwkmsoqymNTpHvt0V3kw0xflIisJEM5ehCLcUF0o71wJiW1L/iVxoe995HEulHf3riVtGnFyMXRbceJWBVzgAAAAAAAAAAAq9M2bklUj0o7+9Fqz+HVxssR9M+JQaNVSXf1otLotXUtNzWT5sVkmIXpTXeWNvbZWZZ8BMpvk12huqzUcKKzLqSIUrE27z4eVKVeK1nHZ8PkOyYtimdRLKnV1ot9eH5hWa9NtOE9pOk9JW9rSno/XinOSuJ045nHYtTdtS6RFmHM31R7Ot5HX1zX0VSqX8Wqzi860dWUtvNk11MrHllg31xpLsej8S8u7L5L5c1PgxBinujaUuZxoqUN+xNrqQiO5WsdWpatG1qtShPLbltUW97Jnym8Vi0NegbarGU3NNLGMPrYlOW0THZbaNlqV8dTyvMifDPNHVi26IzeaAAAAAAAAAAADxsDmL1qVSXuls68bm+JrHju9XFutI6263pKK3besiVL23LaQo5rlbpC5oWl1XtI61eCWrzdZwjnbNR68IW8HJmYxxENPsX5U3ukKFw7xayhKMadbU1feJp60eDxheZRwRLoqCSnUS3ZZpL1LTusTJ7ucW3B796eMeo7T5N1vGrvJwqTf3ktnD9EO0eCJpT7YSIxSWEQzmdvKkMpoFZ1O0W1qYzCXqWltkrv6oTEkt2wqwegadHrXrprctvkTPhpmnpxadGZvMAAAAAAAAAAABU6bu2sU473v7kXrH5dfGx7+ufwiUaSiseZMtrW6pbCFQCPJShLXht4riuGCfLT6b16bNktI1HHVhTVPjhYI6YUrx8dZ3M7Y29LVW3e95MrXtuW4hQAAAI9xb621bH8yYlpS+u0tUatSOxrP8AXEnsvNa28MJV5z5qW/ZhdY0tFK17yv8ARVj7uO3pPf3dxS07ednzepPbwnFWAAAAAAAAAAAYzkkm3uSyExG505ulJznKb47DTx2enaOmsVhIbIZvFNcUDUsggAAAAAAAAwqVFHewtFZnwi606r1YJ/1xLeGuq443Zd6O0dGmsvbPjw7kUm23DmzzftHhPKucAAAAAAAAAAAEDTVXVpPvwi1fLo41d5FXbRxFeZaXVed2RqtRthvWsRDAlZvo12tj3EM7033hKIc70AAAAYVJ4WWExG50iRuJyeIra9yxtLabTSsRuU220NOTzUeO7eyJt7Mb8qte1Fzb28ILEVj5spM7cV72vO5bSFAAAAAAAAAAAAAKjlFLmwXfn0L0dnDj6plGS5vw+ga/lALOoAAWFPcirkt5ZBAAAAeARrnmuM11MmGtPqiay6WlPWSfFJmbzLRqdMggAAAAAAAAAAAAABT8olzYPvx6F6Ozhz3lopvYvANJ8olelh9xLopbcNRK7KnDLwEWtqE9Iq5HoAAAAp7S9nO6qQUs04prHVnZ/uT+Hflw1pxq219UrK7XMfmIceP7lvoieaUPIpby5ORGskphDAAAAAAAAAAAAAABX6cp5pN8Gn9PqWr5dHFtrJ/KrtJZiu7YWl15I1ZuaIUanbxJX9SzZCCW4hSZmfLVfUXOnOMXhtYT7yYaYbxS8Wnw5/Q2lnSbpV8pJ4Un+F8H3EzD0+VxYyx6mJ0sJprKaa4p5RV5ExMTqWQQqdL6YhTTjBqVR7Eltx4kxDt43Etknqt2qcn7B04Oc+nPa+5CZTzc8ZLRWviFhdvmPyEOTH9y10NHFGPfllbeXJyZ3klOKsAAAAAAAAAAAAAAGFWmpRcX1rATWdTtzNLNOcoS44NfMPVt9dYtCYVYAAABX6S0RTrbXzZdpfXiTEurBy74e0d49lQtBXEH93VWPFr0J27vnsN4+urNaHupbJ19ni2xuFfm+PX7ad1jo/QtKk9bpy7UurwRG3Ln5l8sa8QsyHGiXT1pRgt+S0Nsf0xNpdJb09WMY8EkZS8y9uq0y2BUAAAAAAAAAAAAAAAqdNWOsteK2reuK4l6y6+Nm6fpnwr7a4zse/5kzDpvTXeEkhkAAAAAAA0XFdR3byYhpSm0zQ1i/wC8nvfRT+ZFp/DHk5o+yq4KOIAAAAAAAAAAAAAAAAUvKzTataEpLHvJc2mv4uPgjHPl9Ou/y9D4dw55OaK/7Y7y4TQelqjX3zym8qXX/wAGHG5U61d9DzOHTf8Ap/8Ax1FvfZW/WXFHoxq0bh418Op9kyFaL3MaYTSYZkKvQPGBrnXiuvyJ0vFJlDub/C3qK4sTMVjctqYJmfdzWmtJTlCSpNrjLra7jz+RypmNUexxOLWtonI6jkFyg+0UvdVH97TW/tw6n8CeLm641PmHk/GOB6GT1Kfbb/qXVnW8UAAAAAAAAAAAAAB5KSW94CYiZ8I076C3ZZOmkYbS4Dl9RlVq0pOax0VT64re5fE8/mY/qid/8Ppvg14x47V1/wA+6pjHCwjnd0ztspVpR6LaL1vaviWdqVt5hOpaWkulFPvWw6q8y0eYc1uHWfEpUNMR/iRrHLpPmGM8K39mz9sx7Ui3zWNT5O3s1T0xHqUmVnmU/ELxwrf2RaulZvopL1Mbcu0+I03rxKx57oVSrKW2TbOa17W8y6a0rXxDAqsh2t3K1uYVYbk8tcYvpIzi047xaG+TFXk4Jx2fXLXSlOcYyWUpJNPxPajvG4fEZOPelprP4TIVE9zTDCYmPLIIAAAAAAAANdxrar1d4hamt90D7TUj0vUtqHR0Ut4ZVL9tbFjvGkRhj8tcKE57XnxY2tN61QeVFVW1rUqZ575kPzPh6sw5GXopMw6fh9J5HIrT8eZfOLDWlmc5OUn1t5PLpue8vq83TXVaxqITC7AAAAAAAAAARdI0taD4raUvG4bYbat/Lr/Z5XjWoTpSb16b2fklu9Uzu4WXdOn2eF8bxzizRkjxb/LpalrOO1be9Hbt5MZK28sqV9JbJLPzGlbYYnwO6qSfN2eA0enWvlMtNbV5+/6ESxydO/pbiFAAAAAa69TVi3jIWrG50q6mtJaz3f1uLuuNR9MJdhQWNZrb1FZljlvO9QmkMHzr2oXrc6NBPcnOS73sj9TzubfcxV9T/T+HVLZZ/j/1R0YYilwRjEah6Np3MyzJVAAAAAAAAAHjWSBt5DXbo30YPdPNN/NP09SeNbpy691Pi+L1uJNvzHd9aPWfFI15QTi2ltW0mJa47zE6V9OMulHq4FnRMx4lZ2lVyjl793iVly5K9MtxCgAAAAAGMoJrDWzgExMx3erC7geXoQ+Pcobj31/VecpS1U/4Y7jx8s9WWX3PCx+jw6x+Zj/LMsgAAAAAAAAAAAFdcTdOvTmtmHGWfB7TK302iXVSOvFNJfa7errwhJbpRjLzWT2oncbfn969Npr7S2EqsYwS3LATMzPl6kEPQAAAAAAY6627VsCdSqpOU5PHVl79yLeHXEVpDZTvHGnVk/wRlPyWSt51EyrOKLXrEfmdPkejnrTnPjl+byeJTvMy+4z/AE0iqxNXKAAAAAAAAAAACBpaHNi+Dx5meSOzp4095h9T5HXPvLOhJvao6r/9W18kj1OPbqxw+N+J4/T5V4/uujZwAAAAAAAAHjQFW9anJ8PRot5dfa8NKk8vVzt4Er6jXdXco7mVK0rvGMx1c4fXs+phyZ1imXXwMcZOTT+07fP9Ex5rfF/I8nH4fT8ifq0nGjnAAAAAAAAAAABG0hHNOXdtKX8NcM6vDt/Zlca1rKL/AAzePBpP9Tt4U7pp898eprkRb3h2B2PDAAAAAAAAAHjSe8G3igluSCdzLkvaZX1bWMe1NL4JN/Q5ObOqae38Bp1ciZ9ocPo+OKcfM4aeH0Oad3lJLsgAAAAAAAAAAAYVo5jJdzInwtWdWhfeyutzriHdCS9U/obcGe8w83+oadqW/l9DPRfLgAAAAAAAAAAA+fe1Ws/7PDqevL4rC+p5/OnxD6b+nqffb+HKUb6Cilt2LG45YvEQ9q2G8zMs1pCnxfkT1wr6F3v2+nxfkOuD0Lvft1PtejHXCPRv7PVe0+16MdcHo39j7ZT7a9SeuEejf2eq7p9peo6oPSv7PftVPtIdUHpX9nn2qn2kOqD0r+x9qp9pDqg9K/s8+2U+2vUdcHo39h3tPtejI64T6N/ZjK+p8fQdcJjDda+zeti8lFbpQn6NYNOHP+o4vjtN8WJ9ph9TPVfHAAAAAAAAAAAAjXthSrJKrTjNLdrLcVtStvMNcWfJindJ0g/uxZf5en6/qZ/L4/Z0/qXK/fJ+7Fl/l6fr+o+Xx+x+pcr98o97yZstR/2eH836j5fFP4aYviXK6vvlosOStjJPNvB7uuf6ieNi/a0y/FOXE9rz/wBNz5GWH+Av9Uv1K/K4vZT9X5f7z9zLD/B/mkPlcXsfq/L/AHI8uQdl2ai7tf8A2HyuL2P1jl/ubKXIixW+m5fmk/oPlcXsfrHL/c13vJCxjHKo7c9qRMcXF7NMXxblTPexZckLGUcuj19qQni4vYy/FuVE6iyR+5lh/g/zSI+VxezP9X5f7mUOR1gv+3i/Fy/Un5bF7In4ty5/3/4bIclLFbraHnJ/UmOPi9lJ+KcufN5TrLRdCi80qUIPGMpbceJeuOtfEOfLycuWNXtMphdgAAAAAAAAAAAAAAARb6a1GsrPDJMNMX3NFjXhFPWkl4iVs/luekqK/wCpH1IYsP2tR7fowH7Wo9v0YD9rUe36MDVc3tOccQll5zjuJhth+5lZ3dOMcSkk85wxKM33JUbum904+ZDJtVSL3SXmgMgAAAAAAAAAAAAAANN3cqnFyednUgKC401Vl0cRXdtYEKpc1Jb5yfxYQp9PcqrfR6jUuPePWbjFQjrNv9CYaY7RWdy4zSftipSf3VrOXVzpqP0EmS/VKlr+1u5fQt6UfzNy+RDNhae1q7Ul76jRlHrUFKLx4tgfW7C6jVpU6sU0pxUknvWQJAFPp7llbaOcffqpKU09SMI53Y38CYa47xWe7jtJe2KnKTdK0m+DlNR9MCUZLdU7U9f2tXL6FvRj+bMiGbPRntauVOPv6NNwbSfu9aMkuO9gfYrTSE9WMoTklJKSy+prPWBY2+nKi6SUl5MJXlrcKpFSjuYG4AAAAAAAAAAAY1IKSaayn1AVlfQdN9FuPdvQEOpoKp+GUX47AKnTXI+NzBQuKMasU8pZex8U0By9x7I7N5+4qw/LPcEIVX2QWf8A5UfCUf8A5AysvZVYU5KThcVcbdWo8x9IoDtKds4pRjBpJJJKLwkuoDL3UuzL/SwK3TPJqhdqKuLf3mrnVbUk4534aAoansosZbqNaPXzZem1Aapexm1luV2vCcPrECw0V7HbSlNTcKlRp5SrVE0mt2yKQHc0tAS65JdyWQlMo6EprpNy9EBZU4KKSisLggMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9k=",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Bass",
+        "amy",
+        "Freshman"
+    );
+    const amyr = new Character(
+        "Beetrice",
+        "heretics",
+        1,
+        "https://img.favpng.com/8/17/21/honey-bee-cartoon-clip-art-png-favpng-MBBKkw9rmz2GWqdHgKX0Bs62R.jpg",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Violin",
+        "amyr",
+        "Sophomore"
+    );
+    const trinity = new Character(
+        "Jessie",
+        "heretics",
+        1,
+        "https://m.media-amazon.com/images/M/MV5BMjIxNTEwMzczOF5BMl5BanBnXkFtZTgwNDUxMDM5NTM@._V1_.jpg",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Cello",
+        "trinity",
+        "Junior"
+    );
+    const caroline = new Character(
+        "Carl",
+        "heretics",
+        1,
+        "https://i.ebayimg.com/images/g/~bUAAOSwjVVVoWAP/s-l300.jpg",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Cello",
+        "caroline",
+        "Junior"
+    );
 
     let students = [
         jane,
@@ -1072,6 +1138,10 @@ jude.a1(4,"Good connection and intonation")
         tristan,
         brian,
         jaden,
+        amy,
+        amyr,
+        trinity,
+        caroline
     ];
 
     Character.prototype.printStats = function () {
