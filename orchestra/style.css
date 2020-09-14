@@ -43,12 +43,12 @@
 
     #topscore1 {
         color: gold;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #topscore2 {
         color: silver;
-        font-size: 25px;
+        font-size: 20px;
     }
     #topscore3 {
         color: orangered;
@@ -56,11 +56,11 @@
     }
     #topscore4 {
         color: green;
-        font-size: 15px;
+        font-size: 20px;
     }
     #topscore5 {
         color: blue;
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .topscores {

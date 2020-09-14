@@ -25,6 +25,16 @@ window.onload = function () {
         olivia.a4(4)
         amyr.a3(3, "Third finger is sometimes too low. Vibrate everything longer than a quarter")
         tristan.a2(4)
+        brevin.a3(2,"your 4th finger on A string is too high. Some A string notes at beginning were out of tune")
+        jane.a4(4)
+        jane.a3(3, "Need vibrato. Otherwise good")
+        brevin.a3(4)
+        brett.a3(3, "You played an F# coming down in the scae on the E string ")
+        jane.a2(4)
+        brevin.a1(4)
+
+
+
 
 
 
