@@ -2857,12 +2857,12 @@ window.onload = function () {
         assign9.innerHTML = `Roman Trumpets(a9): ${personage.level1[8]}`;
         assign10.innerHTML = `Scales C-G-D(a10): ${personage.level1[9]}`;
 
-        // upload.innerHTML = "Upload a Recording";
-        // upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
-        // upload.style.cursor = "pointer";
-        // upload.addEventListener("click", function () {
-        //     alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
-        // });
+        upload.innerHTML = "Upload a Recording";
+        upload.href = "https://driveuploader.com/upload/1vrEwwyXER/";
+        upload.style.cursor = "pointer";
+        upload.addEventListener("click", function () {
+            alert("Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section");
+        });
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
