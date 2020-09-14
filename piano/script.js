@@ -8,6 +8,8 @@ window.onload = function () {
         rodrick.a1("c")
         brady.a1(4, "Correct")
         jacob.a1(2,"not the correct notes")
+        reuben.a2(3, "Rhyhtm is not correct for second warmup. You hold the second quarter notes too long")
+        joseph.a1(4," Good you don't have to repeat")
 
 
     }
