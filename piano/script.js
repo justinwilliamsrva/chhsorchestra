@@ -993,16 +993,19 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory = 4;
+                this.level1[0] = this.level1[0] + " t";
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
+                this.level1[0] = this.level1[0] + "f";
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
+                this.level1[0] = this.level1[0] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1011,8 +1014,12 @@ window.onload = function () {
     Character.prototype.a2 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 2;
+                this.facility = this.facility + 4;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 2;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 4;
                 this.level1[1] = "A+";
                 this.level1COM[1] = comments;
@@ -1021,8 +1028,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 1;
+                this.facility = this.facility + 3;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 1;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 3;
                 this.level1[1] = "A-";
                 this.level1COM[1] = comments;
@@ -1030,7 +1041,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0 ;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 2;
                 this.level1[1] = "B";
                 this.level1COM[1] = comments;
@@ -1038,10 +1054,33 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 1;
                 this.level1[1] = "C";
                 this.level1COM[1] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level1[1] = this.level1[1] + ": t";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level1[1] = this.level1[1] + "f";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level1[1] = this.level1[1] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1050,22 +1089,27 @@ window.onload = function () {
     Character.prototype.a3 = function (score, comments) {
         switch (score) {
             case 4:
-                console.log("4");
-                this.accuracy = this.accuracy + 4;
+                case 4:
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 2;
                 this.theory = this.theory + 2;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 4;
                 this.level1[2] = "A+";
                 this.level1COM[2] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+
             case 3:
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
                 this.coordination = this.coordination + 1;
                 this.theory = this.theory + 1;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 3;
                 this.level1[2] = "A-";
                 this.level1COM[2] = comments;
@@ -1073,7 +1117,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0 ;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 2;
                 this.level1[2] = "B";
                 this.level1COM[2] = comments;
@@ -1081,10 +1130,33 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 1;
                 this.level1[2] = "C";
                 this.level1COM[2] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level1[2] = this.level1[2] + ": t";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level1[2] = this.level1[2] + "f";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level1[2] = this.level1[2] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1093,10 +1165,12 @@ window.onload = function () {
     Character.prototype.a4 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 2;
                 this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination + 2;
+                this.theory = this.theory + 2;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 4;
                 this.level1[3] = "A+";
                 this.level1COM[3] = comments;
@@ -1105,10 +1179,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 1;
                 this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination + 1;
+                this.theory = this.theory + 1;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 3;
                 this.level1[3] = "A-";
                 this.level1COM[3] = comments;
@@ -1116,7 +1192,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0 ;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 2;
                 this.level1[3] = "B";
                 this.level1COM[3] = comments;
@@ -1124,10 +1205,33 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 1;
                 this.level1[3] = "C";
                 this.level1COM[3] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level1[3] = this.level1[3] + ": t";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level1[3] = this.level1[3] + "f";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level1[3] = this.level1[3] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1136,11 +1240,12 @@ window.onload = function () {
     Character.prototype.a5 = function (score, comments) {
         switch (score) {
             case 4:
-                this.facility = this.facility + 8;
-                this.theory = this.theory + 4;
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 4;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination + 2;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 4;
                 this.coins = this.coins + 4;
                 this.level1[4] = "A+";
                 this.level1COM[4] = comments;
@@ -1149,11 +1254,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.facility = this.facility + 6;
-                this.theory = this.theory + 3;
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 3;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination + 1;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 3;
                 this.level1[4] = "A-";
                 this.level1COM[4] = comments;
@@ -1161,10 +1267,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.facility = this.facility + 4;
-                this.theory = this.theory + 2;
-                this.accuracy = this.accuracy + 2;
-                this.coordination = this.coordination + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0 ;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 2;
                 this.coins = this.coins + 2;
                 this.level1[4] = "B";
                 this.level1COM[4] = comments;
@@ -1172,13 +1280,33 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
-                this.theory = this.theory + 1;
-                this.coordination = this.coordination + 1;
-                this.facility = this.facility + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 1;
                 this.coins = this.coins + 1;
                 this.level1[4] = "C";
                 this.level1COM[4] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level1[4] = this.level1[4] + ": t";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level1[4] = this.level1[4] + "f";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level1[4] = this.level1[4] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1187,10 +1315,12 @@ window.onload = function () {
     Character.prototype.a6 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 2;
-                this.theory = this.theory + 2;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 4;
                 this.coins = this.coins + 4;
                 this.level1[5] = "A+";
                 this.level1COM[5] = comments;
@@ -1199,10 +1329,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
                 this.coordination = this.coordination + 1;
-                this.theory = this.theory + 1;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 3;
                 this.level1[5] = "A-";
                 this.level1COM[5] = comments;
@@ -1210,7 +1342,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0 ;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 2;
                 this.coins = this.coins + 2;
                 this.level1[5] = "B";
                 this.level1COM[5] = comments;
@@ -1218,10 +1355,33 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 1;
                 this.coins = this.coins + 1;
                 this.level1[5] = "C";
                 this.level1COM[5] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level1[5] = this.level1[5] + ": t";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level1[5] = this.level1[5] + "f";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level1[5] = this.level1[5] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1230,11 +1390,12 @@ window.onload = function () {
     Character.prototype.a7 = function (score, comments) {
         switch (score) {
             case 4:
-                this.facility = this.facility + 8;
-                this.theory = this.theory + 4;
-                this.accuracy = this.accuracy + 4;
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 4;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 4;
                 this.coins = this.coins + 4;
                 this.level1[6] = "A+";
                 this.level1COM[6] = comments;
@@ -1243,11 +1404,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.facility = this.facility + 6;
-                this.theory = this.theory + 3;
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
                 this.coordination = this.coordination + 3;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 3;
                 this.level1[6] = "A-";
                 this.level1COM[6] = comments;
@@ -1255,10 +1417,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.facility = this.facility + 4;
-                this.theory = this.theory + 2;
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 2;
+                this.theory = this.theory + 0 ;
+                this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 2;
                 this.level1[6] = "B";
                 this.level1COM[6] = comments;
@@ -1266,13 +1430,33 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
-                this.theory = this.theory + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 1;
-                this.facility = this.facility + 2;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 1;
                 this.level1[6] = "C";
                 this.level1COM[6] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level1[6] = this.level1[6] + ": t";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level1[6] = this.level1[6] + "f";
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level1[6] = this.level1[6] + "c";
                 this.evaluate();
                 this.printStats();
                 break;
