@@ -29,9 +29,22 @@ window.onload = function () {
         jane.a4(4)
         jane.a3(3, "Need vibrato. Otherwise good")
         brevin.a3(4)
-        brett.a3(3, "You played an F# coming down in the scae on the E string ")
+        brett.a4(3, "You played an F# coming down in the scale on the E string ")
         jane.a2(4)
         brevin.a1(4)
+        trinity.a5(4)
+        trinity.a4(4)
+        trinity.a3(2, "Some funny notes in the first 4 measures")
+        trinity.a2(4)
+        amyr.a5(4)
+        caleb.a1(4)
+        caleb.a2(4)
+        caleb.a3(4)
+
+
+
+
+
 
 
 
