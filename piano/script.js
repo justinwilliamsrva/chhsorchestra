@@ -9,7 +9,7 @@ window.onload = function () {
         brady.a1(4, "Correct");
         jacob.a1(2, "not the correct notes");
         reuben.a2(4, "Good");
-        // joseph.a1(4," Good you don't have to repeat")
+        joseph.a1(4," Good you don't have to repeat")
         // samuel.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
         rodrick.a3(4);
         rodrick.a3("c");
@@ -27,7 +27,7 @@ window.onload = function () {
             "in the both There are too many breaks between the measures. Go slow enough that you don't need time to think"
         );
         jada.a1(4, "Good");
-        // joseph.a2(4,"You don\'t need to repeat")
+        joseph.a2(4,"You don\'t need to repeat")
         somros.a2(
             3,
             "Good except your rhythm is off on your long notes. Most of the time you hold them for longer than asked."
