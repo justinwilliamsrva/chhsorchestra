@@ -31,7 +31,7 @@ window.onload = function () {
         brett.a3(2,"Watch out for rhythm. Scrolling is fine")
         // walker.a1
         thomas.a1(4, "Great time indeed")
-        ramon.a1(4,"good stuff")
+        // ramon.a1(4,"good stuff")
 
 
 
