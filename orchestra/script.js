@@ -1061,7 +1061,7 @@ window.onload = function () {
         "Luxien",
         "heretics",
         1,
-        "https://imgur.com/TNC2RUo",
+        "https://i.imgur.com/TNC2RUo.png",
         0,
         0,
         0,
