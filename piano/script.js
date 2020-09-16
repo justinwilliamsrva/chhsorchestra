@@ -30,6 +30,7 @@ window.onload = function () {
         jaden.a3(4)
         ken.a2(4)
         reuben.a4(4)
+        // lauren.a1(4)
 
 
 
@@ -47,7 +48,7 @@ window.onload = function () {
         "laskey",
         "jada",
         "trinity",
-        "kyle ",
+        "kyle",
         "rebecca",
         "jabari",
         "somros",
@@ -57,7 +58,7 @@ window.onload = function () {
         "jamari",
         "tyler",
         "melissa",
-        "Andrew",
+        "andrew",
         "reuben",
         "sierra",
     ];

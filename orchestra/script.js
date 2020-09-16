@@ -47,6 +47,16 @@ window.onload = function () {
         jade.a1(4, "Excellent Jade")
         spencer.a1(2, "5 and 6 have to be performed all on the D string. 11 and 12 were good")
         // kamille.a1(4, "Check your first finger in 3rd with your open string before you start. Otherwise good")
+        ryann.a1(4, "Great sound, love the vibrato")
+        jules.a1(4, "Try to get more sound")
+        mackenzie.a1(4, "Great!!")
+        zack.a1(4, "Lovely playing zach. even some vibrato!")
+        natalia.a1(3, "All those notes sounded fine except for F and F#'s")
+        lucca.a1(4, "Great sound and in  tune")
+        emily.a1(3,"When you third finger is low. your fourth finger tend to be too low. Make sure it is in the same spot as when the third finger is high")
+        angelica.a1(3,"It sounds like your first finger was in the wrong spot. Or your instrument is out of tune")
+        emmett.a1(4,"Put a little more pressure into your left hand 4th finger for a better sound")
+        ally.a1(4,"")
 
 
 
