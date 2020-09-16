@@ -29,7 +29,9 @@ window.onload = function () {
         caleb.a9(4, "Thank you for the articulation")
         caleb.a8(4,"If you are in need of beautiful bass solo. this one is a good one. Great playing")
         brett.a3(2,"Watch out for rhythm. Scrolling is fine")
-
+        // walker.a1
+        thomas.a1(4, "Great time indeed")
+        ramon.a1(4,"good stuff")
 
 
 
