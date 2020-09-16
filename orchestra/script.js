@@ -26,7 +26,9 @@ window.onload = function () {
         jane.a6(4, "Intune!")
         olivia.a5(3, "Needs to be a little faster")
         olivia.b1(4)
-
+        caleb.a9(4, "Thank you for the articulation")
+        caleb.a8(4,"If you are in need of beautiful bass solo. this one is a good one. Great playing")
+        brett.a3(2,"Watch out for rhythm. Scrolling is fine")
 
 
 
