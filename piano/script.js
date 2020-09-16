@@ -27,7 +27,11 @@ window.onload = function () {
         kyle.a1(4)
         // samuel.a1(3,"Keep the music steady")
         jaden.a1("t")
-        
+        jaden.a3(4)
+        ken.a2(4)
+        reuben.a4(4)
+
+
 
     }
 

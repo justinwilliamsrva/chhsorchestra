@@ -40,6 +40,18 @@ window.onload = function () {
         caleb.a1(4)
         caleb.a2(4)
         caleb.a3(4)
+        nicholas.a1(3, "When you shifted backwards you went to far, good sound")
+        kate.a1(2, "Your first and fourth finger were great. 2nd and 3rd were sometimes off. We will go over next class")
+        rowan.a1(4, "Excellent playing")
+        grace.a1(4, "Great playing grace!")
+        jade.a1(4, "Excellent Jade")
+        spencer.a1(2, "5 and 6 have to be performed all on the D string. 11 and 12 were good")
+        // kamille.a1(4, "Check your first finger in 3rd with your open string before you start. Otherwise good")
+
+
+
+
+
 
 
 
@@ -56,7 +68,7 @@ window.onload = function () {
     }
 
     var person = "";
-    let days = 1 / 2;
+    let days = 1;
     // let daysfresh = 3 / 2;
     let studentsString = [
         "jane",
