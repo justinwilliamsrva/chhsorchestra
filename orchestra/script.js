@@ -1,80 +1,77 @@
 window.onload = function () {
     function assignments() {
         jude.a1(4, "Good connection and intonation");
-        olivia.a1(4, "Good. More sound if you can")
-        olivia.a2(4, "Good")
-        olivia.a3(3,"Funny note at the end")
-        tristan.a1(4, "good")
-        angela.a1(4)
-        angela.a2(4)
-        angela.a4(4)
-        angela.a6(4)
-        connor.a1(4)
-        connor.a2(3, "B naturals were flat")
-        connor.a3(4)
-        connor.a4(4)
-        connor.a5(4)
-        connor.a6(4)
-        connor.a7(4)
-        connor.a8(4)
-        connor.a9(3, "There were two notes I think A on the E string with the wrong rhythm")
-        tristan.a3(4)
-        amyr.a2(4)
-        tristan.a4(4)
-        amyr.a1(4)
-        olivia.a4(4)
-        amyr.a3(3, "Third finger is sometimes too low. Vibrate everything longer than a quarter")
-        tristan.a2(4)
-        brevin.a3(2,"your 4th finger on A string is too high. Some A string notes at beginning were out of tune")
-        jane.a4(4)
-        jane.a3(3, "Need vibrato. Otherwise good")
-        brevin.a3(4)
-        brett.a4(3, "You played an F# coming down in the scale on the E string ")
-        jane.a2(4)
-        brevin.a1(4)
-        trinity.a5(4)
-        trinity.a4(4)
-        trinity.a3(2, "Some funny notes in the first 4 measures")
-        trinity.a2(4)
-        amyr.a5(4)
-        caleb.a1(4)
-        caleb.a2(4)
-        caleb.a3(4)
-        nicholas.a1(3, "When you shifted backwards you went to far, good sound")
-        kate.a1(2, "Your first and fourth finger were great. 2nd and 3rd were sometimes off. We will go over next class")
-        rowan.a1(4, "Excellent playing")
-        grace.a1(4, "Great playing grace!")
-        jade.a1(4, "Excellent Jade")
-        spencer.a1(2, "5 and 6 have to be performed all on the D string. 11 and 12 were good")
+        olivia.a1(4, "Good. More sound if you can");
+        olivia.a2(4, "Good");
+        olivia.a3(3, "Funny note at the end");
+        tristan.a1(4, "good");
+        angela.a1(4);
+        angela.a2(4);
+        angela.a4(4);
+        angela.a6(4);
+        connor.a1(4);
+        connor.a2(3, "B naturals were flat");
+        connor.a3(4);
+        connor.a4(4);
+        connor.a5(4);
+        connor.a6(4);
+        connor.a7(4);
+        connor.a8(4);
+        connor.a9(3, "There were two notes I think A on the E string with the wrong rhythm");
+        tristan.a3(4);
+        amyr.a2(4);
+        tristan.a4(4);
+        amyr.a1(4);
+        olivia.a4(4);
+        amyr.a3(3, "Third finger is sometimes too low. Vibrate everything longer than a quarter");
+        tristan.a2(4);
+        brevin.a3(
+            2,
+            "your 4th finger on A string is too high. Some A string notes at beginning were out of tune"
+        );
+        jane.a4(4);
+        jane.a3(3, "Need vibrato. Otherwise good");
+        brevin.a3(4);
+        brett.a4(3, "You played an F# coming down in the scale on the E string ");
+        jane.a2(4);
+        brevin.a1(4);
+        trinity.a5(4);
+        trinity.a4(4);
+        trinity.a3(2, "Some funny notes in the first 4 measures");
+        trinity.a2(4);
+        amyr.a5(4);
+        caleb.a1(4);
+        caleb.a2(4);
+        caleb.a3(4);
+        nicholas.a1(3, "When you shifted backwards you went to far, good sound");
+        kate.a1(
+            2,
+            "Your first and fourth finger were great. 2nd and 3rd were sometimes off. We will go over next class"
+        );
+        rowan.a1(4, "Excellent playing");
+        grace.a1(4, "Great playing grace!");
+        jade.a1(4, "Excellent Jade");
+        spencer.a1(2, "5 and 6 have to be performed all on the D string. 11 and 12 were good");
         // kamille.a1(4, "Check your first finger in 3rd with your open string before you start. Otherwise good")
-        ryann.a1(4, "Great sound, love the vibrato")
-        jules.a1(4, "Try to get more sound")
-        mackenzie.a1(4, "Great!!")
-        zack.a1(4, "Lovely playing zach. even some vibrato!")
-        natalia.a1(3, "All those notes sounded fine except for F and F#'s")
-        lucca.a1(4, "Great sound and in  tune")
-        emily.a1(3,"When you third finger is low. your fourth finger tend to be too low. Make sure it is in the same spot as when the third finger is high")
-        angelica.a1(3,"It sounds like your first finger was in the wrong spot. Or your instrument is out of tune")
-        emmett.a1(4,"Put a little more pressure into your left hand 4th finger for a better sound")
-        ally.a1(4,"")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        ryann.a1(4, "Great sound, love the vibrato");
+        jules.a1(4, "Try to get more sound");
+        mackenzie.a1(4, "Great!!");
+        zack.a1(4, "Lovely playing zach. even some vibrato!");
+        natalia.a1(3, "All those notes sounded fine except for F and F#'s");
+        lucca.a1(4, "Great sound and in  tune");
+        emily.a1(
+            3,
+            "When you third finger is low. your fourth finger tend to be too low. Make sure it is in the same spot as when the third finger is high"
+        );
+        angelica.a1(
+            3,
+            "It sounds like your first finger was in the wrong spot. Or your instrument is out of tune"
+        );
+        emmett.a1(
+            4,
+            "Put a little more pressure into your left hand 4th finger for a better sound"
+        );
+        // ally.a1(4,"")
     }
 
     var person = "";
@@ -130,7 +127,7 @@ window.onload = function () {
         "amy",
         "amyr",
         "trinity",
-        "caroline"
+        "caroline",
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -1215,7 +1212,7 @@ window.onload = function () {
         amy,
         amyr,
         trinity,
-        caroline
+        caroline,
     ];
 
     Character.prototype.printStats = function () {
@@ -3803,6 +3800,7 @@ window.onload = function () {
             team: item.team,
             instrument: item.instrument,
             total_score: item.totalScore,
+            level: item.level,
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -3817,11 +3815,11 @@ window.onload = function () {
         return people.total_score * -1;
     });
 
-    top1.innerHTML = `${highScore[0].name} - ${highScore[0].total_score}`;
-    top2.innerHTML = `${highScore[1].name} - ${highScore[1].total_score}`;
-    top3.innerHTML = `${highScore[2].name} - ${highScore[2].total_score}`;
-    top4.innerHTML = `${highScore[3].name} - ${highScore[3].total_score}`;
-    top5.innerHTML = `${highScore[4].name} - ${highScore[4].total_score}`;
+    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level}`;
+    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level}`;
+    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level}`;
+    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level}`;
+    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level}`;
 
     console.log(highScore[0].name, highScore[1].name);
 
