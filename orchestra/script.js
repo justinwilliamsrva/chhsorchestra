@@ -1,7 +1,7 @@
 window.onload = function () {
     function assignments() {
         olivia.a9(3, "rhyhtm and articulation")
-        amyr.a9(3,"some funny rhythm")
+        amyr.a9(3, "some funny rhythm")
         angela.a5(4)
         brevin.a5(3, "Some funny notes")
         angela.a7(4, "Great")
@@ -10,7 +10,7 @@ window.onload = function () {
         brevin.a4(3, "Close a few notes of scale out of tune. Usually it was 4th finger")
         brian.a3(4)
         amyr.a6(4, "YES!")
-        caleb.a7(4,"Try not to lose sound on the high notes. Those should be the loudest. Otherwise great speed")
+        caleb.a7(4, "Try not to lose sound on the high notes. Those should be the loudest. Otherwise great speed")
         brett.a8(3, "Watch out for the rhythm at beginning")
         olivia.a8(4, "You just said 'okeydokers'")
         caleb.a6(4, "Beautiful. Only funny note was the last one.")
@@ -27,11 +27,12 @@ window.onload = function () {
         olivia.a5(3, "Needs to be a little faster")
         olivia.b1(4)
         caleb.a9(4, "Thank you for the articulation")
-        caleb.a8(4,"If you are in need of beautiful bass solo. this one is a good one. Great playing")
-        brett.a3(2,"Watch out for rhythm. Scrolling is fine")
+        caleb.a8(4, "If you are in need of beautiful bass solo. this one is a good one. Great playing")
+        brett.a3(2, "Watch out for rhythm. Scrolling is fine")
         // walker.a1
         thomas.a1(4, "Great time indeed")
         // ramon.a1(4,"good stuff")
+        jane.a1(4)
 
 
 
@@ -3873,30 +3874,43 @@ window.onload = function () {
     // console.log(highScore[0].name, highScore[1].name);
 
 
-//     let teamScore = [];
-//     function teamScoreFunc(item) {
-//         teamScore.push({
-//             name: item.name,
-//             team: item.team,
-//             instrument: item.instrument,
-//             total_score: item.totalScore,
-//             level: item.level,
-//         });
-//     var arr = [{ 'credit': 1, 'trash': null }, { 'credit': 2, 'trash': null }];
-
-//         var total = 0;
-//         students.forEach(teamScoreFunc)
-// teamScore.forEach(item => {
-//     total += item.;
-// });
-
-// console.log(total);
+    let teamScore = [];
+    function teamScoreFunc(item) {
+        teamScore.push({
+            name: item.name,
+            team: item.team,
+            instrument: item.instrument,
+            total_score: item.totalScore,
+            level: item.level,
+        });
+        //
 
 
 
+        var arr = [{ 'credit': 1, 'trash': null }, { 'credit': 2, 'trash': null }];
+
+        let teamBaroque = [];
+        let teamClassical = [];
+        let teamCentury = [];
+        let teamRomantic = [];
+
+        students.forEach(teamScoreFunc)
+        console.log(teamScore);
+        //         teamScore.forEach(item => {
+
+        //             switch()
 
 
-    // console.log(miami.coins);
+        // });
 
-    // module.exports = Character;
-};
+        // console.log(total);
+
+
+
+
+
+        // console.log(miami.coins);
+
+        // module.exports = Character;
+    }
+}
