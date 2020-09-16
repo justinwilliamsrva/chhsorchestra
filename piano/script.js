@@ -53,7 +53,12 @@ window.onload = function () {
         rodrick.a7(4)
         rodrick.a1("t")
         rodrick.a1("c")
-        
+        jacob.a3(4, "Great!")
+        somros.a4(4, "Great playing somoros")
+        rodrick.a6(4, "This is impressive Rodrick")
+        rodrick.a6("t")
+        rodrick.a6("c")
+
     }
 
     var person = "";
@@ -676,7 +681,7 @@ window.onload = function () {
         jamari,
         tyler,
         melissa,
-        Andrew,
+        andrew,
         reuben,
         sierra,
         timothy,
@@ -1074,18 +1079,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[0] = this.level1[0] + " t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[0] = this.level1[0] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[0] = this.level1[0] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1149,18 +1157,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[1] = this.level1[1] + ": t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[1] = this.level1[1] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[1] = this.level1[1] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1225,18 +1236,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[2] = this.level1[2] + ": t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[2] = this.level1[2] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[2] = this.level1[2] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1300,18 +1314,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[3] = this.level1[3] + ": t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[3] = this.level1[3] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[3] = this.level1[3] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1375,18 +1392,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[4] = this.level1[4] + ": t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[4] = this.level1[4] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[4] = this.level1[4] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1450,18 +1470,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[5] = this.level1[5] + ": t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[5] = this.level1[5] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[5] = this.level1[5] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1525,18 +1548,21 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory = 4;
                 this.level1[6] = this.level1[6] + ": t";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility = 4;
                 this.level1[6] = this.level1[6] + "f";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination = 4;
                 this.level1[6] = this.level1[6] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -1594,6 +1620,28 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+          case "t":
+                    this.theory = this.theory = 4;
+                this.level1[7] = this.level1[7] + ": t";
+                this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility = 4;
+                    this.level1[7] = this.level1[7] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination = 4;
+                    this.level1[7] = this.level1[7] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+
         }
     };
     Character.prototype.a9 = function (score, comments) {
@@ -1651,7 +1699,28 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-        }
+                case "t":
+                    this.theory = this.theory = 4;
+                this.level1[8] = this.level1[8] + ": t";
+                this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility = 4;
+                this.level1[8] = this.level1[8] + "f";
+                this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination = 4;
+                this.level1[8] = this.level1[8] + "c";
+                this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+            }
     };
     Character.prototype.a10 = function (score, comments) {
         switch (score) {
@@ -1708,7 +1777,30 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-        }
+                case "t":
+                    this.theory = this.theory = 4;
+                this.level1[9] = this.level1[9] + ": t";
+                this.coins = this.coins + 2;
+
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility = 4;
+                this.level1[9] = this.level1[9] + "f";
+                this.coins = this.coins + 2;
+
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination = 4;
+                this.level1[9] = this.level1[9] + "c";
+                this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+            }
     };
     Character.prototype.b1 = function (score, comments) {
         switch (score) {
@@ -3479,11 +3571,11 @@ window.onload = function () {
         return people.total_score * -1;
     });
 
-    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level}`;
-    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level}`;
-    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level}`;
-    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level}`;
-    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level}`;
+    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level} - Total Score: ${highScore[0].total_score}`;
+    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level} - Total Score: ${highScore[1].total_score}`;
+    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].total_score}`;
+    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
+    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
 
     console.log(highScore[0].name, highScore[1].name);
 
