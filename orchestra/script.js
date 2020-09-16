@@ -1,5 +1,43 @@
 window.onload = function () {
     function assignments() {
+        olivia.a9(3, "rhyhtm and articulation")
+        amyr.a9(3,"some funny rhythm")
+        angela.a5(4)
+        brevin.a5(3, "Some funny notes")
+        angela.a7(4, "Great")
+        trinity.a6(4, "Very intune")
+        amyr.a7(4, "Very clean!!")
+        brevin.a4(3, "Close a few notes of scale out of tune. Usually it was 4th finger")
+        brian.a3(4)
+        amyr.a6(4, "YES!")
+        caleb.a7(4,"Try not to lose sound on the high notes. Those should be the loudest. Otherwise great speed")
+        brett.a8(3, "Watch out for the rhythm at beginning")
+        olivia.a8(4, "You just said 'okeydokers'")
+        caleb.a6(4, "Beautiful. Only funny note was the last one.")
+        brian.a1(4, "Feel free to play faster")
+        brevin.a1(4, "Good")
+        caleb.a5(4)
+        angela.a3(4)
+        olivia.a7(4)
+        brett.a2(4)
+        jane.a5(3, "needs to be faster")
+        olivia.a6(4, "Great")
+        caleb.a4(4, "One of your E naturals was flat, but I can let it slide this time")
+        jane.a6(4, "Intune!")
+        olivia.a5(3, "Needs to be a little faster")
+        olivia.b1(4)
+
+
+
+
+
+
+
+
+
+
+
+
         jude.a1(4, "Good connection and intonation");
         olivia.a1(4, "Good. More sound if you can");
         olivia.a2(4, "Good");
@@ -3333,7 +3371,7 @@ window.onload = function () {
         // A8
         assign8.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/1Dmi3UwgC55qMGlUOvEUFiHe-t_Qpqisp/view?usp=sharing'>Quest: Complete Number 109 at 60BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Dmi3UwgC55qMGlUOvEUFiHe-t_Qpqisp/view?usp=sharing'>Quest: Complete Number 110 at 60BPM</a>";
             reward.innerHTML =
                 "Reward: Intonation(4) + Shifting(2) + Bow Control(4) + Rhythm(2) + Musicality(4) + Coins(4)";
             recording.innerHTML = " Recording: Coming Soon";
