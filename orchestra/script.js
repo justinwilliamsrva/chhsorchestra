@@ -3828,7 +3828,31 @@ window.onload = function () {
     top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
 
 
-    console.log(highScore[0].name, highScore[1].name);
+    // console.log(highScore[0].name, highScore[1].name);
+
+
+//     let teamScore = [];
+//     function teamScoreFunc(item) {
+//         teamScore.push({
+//             name: item.name,
+//             team: item.team,
+//             instrument: item.instrument,
+//             total_score: item.totalScore,
+//             level: item.level,
+//         });
+//     var arr = [{ 'credit': 1, 'trash': null }, { 'credit': 2, 'trash': null }];
+
+//         var total = 0;
+//         students.forEach(teamScoreFunc)
+// teamScore.forEach(item => {
+//     total += item.;
+// });
+
+// console.log(total);
+
+
+
+
 
     // console.log(miami.coins);
 

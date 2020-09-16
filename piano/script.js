@@ -68,6 +68,8 @@ window.onload = function () {
         rodrick.a4("t");
         rodrick.a4("c");
         rebecca.a3(4, "I assume the breaks were for moving the page. Good recording");
+        brady.a3(4)
+        
 
     }
 
