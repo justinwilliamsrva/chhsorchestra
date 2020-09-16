@@ -3814,11 +3814,11 @@ window.onload = function () {
     var highScore = _.sortBy(topScore, function (people) {
         return people.total_score * -1;
     });
-    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level} - Total Score: ${highScore[0].totalScore}`;
-    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level} - Total Score: ${highScore[1].totalScore}`;
-    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].totalScore}`;
-    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].totalScore}`;
-    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].totalScore}`;
+    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level} - Total Score: ${highScore[0].total_score}`;
+    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level} - Total Score: ${highScore[1].total_score}`;
+    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].total_score}`;
+    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
+    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
 
 
     console.log(highScore[0].name, highScore[1].name);
