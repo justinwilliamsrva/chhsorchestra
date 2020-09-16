@@ -72,7 +72,7 @@ window.onload = function () {
     }
 
     var person = "";
-    let days = 2;
+    let days = 1;
     // let daysfresh = 3 / 2;
     let studentsString = [
         "nick",
