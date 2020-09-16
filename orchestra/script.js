@@ -31,7 +31,7 @@ window.onload = function () {
         );
         jane.a4(4);
         jane.a3(3, "Need vibrato. Otherwise good");
-        brevin.a3(4);
+        // brevin.a3(4);
         brevin.a2(4)
         brett.a4(3, "You played an F# coming down in the scale on the E string ");
         jane.a2(4);
@@ -73,6 +73,11 @@ window.onload = function () {
             4,
             "Put a little more pressure into your left hand 4th finger for a better sound"
         );
+        brett.a1(4)
+        brett.a5(4)
+        brett.a6(4)
+        brett.a7(2, "Need to go much faster. I think you were playing the eigth notes as quarter notes")
+
         // ally.a1(4,"")
     }
 
