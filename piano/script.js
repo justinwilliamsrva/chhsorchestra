@@ -34,6 +34,7 @@ window.onload = function () {
         );
         rebecca.a1(4, "Correct");
         rodrick.a2(4);
+        rodrick.a2("t");
         rodrick.a2("c");
         jaden.a2(4);
         kyle.a1(4);
@@ -48,21 +49,28 @@ window.onload = function () {
         reuben.a5(3, "See video comment");
         andrew.a1(4, "Great Andrew");
         sierra.a1(3, "Switched hands");
-        jada.a2(4, "Great Jada")
-        somros.a1(4, "Good to play song fast if you can")
-        rodrick.a7(4)
-        rodrick.a7("t")
-        rodrick.a7("c")
-        jacob.a3(4, "Great!")
-        somros.a4(4, "Great playing somoros")
-        rodrick.a6(4, "This is impressive Rodrick")
-        rodrick.a6("t")
-        rodrick.a6("c")
-
+        jada.a2(4, "Great Jada");
+        somros.a1(4, "Good to play song fast if you can");
+        rodrick.a7(4);
+        rodrick.a7("t");
+        rodrick.a7("c");
+        jacob.a3(4, "Great!");
+        somros.a4(4, "Great playing somoros");
+        rodrick.a6(4, "This is impressive Rodrick");
+        rodrick.a6("t");
+        rodrick.a6("c");
+        // samuel.a3(4, "Good")
+        rodrick.a5(4);
+        rodrick.a5("t");
+        rodrick.a5("c");
+        rodrick.a4(4);
+        rodrick.a4("t");
+        rodrick.a4("c");
+        rebecca.a3(4, "I assume the breaks were for moving the page. Good recording");
     }
 
     var person = "";
-    let days = 0.5;
+    let days = 2;
     // let daysfresh = 3 / 2;
     let studentsString = [
         "nick",
@@ -1156,7 +1164,7 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory + 4;
-                this.level1[1] = this.level1[1] + ": t";
+                this.level1[1] = this.level1[1] + " t";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
@@ -1620,28 +1628,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-          case "t":
-                    this.theory = this.theory + 4;
+            case "t":
+                this.theory = this.theory + 4;
                 this.level1[7] = this.level1[7] + ": t";
                 this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level1[7] = this.level1[7] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level1[7] = this.level1[7] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level1[7] = this.level1[7] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level1[7] = this.level1[7] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.a9 = function (score, comments) {
@@ -1699,28 +1706,28 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
+            case "t":
+                this.theory = this.theory + 4;
                 this.level1[8] = this.level1[8] + ": t";
                 this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
                 this.level1[8] = this.level1[8] + "f";
                 this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
                 this.level1[8] = this.level1[8] + "c";
                 this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-            }
+                this.evaluate();
+                this.printStats();
+                break;
+        }
     };
     Character.prototype.a10 = function (score, comments) {
         switch (score) {
@@ -1777,30 +1784,30 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
+            case "t":
+                this.theory = this.theory + 4;
                 this.level1[9] = this.level1[9] + ": t";
                 this.coins = this.coins + 2;
 
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
                 this.level1[9] = this.level1[9] + "f";
                 this.coins = this.coins + 2;
 
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
                 this.level1[9] = this.level1[9] + "c";
                 this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-            }
+                this.evaluate();
+                this.printStats();
+                break;
+        }
     };
     Character.prototype.b1 = function (score, comments) {
         switch (score) {
