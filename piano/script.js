@@ -12,6 +12,7 @@ window.onload = function () {
         joseph.a1(4, " Good you don't have to repeat");
         // samuel.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
         rodrick.a3(4);
+        rodrick.a3("t");
         rodrick.a3("c");
         brady.a2(
             4,
@@ -67,6 +68,7 @@ window.onload = function () {
         rodrick.a4("t");
         rodrick.a4("c");
         rebecca.a3(4, "I assume the breaks were for moving the page. Good recording");
+
     }
 
     var person = "";
