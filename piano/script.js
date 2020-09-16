@@ -9,7 +9,7 @@ window.onload = function () {
         brady.a1(4, "Correct");
         jacob.a1(2, "not the correct notes");
         reuben.a2(4, "Good");
-        joseph.a1(4," Good you don't have to repeat")
+        joseph.a1(4, " Good you don't have to repeat");
         // samuel.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
         rodrick.a3(4);
         rodrick.a3("c");
@@ -19,7 +19,7 @@ window.onload = function () {
         );
         reuben.a1(4, "Good");
         victoria.a1(
-            3,
+            4,
             "It sounds like you either played it all with one hand or moved your left hand to take the same place as your right hand. THe two hand should be in different places"
         );
         rebecca.a2(
@@ -27,7 +27,7 @@ window.onload = function () {
             "in the both There are too many breaks between the measures. Go slow enough that you don't need time to think"
         );
         jada.a1(4, "Good");
-        joseph.a2(4,"You don\'t need to repeat")
+        joseph.a2(4, "You don't need to repeat");
         somros.a2(
             3,
             "Good except your rhythm is off on your long notes. Most of the time you hold them for longer than asked."
@@ -43,6 +43,17 @@ window.onload = function () {
         ken.a2(4);
         reuben.a4(4);
         // lauren.a1(4)
+        sierra.a2(4, "Great! Slow is fine!");
+        victoria.a2(4, "Good");
+        reuben.a5(3, "See video comment");
+        andrew.a1(4, "Great Andrew");
+        sierra.a1(3, "Switched hands");
+        jada.a2(4, "Great Jada")
+        somros.a1(4, "Good to play song fast if you can")
+        rodrick.a7(4)
+        rodrick.a1("t")
+        rodrick.a1("c")
+        
     }
 
     var person = "";
@@ -571,7 +582,7 @@ window.onload = function () {
         "melissa",
         "Sophomore"
     );
-    const Andrew = new Character(
+    const andrew = new Character(
         "Mighty",
         "romantic",
         1,
@@ -583,7 +594,7 @@ window.onload = function () {
         0,
         0,
         0,
-        "Andrew",
+        "andrew",
         "Sophomore"
     );
     const reuben = new Character(
@@ -3453,6 +3464,7 @@ window.onload = function () {
             team: item.team,
             instrument: item.instrument,
             total_score: item.totalScore,
+            level: item.level,
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -3467,11 +3479,11 @@ window.onload = function () {
         return people.total_score * -1;
     });
 
-    top1.innerHTML = `${highScore[0].name} - ${highScore[0].total_score}`;
-    top2.innerHTML = `${highScore[1].name} - ${highScore[1].total_score}`;
-    top3.innerHTML = `${highScore[2].name} - ${highScore[2].total_score}`;
-    top4.innerHTML = `${highScore[3].name} - ${highScore[3].total_score}`;
-    top5.innerHTML = `${highScore[4].name} - ${highScore[4].total_score}`;
+    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level}`;
+    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level}`;
+    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level}`;
+    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level}`;
+    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level}`;
 
     console.log(highScore[0].name, highScore[1].name);
 
