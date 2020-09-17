@@ -120,7 +120,10 @@ window.onload = function () {
             2,
             "Need to go much faster. I think you were playing the eigth notes as quarter notes"
         );
-
+        jade.a3(3,"Mostly really great, but watch the articulation. Some of the notes are short. The ones with dats")
+        jude.a3(3, "Great bass playing jude. Watch our for the staccato notes which need to be short")
+        matthew.a1(3, "Great playing Matthew. Watch out for #12 the third finger needs to be low")
+        rowan.a2(4,"Great playing")
         // ally.a1(4,"")
     }
 

@@ -70,6 +70,11 @@ window.onload = function () {
         rebecca.a3(4, "I assume the breaks were for moving the page. Good recording");
         brady.a3(4);
         kyle.a3(4);
+        jaden.a4(4)
+        kyle.a2(4)
+        josendo.a2(4)
+        josendo.a2("c")
+        jamari.a2(4)
     }
 
     var person = "";
