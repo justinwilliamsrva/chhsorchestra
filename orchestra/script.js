@@ -1,47 +1,44 @@
 window.onload = function () {
     function assignments() {
-        olivia.a9(3, "rhyhtm and articulation")
-        amyr.a9(3, "some funny rhythm")
-        angela.a5(4)
-        brevin.a5(3, "Some funny notes")
-        angela.a7(4, "Great")
-        trinity.a6(4, "Very intune")
-        amyr.a7(4, "Very clean!!")
-        brevin.a4(3, "Close a few notes of scale out of tune. Usually it was 4th finger")
-        brian.a3(4)
-        amyr.a6(4, "YES!")
-        caleb.a7(4, "Try not to lose sound on the high notes. Those should be the loudest. Otherwise great speed")
-        brett.a8(3, "Watch out for the rhythm at beginning")
-        olivia.a8(4, "You just said 'okeydokers'")
-        caleb.a6(4, "Beautiful. Only funny note was the last one.")
-        brian.a1(4, "Feel free to play faster")
-        brevin.a1(4, "Good")
-        caleb.a5(4)
-        angela.a3(4)
-        olivia.a7(4)
-        brett.a2(4)
-        jane.a5(3, "needs to be faster")
-        olivia.a6(4, "Great")
-        caleb.a4(4, "One of your E naturals was flat, but I can let it slide this time")
-        jane.a6(4, "Intune!")
-        olivia.a5(3, "Needs to be a little faster")
-        olivia.b1(4)
-        caleb.a9(4, "Thank you for the articulation")
-        caleb.a8(4, "If you are in need of beautiful bass solo. this one is a good one. Great playing")
-        brett.a3(2, "Watch out for rhythm. Scrolling is fine")
+        olivia.a9(3, "rhyhtm and articulation");
+        amyr.a9(3, "some funny rhythm");
+        angela.a5(4);
+        brevin.a5(3, "Some funny notes");
+        angela.a7(4, "Great");
+        trinity.a6(4, "Very intune");
+        amyr.a7(4, "Very clean!!");
+        brevin.a4(3, "Close a few notes of scale out of tune. Usually it was 4th finger");
+        brian.a3(4);
+        amyr.a6(4, "YES!");
+        caleb.a7(
+            4,
+            "Try not to lose sound on the high notes. Those should be the loudest. Otherwise great speed"
+        );
+        brett.a8(3, "Watch out for the rhythm at beginning");
+        olivia.a8(4, "You just said 'okeydokers'");
+        caleb.a6(4, "Beautiful. Only funny note was the last one.");
+        brian.a1(4, "Feel free to play faster");
+        brevin.a1(4, "Good");
+        caleb.a5(4);
+        angela.a3(4);
+        olivia.a7(4);
+        brett.a2(4);
+        jane.a5(3, "needs to be faster");
+        olivia.a6(4, "Great");
+        caleb.a4(4, "One of your E naturals was flat, but I can let it slide this time");
+        jane.a6(4, "Intune!");
+        olivia.a5(3, "Needs to be a little faster");
+        olivia.b1(4);
+        caleb.a9(4, "Thank you for the articulation");
+        caleb.a8(
+            4,
+            "If you are in need of beautiful bass solo. this one is a good one. Great playing"
+        );
+        brett.a3(2, "Watch out for rhythm. Scrolling is fine");
         // walker.a1
-        thomas.a1(4, "Great time indeed")
+        thomas.a1(4, "Great time indeed");
         // ramon.a1(4,"good stuff")
-        jane.a1(4)
-
-
-
-
-
-
-
-
-
+        jane.a1(4);
 
         jude.a1(4, "Good connection and intonation");
         olivia.a1(4, "Good. More sound if you can");
@@ -75,7 +72,7 @@ window.onload = function () {
         jane.a4(4);
         jane.a3(3, "Need vibrato. Otherwise good");
         // brevin.a3(4);
-        brevin.a2(4)
+        brevin.a2(4);
         brett.a4(3, "You played an F# coming down in the scale on the E string ");
         jane.a2(4);
         brevin.a1(4);
@@ -83,7 +80,7 @@ window.onload = function () {
         trinity.a4(4);
         trinity.a3(2, "Some funny notes in the first 4 measures");
         trinity.a2(4);
-        trinity.a1(4)
+        trinity.a1(4);
         amyr.a5(4);
         caleb.a1(4);
         caleb.a2(4);
@@ -116,10 +113,13 @@ window.onload = function () {
             4,
             "Put a little more pressure into your left hand 4th finger for a better sound"
         );
-        brett.a1(4)
-        brett.a5(4)
-        brett.a6(4)
-        brett.a7(2, "Need to go much faster. I think you were playing the eigth notes as quarter notes")
+        brett.a1(4);
+        brett.a5(4);
+        brett.a6(4);
+        brett.a7(
+            2,
+            "Need to go much faster. I think you were playing the eigth notes as quarter notes"
+        );
 
         // ally.a1(4,"")
     }
@@ -215,6 +215,11 @@ window.onload = function () {
     var top3 = document.getElementById("topscore3");
     var top4 = document.getElementById("topscore4");
     var top5 = document.getElementById("topscore5");
+    var teamTop1 = document.getElementById("teamtopscore1");
+    var teamTop2 = document.getElementById("teamtopscore2");
+    var teamTop3 = document.getElementById("teamtopscore3");
+    var teamTop4 = document.getElementById("teamtopscore4");
+    var teamTop5 = document.getElementById("teamtopscore5");
     function Character(
         name,
         team,
@@ -3783,7 +3788,7 @@ window.onload = function () {
         comment.innerHTML = "";
     }
     function clearQuests() {
-        currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.40";
+        currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.50";
         assign1.innerHTML = "";
         assign2.innerHTML = "";
         assign3.innerHTML = "";
@@ -3859,7 +3864,7 @@ window.onload = function () {
         // console.log(jaden.coins);
     }
     students.forEach(topScoreFunc);
-    console.log(topScore);
+    // console.log(topScore);
 
     var highScore = _.sortBy(topScore, function (people) {
         return people.total_score * -1;
@@ -3870,47 +3875,113 @@ window.onload = function () {
     top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
     top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
 
-
     // console.log(highScore[0].name, highScore[1].name);
 
+    var arr = [
+        { credit: 1, trash: null },
+        { credit: 2, trash: null },
+    ];
 
-    let teamScore = [];
-    function teamScoreFunc(item) {
-        teamScore.push({
-            name: item.name,
-            team: item.team,
-            instrument: item.instrument,
-            total_score: item.totalScore,
-            level: item.level,
-        });
-        //
+    let teamBaroque = [];
+    let teamClassical = [];
+    let teamCentury = [];
+    let teamRomantic = [];
+    let teamHeretic = []
 
+    console.log(topScore);
 
-
-        var arr = [{ 'credit': 1, 'trash': null }, { 'credit': 2, 'trash': null }];
-
-        let teamBaroque = [];
-        let teamClassical = [];
-        let teamCentury = [];
-        let teamRomantic = [];
-
-        students.forEach(teamScoreFunc)
-        console.log(teamScore);
-        //         teamScore.forEach(item => {
-
-        //             switch()
-
-
-        // });
-
-        // console.log(total);
-
-
-
-
-
-        // console.log(miami.coins);
-
-        // module.exports = Character;
+    function teamScore(item) {
+        if (item.team == "baroque") {
+            teamBaroque.push(item);
+        }
+        else if (item.team == "classical") {
+            teamClassical.push(item);
+        }
+        else if (item.team == "century") {
+            teamCentury.push(item);
+        }
+        else if (item.team == "romantic") {
+            teamRomantic.push(item);
+        }
+        else if (item.team == "heretics") {
+            teamHeretic.push(item);
+        }
     }
-}
+
+    let baroque_Score = 0;
+    let classical_Score = 0;
+    let romantic_Score = 0;
+    let century_Score = 0;
+    let heretic_Score = 0;
+
+
+
+    finalTeamScore = []
+    function teamTotalScore(item) {
+        if (item.team == "baroque") {
+            baroque_Score = item.total_score + baroque_Score;
+
+
+
+        }
+        else if (item.team == "classical") {
+            classical_Score  = item.total_score + classical_Score ;
+
+        }
+        else if (item.team == "century") {
+            romantic_Score = item.total_score + romantic_Score;
+
+        }
+        else if (item.team == "romantic") {
+            century_Score = item.total_score + century_Score;
+
+        }
+        else if (item.team == "heretics") {
+            heretic_Score = item.total_score + heretic_Score;
+
+        }
+
+
+
+    }
+
+    topScore.forEach(teamScore);
+    teamHeretic.forEach(teamTotalScore)
+    teamBaroque.forEach(teamTotalScore)
+    teamClassical.forEach(teamTotalScore)
+    teamRomantic.forEach(teamTotalScore)
+    teamCentury.forEach(teamTotalScore)
+
+    var BObj = { name: "Baroque Kingdom", score: baroque_Score }
+    var CObj = { name: "Classical Reign", score: classical_Score }
+    var RObj = {name: "Romantic Dynasty", score: romantic_Score}
+    var CenObj = {name: "21st Centurians", score: century_Score}
+    var HObj = {name: "Heretics of Hive", score: heretic_Score}
+
+
+    finalTeamScore.push(BObj, CObj, RObj, CenObj, HObj)
+    var highteamScore = _.sortBy(finalTeamScore, function (team) {
+        return team.score * -1;
+    });
+
+    console.log(highteamScore);
+    teamTop1.innerHTML = `${highteamScore[0].name} - Total Score: ${highteamScore[0].score}`;
+    teamTop2.innerHTML = `${highteamScore[1].name}  - Total Score: ${highteamScore[1].score}`;
+    teamTop3.innerHTML = `${highteamScore[2].name} - Total Score: ${highteamScore[2].score}`;
+    teamTop4.innerHTML = `${highteamScore[3].name} - Total Score: ${highteamScore[3].score}`;
+    teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
+
+
+
+    //         teamScore.forEach(item => {
+
+    //             switch()
+
+    // });
+
+    // console.log(total);
+
+    // console.log(miami.coins);
+
+    // module.exports = Character;
+};

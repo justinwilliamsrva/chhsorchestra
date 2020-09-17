@@ -42,28 +42,28 @@
         word-wrap: break-word;
     }
 
-    #topscore1 {
+    #topscore1,#teamtopscore1 {
         color: gold;
         font-size: 13px;
         word-wrap: break-word;
     }
 
-    #topscore2 {
+    #topscore2,#teamtopscore2 {
         color: silver;
         font-size: 13px;
         word-wrap: break-word;
     }
-    #topscore3 {
+    #topscore3,#teamtopscore3 {
         color: orangered;
         font-size: 13px;
         word-wrap: break-word;
     }
-    #topscore4 {
+    #topscore4,#teamtopscore4 {
         color: green;
         font-size: 13px;
         word-wrap: break-word;
     }
-    #topscore5 {
+    #topscore5,#teamtopscore5 {
         color: blue;
         font-size: 13px;
         word-wrap: break-word;
