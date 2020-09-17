@@ -3755,8 +3755,8 @@ window.onload = function () {
         assign4.innerHTML = "Contributors";
         assign3.addEventListener("click", function () {
             clearInstructions();
+            instruct.innerHTML =
                 "<div style='20px';><p>Long forgotten until the Second Symphonic Age laid the Golden Era of Harmony, a time when musicians in every nation dwelt in peace. In each nation was a different people and reign of power: the Baroque Kingdom, the Classical Reign, the Romantic Dynasty, and the 21st Centurions; each separate in culture, beliefs, and practices. Any non-musician might say they were destined to fall to war but in the early days, the alliance of the four empires reigned supreme. Dissonance among people was rare, and many delighted in the exchanges of knowledge and customs.</p> <br> <p>There were those , however, who found chaos in the commingling, and dissenters from each nation orchestrated a plan to destroy the foundation of trust and understanding. In a single night, before the break of dawn, the dissenters that came to be known as the Heretic of Hive had eliminated each nation principals and the people clashed against each other, drawing bows and sounding horns, calling the sounds of war </p><br><p>Peace must be restored among this world, for because of the blind assault, music cannot flow as freely as it once did. As a musician of much knowledge and incredible passion, you must help bring an end to this war whether for your nation, or for the good of all nations. The fight will be grating, tiresome and may even seem impossible at times but only hearts like yours can bring rest to the pain and resolve the unrest.</p></div>";
-                instruct.innerHTML =
         });
         assign4.addEventListener("click", function () {
             clearInstructions();
@@ -3886,24 +3886,20 @@ window.onload = function () {
     let teamClassical = [];
     let teamCentury = [];
     let teamRomantic = [];
-    let teamHeretic = []
+    let teamHeretic = [];
 
     console.log(topScore);
 
     function teamScore(item) {
         if (item.team == "baroque") {
             teamBaroque.push(item);
-        }
-        else if (item.team == "classical") {
+        } else if (item.team == "classical") {
             teamClassical.push(item);
-        }
-        else if (item.team == "century") {
+        } else if (item.team == "century") {
             teamCentury.push(item);
-        }
-        else if (item.team == "romantic") {
+        } else if (item.team == "romantic") {
             teamRomantic.push(item);
-        }
-        else if (item.team == "heretics") {
+        } else if (item.team == "heretics") {
             teamHeretic.push(item);
         }
     }
@@ -3914,52 +3910,35 @@ window.onload = function () {
     let century_Score = 0;
     let heretic_Score = 0;
 
-
-
-    finalTeamScore = []
+    finalTeamScore = [];
     function teamTotalScore(item) {
         if (item.team == "baroque") {
             baroque_Score = item.total_score + baroque_Score;
-
-
-
-        }
-        else if (item.team == "classical") {
-            classical_Score  = item.total_score + classical_Score ;
-
-        }
-        else if (item.team == "century") {
+        } else if (item.team == "classical") {
+            classical_Score = item.total_score + classical_Score;
+        } else if (item.team == "century") {
             romantic_Score = item.total_score + romantic_Score;
-
-        }
-        else if (item.team == "romantic") {
+        } else if (item.team == "romantic") {
             century_Score = item.total_score + century_Score;
-
-        }
-        else if (item.team == "heretics") {
+        } else if (item.team == "heretics") {
             heretic_Score = item.total_score + heretic_Score;
-
         }
-
-
-
     }
 
     topScore.forEach(teamScore);
-    teamHeretic.forEach(teamTotalScore)
-    teamBaroque.forEach(teamTotalScore)
-    teamClassical.forEach(teamTotalScore)
-    teamRomantic.forEach(teamTotalScore)
-    teamCentury.forEach(teamTotalScore)
+    teamHeretic.forEach(teamTotalScore);
+    teamBaroque.forEach(teamTotalScore);
+    teamClassical.forEach(teamTotalScore);
+    teamRomantic.forEach(teamTotalScore);
+    teamCentury.forEach(teamTotalScore);
 
-    var BObj = { name: "Baroque Kingdom", score: baroque_Score }
-    var CObj = { name: "Classical Reign", score: classical_Score }
-    var RObj = {name: "Romantic Dynasty", score: romantic_Score}
-    var CenObj = {name: "21st Centurians", score: century_Score}
-    var HObj = {name: "Heretics of Hive", score: heretic_Score}
+    var BObj = { name: "Baroque Kingdom", score: baroque_Score };
+    var CObj = { name: "Classical Reign", score: classical_Score };
+    var RObj = { name: "Romantic Dynasty", score: romantic_Score };
+    var CenObj = { name: "21st Centurians", score: century_Score };
+    var HObj = { name: "Heretics of Hive", score: heretic_Score };
 
-
-    finalTeamScore.push(BObj, CObj, RObj, CenObj, HObj)
+    finalTeamScore.push(BObj, CObj, RObj, CenObj, HObj);
     var highteamScore = _.sortBy(finalTeamScore, function (team) {
         return team.score * -1;
     });
@@ -3970,8 +3949,6 @@ window.onload = function () {
     teamTop3.innerHTML = `${highteamScore[2].name} - Total Score: ${highteamScore[2].score}`;
     teamTop4.innerHTML = `${highteamScore[3].name} - Total Score: ${highteamScore[3].score}`;
     teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
-
-
 
     //         teamScore.forEach(item => {
 
