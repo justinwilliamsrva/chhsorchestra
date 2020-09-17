@@ -3773,16 +3773,16 @@ window.onload = function () {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
         assign1.innerHTML = `Total Score: ${personage.totalScore}`;
-        assign4.innerHTML = `Current Rank: ${myTotalRank}`;
+        assign4.innerHTML = `Current Rank in Orchestra: ${myTotalRank}`;
 
-        personage.grading();
-        // if (person == "jaden") {
-        //     personage.freshGrading();
-        // } else if (person == "miami") {
-        //     personage.grading();
-        // }
+        // personage.grading();
+        // // if (person == "jaden") {
+        // //     personage.freshGrading();
+        // // } else if (person == "miami") {
+        // //     personage.grading();
+        // // }
 
-        assign5.innerHTML = `Rank on Team: ${myHighScore}`;
+        assign5.innerHTML = `Current Rank on Team: ${myHighScore}`;
         assign6.innerHTML = `Rank on Instrument: Coming Soon`;
     }
 
@@ -3969,6 +3969,10 @@ window.onload = function () {
         return team.total_score * -1;
     });
     console.log(hereticHighScore);
+       console.log(classicalHighScore);
+          console.log(romanticHighScore);
+             console.log(centuryHighScore);
+                console.log(baroqueHighScore);
 
     topScore.forEach(teamTopScore);
 
