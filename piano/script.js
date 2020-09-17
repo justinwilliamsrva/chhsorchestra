@@ -77,6 +77,17 @@ window.onload = function () {
         jamari.a2(4)
         // lauren.a3(4)
         // lauren.a2(4)
+        josendo.a3(4)
+        jaden.a7(4)
+        reuben.a6(4)
+        jaden.a6(4)
+        jaden.a5(4)
+        kyle.a4(4)
+
+
+
+
+
 
 
 

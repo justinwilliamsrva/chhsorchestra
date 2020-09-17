@@ -71,7 +71,7 @@ window.onload = function () {
         );
         jane.a4(4);
         jane.a3(3, "Need vibrato. Otherwise good");
-        // brevin.a3(4);
+
         brevin.a2(4);
         brett.a4(3, "You played an F# coming down in the scale on the E string ");
         jane.a2(4);
@@ -145,11 +145,13 @@ window.onload = function () {
         );
         spencer.a2(3, "The rhythm is very funny in #17 ");
         thomas.a2(4, "Nice with the standing practice. The bow will take getting used to");
-        // zackary.a2(2, "Let's go over 17 next time. It is hard on cello")
+        zack.a2(2, "Let's go over 17 next time. It is hard on cello")
         mackenzie.a3(4);
-        // juliet.a3(3, "A few missed notes. Otherwise good")
+        jules.a3(3, "A few missed notes. Otherwise good")
         kamille.a3(3, "Good but it could be a little faster");
-        
+        julia.a1(2,"Close. Let's go over this next class. I will start with cellos")
+
+
 
         // ally.a1(4,"")
     }
@@ -160,10 +162,7 @@ window.onload = function () {
     let studentsString = [
         "jane",
         "olivia",
-        "whitt",
         "angela",
-        "chankyu",
-        "ryan",
         "brett",
         "brevin",
         "connor",
@@ -174,7 +173,6 @@ window.onload = function () {
         "matthew",
         "rowan",
         "lauren",
-        "yashua",
         "cameryn",
         "zack",
         "lucca",
@@ -182,8 +180,6 @@ window.onload = function () {
         "jules",
         "mackenzie",
         "jade",
-        "william",
-        "kasudie",
         "natalia",
         "kyle",
         "caleb",
@@ -203,7 +199,6 @@ window.onload = function () {
         "abigail",
         "tristan",
         "brian",
-        "jaden",
         "amy",
         "amyr",
         "trinity",
@@ -483,22 +478,6 @@ window.onload = function () {
         "olivia",
         "Junior"
     );
-    const whitt = new Character(
-        "Malcorus",
-        "heretics",
-        1,
-        "https://vignette.wikia.nocookie.net/characterprofile/images/c/c8/BotW_Link.png/revision/latest?cb=20170306180639",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "Cello",
-        "whitt",
-        "Junior"
-    );
     const angela = new Character(
         "Komainu",
         "heretics",
@@ -515,38 +494,7 @@ window.onload = function () {
         "angela",
         "Junior"
     );
-    const chankyu = new Character(
-        "Nemo",
-        "heretics",
-        1,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfaaXnuExSbd0tWIp2nTk5JUuuvlUMeCOc7g&usqp=CAU",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "Cello",
-        "chankyu",
-        "Junior"
-    );
-    const ryan = new Character(
-        "Lad",
-        "heretics",
-        1,
-        "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMWFhUXFx0ZGBgYGBgYIBoYGBYXFxgYGB0YHSggGh0lHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAPGC0dHR0tKystLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKys3LSstLS03LS0rKystK//AABEIANsA5gMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAMFBgcCAQj/xAA5EAABAwMCBAQDBwQDAAMBAAABAAIRAwQhEjEFQVFhBhMicTKBkRQjQqGxwdEHUuHwFWLxcpLCM//EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAIREBAQACAwEBAAMBAQAAAAAAAAECEQMSITETMkFRIgT/2gAMAwEAAhEDEQA/AMwsBNMRyn/CKDpBzBB1KJtr2MAYH5oq1ufXrP0XVK58p6lvsrSxrhMO+vzUTxB9Si4g89j8o+qmmXOljOhMBeXBFZkaRE5MDb5rBFdrPMhxJ6fLqm7msA4aNuRUjdUHNBBy2IEQQRyJ5hQ1anBHTcFBSSVNcEq1RVaGOg7lWe3pte8Fz/vA4Az+ISqlwommRWM7Y25mFKUK/mVW1Acg5A7IUlg/ip+zVNYl1NwcCx+YJVQ4jVAedBgHkrR4vrvNNhdEkzIIMj5c1SajpK0NjExSvppkB0HSJHWDKHt3udVBAJMjA6TlB0Gjmpbg7y15DRLnCG/PmUw2QzcPfUrOLt9UewBgBTlqwaSDvspW74O0bVAYGo4yBGwPNQ5YT9FiZGq1XRmR0wpO1rg6mtM8wZ3/ANKr11SmXNfGYLeoiZTthWFJgefUHfkeaAaF8QfWkseS5ukkE7iMwCFVqjuavdvcipQdLZzk8xPJUa5p6XFpBEHY/kml0pjDRK7ovhwPQrkhTNraUDSE1IeRnt2IVIZ7QGt28GMQU+KxZOoEu6r11u2nSFRo9QOTKFqXmoyRjoqJWH6lwXCXNlu3eeqjL2hpO0IukHz6dkQ1usGd2/sha29Iui3Zx2/Vd1HA4EJ5tMD4tv8AdkxXY1roBMFaUZ6ZeIMDKcbdEAjqnqjGnZwQ5pJ9mcPfKS5K8TbjO7Vuc9J+iMoUwS10w3Eoayc4HUBOIXYe4uM4HRcENcdp9hHlDUYAMg/NO0bimaXlmSSd9oCq3212nTOF3TuiG9+S3YnSrLcaWadDi5pJn36Lzidn5lACmwQ0SOs8/cKPZdfcgHrM+6uP9MuEsvKkV9WjTAaDGo7Ek9FtjJWetq4DHEhoOfcKS4Q71OAnSVcvH39P6lg81qQ8yic6iAdM8nfyqFaS18k+nMkbLbaxI8ZMta3m0kg8jKr9anzT1zfOcNJMicIecIyjJomPVt4RbtFPU1p1EZcRyPRVOg0TLpjnCt/D+JhzAwNgRjM7LBkkKBBpVXD4mgfQ4IUNRrEAgHmib29Hk1CzsCj+B2ts1uqvL3FoIAMDOYlHGbJJtS7wmnUJ35/VN1r0uYGRABnC0yp4RsbtpNM1KD9hL9bSYnnlUjxB4TrWrwHaXsOz2nHsehTddKzHwR4ZuWtB17HvGxkJziHBX13F/STqEO9PIEDKE4lZsZSaJORIOwBjYqItuI1GFpa4jTsJMfMc0tGOLy2NN5Y6JHTolQwNXdcXFdzzLjJiFwCnxrCvOcQQT6ZmE7o2MFCUGyc7I6vcQyB1weypMi2DOHEu0hsTnHVP3dvjUBvv7qFsrkscCHR3/ZOXvEi8R3mUuXpOtG07Vr9LZ0nYomtYUxTgOkjc85UHb3DpHPPNF1rl4Eddz7o43QWWOLio0ARkpmk8krymzI90c+3JBIGw9kd+juB9LB/pSTGlw7JI7ombd+kEjcR+a9e4uOocslcfh+a4BIXF8Vek7pOeTupO3smvid49kHWoAOhpkRI/go6Z3dXpeAMD+FcPB9zUt6IrMk+ogHMY3AVJZRkgK7cK4o6nSbTc0Fokj5qed0OOtth8O8cpcQt3ULj1Ne3S4HcT09ljHj3wbW4ZVIy+g/4KnI/9XdHIm18Rttq4FLUIPqk8z0C1vg3G7fiFB1tcta5rxBB/UHke6Wcmi36+a205Sa1XXx74ArcOqahNS3d8FTp/1f3781T6bSCunGylNuycKy8DYWNl2J5EclA0P/6NxJkY65U/UvNXn06npeCNI6AcvzCNDILWexlTQ55FJzidUE884G5wrdRo8NeZo1jEQA86Dqjoe6z6lcS+m12zHD6Stc4Qyg7Q6qwFzfhOgDbaSFplp0cHF2E3vDzb06Nei70gHMbkiDPyVW8R8WNWj5bgJ1AyFqLOLU6rdFRrS3aD+Sxz+pd/SFcUqBEMEPLRA1Tt8lpncl+bj647Q1zfsJhwxADm5g4wR0hQDhkwvajpXK1ccJerxJbbOw+BC8LlzK9TbYpSSSR2x+3YTMcl3UrYhDNdCTnzum2GtjrK90TjPIoupfwZ1AyJ+vJQq9aENh0gms4ucdKS5o1dIXqLaHW1Bj6QDQdc8hM90xfU3OcGAZYIA2x+6Lol9ucNE5A+fNDX18XN0ECWmdXOeYXMOzNvScASWyBz6J17QB5gOZ5+3Je8Npy8Nc+NS74yKbYawkkbrbY1Y0JqtDTIOf5VvZSaBJ5fsq/4WtgSah5YHzUrxi6DaZBPxY+S4+S25yN/atXLfvC+ZkypXg3iF9GoCDhQ9Jk7ZTNVsO7LpvHLA2+jfC/ield0TQuAHscIIOVnvj3+mNS2Lrm0mrbn1Efipj9wqdwjjL6RBBMLX/AvjQOaKVYyHCDOZB6pMO2F9+MxqzeKfrIyDj+VHX9dz3uf1K1X+ovgB1Kbuyb5lB2XUxksnoObf0VU4X4Jq1CHV3MosjmfV2ELp32aKYCrjw7xTWc1rAxuIEgQjrngFrT9NP7zS2Xudn2De5TVhaOr1g1jQAG7AREbLXHx08OVmS5+E5c8OqZWe+LfDFyyvVqCmX0y9ztTM4JnIGVoRpOoUA4uAccBo37rjhnEnAxpOea3Hj/a/wD6MvNMWeMwVytc8Rf01ZVD6tu5wqEyWOyCTk5GQsy4rwitbu01aZaTtOx9ins24gCS9XiWwCSSSQYkkkkWJJJJASXrSvEkdgdNXskmwkn22k1WuGueCXENBIJ9hIQt7XY54e1sNAg9T3TnmgiqdI39OEBSpHUAcT1UCw48NJJmOYTzRq9JyU2+lzHVdamj1EkR0Rs8Zf8AhtjbsbTpuJpDT6jGolxyVYKfgWxu6Wv7Q5tTZoEH6tWeU+Mh5DngmB7J53F3UgKgeRJiB9VyXG9tq+aHcX8FXFm46QXs/vAkEd+iiWUGF2wjorv4b/qI4ANfDm7Gc4U5ccP4ffAObFCpyc2InuF0Y5f6hldVjl5RdTfpMQciOiP4a2q0awCAMgqe4z4ErW9dtSpFS2mTUaZHsZyJU3YUqL2P0CBMAdFSyWGwnZYP6deMJAp1D2Mqd4xYWDblrqtVrA8F2gzkjoenZYvx23q2dUVG/CekqfrX32+3Y0Ph7MtP7LmtuBtWNG8QeHqN5Q1UA1tRo9JAA1djCzS0pV7Gr5tVhYRIIPPkrD4V8Tut2RWHrnSAeUH4leb4tv7ZzBoLyMFwBgqmHL/ozLTFanFLmvU1HDS7bt2U1QrkQY2UHxCnc2tZzatIMLT8PUdQeYVq8M8Lr3phjA1kfG4wJ5ADcrr7TQ3K5X1M8G45BgnTAPuU3xuwocToPa58VGtJpjaHAYPz2UDx3g9zZXDG1m6mH4XsnS7Gd9j2T9lQDma2n1A7duanLs+mP1aRaS1wggkEdxhNqyeNuGupXGuPTVGoe+xH6fVV0tVEnCS9IXinpiSShKENUXi9XsJLdWeL1eL1NIDxJJeraZN041cjK4u7N5zpODnnjspyhwsEgup7GdoRdzwknLdQzvy+ahsslQVXhLnCWiJiP89FH1uFvGpsZB/RXU2r9MA559wOSZdaHU1pa4Ttqbv8xut3PMapde3eGggHbMJjU925PzWg1OHaT07QubnhrXGXMBncx/CHaD1Uy1bPUEKQs+JvY4CfbKnm+HGh0h0DoSimeF6Ml2qQMhoMme3Za2FuFcHxJUfRdRe6Qf1Gy64LehjtQByIc3/9BKnwkcwfZNO4XUDTozHI7+0o4Z/0PHNJi7oUrlpY+TO2ZgqC4Nbss6zmVqdR7TBY6mQAc85Q1zxfyQ0aSHHcdOqt/D+LUa9NrfScYMZBW5NWOjHCZUDxa3bdSWEtLfhG/wBU74Q8Ruo1BTfggwRKkK1ZlvS1vpE0dJDqlMDVTd+Ekc2nqoTiHC216ba1Iw8CR3XLYny8dxanxzhlDiFsZH3jGkscPikCY7ys78L8bdReGAwJyOkbrvwj4qdT9LiQ4Yj2Uf4spuNZ902AHxOnGYz9Ue9k0nhGz21SjfUTTqtDmn9eo6FZ34q8F17F32m3cX0mmSM6mjv1CC8DeJIcGkwP091rnDeL07hsAggiDPNPhy6+qaYr4woNvbIV6YGuidTm8wD8Xy5rNatseh+i2vxp4drWj31Ldk06pOQcNB3a7soSlwhhaCW5hdcz8CcfZlJtHf2n6Lz7I7ofotWdwZn9v5rw8Cb0/NbuP41lf2R3Q/ReOtHDkfotP/4HPNev4FPX6IfoP41lptXf2n6Lk0D0P0WoO4GP9CZHBgd4HyR/Qt4smatpzyXL6a05nBqfUf8A1Q1fhTdUYPyQmZfzyZyKZ6FeLSBwlh/t/P8AhJb9I3XJIsZIjOO8wnxbYB1kBSFClTLgHyQNowSi72m0jGkacwZaf4K5bXRMIijZwd9wY90RUtnOaNRkjb3RFxVLgPSMQTAAP/iMc3TgOABAMbqcozGI+4tHfEIg784QrbI7T7KbEEZx2Q1yWUyDqM9E7XjRlezgS9oISoWgBESD1ghWCiGEzAMjbdPsYADHqHT3Wo/nVcr0TuWkD33XtG3HMiI5bz3Uy6hTj1Nz7qO/44NJdq/P9kvofmh7zhVNwIIJCg7ngxoO8xmWxkTB/wAq7uZjSWieULPPHFzXbVbS+FhEiNzO8psZbQ/itHA+Mk0y8kEAEGYILej2ncKDo32iq57APKHIAgCeQHIKl0nvbgTHRWPwzf0iTSuKnlMcMuInbITZYVuTkmU0n+IcOFUCtRw/mAnLLigaCys0OA/VR3AOJsdcuZTeRSbs8jcbbKy+IuCMeBUpGSR6gOv6TzUrjUOtnqsX1A0mmpT/AB5gfhHZSPhXxM+m4Zwo/VoIDpLYjI/IoO64eWnXT+E8uiFgW+PoLhPE6dzS0PgtcMqucV4d5T4GlzTsQR9D3VJ4NQvDRHllwa7mOiN4Vw2tTqE1HE4k5J+qfHKujgxv2p420k8lwbVw5D6o44bqJIBSJbHxz2VXXNAxbnovatDCk6Q5CY7rmoBPJFtIEteNwSPZN8/hU/8AZJG5HthC1eHPnEg9ZlGBcUZ5TebV7/x7XD4UcWumImF5oqTIbHZANIx/BwkpS6DtxqHyCSxesRP4iSwaZgnVJn2UhQrtcCAJjfEn5IOg+m9oLqT2n3H+lPW1l6gWVCATEjkehzKh6jq06yGxzP0MeyX2JxIdt23BC9o2r2Oc0ukz8RHL5oyjUZTI1OEneHA/QSm6qTANTpF8enacyvHUQDGCO6KdPrFI7GcjqmPKOrLmuJHqbjE9FtKaMGkQfTGcc8T3RTKD2iDGehn9UTReBsCOyaFI6wSPdNptBaLWtc5zt42nmn6lIH1HHQryvRJDiCDyjG3zTIoOYMCRvg5+iFgWH/JkEzM79o/dZT4xqCrf6GydAE+4GVrAoNeYZ6JMEHn3wsqvrJra9drCZNRwL9yAOU+6bj+o5RC0rDUXacBpgz1QlzRjESpk0tDQ1p5oU1TqJiZ/KF0a2hcUXb3LqTw4CIVwsPEhOjS46ZyO/wD4q9Xsy5hdIEckXwaiNQAaBG+TmQkz49j78XM0WV2kt+Ln0cP5UOwFjix222dx7oi0t6rNT6YJaBJHOJiQjrmk25aIgP31dv3XJZZdJ2aWPwjd1gwURUHlzgafUATtKstfgeh3mDLTzM/QrMOAcTdQq6H7g/VbFwDi7arNJgg8ksuqfHlrmhQBGmBtso6vb6TIDYPTdTlzw8ifL2jH8KIJJOlwGF0SuvHOUz5biDge0pqlYhw5T0Us2iDk/UJoFo5wO4KZZHeSQIaflOyCbe1A7SW8sEZB9+imriz9WpgE8+65bThskaSeyzBCWvE8+ZGM8146iCz405RuADBEgnJ2T9SjTbkAfIrBuI11GYDspJ2pVAJifbH7pLNpXnuLZIdqO5ai7WqxoL3MkkRAMctjhDtqDUCwFsmAQ2ZAOyKrCpqdIBHRx0/SEksc+x9IEskENAHwuEx9UK20YQXQwd4ATD6erNQEHlDyQAmm2LZJqaCIj0gjPfqjtSHad+0E0362yRBOJjvspNgG2CI3O6iKjnHemXCcEExHQgqSoPEABpDe42PZDcHZ2vp0+kSN5Gc9ClToTB1tLYnJiD0SdSb5cyJJ9lxSqA+loOOg39k0HbytZaiHGJPTl/KTKbWPH09/knafokn04xqM/wDi8y4A1BMGQ6PpkclqBi9BDy4FpaBMEgRGVjljxIOFWfidULpP/ZxO61/jbwaFao1gMMcfyOyxvhXD4py4fHDvkdkcEuQffAct+SZpUpzsom8Y5pIDzA2yjaFs7ywfMcr41I5duAYW9SnuBtHmDP4TKCqUXR6nSPkpHgNMGoJ2Ts0Xw1Q1PG0aEJx/w7UpPdWt/Uw5czp1jspzw6WxAbmFO1KLi5pGwOR17Lj5J/0rOOZYsuqUW3LelQbH9ipnwtePoNJq4jAnmVLeI/DDi/7TSGkjLmCBqHURzVb4kPtDRTa6NOZ7qWcQvFcWucF4yKzBqiCOSZ4lwprTrbIHvIWW+HPFFS0f5dYbD3lX8cTrVaIqP+7Y4GGDmORQw2PH9SFItc3SDlctjIJnmJ5KOtqwAlocfn+yf/5cf2e8rodsKpIcYmIndD214QC0iTMEHkpAXTcFzSOWP3TnktdkTnfY/qsIVtOm/wBDiOxCZPDQ13pdqHdEmlTbAiT7fqjWNbHpbusXSJvKYBjcfJJSp4dTOSJSW0O1EBiRO53AjSmbV1R34pjHq90dSpQ3Vg9U/Toh7gfhx0x84UtOfRkUtRDdWl22dj3TtSiGYOkxnHNdsIB9UFIue0agA4Gcc55QirB1q4MEkEA5HNeXJ18zHfGD0UZ59RxBBwNwf2TlOo7LgG435LaHb2tw/RAa8kdDz6iVLU2ANjzdIjDQBgfqgiWuaCTB6FDNLgZIBHcckZWFPpu0nJdO04TdbzDTHp0vb2x2xzRxI0jQTI7H90m3IcGyYcHZPaCm2xipwz7oB5Dy8eocs7gdlm3iOx8ms6mGhrQ0aQOkLVKlzTEayI5fP2VF8f16ZrU9A/Bk9fViUcSZzxnHFbf0yd0/wh80w3eE/wAQpAtMKP4K4h7mn3CtIkkbxnoMDkvOF1NRaIgiNuYCc4gPQSOiY4VWhwPRVxCrvwHjL6dVoLAQTEg8lfnPaC00wfVkhZ7wegS5o07uEGOU9fZXmrUIaWh8xtiIjkufl+rce9JFzyT62uE/MKneKvD5Y/zqAAO72Dc89QCsVC+fABDXd9S5qF9V5c1uRnP7KFh88e0VC3s6V4GydL2ncb491odxbOdRa5w8zSADGOUSAMLP+N2DqVQ16IjM1GDl/wBo6K4+DvEgqNgnPRJ/Fx6vHRli2ns2WnumrtrmZMnuApXi1pLddMD3AymM6ZyD3VMctuzDOZRG2/lvGCSe5/VFW1VtMwQ0AL2nUYDLo7YTN0KeXSI67gJjijfMO+B1kFNUrdwfLHEtMbpupb08ODWz10/wpC0rEDaekdEYFh+o6Ekw+3D8kH9Ekdgo1Co0HRULgT/uEbVZR2Bcec7fVBV6pc4kklu4b09iOa6pyYhkY2dufmCoSobSdnYNcC7V7dlxWphuHPyc4EoK3qlpOoc5OeS6FcEwxxj5/nKeHmSSdZgCZ5ckC6u0YnJ2aeYG5C5DS0HTPWSSZnkmftDgYFKTGDHNa5D2HCl8J1RIxgfRdXD9PpLhMYIQtK+Mw5hEe35J5tamGknYO69eiXe23sVwyu3REO1HcTI+UpqmS0w5sajz5Jy0rU3S3TynphPF9NsQ0j3RFw+ls7y9QEAwcidjp6Ki+NXA3ZaBpAaB84laRa0WGXglriOqyLxi0m5qjUSQ7c+ypx/Qz+IO8duNlH27PvgRtBT1R392VJ+GaDXvgjfA+eAuioOKuWwByUdaNOqIyTAU4y2+8LDggkfMKcr8Ca4tfTw8AT3wjBWXwTwsmi11RxBDvSMbD9lb6jg0ghoPImVWfBld8eTVZ8IMObzHdTVzFNvoPoJ/FMgkqGf1fH4cuOHAjUzf5YXFK3FPOs6vfH0QzbwtLtR5gNT+sk+pm433E+yQ7qo8RqIDjEGAPh6Kj8StDaVRWpgik47f2nmFe6ZaMED5BMup0yHMq5ZvJ2gpMsdk5MJlBXhjjweA0mZRHFLUNcSHktOS2dv8LPeJUn2NQBjpY/LHjkOh7hXHwzfMLfUdRIgk5lDDG7ccv531y5rSYILendcikWkgEFp6jf3S47ws04qMc8jlmY7R0TdC4a451DCq7cOSZQ/bX0uDTj2GEcHgenzc7jZBNpMdLTkfMFPP4RTgY/MrHH0nkcy76LxNUqZaIEpI7brFap2ukelwPURt9E3Xc7+3PKV5ZWTqby8OPqG38yYRLnxJcHHscx9OSnMUtBadmMDTM5JBhP1uHFkkQf2T9K4IA0ta4nqSI/dEMu9UggyNwB+k8kdDoBb0amziC7kdgnKj6jXR5evuDC7uOUEz02IQte5AjS6RGZJB/JLoLIcZdsiS3T1lC+bTeY5dAE2y9pO/C78/1RNB1IHUG/mjosroUxIwOsnGOmEXVOsBuguO40n+UI+o0/2tPIfxK6bfOyC7cwIwR3lHR9ia1MNDXSW1BiCf1WceMWuNy9/J4Dtu0GPotItqQPxDV3KgvH1oHUPM06fK59WncI4+UMvjM61P+1wB7qa8FUnG4YwtBkzPtlRTbUPEsMnpIVj8E0av2pnog5yYjY5VbUYa8SUfJu6kddX1GVMWbjUYKjDBAgj2RnjPw05wZWDpc0FtQjPdpgKvcBvvK9LsjmRj9VTCjWg+GrxwaXObJGMYRt24nUQYBEnr9Niq7wvjGt2ljSBzd/Kmn3L3ECZA6BTznquN8eNcRs3VP6o3uPSe+UzVeQZgZ5bZ7SnjUBYCWn6qahAsLhJGo4n/AHZcvtSHiXS0nGZ5TlCPYQZBwevJFfZnATqQbT2+4S2pScyoGunY9FTKgq2VQNfljvhd17e6udxVEYLp9pXHEOGU7qjocdJOfY9QjEuTjmUG8B4u2o2Cd+RRlagweqBHYLMR5thW8uoZb+F3JwWicC4w2qwAwhtyYZ3juqVdoc0hpgnaRsu6BOx5bp+6oublomUKyoTsCw9wtt34ZzKeO6zuYP0SUdcWzyZLgRyxH6JInR/lAEODiQNwf3TAeWkhsnVn/AQd3U1DVqAzJ7ruhduy7ScfRZOnavFWU9QqMh0EsHMnslbVqlVrasFgPMnMdFF3N1rfqc0mIHwzk9OaOdeMqNc1kjoDg4R0BVq2ZbON+6jnv1OJmIMR7owOB3EdI/dMXQBHpkOHMfuOYQsCp2k5jWwDk8lwKXmDLRPVQ7GOLmmo+I+KO36IkXwmWOxPLYdsoaTP0LST95Et6Ly0dTJe0tI/tP5pt/GmbDfnGUZZ8SOqdDQ09cH5LKHaVbSSWjlEFNcWra6LqVSm4te05bmOmETdXLDkYHdCX90RBa7JGyM+jl8YrxUMo1XUzqDmneOuRIVk8EXNSq8hjidAkqJ8YtBu6p32n3gSiPAtXR55BI1ACegnKpZ4hv1o13xI0gXkEtA+qp/A+N0xXLbljXNcTpdERJwHK2NoNrU/K1TNPSHRjtnrKzbjdubeqaNUjWADjodkcL6plGlcPfSZU+71NAy4DId/Cnal8wN9JgrM+A3Je0NZXaHdNyrZb27i0Nc8bZdjKHIXBN1K2poLhPNsdVJ0ND2gZkZM4gqApcNePgeQ3656j3UvTJA3x0/dTWl9O3Abqy4EY+vdPX9u0iQ5uofDnZA1anpI9Ofqo8uc05Eg9BKxrR51DTkCMmDuecpm5e8tJkzEhreiFq3ODrYYG0ZK4/5cM+Ge88liZWhLi181sVA49J5eyira4q2dQNeDpPwnkQrV9sJ9LiO0BM8RsTWp+W+XDcdW9wksc/Jx7WXgnF2VWAE8l5f2b6fr80upnfVnSFmtC5q2lQMdMTg9Vo3A/EDKjNLsg4hJbYlhbhXtCp6ZEOB2g8vmknq3CjM0nw08uiSaZ+Oycnih/aSxo+7ETmRlEVeJTLWAEkbAyZXFekJmM6kdYW7dRdpEzuq6MhhZ6y0kEGcg7HsYTtvbBlQQMZ3XV9XcK+mcScJP3WBJ0Xx+ELs2zWwdPyXtnbNGmBu3PPp1Uja7oNpXb5pacnB5HdBCXDAEkxHZWW7YHH1AH3QdOk0VAABsiFxBNtACDo+YCcq3MuBO38Ius4yRyQ43QrG699jqD2zKheM8XfoFOm06oiT+HuEdxCqeqql7UImCnxx2TKq9eUIcZJLpyZU54WowSHRpIzPXkoG4Hq9yp/hjQ1oIwU2RMZ7teOF2LWiQTpH4QZGeazvxaW1rqs85LfSJ/wCogK4cGrO1jO5AKoviZsXVYDHrKHHPT5nvCVA+ZTI3JcPyK0anY1HQHQR0VK8FO+8A5B0jsdJV0p3b9Thq2KPJC8fo14qNhjXT2M4+qco+YGxBBAJkEfRAG5fJ9R5KauPgP/xUlpAtpf5gticAnaUrmmXEy/G2AUzWb9235IqJpuJ/DEdljU3b2zm5HqBwihbW5EPHq3J2XVF50hA37jBKwyCmsaCdOWnHcfNO/aGUxqBJnaVG8OcTHuV7XwSBtH7rBYV9UZWaRWZAOxkfUd1WddS0qxJLD8LoOffuplrySAdkXf0WupODgCNBS5TxDkwiT4L4lwZKSzbh1dwkBxSUtOa41//Z",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "Viola",
-        "ryan",
-        "Senior"
-    );
+
     const brett = new Character(
         "Violino Corleone",
         "heretics",
@@ -708,22 +656,7 @@ window.onload = function () {
         "lauren",
         "Freshman"
     );
-    const yashua = new Character(
-        "goated",
-        "romantic",
-        1,
-        "https://www.batesville.com/wp-content/uploads/2016/10/1.png",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "Violin",
-        "yashua",
-        "Freshman"
-    );
+
     const cameryn = new Character(
         "MrNightRider",
         "century",
@@ -836,38 +769,7 @@ window.onload = function () {
         "jade",
         "Junior"
     );
-    const william = new Character(
-        "PaperSky",
-        "heretics",
-        1,
-        "https://drive.google.com/file/d/1PPGQEErISmFoyhK0ohpPoi3LfLUxIAmm/view",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "Violin",
-        "william",
-        "Senior"
-    );
-    const kasudie = new Character(
-        "tree",
-        "heretics",
-        1,
-        "https://media.istockphoto.com/photos/tree-picture-id543052538?k=6&m=543052538&s=612x612&w=0&h=YP7fBhjDe1dQGpj00Bu4ywsCjTljdW7dB_HKjp7_DDU=",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "Violin",
-        "kasudie",
-        "Senior"
-    );
+
     const natalia = new Character(
         "lady ",
         "baroque",
@@ -1172,21 +1074,7 @@ window.onload = function () {
         "brian",
         "Sophomore"
     );
-    const jaden = new Character(
-        "Cluck Norris",
-        "baroque",
-        1,
-        "https://media0.giphy.com/media/ghHDuqJ1uh9vP2gKdC/giphy.gif",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "violin",
-        "jaden"
-    );
+
     const amy = new Character(
         "Peppa Pig",
         "romantic",
@@ -1287,11 +1175,8 @@ window.onload = function () {
     let students = [
         jane,
         olivia,
-        whitt,
         angela,
-        chankyu,
-        ryan,
-        brett,
+       brett,
         brevin,
         connor,
         jude,
@@ -1301,7 +1186,6 @@ window.onload = function () {
         matthew,
         rowan,
         lauren,
-        yashua,
         cameryn,
         zack,
         lucca,
@@ -1309,8 +1193,6 @@ window.onload = function () {
         jules,
         mackenzie,
         jade,
-        william,
-        kasudie,
         natalia,
         kyle,
         caleb,
@@ -1330,7 +1212,6 @@ window.onload = function () {
         abigail,
         tristan,
         brian,
-        jaden,
         amy,
         amyr,
         trinity,
