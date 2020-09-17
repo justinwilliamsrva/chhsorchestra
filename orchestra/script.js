@@ -431,7 +431,7 @@ window.onload = function () {
         0,
         0,
         "Cello",
-        "jane ",
+        "jane",
         "Junior"
     );
     const olivia = new Character(
@@ -511,7 +511,7 @@ window.onload = function () {
         0,
         0,
         "Viola",
-        "ryan ",
+        "ryan",
         "Senior"
     );
     const brett = new Character(
@@ -848,7 +848,7 @@ window.onload = function () {
         0,
         0,
         "Bass",
-        "natalia ",
+        "natalia",
         "Senior"
     );
     const kyle = new Character(
@@ -869,7 +869,7 @@ window.onload = function () {
     );
     const caleb = new Character(
         "Bugs",
-        "century",
+        "heretics",
         1,
         "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDMThCJsYEfi5B8o-ESaEufl9IlGkvGcRimQ&usqp=CAU",
         0,
@@ -3878,7 +3878,7 @@ window.onload = function () {
     top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
     top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
 
-    // console.log(highScore[0].name, highScore[1].name);
+    // SCORE OF TEAMS
 
     let teamBaroque = [];
     let teamClassical = [];
@@ -3948,7 +3948,7 @@ window.onload = function () {
     teamTop4.innerHTML = `${highteamScore[3].name} - Total Score: ${highteamScore[3].score}`;
     teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
 
-    //
+    //SCORE IN TEAM
 
     var baroqueHighScore = _.sortBy(teamBaroque, function (team) {
         return team.total_score * -1;
@@ -3965,7 +3965,7 @@ window.onload = function () {
     var hereticHighScore = _.sortBy(teamHeretic, function (team) {
         return team.total_score * -1;
     });
-    // console.log(baroqueHighScore);
+    console.log(hereticHighScore);
 
     topScore.forEach(teamTopScore);
 
@@ -4004,12 +4004,6 @@ window.onload = function () {
         }
     }
 
-    // function indexScore(item) {
-    //     // console.log(item.realname);
-    //     if (person == item.realname) {
-    //         myHighScore = this.indexOf(item) + 1;
+    //
 
-    //         // console.log(person);
-    //     }
-    // }
 };

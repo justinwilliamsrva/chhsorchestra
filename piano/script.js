@@ -143,6 +143,8 @@ window.onload = function () {
     var teamTop3 = document.getElementById("teamtopscore3");
     var teamTop4 = document.getElementById("teamtopscore4");
     var teamTop5 = document.getElementById("teamtopscore5");
+    let myHighScore = 0;
+
     function Character(
         name,
         team,
@@ -467,7 +469,7 @@ window.onload = function () {
         0,
         0,
         0,
-        "kyle ",
+        "kyle",
         "Junior"
     );
     const rebecca = new Character(
@@ -3508,7 +3510,9 @@ window.onload = function () {
         assign2.innerHTML = `Current Rank: Coming Soon`;
         personage.grading();
 
-        assign3.innerHTML = `Rank on Team: Coming Soon`;
+        assign4.innerHTML = `Rank on Team: ${myHighScore}`;
+
+
     }
 
     function clearInstructions() {
@@ -3582,6 +3586,7 @@ window.onload = function () {
     function topScoreFunc(item) {
         topScore.push({
             name: item.name,
+            realname: item.realname,
             team: item.team,
             instrument: item.instrument,
             total_score: item.totalScore,
@@ -3700,7 +3705,59 @@ window.onload = function () {
     teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
 
 
-    // console.log(miami.coins);
+     //SCORE IN TEAM
 
-    // module.exports = Character;
+     var baroqueHighScore = _.sortBy(teamBaroque, function (team) {
+        return team.total_score * -1;
+    });
+    var classicalHighScore = _.sortBy(teamClassical, function (team) {
+        return team.total_score * -1;
+    });
+    var romanticHighScore = _.sortBy(teamRomantic, function (team) {
+        return team.total_score * -1;
+    });
+    var centuryHighScore = _.sortBy(teamCentury, function (team) {
+        return team.total_score * -1;
+    });
+    var hereticHighScore = _.sortBy(teamHeretic, function (team) {
+        return team.total_score * -1;
+    });
+    console.log(hereticHighScore);
+
+    topScore.forEach(teamTopScore);
+
+    function teamTopScore(item) {
+        // console.log();
+        if (item.team == "baroque") {
+            baroqueHighScore.forEach(function (item) {
+                if (person == item.realname) {
+                    myHighScore = baroqueHighScore.indexOf(item) + 1;
+                }
+            });
+        } else if (item.team == "classical") {
+            classicalHighScore.forEach(function (item) {
+                if (person == item.realname) {
+                    myHighScore = classicalHighScore.indexOf(item) + 1;
+                }
+            });
+        } else if (item.team == "century") {
+            centuryHighScore.forEach(function (item) {
+                if (person == item.realname) {
+                    myHighScore = centuryHighScore.indexOf(item) + 1;
+                }
+            });
+        } else if (item.team == "romantic") {
+            romanticHighScore.forEach(function (item) {
+                if (person == item.realname) {
+                    myHighScore = romanticHighScore.indexOf(item) + 1;
+                }
+            });
+        } else if (item.team == "heretics") {
+            hereticHighScore.forEach(function (item) {
+                if (person == item.realname) {
+                    myHighScore = hereticHighScore.indexOf(item) + 1;
+                }
+            });
+        }
+    };
 };
