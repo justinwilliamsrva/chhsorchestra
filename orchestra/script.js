@@ -221,6 +221,8 @@ window.onload = function () {
     var teamTop4 = document.getElementById("teamtopscore4");
     var teamTop5 = document.getElementById("teamtopscore5");
     let myHighScore = 0;
+    let myTotalRank = 0;
+
 
     function Character(
         name,
@@ -3195,31 +3197,31 @@ window.onload = function () {
         // alert(this.grade);
 
         if (this.grade >= 7.2) {
-            assign3.innerHTML = "Current Grade: A+";
+            assign2.innerHTML = "Current Grade: A+";
         } else if (this.grade >= 6.4) {
-            assign3.innerHTML = "Current Grade: A";
+            assign2.innerHTML = "Current Grade: A";
         } else if (this.grade >= 5.6) {
-            assign3.innerHTML = "Current Grade: A-";
+            assign2.innerHTML = "Current Grade: A-";
         } else if (this.grade >= 4.8) {
-            assign3.innerHTML = "Current Grade: B+";
+            assign2.innerHTML = "Current Grade: B+";
         } else if (this.grade >= 4.0) {
-            assign3.innerHTML = "Current Grade: B";
+            assign2.innerHTML = "Current Grade: B";
         } else if (this.grade >= 3.33) {
-            assign3.innerHTML = "Current Grade: B-";
+            assign2.innerHTML = "Current Grade: B-";
         } else if (this.grade >= 2.66) {
-            assign3.innerHTML = "Current Grade: C+";
+            assign2.innerHTML = "Current Grade: C+";
         } else if (this.grade >= 2.0) {
-            assign3.innerHTML = "Current Grade: C";
+            assign2.innerHTML = "Current Grade: C";
         } else if (this.grade >= 1.66) {
-            assign3.innerHTML = "Current Grade: C-";
+            assign2.innerHTML = "Current Grade: C-";
         } else if (this.grade >= 1.33) {
-            assign3.innerHTML = "Current Grade: D+";
+            assign2.innerHTML = "Current Grade: D+";
         } else if (this.grade >= 1) {
-            assign3.innerHTML = "Current Grade: D";
+            assign2.innerHTML = "Current Grade: D";
         } else if (this.grade >= 0.5) {
-            assign3.innerHTML = "Current Grade: D-";
+            assign2.innerHTML = "Current Grade: D-";
         } else {
-            assign3.innerHTML = "Current Grade: F";
+            assign2.innerHTML = "Current Grade: F";
         }
     };
     Character.prototype.freshGrading = function () {
@@ -3227,31 +3229,31 @@ window.onload = function () {
         // alert(this.grade);
 
         if (this.grade >= 3.66) {
-            assign3.innerHTML = "Current Grade: A+";
+            assign2.innerHTML = "Current Grade: A+";
         } else if (this.grade >= 3.33) {
-            assign3.innerHTML = "Current Grade: A";
+            assign2.innerHTML = "Current Grade: A";
         } else if (this.grade >= 3) {
-            assign3.innerHTML = "Current Grade: A-";
+            assign2.innerHTML = "Current Grade: A-";
         } else if (this.grade >= 2.5) {
-            assign3.innerHTML = "Current Grade: B+";
+            assign2.innerHTML = "Current Grade: B+";
         } else if (this.grade >= 2.0) {
-            assign3.innerHTML = "Current Grade: B";
+            assign2.innerHTML = "Current Grade: B";
         } else if (this.grade >= 1.66) {
-            assign3.innerHTML = "Current Grade: B-";
+            assign2.innerHTML = "Current Grade: B-";
         } else if (this.grade >= 1.33) {
-            assign3.innerHTML = "Current Grade: C+";
+            assign2.innerHTML = "Current Grade: C+";
         } else if (this.grade >= 1.0) {
-            assign3.innerHTML = "Current Grade: C";
+            assign2.innerHTML = "Current Grade: C";
         } else if (this.grade >= 0.8) {
-            assign3.innerHTML = "Current Grade: C-";
+            assign2.innerHTML = "Current Grade: C-";
         } else if (this.grade >= 0.6) {
-            assign3.innerHTML = "Current Grade: D+";
+            assign2.innerHTML = "Current Grade: D+";
         } else if (this.grade >= 0.4) {
-            assign3.innerHTML = "Current Grade: D";
+            assign2.innerHTML = "Current Grade: D";
         } else if (this.grade >= 0.2) {
-            assign3.innerHTML = "Current Grade: D-";
+            assign2.innerHTML = "Current Grade: D-";
         } else {
-            assign3.innerHTML = "Current Grade: F";
+            assign2.innerHTML = "Current Grade: F";
         }
     };
 
@@ -3771,7 +3773,8 @@ window.onload = function () {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
         assign1.innerHTML = `Total Score: ${personage.totalScore}`;
-        assign2.innerHTML = `Current Rank: Coming Soon`;
+        assign4.innerHTML = `Current Rank: ${myTotalRank}`;
+
         personage.grading();
         // if (person == "jaden") {
         //     personage.freshGrading();
@@ -4004,6 +4007,10 @@ window.onload = function () {
         }
     }
 
-    //
-
+    //TOTAL RANK
+    highScore.forEach(function (item) {
+        if (person == item.realname) {
+            myTotalRank = highScore.indexOf(item) + 1;
+        }
+    });
 };

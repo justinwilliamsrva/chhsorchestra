@@ -68,10 +68,8 @@ window.onload = function () {
         rodrick.a4("t");
         rodrick.a4("c");
         rebecca.a3(4, "I assume the breaks were for moving the page. Good recording");
-        brady.a3(4)
-        kyle.a3(4)
-
-
+        brady.a3(4);
+        kyle.a3(4);
     }
 
     var person = "";
@@ -144,6 +142,7 @@ window.onload = function () {
     var teamTop4 = document.getElementById("teamtopscore4");
     var teamTop5 = document.getElementById("teamtopscore5");
     let myHighScore = 0;
+    let myTotalRank = 0;
 
     function Character(
         name,
@@ -3507,12 +3506,10 @@ window.onload = function () {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
         assign1.innerHTML = `Total Score: ${personage.totalScore}`;
-        assign2.innerHTML = `Current Rank: Coming Soon`;
+        assign2.innerHTML = `Current Rank: ${myTotalRank}`;
         personage.grading();
 
         assign4.innerHTML = `Rank on Team: ${myHighScore}`;
-
-
     }
 
     function clearInstructions() {
@@ -3613,30 +3610,24 @@ window.onload = function () {
 
     console.log(highScore[0].name, highScore[1].name);
 
-
-
     let teamBaroque = [];
     let teamClassical = [];
     let teamCentury = [];
     let teamRomantic = [];
-    let teamHeretic = []
+    let teamHeretic = [];
 
     console.log(topScore);
 
     function teamScore(item) {
         if (item.team == "baroque") {
             teamBaroque.push(item);
-        }
-        else if (item.team == "classical") {
+        } else if (item.team == "classical") {
             teamClassical.push(item);
-        }
-        else if (item.team == "century") {
+        } else if (item.team == "century") {
             teamCentury.push(item);
-        }
-        else if (item.team == "romantic") {
+        } else if (item.team == "romantic") {
             teamRomantic.push(item);
-        }
-        else if (item.team == "heretics") {
+        } else if (item.team == "heretics") {
             teamHeretic.push(item);
         }
     }
@@ -3647,52 +3638,35 @@ window.onload = function () {
     let century_Score = 0;
     let heretic_Score = 0;
 
-
-
-    finalTeamScore = []
+    finalTeamScore = [];
     function teamTotalScore(item) {
         if (item.team == "baroque") {
             baroque_Score = item.total_score + baroque_Score;
-
-
-
-        }
-        else if (item.team == "classical") {
-            classical_Score  = item.total_score + classical_Score ;
-
-        }
-        else if (item.team == "century") {
+        } else if (item.team == "classical") {
+            classical_Score = item.total_score + classical_Score;
+        } else if (item.team == "century") {
             romantic_Score = item.total_score + romantic_Score;
-
-        }
-        else if (item.team == "romantic") {
+        } else if (item.team == "romantic") {
             century_Score = item.total_score + century_Score;
-
-        }
-        else if (item.team == "heretics") {
+        } else if (item.team == "heretics") {
             heretic_Score = item.total_score + heretic_Score;
-
         }
-
-
-
     }
 
     topScore.forEach(teamScore);
-    teamHeretic.forEach(teamTotalScore)
-    teamBaroque.forEach(teamTotalScore)
-    teamClassical.forEach(teamTotalScore)
-    teamRomantic.forEach(teamTotalScore)
-    teamCentury.forEach(teamTotalScore)
+    teamHeretic.forEach(teamTotalScore);
+    teamBaroque.forEach(teamTotalScore);
+    teamClassical.forEach(teamTotalScore);
+    teamRomantic.forEach(teamTotalScore);
+    teamCentury.forEach(teamTotalScore);
 
-    var BObj = { name: "Baroque Kingdom", score: baroque_Score }
-    var CObj = { name: "Classical Reign", score: classical_Score }
-    var RObj = {name: "Romantic Dynasty", score: romantic_Score}
-    var CenObj = {name: "21st Centurians", score: century_Score}
-    var HObj = {name: "Heretics of Hive", score: heretic_Score}
+    var BObj = { name: "Baroque Kingdom", score: baroque_Score };
+    var CObj = { name: "Classical Reign", score: classical_Score };
+    var RObj = { name: "Romantic Dynasty", score: romantic_Score };
+    var CenObj = { name: "21st Centurians", score: century_Score };
+    var HObj = { name: "Heretics of Hive", score: heretic_Score };
 
-
-    finalTeamScore.push(BObj, CObj, RObj, CenObj, HObj)
+    finalTeamScore.push(BObj, CObj, RObj, CenObj, HObj);
     var highteamScore = _.sortBy(finalTeamScore, function (team) {
         return team.score * -1;
     });
@@ -3704,10 +3678,9 @@ window.onload = function () {
     teamTop4.innerHTML = `${highteamScore[3].name} - Total Score: ${highteamScore[3].score}`;
     teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
 
+    //SCORE IN TEAM
 
-     //SCORE IN TEAM
-
-     var baroqueHighScore = _.sortBy(teamBaroque, function (team) {
+    var baroqueHighScore = _.sortBy(teamBaroque, function (team) {
         return team.total_score * -1;
     });
     var classicalHighScore = _.sortBy(teamClassical, function (team) {
@@ -3759,5 +3732,11 @@ window.onload = function () {
                 }
             });
         }
-    };
+    }
+
+    highScore.forEach(function (item) {
+        if (person == item.realname) {
+            myTotalRank = highScore.indexOf(item) + 1;
+        }
+    });
 };
