@@ -3717,6 +3717,10 @@ window.onload = function () {
         return team.total_score * -1;
     });
     console.log(hereticHighScore);
+    console.log(classicalHighScore);
+    console.log(romanticHighScore);
+    console.log(centuryHighScore);
+    console.log(baroqueHighScore)
 
     topScore.forEach(teamTopScore);
 
