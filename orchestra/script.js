@@ -35,9 +35,9 @@ window.onload = function () {
             "If you are in need of beautiful bass solo. this one is a good one. Great playing"
         );
         brett.a3(2, "Watch out for rhythm. Scrolling is fine");
-        // walker.a1
+        walker.a1
         thomas.a1(4, "Great time indeed");
-        // ramon.a1(4,"good stuff")
+        ramon.a1(4,"good stuff")
         jane.a1(4);
 
         jude.a1(4, "Good connection and intonation");
@@ -94,7 +94,10 @@ window.onload = function () {
         grace.a1(4, "Great playing grace!");
         jade.a1(4, "Excellent Jade");
         spencer.a1(2, "5 and 6 have to be performed all on the D string. 11 and 12 were good");
-        // kamille.a1(4, "Check your first finger in 3rd with your open string before you start. Otherwise good")
+        kamille.a1(
+            4,
+            "Check your first finger in 3rd with your open string before you start. Otherwise good"
+        );
         ryann.a1(4, "Great sound, love the vibrato");
         jules.a1(4, "Try to get more sound");
         mackenzie.a1(4, "Great!!");
@@ -118,12 +121,36 @@ window.onload = function () {
         brett.a6(4);
         brett.a7(
             2,
-            "Need to go much faster. I think you were playing the eigth notes as quarter notes"
+            "Need to go much faster. I think you were playing the eighth notes as quarter notes"
         );
-        jade.a3(3,"Mostly really great, but watch the articulation. Some of the notes are short. The ones with dats")
-        jude.a3(3, "Great bass playing jude. Watch our for the staccato notes which need to be short")
-        matthew.a1(3, "Great playing Matthew. Watch out for #12 the third finger needs to be low")
-        rowan.a2(4,"Great playing")
+        jade.a3(
+            3,
+            "Mostly really great, but watch the articulation. Some of the notes are short. The ones with dats"
+        );
+        jude.a3(
+            3,
+            "Great bass playing jude. Watch our for the staccato notes which need to be short"
+        );
+        matthew.a1(3, "Great playing Matthew. Watch out for #12 the third finger needs to be low");
+        rowan.a2(4, "Great playing");
+        emmett.a3(4);
+        grace.a3(4, "This is fine playing");
+        jade.a2(3, "You fourth finger should touch your third finger in #15");
+        emmett.a2(4, "A little funny at the end. But the rest was very good");
+        spencer.a2(2, "A little too slow and some of the notes are wrong.");
+        grace.a2(4);
+        jude.a2(
+            4,
+            "You are going to be a very good bass player by the end of the year. Great start"
+        );
+        spencer.a2(3, "The rhythm is very funny in #17 ");
+        thomas.a2(4, "Nice with the standing practice. The bow will take getting used to");
+        // zackary.a2(2, "Let's go over 17 next time. It is hard on cello")
+        mackenzie.a3(4);
+        // juliet.a3(3, "A few missed notes. Otherwise good")
+        kamille.a3(3, "Good but it could be a little faster");
+        
+
         // ally.a1(4,"")
     }
 
@@ -181,6 +208,8 @@ window.onload = function () {
         "amyr",
         "trinity",
         "caroline",
+        "ramon",
+        "kamille",
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -225,7 +254,6 @@ window.onload = function () {
     var teamTop5 = document.getElementById("teamtopscore5");
     let myHighScore = 0;
     let myTotalRank = 0;
-
 
     function Character(
         name,
@@ -810,7 +838,7 @@ window.onload = function () {
     );
     const william = new Character(
         "PaperSky",
-        "romantic",
+        "heretics",
         1,
         "https://drive.google.com/file/d/1PPGQEErISmFoyhK0ohpPoi3LfLUxIAmm/view",
         0,
@@ -826,7 +854,7 @@ window.onload = function () {
     );
     const kasudie = new Character(
         "tree",
-        "century",
+        "heretics",
         1,
         "https://media.istockphoto.com/photos/tree-picture-id543052538?k=6&m=543052538&s=612x612&w=0&h=YP7fBhjDe1dQGpj00Bu4ywsCjTljdW7dB_HKjp7_DDU=",
         0,
@@ -1093,7 +1121,7 @@ window.onload = function () {
         0,
         0,
         "Violin",
-        "kimberly ",
+        "kimberly",
         "Freshman"
     );
     const abigail = new Character(
@@ -1223,6 +1251,38 @@ window.onload = function () {
         "caroline",
         "Junior"
     );
+    const ramon = new Character(
+        "Ramen",
+        "century",
+        1,
+        "https://i.ytimg.com/vi/_-J7Y1UBvuo/sddefault.jpg",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Violin",
+        "ramon",
+        "Sophomore"
+    );
+    const kamille = new Character(
+        "Kamille",
+        "romantic",
+        1,
+        "",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Violin",
+        "kamille",
+        "Freshman"
+    );
 
     let students = [
         jane,
@@ -1275,6 +1335,8 @@ window.onload = function () {
         amyr,
         trinity,
         caroline,
+        ramon,
+        kamille,
     ];
 
     Character.prototype.printStats = function () {
@@ -3972,10 +4034,10 @@ window.onload = function () {
         return team.total_score * -1;
     });
     console.log(hereticHighScore);
-       console.log(classicalHighScore);
-          console.log(romanticHighScore);
-             console.log(centuryHighScore);
-                console.log(baroqueHighScore);
+    console.log(classicalHighScore);
+    console.log(romanticHighScore);
+    console.log(centuryHighScore);
+    console.log(baroqueHighScore);
 
     topScore.forEach(teamTopScore);
 

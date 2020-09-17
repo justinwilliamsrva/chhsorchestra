@@ -75,6 +75,11 @@ window.onload = function () {
         josendo.a2(4)
         josendo.a2("c")
         jamari.a2(4)
+        // lauren.a3(4)
+        // lauren.a2(4)
+
+
+
     }
 
     var person = "";
