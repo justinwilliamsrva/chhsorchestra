@@ -397,7 +397,7 @@ window.onload = function () {
     );
     const rodrick = new Character(
         "dog4lifess",
-        "classical",
+        "heretics",
         1,
         "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCsnK7p0rREjPUFIOT474mDoitJueC69j2rg&usqp=CAU",
         0,
@@ -3487,6 +3487,18 @@ window.onload = function () {
         currentLevel.innerHTML = `Options`;
         assign1.innerHTML = `<a href="../index.html">Return to Home Screen</a>`;
         assign2.innerHTML = ` <a href="https://github.com/justinwilliamsrva/chhsorchestra/issues">Submit an Issue via Github</a>`;
+        assign3.innerHTML = `Origins to Ensemble Empires`;
+        assign4.innerHTML = "Contributors";
+        assign3.addEventListener("click", function () {
+            clearInstructions();
+            instruct.innerHTML =
+                "<div style='20px';><p>Long forgotten until the Second Symphonic Age laid the Golden Era of Harmony, a time when musicians in every nation dwelt in peace. In each nation was a different people and reign of power: the Baroque Kingdom, the Classical Reign, the Romantic Dynasty, and the 21st Centurions; each separate in culture, beliefs, and practices. Any non-musician might say they were destined to fall to war but in the early days, the alliance of the four empires reigned supreme. Dissonance among people was rare, and many delighted in the exchanges of knowledge and customs.</p> <br> <p>There were those , however, who found chaos in the commingling, and dissenters from each nation orchestrated a plan to destroy the foundation of trust and understanding. In a single night, before the break of dawn, the dissenters that came to be known as the Heretic of Hive had eliminated each nation principals and the people clashed against each other, drawing bows and sounding horns, calling the sounds of war </p><br><p>Peace must be restored among this world, for because of the blind assault, music cannot flow as freely as it once did. As a musician of much knowledge and incredible passion, you must help bring an end to this war whether for your nation, or for the good of all nations. The fight will be grating, tiresome and may even seem impossible at times but only hearts like yours can bring rest to the pain and resolve the unrest.</p></div>";
+        });
+        assign4.addEventListener("click", function () {
+            clearInstructions();
+            instruct.innerHTML =
+                "<br><p><b>Katy Stenner</b>: Teams Names, Viola/Bass Side Quests</p><p><b>William Wang</b>: Background Images, Icons, Violin Side Quests</p><p><b>Kasudie Burton</b>: Story</p><p><b>Jaden Eaglin</b>: Chromebook Testing</p><p><b>Clover Hill High School Piano 2020-2021</b>: Beta Testing";
+        });
     }
 
     function completeStatsFunc() {
@@ -3685,7 +3697,7 @@ window.onload = function () {
     teamTop2.innerHTML = `${highteamScore[1].name}  - Total Score: ${highteamScore[1].score}`;
     teamTop3.innerHTML = `${highteamScore[2].name} - Total Score: ${highteamScore[2].score}`;
     teamTop4.innerHTML = `${highteamScore[3].name} - Total Score: ${highteamScore[3].score}`;
-    // teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
+    teamTop5.innerHTML = `${highteamScore[4].name}  - Total Score: ${highteamScore[4].score}`;
 
 
     // console.log(miami.coins);
