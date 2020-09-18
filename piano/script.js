@@ -10,7 +10,7 @@ window.onload = function () {
         jacob.a1(2, "not the correct notes");
         reuben.a2(4, "Good");
         joseph.a1(4, " Good you don't have to repeat");
-        // samuel.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
+        sam.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
         rodrick.a3(4);
         rodrick.a3("t");
         rodrick.a3("c");
@@ -39,7 +39,7 @@ window.onload = function () {
         rodrick.a2("c");
         jaden.a2(4);
         kyle.a1(4);
-        // samuel.a1(3,"Keep the music steady")
+        sam.a1(3,"Keep the music steady")
         jaden.a1("t");
         jaden.a3(4);
         ken.a2(4);
@@ -60,7 +60,7 @@ window.onload = function () {
         rodrick.a6(4, "This is impressive Rodrick");
         rodrick.a6("t");
         rodrick.a6("c");
-        // samuel.a3(4, "Good")
+        sam.a3(4, "Good")
         rodrick.a5(4);
         rodrick.a5("t");
         rodrick.a5("c");
@@ -102,7 +102,7 @@ window.onload = function () {
         "brady",
         "josendo",
         "rodrick",
-        "laskey",
+        "sam",
         "jada",
         "trinity",
         "kyle",
@@ -432,8 +432,8 @@ window.onload = function () {
         "rodrick",
         "Junior"
     );
-    const laskey = new Character(
-        "emberwood",
+    const sam = new Character(
+        "laskey emberwood",
         "baroque",
         1,
         "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2F06b92274-f3e8-11e4-99de-00144feab7de?fit=scale-down&source=next&width=700",
@@ -444,7 +444,7 @@ window.onload = function () {
         0,
         0,
         0,
-        "laskey",
+        "sam",
         "Junior"
     );
     const jada = new Character(
@@ -708,7 +708,7 @@ window.onload = function () {
         brady,
         josendo,
         rodrick,
-        laskey,
+        sam,
         jada,
         trinity,
         kyle,
