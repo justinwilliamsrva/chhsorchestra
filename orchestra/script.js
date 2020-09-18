@@ -175,7 +175,7 @@ window.onload = function () {
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
 
-        // ally.a1(4,"")
+        ally.a1(4)
     }
 
     var person = "";
@@ -227,6 +227,7 @@ window.onload = function () {
         "caroline",
         "ramon",
         "kamille",
+        "ally"
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -1193,6 +1194,22 @@ window.onload = function () {
         "kamille",
         "Freshman"
     );
+    const ally = new Character(
+        "Ally",
+        "classical",
+        1,
+        "",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "Violin",
+        "ally",
+        "Junior"
+    );
 
     let students = [
         jane,
@@ -1240,6 +1257,7 @@ window.onload = function () {
         caroline,
         ramon,
         kamille,
+        ally
     ];
 
     Character.prototype.printStats = function () {
