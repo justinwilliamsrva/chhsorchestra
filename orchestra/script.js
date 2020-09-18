@@ -1,6 +1,30 @@
 window.onload = function () {
     function assignments() {
-        olivia.a9(3, "rhyhtm and articulation");
+
+        
+        emily.a2(4, "Thank you for the disclaimer! Sounds good on this end. Woah except for that G string")
+        kamille.a2(4,"Good")
+        mackenzie.a2(3,"One note near the end of 17th realy out of tune. Maybe 1st finger D on the A string. other than that, really good")
+        emily.a3(4,"Watch out for articulation")
+        ryann.a2(4,"Good sound. Try playing them a bit faster")
+        jules.a2(4,"Watch out for H3 making sure it is high enough. Otherwise very good")
+        ryann.a3(4, "Great sound as always");
+        walker.a3(
+            4,
+            "You didn't play the whole song. Make sure to check the whole page. But it is fine this time since you did not know"
+        );
+        natalia.a2(
+            3,
+            "First two songs were good. Not sure about some of the notes for the last song."
+        );
+        natalia.a3(4, "Needs to be a little faster");
+        kamille.a3(
+            4,
+            "Watch for for Staccato notes and is should be played a bit faster. Good intonation"
+        );
+        julia.a3(4, "Your eighth notes are a bit rushed. We will go over rhythm. Good intonation");
+        julia.a2(3, "Very good intonation. Just some funny rhythm in #17");
+        olivia.a9(3, "rhythm and articulation");
         amyr.a9(3, "some funny rhythm");
         angela.a5(4);
         brevin.a5(3, "Some funny notes");
@@ -35,9 +59,9 @@ window.onload = function () {
             "If you are in need of beautiful bass solo. this one is a good one. Great playing"
         );
         brett.a3(2, "Watch out for rhythm. Scrolling is fine");
-        walker.a1
+        walker.a1;
         thomas.a1(4, "Great time indeed");
-        ramon.a1(4,"good stuff")
+        ramon.a1(4, "good stuff");
         jane.a1(4);
 
         jude.a1(4, "Good connection and intonation");
@@ -145,13 +169,11 @@ window.onload = function () {
         );
         spencer.a2(3, "The rhythm is very funny in #17 ");
         thomas.a2(4, "Nice with the standing practice. The bow will take getting used to");
-        zack.a2(2, "Let's go over 17 next time. It is hard on cello")
+        zack.a2(2, "Let's go over 17 next time. It is hard on cello");
         mackenzie.a3(4);
-        jules.a3(3, "A few missed notes. Otherwise good")
+        jules.a3(3, "A few missed notes. Otherwise good");
         kamille.a3(3, "Good but it could be a little faster");
-        julia.a1(2,"Close. Let's go over this next class. I will start with cellos")
-
-
+        julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
 
         // ally.a1(4,"")
     }
@@ -1176,7 +1198,7 @@ window.onload = function () {
         jane,
         olivia,
         angela,
-       brett,
+        brett,
         brevin,
         connor,
         jude,
