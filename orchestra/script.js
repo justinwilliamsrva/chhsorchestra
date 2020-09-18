@@ -174,7 +174,6 @@ window.onload = function () {
         jules.a3(3, "A few missed notes. Otherwise good");
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
-
         ally.a1(4)
     }
 
@@ -272,6 +271,7 @@ window.onload = function () {
     var teamTop5 = document.getElementById("teamtopscore5");
     let myHighScore = 0;
     let myTotalRank = 0;
+    let instrumentHighScore = 0;
 
     function Character(
         name,
@@ -3769,7 +3769,7 @@ window.onload = function () {
         // // }
 
         assign5.innerHTML = `Current Rank on Team: ${myHighScore}`;
-        assign6.innerHTML = `Rank on Instrument: Coming Soon`;
+        assign6.innerHTML = `Current Rank on Instrument: ${instrumentHighScore}`;
     }
 
     function clearInstructions() {
@@ -4005,4 +4005,73 @@ window.onload = function () {
             myTotalRank = highScore.indexOf(item) + 1;
         }
     });
+
+     //RANK BY INSTRUMENT
+
+
+
+//      let teamViolin = [];
+//      let teamViola = [];
+//      let teamCello = [];
+//      let teamBass = [];
+//      topScore.forEach(instrumentTeam)
+
+
+//      // console.log(topScore);
+
+//     function instrumentTeam(item) {
+//         if (item.instrument == "Violin") {
+//             teamViolin.push(item);
+//         } if (item.instrument == "Viola") {
+//             teamViola.push(item);
+//         } if (item.insarument == "Cello") {
+//             teamCello.push(item);
+//         } if (item.instrument == "Bass") {
+//             teamBass.push(item);
+//         }
+//     }
+
+//     var violinHighScore = _.sortBy(teamViolin, function (team) {
+//         return team.total_score * -1;
+//     });
+//     var violaHighScore = _.sortBy(teamViola, function (team) {
+//         return team.total_score * -1;
+//     });
+//     var celloHighScore = _.sortBy(teamCello, function (team) {
+//         return team.total_score * -1;
+//     });
+//     var bassHighScore= _.sortBy(teamBass, function (team) {
+//         return team.total_score * -1;
+//     });
+// // console.log(violinHighScore);
+
+// celloHighScore.forEach(instrumentTopScore);
+
+// function instrumentTopScore(item) {
+//     console.log(item.instrument);
+//     console.log(person);
+
+//     if (person == item.realname && item.instrument == "Violin") {
+
+//         instrumentHighScore = violinHighScore.indexOf(item) + 1;
+//     }
+//     else if (person == item.realname && item.instrument == "Viola") {
+
+
+//         instrumentHighScore = violaHighScore.indexOf(item) + 1;
+//     }
+
+//     else if (person == item.realname && item.instrument == "Cello") {
+
+
+//                 instrumentHighScore = celloHighScore.indexOf(item) + 1;
+
+
+//     } else if (person == item.realname && item.instrument == "Bass") {
+
+//                 instrumentHighScore = bassHighScore.indexOf(item) + 1;
+
+//     }
+// }
+
 };
