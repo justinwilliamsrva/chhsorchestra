@@ -1,7 +1,7 @@
 window.onload = function () {
     function assignments() {
 
-        
+
         emily.a2(4, "Thank you for the disclaimer! Sounds good on this end. Woah except for that G string")
         kamille.a2(4,"Good")
         mackenzie.a2(3,"One note near the end of 17th realy out of tune. Maybe 1st finger D on the A string. other than that, really good")
@@ -3843,6 +3843,8 @@ window.onload = function () {
     var highScore = _.sortBy(topScore, function (people) {
         return people.total_score * -1;
     });
+
+    console.log(highScore);
     top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level} - Total Score: ${highScore[0].total_score}`;
     top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level} - Total Score: ${highScore[1].total_score}`;
     top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].total_score}`;
@@ -3857,7 +3859,7 @@ window.onload = function () {
     let teamRomantic = [];
     let teamHeretic = [];
 
-    console.log(topScore);
+    // console.log(topScore);
 
     function teamScore(item) {
         if (item.team == "baroque") {
