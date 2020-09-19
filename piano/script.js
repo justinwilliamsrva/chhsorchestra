@@ -1,5 +1,25 @@
 window.onload = function () {
     function assignments() {
+        timothy.a1(3, "Just one wrong note at the beginning. Great Start");
+        kyle.a5(4);
+        rodrick.b1(4);
+        rodrick.b1("t");
+        rodrick.b1("c");
+        rodrick.a9(4, "my pedal is doing the same. the 8va below means an octave lower");
+        rodrick.a8(4, "Great attention to detail");
+        rodrick.b2(4);
+        rodrick.b2("t");
+        rodrick.b2("c");
+        jamari.a3(4);
+        joseph.a3(4,"Using a metronome is great practice")
+        sam.a4(4,"Correct")
+        ken.a3(4,"Correct")
+
+
+
+
+
+        reuben.a3(4,"Great playing rueben")
         jada.a4(3, "Should be played an octave lower");
         jaden.a1(4, "Burger King");
         ken.a1(4, "That's the song");
@@ -10,7 +30,10 @@ window.onload = function () {
         jacob.a1(2, "not the correct notes");
         reuben.a2(4, "Good");
         joseph.a1(4, " Good you don't have to repeat");
-        sam.a2(2,"Play wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same")
+        sam.a2(
+            2,
+            "Played wrong note in 2nd exercise. It is cceegg. you played cceeff. Also keep the music steady all quarter notes should sound the same"
+        );
         rodrick.a3(4);
         rodrick.a3("t");
         rodrick.a3("c");
@@ -39,7 +62,7 @@ window.onload = function () {
         rodrick.a2("c");
         jaden.a2(4);
         kyle.a1(4);
-        sam.a1(3,"Keep the music steady")
+        sam.a1(3, "Keep the music steady");
         jaden.a1("t");
         jaden.a3(4);
         ken.a2(4);
@@ -60,7 +83,7 @@ window.onload = function () {
         rodrick.a6(4, "This is impressive Rodrick");
         rodrick.a6("t");
         rodrick.a6("c");
-        sam.a3(4, "Good")
+        sam.a3(4, "Good");
         rodrick.a5(4);
         rodrick.a5("t");
         rodrick.a5("c");
@@ -70,27 +93,19 @@ window.onload = function () {
         rebecca.a3(4, "I assume the breaks were for moving the page. Good recording");
         brady.a3(4);
         kyle.a3(4);
-        jaden.a4(4)
-        kyle.a2(4)
-        josendo.a2(4)
-        josendo.a2("c")
-        jamari.a2(4)
+        jaden.a4(4);
+        kyle.a2(4);
+        josendo.a2(4);
+        josendo.a2("c");
+        jamari.a2(4);
         // lauren.a3(4)
         // lauren.a2(4)
-        josendo.a3(4)
-        jaden.a7(4)
-        reuben.a6(4)
-        jaden.a6(4)
-        jaden.a5(4)
-        kyle.a4(4)
-
-
-
-
-
-
-
-
+        josendo.a3(4);
+        jaden.a7(4);
+        reuben.a6(4);
+        jaden.a6(4);
+        jaden.a5(4);
+        kyle.a4(4);
     }
 
     var person = "";
@@ -1881,6 +1896,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[0] = this.level2[0] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[0] = this.level2[0] + ": f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[0] = this.level2[0] + ": c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.b2 = function (score, comments) {
@@ -1920,6 +1956,27 @@ window.onload = function () {
                 this.coins = this.coins + 1;
                 this.level2[1] = "C";
                 this.level2COM[1] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[1] = this.level2[1] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[1] = this.level2[1] + ": f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[1] = this.level2[1] + ": c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -3720,7 +3777,7 @@ window.onload = function () {
     console.log(classicalHighScore);
     console.log(romanticHighScore);
     console.log(centuryHighScore);
-    console.log(baroqueHighScore)
+    console.log(baroqueHighScore);
 
     topScore.forEach(teamTopScore);
 
