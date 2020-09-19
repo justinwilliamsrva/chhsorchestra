@@ -1,6 +1,18 @@
 window.onload = function () {
     function assignments() {
-        
+        olivia.b2(4, "very convenient. excellent shifts")
+        angela.a8(3, "There was funny rhythm on measure 5. Also you can ignore repeats")
+        brevin.a8(4, "Great sustaining of tones. To make it even better crescendo the first 4 bars and do the opposite the next four bars")
+        brian.a2(2, "Lets go over this. The notes are not correct")
+        brevin.a9(2, "There are no F sharps in the Key signature")
+        olivia.b4(2,"Close. The f#s were very flat and sounded like f naturals")
+        olivia.b3(4, "You don't need to repeat, but love the attention to detail")
+        amyr.a4(4, "The top C was a little sharp remember to keep it right next ot the B")
+        brevin.a7(4)
+        brett.a9(4)
+
+
+
 
 
 
