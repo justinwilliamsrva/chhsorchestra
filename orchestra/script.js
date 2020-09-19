@@ -1,8 +1,15 @@
 window.onload = function () {
     function assignments() {
+        
+
+
+
+
+
+
+
         lucca.a2(3,"Pretty good. Only problem is your 3 needs to be higher. It should be touching the 4")
-        tristan.a9(4, "Excellent")
-        tristan.a8(4)
+        tristan.a9(4, "Excellent").a8(4)
         tristan.a7(4)
         tristan.a5(4,"excellent shifts")
         tristan.a6(4, "The B natural on G string was just a hair too low")
@@ -2016,6 +2023,7 @@ window.onload = function () {
                 this.printStats();
                 break;
         }
+        return this;
     };
     Character.prototype.a10 = function (score, comments) {
         switch (score) {

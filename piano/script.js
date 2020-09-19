@@ -14,6 +14,18 @@ window.onload = function () {
         joseph.a3(4,"Using a metronome is great practice")
         sam.a4(4,"Correct")
         ken.a3(4,"Correct")
+        rodrick.b4(4)
+        rodrick.b4("t")
+        rodrick.b4("c")
+        joseph.a4(4, "Great hand position as well")
+        joseph.a4("t")
+        rodrick.b3(4)
+        rodrick.b3("t")
+        rodrick.b3("c")
+        victoria.a3(4, "Great job taking your time to find the right notes")
+        andrew.a3(3,"Keep the music steady instead of playing fast with huge breaks. Notes are correct")
+
+
 
 
 
