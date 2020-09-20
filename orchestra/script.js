@@ -3,6 +3,7 @@ window.onload = function () {
     let days = 1;
     let cavDays = 6;
     function assignments() {
+        jude.a4(4,"Great stuff for a freshman. The big thing you need to learn this year is create more beauty in your sound. Hard to do on the bass. But try to make the notes connect like someone is singing. This is easy to show in person but the trick is to shift as LATE as you possibly can and to make sure the bow is always in motion.   ")
         trinity.a9(4,"Very fine playing Trinity. This is not the most interesting piece but you made it sound like something special")
         trinity.a8(3, "Funny rhythm in measure 5. Otherwise good")
         rowan.a3(4,"Very clean playing on every note")
