@@ -1,11 +1,23 @@
 window.onload = function () {
+
+    let days = 1;
+    let cavDays = 6;
     function assignments() {
+        trinity.a9(4,"Very fine playing Trinity. This is not the most interesting piece but you made it sound like something special")
+        trinity.a8(3, "Funny rhythm in measure 5. Otherwise good")
+        rowan.a3(4,"Very clean playing on every note")
+        amy.a1(4, "Good for a  first recording")
         olivia.b2(4, "very convenient. excellent shifts");
         angela.a8(3, "There was funny rhythm on measure 5. Also you can ignore repeats");
         brevin.a8(
             4,
             "Great sustaining of tones. To make it even better crescendo the first 4 bars and do the opposite the next four bars"
         );
+        angela.a10(4)
+        jane.a8(4, "Great sound,intonation and rhyhtm")
+        jane.a7(3, "A bit too slow")
+        angela.a9(4, "Everything was correct")
+        trinity.a7(4)
         brian.a2(2, "Lets go over this. The notes are not correct");
         brevin.a9(2, "There are no F sharps in the Key signature");
         olivia.b4(2, "Close. The f#s were very flat and sounded like f naturals");
@@ -13,7 +25,7 @@ window.onload = function () {
         amyr.a4(4, "The top C was a little sharp remember to keep it right next ot the B");
         brevin.a7(4);
         brett.a9(4);
-
+        amyr.a8(3,"Some of the rhythm was off but the intonation and sound exactly correct.")
         lucca.a2(
             3,
             "Pretty good. Only problem is your 3 needs to be higher. It should be touching the 4"
@@ -205,8 +217,7 @@ window.onload = function () {
     }
 
     var person = "";
-    let days = 1;
-    let cavDays = 9;
+
     // let daysfresh = 3 / 2;
     let studentsString = [
         "jane",
