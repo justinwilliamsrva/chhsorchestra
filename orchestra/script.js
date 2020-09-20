@@ -1,37 +1,40 @@
 window.onload = function () {
     function assignments() {
-        olivia.b2(4, "very convenient. excellent shifts")
-        angela.a8(3, "There was funny rhythm on measure 5. Also you can ignore repeats")
-        brevin.a8(4, "Great sustaining of tones. To make it even better crescendo the first 4 bars and do the opposite the next four bars")
-        brian.a2(2, "Lets go over this. The notes are not correct")
-        brevin.a9(2, "There are no F sharps in the Key signature")
-        olivia.b4(2,"Close. The f#s were very flat and sounded like f naturals")
-        olivia.b3(4, "You don't need to repeat, but love the attention to detail")
-        amyr.a4(4, "The top C was a little sharp remember to keep it right next ot the B")
-        brevin.a7(4)
-        brett.a9(4)
+        olivia.b2(4, "very convenient. excellent shifts");
+        angela.a8(3, "There was funny rhythm on measure 5. Also you can ignore repeats");
+        brevin.a8(
+            4,
+            "Great sustaining of tones. To make it even better crescendo the first 4 bars and do the opposite the next four bars"
+        );
+        brian.a2(2, "Lets go over this. The notes are not correct");
+        brevin.a9(2, "There are no F sharps in the Key signature");
+        olivia.b4(2, "Close. The f#s were very flat and sounded like f naturals");
+        olivia.b3(4, "You don't need to repeat, but love the attention to detail");
+        amyr.a4(4, "The top C was a little sharp remember to keep it right next ot the B");
+        brevin.a7(4);
+        brett.a9(4);
 
-
-
-
-
-
-
-
-
-
-        lucca.a2(3,"Pretty good. Only problem is your 3 needs to be higher. It should be touching the 4")
-        tristan.a9(4, "Excellent").a8(4)
-        tristan.a7(4)
-        tristan.a5(4,"excellent shifts")
-        tristan.a6(4, "The B natural on G string was just a hair too low")
-        tristan.a10(4,"First to complete this correctly")
-        emily.a2(4, "Thank you for the disclaimer! Sounds good on this end. Woah except for that G string")
-        kamille.a2(4,"Good")
-        mackenzie.a2(3,"One note near the end of 17th realy out of tune. Maybe 1st finger D on the A string. other than that, really good")
-        emily.a3(4,"Watch out for articulation")
-        ryann.a2(4,"Good sound. Try playing them a bit faster")
-        jules.a2(4,"Watch out for H3 making sure it is high enough. Otherwise very good")
+        lucca.a2(
+            3,
+            "Pretty good. Only problem is your 3 needs to be higher. It should be touching the 4"
+        );
+        tristan.a9(4, "Excellent").a8(4);
+        tristan.a7(4);
+        tristan.a5(4, "excellent shifts");
+        tristan.a6(4, "The B natural on G string was just a hair too low");
+        tristan.a10(4, "First to complete this correctly");
+        emily.a2(
+            4,
+            "Thank you for the disclaimer! Sounds good on this end. Woah except for that G string"
+        );
+        kamille.a2(4, "Good");
+        mackenzie.a2(
+            3,
+            "One note near the end of 17th realy out of tune. Maybe 1st finger D on the A string. other than that, really good"
+        );
+        emily.a3(4, "Watch out for articulation");
+        ryann.a2(4, "Good sound. Try playing them a bit faster");
+        jules.a2(4, "Watch out for H3 making sure it is high enough. Otherwise very good");
         ryann.a3(4, "Great sound as always");
         walker.a3(
             4,
@@ -198,7 +201,7 @@ window.onload = function () {
         jules.a3(3, "A few missed notes. Otherwise good");
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
-        ally.a1(4)
+        ally.a1(4);
     }
 
     var person = "";
@@ -250,7 +253,7 @@ window.onload = function () {
         "caroline",
         "ramon",
         "kamille",
-        "ally"
+        "ally",
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -1281,7 +1284,7 @@ window.onload = function () {
         caroline,
         ramon,
         kamille,
-        ally
+        ally,
     ];
 
     Character.prototype.printStats = function () {
@@ -3804,7 +3807,7 @@ window.onload = function () {
         comment.innerHTML = "";
     }
     function clearQuests() {
-        currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.51";
+        currentLevel.innerHTML = "CCPS HIGH SCHOOL ORCHESTRA LEARNING<br>BETA VERSION 1.60";
         assign1.innerHTML = "";
         assign2.innerHTML = "";
         assign3.innerHTML = "";
@@ -4031,72 +4034,62 @@ window.onload = function () {
         }
     });
 
-     //RANK BY INSTRUMENT
+    //RANK BY INSTRUMENT
 
+    let teamViolin = [];
+    let teamViola = [];
+    let teamCello = [];
+    let teamBass = [];
+    topScore.forEach(instrumentTeam);
 
+    // console.log(topScore);
 
-//      let teamViolin = [];
-//      let teamViola = [];
-//      let teamCello = [];
-//      let teamBass = [];
-//      topScore.forEach(instrumentTeam)
+    function instrumentTeam(item) {
+        if (item.instrument == "Violin") {
+            teamViolin.push(item);
+        }
+        if (item.instrument == "Viola") {
+            teamViola.push(item);
+        }
+        if (item.instrument == "Cello") {
+            teamCello.push(item);
+        }
+        if (item.instrument == "Bass") {
+            teamBass.push(item);
+        }
+    }
 
+    var violinHighScore = _.sortBy(teamViolin, function (team) {
+        return team.total_score * -1;
+    });
+    var violaHighScore = _.sortBy(teamViola, function (team) {
+        return team.total_score * -1;
+    });
+    var celloHighScore = _.sortBy(teamCello, function (team) {
+        return team.total_score * -1;
+    });
+    var bassHighScore = _.sortBy(teamBass, function (team) {
+        return team.total_score * -1;
+    });
+    console.log(violinHighScore);
+    console.log(violaHighScore);
+    console.log(celloHighScore);
+    console.log(bassHighScore);
 
-//      // console.log(topScore);
+    topScore.forEach(instrumentTopScore);
 
-//     function instrumentTeam(item) {
-//         if (item.instrument == "Violin") {
-//             teamViolin.push(item);
-//         } if (item.instrument == "Viola") {
-//             teamViola.push(item);
-//         } if (item.insarument == "Cello") {
-//             teamCello.push(item);
-//         } if (item.instrument == "Bass") {
-//             teamBass.push(item);
-//         }
-//     }
+    function instrumentTopScore(item) {
+        // console.log(item.instrument);
+        // console.log(person);
 
-//     var violinHighScore = _.sortBy(teamViolin, function (team) {
-//         return team.total_score * -1;
-//     });
-//     var violaHighScore = _.sortBy(teamViola, function (team) {
-//         return team.total_score * -1;
-//     });
-//     var celloHighScore = _.sortBy(teamCello, function (team) {
-//         return team.total_score * -1;
-//     });
-//     var bassHighScore= _.sortBy(teamBass, function (team) {
-//         return team.total_score * -1;
-//     });
-// // console.log(violinHighScore);
-
-// celloHighScore.forEach(instrumentTopScore);
-
-// function instrumentTopScore(item) {
-//     console.log(item.instrument);
-//     console.log(person);
-
-//     if (person == item.realname && item.instrument == "Violin") {
-
-//         instrumentHighScore = violinHighScore.indexOf(item) + 1;
-//     }
-//     else if (person == item.realname && item.instrument == "Viola") {
-
-
-//         instrumentHighScore = violaHighScore.indexOf(item) + 1;
-//     }
-
-//     else if (person == item.realname && item.instrument == "Cello") {
-
-
-//                 instrumentHighScore = celloHighScore.indexOf(item) + 1;
-
-
-//     } else if (person == item.realname && item.instrument == "Bass") {
-
-//                 instrumentHighScore = bassHighScore.indexOf(item) + 1;
-
-//     }
-// }
-
+        if (item.realname == person && item.instrument == "Violin") {
+            instrumentHighScore = violinHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.instrument == "Viola") {
+            instrumentHighScore = violaHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.instrument == "Cello") {
+            instrumentHighScore = celloHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.instrument == "Bass") {
+            instrumentHighScore = bassHighScore.indexOf(item) + 1;
+        }
+    }
 };

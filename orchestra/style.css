@@ -131,8 +131,9 @@
     #levelPng,
     #defensePng,
     #coinPng{
-        height: 90%;
+        height: 100%;
         width: 40%;
+        /* display: inline; */
     }
 
 
