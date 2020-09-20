@@ -206,6 +206,7 @@ window.onload = function () {
 
     var person = "";
     let days = 1;
+    let cavDays = 9;
     // let daysfresh = 3 / 2;
     let studentsString = [
         "jane",
@@ -250,7 +251,7 @@ window.onload = function () {
         "amy",
         "amyr",
         "trinity",
-        "caroline",
+        // "caroline",
         "ramon",
         "kamille",
         "ally",
@@ -888,7 +889,7 @@ window.onload = function () {
         "Godiva",
         "classical",
         1,
-        "https://www.vectorstock.com/royalty-free-vector/cute-chocolate-bar-character-with-funny-face-vector-13726498",
+        "../assets/choc.jpg",
         0,
         0,
         0,
@@ -1281,7 +1282,7 @@ window.onload = function () {
         amy,
         amyr,
         trinity,
-        caroline,
+        // caroline,
         ramon,
         kamille,
         ally,
@@ -3210,36 +3211,36 @@ window.onload = function () {
         this.grade = this.coins / days;
         // alert(this.grade);
 
-        if (this.grade >= 7.2) {
+        if (this.grade >= 3.66) {
             assign2.innerHTML = "Current Grade: A+";
-        } else if (this.grade >= 6.4) {
-            assign2.innerHTML = "Current Grade: A";
-        } else if (this.grade >= 5.6) {
-            assign2.innerHTML = "Current Grade: A-";
-        } else if (this.grade >= 4.8) {
-            assign2.innerHTML = "Current Grade: B+";
-        } else if (this.grade >= 4.0) {
-            assign2.innerHTML = "Current Grade: B";
         } else if (this.grade >= 3.33) {
-            assign2.innerHTML = "Current Grade: B-";
-        } else if (this.grade >= 2.66) {
-            assign2.innerHTML = "Current Grade: C+";
+            assign2.innerHTML = "Current Grade: A";
+        } else if (this.grade >= 3) {
+            assign2.innerHTML = "Current Grade: A-";
+        } else if (this.grade >= 2.5) {
+            assign2.innerHTML = "Current Grade: B+";
         } else if (this.grade >= 2.0) {
-            assign2.innerHTML = "Current Grade: C";
+            assign2.innerHTML = "Current Grade: B";
         } else if (this.grade >= 1.66) {
-            assign2.innerHTML = "Current Grade: C-";
+            assign2.innerHTML = "Current Grade: B-";
         } else if (this.grade >= 1.33) {
+            assign2.innerHTML = "Current Grade: C+";
+        } else if (this.grade >= 1.0) {
+            assign2.innerHTML = "Current Grade: C";
+        } else if (this.grade >= 0.8) {
+            assign2.innerHTML = "Current Grade: C-";
+        } else if (this.grade >= 0.6) {
             assign2.innerHTML = "Current Grade: D+";
-        } else if (this.grade >= 1) {
+        } else if (this.grade >= 0.4) {
             assign2.innerHTML = "Current Grade: D";
-        } else if (this.grade >= 0.5) {
+        } else if (this.grade >= 0.2) {
             assign2.innerHTML = "Current Grade: D-";
         } else {
             assign2.innerHTML = "Current Grade: F";
         }
     };
-    Character.prototype.freshGrading = function () {
-        this.grade = this.coins / days;
+    Character.prototype.cavGrading = function () {
+        this.grade = this.coins / cavDays;
         // alert(this.grade);
 
         if (this.grade >= 3.66) {
@@ -3790,11 +3791,25 @@ window.onload = function () {
         assign4.innerHTML = `Current Rank in Orchestra: ${myTotalRank}`;
 
         // personage.grading();
-        // // if (person == "jaden") {
-        // //     personage.freshGrading();
-        // // } else if (person == "miami") {
-        // //     personage.grading();
-        // // }
+        if (
+            person == "jane" ||
+            person == "olivia" ||
+            person == "angela" ||
+            person == "brett" ||
+            person == "brevin" ||
+            person == "connor" ||
+            person == "caleb" ||
+            person == "tristan" ||
+            person == "brian" ||
+            person == "amy" ||
+            person == "amyr" ||
+            person == "trinity" ||
+            person == "caroline"
+        ) {
+            personage.cavGrading();
+        } else {
+            personage.grading();
+        }
 
         assign5.innerHTML = `Current Rank on Team: ${myHighScore}`;
         assign6.innerHTML = `Current Rank on Instrument: ${instrumentHighScore}`;

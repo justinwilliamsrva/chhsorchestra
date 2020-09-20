@@ -3597,7 +3597,7 @@ window.onload = function () {
         currentLevel.innerHTML = `Complete Stats`;
         assign1.innerHTML = `Total Score: ${personage.totalScore}`;
         assign2.innerHTML = `Current Rank: ${myTotalRank}`;
-        personage.grading();
+        personage.freshGrading();
 
         assign4.innerHTML = `Rank on Team: ${myHighScore}`;
     }
