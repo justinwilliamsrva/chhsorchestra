@@ -3253,7 +3253,7 @@ window.onload = function () {
     };
     Character.prototype.cavGrading = function () {
         this.grade = this.coins / cavDays;
-        // alert(this.grade);
+        console.log(this.grade)
 
         if (this.grade >= 3.66) {
             assign2.innerHTML = "Current Grade: A+";
