@@ -3,7 +3,40 @@ window.onload = function () {
     let days = 1;
     let cavDays = 6;
     function assignments() {
-        jude.a4(4,"Great stuff for a freshman. The big thing you need to learn this year is create more beauty in your sound. Hard to do on the bass. But try to make the notes connect like someone is singing. This is easy to show in person but the trick is to shift as LATE as you possibly can and to make sure the bow is always in motion.   ")
+        // 9/21
+   nicholas.a2(4,"Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts.")
+        walker.a5(4,"Good, Could be a little faster")
+        walker.a9(4,"Great attention to detail. It ave the music some character")
+        madeline.a1(4,"This is good stuff. Solid tone and intonation")
+        ryann.a4(4,"Wonderful sound Ryann")
+        natalia.a5(4,"Good")
+        mackenzie.a4(4,"Great.")
+        ryann.a5(4,"You forgot the rest of the song. But this sounded good I am sure you'd be fine on the rest of it")
+        kamille.a4(4,"Good. Could be a bit faster")
+        isabella.a2(4,"This is very good left hand playing. Don't worry about the sound. That will come, I promise.")
+        kamille.a5(4,"Good. Could be a bit faster")
+        kamille.a6(4,"Good. Could be a bit faster")
+        emily.a4(4)
+        mackenzie.a5(4,"A little on the slow side but intune")
+        emily.a5(4,"in third position your fingers were too spread out which is why they sounded funny")
+        jules.a5(4,"Good need to be a little faster")
+        jules.a7(4, "Good needs to be a little faster")
+        jules.a4(4,"Good the last shift to the top note try no to take a big break")
+        jules.a6(4,"Correct. Remember that your right hand elbow should lower as you go higher on the string. The will keep the bow from jumping")
+        jade.a5(2,"You forgot the rest of it. You can submit another recording")
+        jude.a5(4,"Tip when playing the E string. Rotate your bass counter clockwise a hair and it will be easier to get a great sound.")
+        jude.a6(4,"This is good. Keep working on shifting to the next note as late as possible. In fact I only shift when the note needs to be played, not a millisecond before. Your playing will go from good to magical. ")
+        spencer.a7(4,"Good. same comment as a5. And watch out for yanking the last notes(I have the same bad habit) It feels nice but sounds bad. Good Facility overall")
+        jude.a7(3,"Whoops you played some F naturals going up. Down was fine.")
+        kate.a2(2,"Those 3's need to be higher. you are playing low 3 by accident.Good Facility.")
+        spencer.a5(4,"Good, Try to dig in a little more an use less bow so the sound is not weak")
+        rowan.a4(2,"Whoops there should not have been an F# on the E string only F natural. Also you forgot to play 102")
+        jude.a8(4,"Great connection on all notes except on the half notes. A lot of this sounded quite nice, which is hard to do on bass")
+        emmett.a4(4,"Good")
+        emmett.a5(3,"A little on the slow side. Otherwise good")
+        madeline.a2(3,"Mostly good. A few out of tune notes and some funny rhythm in the last song. ")
+    //    before 9/21
+        jude.a4(4, "Great stuff for a freshman. The big thing you need to learn this year is create more beauty in your sound. Hard to do on the bass. But try to make the notes connect like someone is singing. This is easy to show in person but the trick is to shift as LATE as you possibly can and to make sure the bow is always in motion.   ")
         trinity.a9(4,"Very fine playing Trinity. This is not the most interesting piece but you made it sound like something special")
         trinity.a8(3, "Funny rhythm in measure 5. Otherwise good")
         rowan.a3(4,"Very clean playing on every note")
@@ -99,7 +132,7 @@ window.onload = function () {
             "If you are in need of beautiful bass solo. this one is a good one. Great playing"
         );
         brett.a3(2, "Watch out for rhythm. Scrolling is fine");
-        walker.a1;
+        walker.a1(4);
         thomas.a1(4, "Great time indeed");
         ramon.a1(4, "good stuff");
         jane.a1(4);
@@ -312,6 +345,7 @@ window.onload = function () {
     let myHighScore = 0;
     let myTotalRank = 0;
     let instrumentHighScore = 0;
+    let gradeHighScore = 0;
 
     function Character(
         name,
@@ -3825,6 +3859,7 @@ window.onload = function () {
 
         assign5.innerHTML = `Current Rank on Team: ${myHighScore}`;
         assign6.innerHTML = `Current Rank on Instrument: ${instrumentHighScore}`;
+        assign7.innerHTML = `Current Rank in Grade: ${gradeHighScore}`;
     }
 
     function clearInstructions() {
@@ -3903,6 +3938,7 @@ window.onload = function () {
             instrument: item.instrument,
             total_score: item.totalScore,
             level: item.level,
+            class: item.currentClass
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -3911,7 +3947,7 @@ window.onload = function () {
         // console.log(jaden.coins);
     }
     students.forEach(topScoreFunc);
-    // console.log(topScore);
+    console.log(topScore);
 
     var highScore = _.sortBy(topScore, function (people) {
         return people.total_score * -1;
@@ -4117,6 +4153,66 @@ window.onload = function () {
             instrumentHighScore = celloHighScore.indexOf(item) + 1;
         } else if (person == item.realname && item.instrument == "Bass") {
             instrumentHighScore = bassHighScore.indexOf(item) + 1;
+        }
+    }
+
+
+    //RANK BY GRADE
+
+    let teamFreshman = [];
+    let teamSophomore = [];
+    let teamJunior = [];
+    let teamSenior = [];
+    topScore.forEach(gradeTeam);
+
+    // console.log(topScore);
+
+    function gradeTeam(item) {
+        if (item.class == "Freshman") {
+            teamFreshman.push(item);
+        }
+        if (item.class == "Sophomore") {
+            teamSophomore.push(item);
+        }
+        if (item.class == "Junior") {
+            teamJunior.push(item);
+        }
+        if (item.class == "Senior") {
+            teamSenior.push(item);
+        }
+    }
+
+    var FreshmanHighScore = _.sortBy(teamFreshman, function (team) {
+        return team.total_score * -1;
+    });
+    var SophomoreHighScore = _.sortBy(teamSophomore, function (team) {
+        return team.total_score * -1;
+    });
+    var JuniorHighScore = _.sortBy(teamJunior, function (team) {
+        return team.total_score * -1;
+    });
+    var SeniorHighScore = _.sortBy(teamSenior, function (team) {
+        return team.total_score * -1;
+    });
+    console.log(FreshmanHighScore);
+    console.log(SophomoreHighScore);
+    console.log(JuniorHighScore);
+    console.log(SeniorHighScore);
+
+    topScore.forEach(gradeTopScore);
+
+    function gradeTopScore(item) {
+        // console.log(item.instrument);
+        // console.log(person);
+
+        if (item.realname == person && item.class == "Freshman") {
+            gradeHighScore = FreshmanHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.class == "Sophomore") {
+            gradeHighScore = SophomoreHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.class == "Junior") {
+            gradeHighScore = JuniorHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.class == "Senior") {
+            gradeHighScore = SeniorHighScore.indexOf(item) + 1;
         }
     }
 };
