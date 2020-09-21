@@ -191,6 +191,8 @@ window.onload = function () {
     var teamTop5 = document.getElementById("teamtopscore5");
     let myHighScore = 0;
     let myTotalRank = 0;
+    let gradeHighScore = 0;
+
 
     function Character(
         name,
@@ -3056,31 +3058,31 @@ window.onload = function () {
         // alert(this.grade);
 
         if (this.grade >= 3.66) {
-            assign5.innerHTML = "Current Grade: A+";
+            assign2.innerHTML = "Current Grade: A+";
         } else if (this.grade >= 3.33) {
-            assign5.innerHTML = "Current Grade: A";
+            assign2.innerHTML = "Current Grade: A";
         } else if (this.grade >= 3) {
-            assign5.innerHTML = "Current Grade: A-";
+            assign2.innerHTML = "Current Grade: A-";
         } else if (this.grade >= 2.5) {
-            assign5.innerHTML = "Current Grade: B+";
+            assign2.innerHTML = "Current Grade: B+";
         } else if (this.grade >= 2.0) {
-            assign5.innerHTML = "Current Grade: B";
+            assign2.innerHTML = "Current Grade: B";
         } else if (this.grade >= 1.66) {
-            assign5.innerHTML = "Current Grade: B-";
+            assign2.innerHTML = "Current Grade: B-";
         } else if (this.grade >= 1.33) {
-            assign5.innerHTML = "Current Grade: C+";
+            assign2.innerHTML = "Current Grade: C+";
         } else if (this.grade >= 1.0) {
-            assign5.innerHTML = "Current Grade: C";
+            assign2.innerHTML = "Current Grade: C";
         } else if (this.grade >= 0.8) {
-            assign5.innerHTML = "Current Grade: C-";
+            assign2.innerHTML = "Current Grade: C-";
         } else if (this.grade >= 0.6) {
-            assign5.innerHTML = "Current Grade: D+";
+            assign2.innerHTML = "Current Grade: D+";
         } else if (this.grade >= 0.4) {
-            assign5.innerHTML = "Current Grade: D";
+            assign2.innerHTML = "Current Grade: D";
         } else if (this.grade >= 0.2) {
-            assign5.innerHTML = "Current Grade: D-";
+            assign2.innerHTML = "Current Grade: D-";
         } else {
-            assign5.innerHTML = "Current Grade: F";
+            assign2.innerHTML = "Current Grade: F";
         }
     };
 
@@ -3596,10 +3598,12 @@ window.onload = function () {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
         assign1.innerHTML = `Total Score: ${personage.totalScore}`;
-        assign2.innerHTML = `Current Rank: ${myTotalRank}`;
+        assign4.innerHTML = `Current Rank: ${myTotalRank}`;
         personage.freshGrading();
 
-        assign4.innerHTML = `Rank on Team: ${myHighScore}`;
+        assign5.innerHTML = `Rank on Team: ${myHighScore}`;
+        assign6.innerHTML = `Rank in Grade: ${gradeHighScore}`;
+
     }
 
     function clearInstructions() {
@@ -3678,6 +3682,7 @@ window.onload = function () {
             instrument: item.instrument,
             total_score: item.totalScore,
             level: item.level,
+            class: item.currentClass
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -3833,4 +3838,67 @@ window.onload = function () {
             myTotalRank = highScore.indexOf(item) + 1;
         }
     });
+
+
+
+    let teamFreshman = [];
+    let teamSophomore = [];
+    let teamJunior = [];
+    let teamSenior = [];
+    topScore.forEach(gradeTeam);
+
+    // console.log(topScore);
+
+    function gradeTeam(item) {
+        if (item.class == "Freshman") {
+            teamFreshman.push(item);
+        }
+        if (item.class == "Sophomore") {
+            teamSophomore.push(item);
+        }
+        if (item.class == "Junior") {
+            teamJunior.push(item);
+        }
+        if (item.class == "Senior") {
+            teamSenior.push(item);
+        }
+    }
+
+    var FreshmanHighScore = _.sortBy(teamFreshman, function (team) {
+        return team.total_score * -1;
+    });
+    var SophomoreHighScore = _.sortBy(teamSophomore, function (team) {
+        return team.total_score * -1;
+    });
+    var JuniorHighScore = _.sortBy(teamJunior, function (team) {
+        return team.total_score * -1;
+    });
+    var SeniorHighScore = _.sortBy(teamSenior, function (team) {
+        return team.total_score * -1;
+    });
+    console.log(FreshmanHighScore);
+    console.log(SophomoreHighScore);
+    console.log(JuniorHighScore);
+    console.log(SeniorHighScore);
+
+    topScore.forEach(gradeTopScore);
+
+    function gradeTopScore(item) {
+        // console.log(item.instrument);
+        // console.log(person);
+
+        if (item.realname == person && item.class == "Freshman") {
+            gradeHighScore = FreshmanHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.class == "Sophomore") {
+            gradeHighScore = SophomoreHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.class == "Junior") {
+            gradeHighScore = JuniorHighScore.indexOf(item) + 1;
+        } else if (person == item.realname && item.class == "Senior") {
+            gradeHighScore = SeniorHighScore.indexOf(item) + 1;
+        }
+    }
+
+
+
+
 };
