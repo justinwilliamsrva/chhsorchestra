@@ -1,5 +1,7 @@
 window.onload = function () {
+    let days = 2;
     function assignments() {
+        let days = 2;
         timothy.a1(3, "Just one wrong note at the beginning. Great Start");
         kyle.a5(4);
         rodrick.b1(4);

@@ -1,7 +1,7 @@
 window.onload = function () {
 
-    let days = 1;
-    let cavDays = 6;
+    let days = 2;
+    let cavDays = 9;
     function assignments() {
         // 9/21
    nicholas.a2(4,"Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts.")
