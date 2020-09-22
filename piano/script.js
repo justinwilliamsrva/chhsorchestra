@@ -1,10 +1,9 @@
 window.onload = function () {
     let days = 2;
     function assignments() {
-        rodrick.a10(4,"Correct!")
+        rodrick.a10(4, "Correct!")
 
         // 9/21
-
         jada.a3(4)
         jada.a4(4,"Very good playing")
         kyle.a6(4)
@@ -3727,7 +3726,7 @@ window.onload = function () {
     top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
     top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
 
-    console.log(highScore[0].name, highScore[1].name);
+    console.log(highScore);
 
     let teamBaroque = [];
     let teamClassical = [];
