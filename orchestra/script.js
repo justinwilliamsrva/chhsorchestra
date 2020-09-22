@@ -4,6 +4,11 @@ window.onload = function () {
     let cavDays = 9;
     function assignments() {
         // 9/21
+        lucca.a3(3,"Watch out for 3rd finger. It needs to be high for the F#s and B")
+        lucca.a4(4,"Great!")
+        lucca.a5(3,"Missed a few notes but mostly good")
+        grace.a4(3,"The other half of 101 is missing. Please submit the rest of it. 102 sounds good")
+        grace.a5(2,"Mostly good. I heard an F# on the E string when there hsould on be F natural. I didn't hear the second half of this piece. Please submit the rest of #130")
    nicholas.a2(4,"Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts.")
         walker.a5(4,"Good, Could be a little faster")
         walker.a9(4,"Great attention to detail. It ave the music some character")
