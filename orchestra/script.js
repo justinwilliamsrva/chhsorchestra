@@ -3,7 +3,7 @@ window.onload = function () {
     let days = 2;
     let cavDays = 9;
     function assignments() {
-        // 9/21
+        // 9/21F
         amy.a2(3,"Very good. We only need to fix a few notes")
         lucca.a3(3,"Watch out for 3rd finger. It needs to be high for the F#s and B")
         lucca.a4(4,"Great!")
@@ -3861,7 +3861,6 @@ window.onload = function () {
             person == "caleb" ||
             person == "tristan" ||
             person == "brian" ||
-            person == "amy" ||
             person == "amyr" ||
             person == "trinity" ||
             person == "caroline"
