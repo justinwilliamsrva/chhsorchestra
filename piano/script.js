@@ -1,7 +1,10 @@
 window.onload = function () {
     let days = 2;
     function assignments() {
+        rodrick.a10(4,"Correct!")
+
         // 9/21
+
         jada.a3(4)
         jada.a4(4,"Very good playing")
         kyle.a6(4)
@@ -97,7 +100,7 @@ window.onload = function () {
         rodrick.a7("t");
         rodrick.a7("c");
         jacob.a3(4, "Great!");
-        somros.a4(4, "Great playing somoros");
+        somros.a3(4, "Great playing somoros");
         rodrick.a6(4, "This is impressive Rodrick");
         rodrick.a6("t");
         rodrick.a6("c");
