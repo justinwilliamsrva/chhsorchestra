@@ -1,7 +1,20 @@
 window.onload = function () {
     let days = 2;
     function assignments() {
+        // 9.22
+        sam.a6(2, "Listen to the recording I sent you.")
+        sam.a5(2,"This is good but your left hand was one note off. Your thumb was on G when it needed to be on A")
         rodrick.a10(4, "Correct!")
+        rodrick.b5(4)
+        rodrick.b5("t")
+        rodrick.b5("c")
+        rebecca.a4(4, "Excellent")
+        somros.a4(4, "Good")
+        victoria.a4(4,"Love the organ sound")
+        jaden.a9(4)
+        kyle.a7(4)
+        josendo.a5(4,"Great rhythm")
+        somros.a5(4,"Correct")
 
         // 9/21
         jada.a3(4)
