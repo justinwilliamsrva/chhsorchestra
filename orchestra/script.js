@@ -4,12 +4,13 @@ window.onload = function () {
     let cavDays = 9;
     function assignments() {
         // 9/21
+        amy.a2(3,"Very good. We only need to fix a few notes")
         lucca.a3(3,"Watch out for 3rd finger. It needs to be high for the F#s and B")
         lucca.a4(4,"Great!")
         lucca.a5(3,"Missed a few notes but mostly good")
         grace.a4(3,"The other half of 101 is missing. Please submit the rest of it. 102 sounds good")
-        grace.a5(2,"Mostly good. I heard an F# on the E string when there hsould on be F natural. I didn't hear the second half of this piece. Please submit the rest of #130")
-   nicholas.a2(4,"Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts.")
+        grace.a5(2,"Mostly good. I heard an F# on the E string when there should on be F natural. I didn't hear the second half of this piece. Please submit the rest of #130")
+    nicholas.a2(4,"Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts.")
         walker.a5(4,"Good, Could be a little faster")
         walker.a9(4,"Great attention to detail. It ave the music some character")
         madeline.a1(4,"This is good stuff. Solid tone and intonation")
@@ -556,7 +557,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -653,7 +654,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        10,
         0,
         0,
         0,
@@ -669,7 +670,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -686,7 +687,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        10,
         0,
         0,
         0,
@@ -702,7 +703,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -750,7 +751,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        10,
         0,
         0,
         0,
@@ -783,7 +784,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -912,7 +913,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        10,
         0,
         0,
         0,
@@ -928,7 +929,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        10,
         0,
         0,
         0,
@@ -944,7 +945,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -960,7 +961,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -976,7 +977,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -1024,7 +1025,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -1104,7 +1105,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -1185,7 +1186,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        10,
         0,
         0,
         0,
@@ -1217,7 +1218,7 @@ window.onload = function () {
         0,
         0,
         0,
-        0,
+        5,
         0,
         0,
         0,
@@ -1435,6 +1436,8 @@ window.onload = function () {
             lvl8.classList.add("invisible");
             lvl9.classList.add("invisible");
             lvl10.classList.add("invisible");
+            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
+            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
         } else if (this.coins < 102) {
             this.level = 3;
 
@@ -1465,6 +1468,8 @@ window.onload = function () {
             lvl10.classList.add("invisible");
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
+            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
+            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
         } else if (this.coins < 142) {
             this.level = 4;
             lvl2.classList.remove("invisible");
@@ -1494,6 +1499,8 @@ window.onload = function () {
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
+            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
+            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
         } else if (this.coins < 182) {
             this.level = 5;
             lvl2.classList.remove("invisible");
@@ -1523,6 +1530,8 @@ window.onload = function () {
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
             lvl5.classList.add("lvl5");
+            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
+            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
         } else if (this.coins < 222) {
             this.level = 6;
             lvl2.classList.remove("invisible");
