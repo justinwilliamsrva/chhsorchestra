@@ -4,7 +4,8 @@ window.onload = function () {
     let cavDays = 9;
     function assignments() {
         // 9/22
-
+        isabella.a3(4,"Great High 3")
+        isabella.a1(4)
         lauren.a1(4)
         trinity.b2(4)
         trinity.b3(4)
