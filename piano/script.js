@@ -1,5 +1,5 @@
 window.onload = function () {
-    let days = 2;
+    let days = 3;
     function assignments() {
         // 9.22
         ken.a4(4,"Great ken. Steady and secure playing")

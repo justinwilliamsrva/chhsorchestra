@@ -1,6 +1,6 @@
 window.onload = function () {
 
-    let days = 2;
+    let days = 3;
     let cavDays = 9;
     function assignments() {
         // 9/22
