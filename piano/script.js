@@ -155,7 +155,6 @@ window.onload = function () {
         "rodrick",
         "sam",
         "jada",
-        "trinity",
         "kyle",
         "rebecca",
         "jabari",
@@ -515,21 +514,7 @@ window.onload = function () {
         "jada",
         "Junior"
     );
-    const trinity = new Character(
-        "jessie",
-        "century",
-        1,
-        "https://m.media-amazon.com/images/M/MV5BMjIxNTEwMzczOF5BMl5BanBnXkFtZTgwNDUxMDM5NTM@._V1_.jpg",
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        "trinity",
-        "Junior"
-    );
+
     const kyle = new Character(
         "Kyle",
         "heretics",
@@ -778,7 +763,6 @@ window.onload = function () {
         rodrick,
         sam,
         jada,
-        trinity,
         kyle,
         rebecca,
         jabari,
