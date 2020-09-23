@@ -3750,7 +3750,7 @@ window.onload = function () {
     let teamRomantic = [];
     let teamHeretic = [];
 
-    console.log(topScore);
+    // console.log(topScore);
 
     function teamScore(item) {
         if (item.team == "baroque") {
@@ -3805,7 +3805,7 @@ window.onload = function () {
         return team.score * -1;
     });
 
-    console.log(highteamScore);
+    // console.log(highteamScore);
     teamTop1.innerHTML = `${highteamScore[0].name} - Total Score: ${highteamScore[0].score}`;
     teamTop2.innerHTML = `${highteamScore[1].name}  - Total Score: ${highteamScore[1].score}`;
     teamTop3.innerHTML = `${highteamScore[2].name} - Total Score: ${highteamScore[2].score}`;
