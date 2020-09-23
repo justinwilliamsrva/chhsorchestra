@@ -980,7 +980,7 @@ window.onload = function () {
         0,
         0,
         "Bass",
-        "thomas ",
+        "thomas",
         "Sophomore"
     );
     const madeline = new Character(
