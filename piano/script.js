@@ -2,6 +2,7 @@ window.onload = function () {
     let days = 2;
     function assignments() {
         // 9.22
+        ken.a4(4,"Great ken. Steady and secure playing")
         sierra.a3(4,"Great work Sierra. You are getting it!")
         jamari.a2(4)
         sam.a6(2, "Listen to the recording I sent you.")

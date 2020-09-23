@@ -4,7 +4,7 @@ window.onload = function () {
     let cavDays = 9;
     function assignments() {
         // 9/22
-        
+
         lauren.a1(4)
         trinity.b2(4)
         trinity.b3(4)
@@ -82,7 +82,7 @@ window.onload = function () {
         jude.a7(3,"Whoops you played some F naturals going up. Down was fine.")
         kate.a2(2,"Those 3's need to be higher. you are playing low 3 by accident.Good Facility.")
         spencer.a5(4,"Good, Try to dig in a little more an use less bow so the sound is not weak")
-        rowan.a4(2,"Whoops there should not have been an F# on the E string only F natural. Also you forgot to play 102")
+        rowan.a4(3,"Whoops there should not have been an F# on the E string only F natural.")
         jude.a8(4,"Great connection on all notes except on the half notes. A lot of this sounded quite nice, which is hard to do on bass")
         emmett.a4(4,"Good")
         emmett.a5(3,"A little on the slow side. Otherwise good")
