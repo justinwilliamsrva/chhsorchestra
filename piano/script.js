@@ -2,31 +2,34 @@ window.onload = function () {
     let days = 3;
     function assignments() {
         // 9.22
-        ken.a4(4,"Great ken. Steady and secure playing")
-        sierra.a3(4,"Great work Sierra. You are getting it!")
-        jamari.a2(4)
-        sam.a6(2, "Listen to the recording I sent you.")
-        sam.a5(2,"This is good but your left hand was one note off. Your thumb was on G when it needed to be on A")
-        rodrick.a10(4, "Correct!")
-        rodrick.b5(4)
-        rodrick.b5("t")
-        rodrick.b5("c")
-        rebecca.a4(4, "Excellent")
-        somros.a4(4, "Good")
-        victoria.a4(4,"Love the organ sound")
-        jaden.a9(4)
-        kyle.a7(4)
-        josendo.a5(4,"Great rhythm")
-        somros.a5(4,"Correct")
+        ken.a4(4, "Great ken. Steady and secure playing");
+        sierra.a3(4, "Great work Sierra. You are getting it!");
+        jamari.a2(4);
+        sam.a6(2, "Listen to the recording I sent you.");
+        sam.a5(
+            2,
+            "This is good but your left hand was one note off. Your thumb was on G when it needed to be on A"
+        );
+        rodrick.a10(4, "Correct!");
+        rodrick.b5(4);
+        rodrick.b5("t");
+        rodrick.b5("c");
+        rebecca.a4(4, "Excellent");
+        somros.a4(4, "Good");
+        victoria.a4(4, "Love the organ sound");
+        jaden.a9(4);
+        kyle.a7(4);
+        josendo.a5(4, "Great rhythm");
+        somros.a5(4, "Correct");
 
         // 9/21
-        jada.a3(4)
-        jada.a4(4,"Very good playing")
-        kyle.a6(4)
-        josendo.a4(4,"Good. See if you can connect the notes more to make it more lyrical")
-        timothy.a2(4,"Great start! You are getting it!")
-        jaden.a8(4,"This actually relieved my stress")
-        lauren.a4(4)
+        jada.a3(4);
+        jada.a4(4, "Very good playing");
+        kyle.a6(4);
+        josendo.a4(4, "Good. See if you can connect the notes more to make it more lyrical");
+        timothy.a2(4, "Great start! You are getting it!");
+        jaden.a8(4, "This actually relieved my stress");
+        lauren.a4(4);
         timothy.a1(3, "Just one wrong note at the beginning. Great Start");
         kyle.a5(4);
         rodrick.b1(4);
@@ -103,7 +106,7 @@ window.onload = function () {
         jaden.a3(4);
         ken.a2(4);
         reuben.a4(4);
-        lauren.a1(4)
+        lauren.a1(4);
         sierra.a2(4, "Great! Slow is fine!");
         victoria.a2(4, "Good");
         reuben.a5(3, "See video comment");
@@ -134,8 +137,8 @@ window.onload = function () {
         josendo.a2(4);
         josendo.a2("c");
         jamari.a2(4);
-        lauren.a3(4)
-        lauren.a2(4)
+        lauren.a3(4);
+        lauren.a2(4);
         josendo.a3(4);
         jaden.a7(4);
         reuben.a6(4);
@@ -3571,13 +3574,14 @@ window.onload = function () {
     function raidFunc() {
         clearAll();
         currentLevel.innerHTML = `Raids`;
-        assign1.innerHTML = `Two Duets in CM and GM(r1): ${personage.raids[0]}`;
-        assign2.innerHTML = `Two Duets in DM and AM(r2): ${personage.raids[1]}`;
-        assign3.innerHTML = `Two Duets in FM and BbM(r3): ${personage.raids[2]}`;
+        assign1.innerHTML = `When the Saints go Marching in(r1): ${personage.raids[0]}`;
+        // assign2.innerHTML = `Two Duets in DM and AM(r2): ${personage.raids[1]}`;
+        // assign3.innerHTML = `Two Duets in FM and BbM(r3): ${personage.raids[2]}`;
 
         // R!
         assign1.addEventListener("click", function () {
-            instruct.innerHTML = "<p>Quest: Record Numbers 105 and 111 with a partner</p>";
+            instruct.innerHTML =
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1yvby4SfNGf8-vM01hq3woVVR3gNeHoG1?usp=sharing'><p>Record when the Saint Go Marching In with a Partner</p></a>";
             reward.innerHTML =
                 "Reward: accuracy(8) + Facility(4) + Theory(4) + Rhythm(8) + Musicality(4) + XP(8)";
             recording.innerHTML = " Recording: Coming Soon";
