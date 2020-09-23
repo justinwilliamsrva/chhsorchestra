@@ -1012,7 +1012,7 @@ window.onload = function () {
         0,
         0,
         "Cello",
-        "nicholas ",
+        "nicholas",
         "Sophomore"
     );
     const ryann = new Character(
