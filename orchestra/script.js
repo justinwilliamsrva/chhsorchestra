@@ -3,6 +3,33 @@ window.onload = function () {
     let days = 3;
     let cavDays = 9;
     function assignments() {
+        // 9/23
+        rowan.a5(3,"Very good facility. Excellent. You played all the f's as f# though")
+        kamille.a7(4,"Great. Could be faster.")
+        natalia.a6(4,"Great facility")
+        ryann.a6(4,"YUP")
+        mackenzie.a6(3,"Watch out for that top note. It has to touch the 3rd finger. It was way too high. the rest was good")
+        jules.a8(4,"Lovely sound!")
+        walker.a2(4)
+        nicholas.a3(4)
+        lucca.a6(3,"Mostly very good. In the scale there should have been a low 2 on the A string in 1st position")
+        nicholas.a4(4)
+        thomas.a3(4,"BRAVO")
+        nicholas.a5(4,"Very nice playing")
+        tristan.b3(4)
+        rowan.a6(4,"Whoops you played C# in the G scale. Rest was very good")
+        matthew.a3(2,"Very close")
+        spencer.a6(4)
+        spencer.a7(4)
+        emmett.a8(4)
+        emmett.a6(4,"One note out of tune on 108. Otherwise great!")
+        emmett.a7(4)
+        grace.a6(4,"Watch our for f#. They were very low on the D string and E string")
+        lindsay.a1(4,"")
+        jade.a6(4)
+        jude.a9(3,"Very close. You were playing F#'s. That is why it sounded funny. There were no sharps no flats in this one")
+        kate.a4(3,"Very close. For 102 you last note was note high enough. Scale was pretty good")
+        angelica.a2(3,"Whoops the last two measures of #15 were the wrong notes. Be careful of 4th finger that it does not go too high.")
         // 9/22
         isabella.a3(4,"Great High 3")
         isabella.a1(4)
