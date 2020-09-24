@@ -1,7 +1,7 @@
 window.onload = function () {
 
     let days = 3;
-    let cavDays = 9;
+    let cavDays = 16;
     function assignments() {
         // 9/23
         rowan.a5(3,"Very good facility. Excellent. You played all the f's as f# though")
