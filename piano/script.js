@@ -1,6 +1,15 @@
 window.onload = function () {
     let days = 3;
     function assignments() {
+    //    9/24
+        
+        tyler.a2(4)
+        tyler.a1(4)
+        josendo.a7(4)
+        kyle.a9(4)
+        melissa.a2(2,"You RH was on the wrong key. You thumb was on D and not C. B+")
+        melissa.a1()
+
         // 9.22
         ken.a4(4, "Great ken. Steady and secure playing");
         sierra.a3(4, "Great work Sierra. You are getting it!");
