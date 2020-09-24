@@ -52,7 +52,7 @@ window.onload = function () {
         amyr.a10(4, "Excellent")
         olivia.b7(4, "Going down was perfect. Going up was a little funny")
         jane.b3(4)
-        angela.a3(3,"Whoops you misread the notes on 39 at the end. The last two measure you played everything a note too high. Rest was good. Excellent sound on all notes")
+        angela.b3(3,"Whoops you misread the notes on 39 at the end. The last two measure you played everything a note too high. Rest was good. Excellent sound on all notes")
         caleb.a10("Impressive!")
         brett.a10(4)
         olivia.b6(4, "Watch out for your 3rd finger. It is a hair too late. remember to stretch")

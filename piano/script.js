@@ -2,7 +2,7 @@ window.onload = function () {
     let days = 3;
     function assignments() {
     //    9/24
-        
+        t
         tyler.a2(4)
         tyler.a1(4)
         josendo.a7(4)
