@@ -2,6 +2,12 @@ window.onload = function () {
     let days = 3;
     function assignments() {
     //    9/24
+        jaden.b3(4)
+        kyle.b1(4)
+        josendo.a8(4)
+        timothy.a4(4,"Very very close. The rhythm was just a little off.")
+        lauren.a8(4)
+        lauren.a9(4)
         ken.a5(4)
         ken.a6(4)
         jamari.a6(2, "LH is perfect. I will help you with the RH")
@@ -4132,4 +4138,16 @@ window.onload = function () {
             gradeHighScore = SeniorHighScore.indexOf(item) + 1;
         }
     }
+
+    let topGrade = [];
+    function gradeFunc(item) {
+        topGrade.push({
+            realname: item.realname,
+            grade: (item.coins / days),
+
+        });
+
+    }
+    students.forEach(gradeFunc);
+    console.log(topGrade);
 };

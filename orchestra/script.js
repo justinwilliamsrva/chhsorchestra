@@ -3,6 +3,37 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 9/24
+        emily.a6(4)
+        mackenzie.a7(4)
+        emily.a7(4)
+        kamille.a8(4)
+        isabella.a4(3,"Just a few notes out of slightly out of tune. but overall good")
+        kamille.a9
+        natalia.a7(2,"Going up was fine. Not sure what happened going down")
+        emily.a8(4)
+        thomas.a4(4)
+        rowan.a7(4)
+        spencer.a8(3,"Rhythm was a little funny on the longer notes.")
+        kate.a6(2,"Watch out for those high twos on D and G. You played them a bit low")
+        jude.a10(4,"Pro Tip: In a scale bringing out the top notes sounds more natural and pleasing. When up high you need more left hand pressure inot the string and the bow should be closer to the bridge. Your low notes are nearly perfect. ")
+        spencer.a9(4)
+        kate.a7(2,"Watch out for the key signature. You played low f nautral on the D string. It should have been F#")
+        rowan.a8()
+        emmett.a9(3,"Good except the E needs to be much higher")
+        matthew.a4(1,"Lets go over this one. This is hard for violin")
+        matthew.a5(1, "Lets go over this one next class. Chekc out the reocrdings ")
+        matthew.a6(3,"The two should have been low twos not high two")
+        emmett.a10(4,"fine playing indeed")
+        jade.a7(4)
+        lindsay.a1(4)
+        natalia.a8(4)
+        jules.a9(4)
+        mackenzie.a9(4)
+        mackenzie.a8(4)
+        lucca.a6(3,"Great intonation but the rhythm was off. Always check the recordings")
+        ryann.a7(4)
+        lucca.a7(3,"Watch out for high 3's. They should be a little higher")
+        ryann.a8(4)
         lance.a1(4, "Good Start");
         julia.a5(4);
         trinity.b6(4);
@@ -4150,6 +4181,7 @@ window.onload = function () {
             total_score: item.totalScore,
             level: item.level,
             class: item.currentClass,
+
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -4425,4 +4457,24 @@ window.onload = function () {
             gradeHighScore = SeniorHighScore.indexOf(item) + 1;
         }
     }
+
+
+    let topGrade = [];
+    function gradeFunc(item) {
+        topGrade.push({
+            realname: item.realname,
+            grade: (item.coins / days),
+            grade1: (item.coins / cavDays)
+        });
+        // topScore.push(
+        //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
+        //     { miami: miami.totalScore, instrument: jaden.instrument, team: miami.team }
+        // );
+        // console.log(jaden.coins);
+    }
+    students.forEach(gradeFunc);
+    console.log(topGrade);
+
+
+
 };
