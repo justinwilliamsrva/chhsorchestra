@@ -3,6 +3,64 @@ window.onload = function () {
     let days = 3;
     let cavDays = 16;
     function assignments() {
+        // 9/24
+        lance.a1(4, "Good Start")
+        julia.a5(4)
+        trinity.b6(4)
+        trinity.b5(4)
+        angela.b10(4, "Excellent!")
+        trinity.b4(4)
+        trinity.a10(4, "This is very impressive Trinity")
+        angela.b9(4)
+        amyr.b6(3, "Watch out for high 3's. some of your C sharps were a little flat. Great facility")
+        tristan.b6(4)
+        brevin.b6(4, "Great intonation")
+        olivia.b9(4)
+        tristan.b5(4, "I still remember your first audition freshman year. You have come a long way and it is due to your hard work!!")
+        caleb.b6(4)
+        brevin.b5(3, "Good facility a few missed notes")
+        angela.b8(4,"Pro tip: Sometimes on the  last note of a slur your sound is funny. It is because you are slowing the bow down on that note. You want do to the opposite and move the bow more on the last note of a bow if possible to make smooth transition ")
+        tristan.b4(4, "Basically Perfect")
+        brett.b6(4, "in tune")
+        amyr.b5(3,"Mostly very very good. Once in a while your 2nd or 3rd finger is low when it should be high or high when it should be low. Good facility ")
+        brevin.b4(4)
+        brevin.b5(3, "Watch out for G natural on the E string. You played G#")
+        caleb.b5(4)
+        caleb.b4(4)
+        amyr.b4(4)
+        angela.b7(4)
+        brett.b4(4, "Very intune and nice vibrato")
+        brevin.b3(4)
+        olivia.b8(4)
+        caleb.b3(4)
+        amyr.b3(4)
+        angela.b6(4)
+        brett.b3(4)
+        connor.b6(4)
+        connor.b5(4, "Missed some notes but b6 was SO good you get a pass")
+        connor.b4(4)
+        jane.b6(2, "Eeek the Key signature has F#,C# and G#")
+        jane.b5(4)
+        jane.b4(4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // 9/23
         rowan.a5(3,"Very good facility. Excellent. You played all the f's as f# though")
         kamille.a7(4,"Great. Could be faster.")
@@ -660,7 +718,7 @@ window.onload = function () {
         "heretics",
         1,
         "",
-        0,
+        1000000,
         0,
         0,
         0,
@@ -3416,6 +3474,7 @@ window.onload = function () {
             side.classList.remove("side");
             personage.evaluate();
             personage.printStats();
+            // alert("Your 4 week FREE trial of Orchestra RPG will come to an end on September 30, 201")
         } else {
             // if (confirm("Do you need to create a new character?")) {
             //     window.location.href =
