@@ -1,195 +1,245 @@
 window.onload = function () {
-
     let days = 3;
     let cavDays = 16;
     function assignments() {
         // 9/24
-        lance.a1(4, "Good Start")
-        julia.a5(4)
-        trinity.b6(4)
-        trinity.b5(4)
-        angela.b10(4, "Excellent!")
-        trinity.b4(4)
-        trinity.a10(4, "This is very impressive Trinity")
-        angela.b9(4)
-        amyr.b6(3, "Watch out for high 3's. some of your C sharps were a little flat. Great facility")
-        tristan.b6(4)
-        brevin.b6(4, "Great intonation")
-        olivia.b9(4)
-        tristan.b5(4, "I still remember your first audition freshman year. You have come a long way and it is due to your hard work!!")
-        caleb.b6(4)
-        brevin.b5(3, "Good facility a few missed notes")
-        angela.b8(4,"Pro tip: Sometimes on the  last note of a slur your sound is funny. It is because you are slowing the bow down on that note. You want do to the opposite and move the bow more on the last note of a bow if possible to make smooth transition ")
-        tristan.b4(4, "Basically Perfect")
-        brett.b6(4, "in tune")
-        amyr.b5(3,"Mostly very very good. Once in a while your 2nd or 3rd finger is low when it should be high or high when it should be low. Good facility ")
-        brevin.b4(4)
-        brevin.b5(3, "Watch out for G natural on the E string. You played G#")
-        caleb.b5(4)
-        caleb.b4(4)
-        amyr.b4(4)
-        angela.b7(4)
-        brett.b4(4, "Very intune and nice vibrato")
-        brevin.b3(4)
-        olivia.b8(4)
-        caleb.b3(4)
-        amyr.b3(4)
-        angela.b6(4)
-        brett.b3(4)
-        connor.b6(4)
-        connor.b5(4, "Missed some notes but b6 was SO good you get a pass")
-        connor.b4(4)
-        jane.b6(2, "Eeek the Key signature has F#,C# and G#")
-        jane.b5(4)
-        jane.b4(4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        lance.a1(4, "Good Start");
+        julia.a5(4);
+        trinity.b6(4);
+        trinity.b5(4);
+        angela.b10(4, "Excellent!");
+        trinity.b4(4);
+        trinity.a10(4, "This is very impressive Trinity");
+        angela.b9(4);
+        amyr.b6(
+            3,
+            "Watch out for high 3's. some of your C sharps were a little flat. Great facility"
+        );
+        tristan.b6(4);
+        brevin.b6(4, "Great intonation");
+        olivia.b9(4);
+        tristan.b5(
+            4,
+            "I still remember your first audition freshman year. You have come a long way and it is due to your hard work!!"
+        );
+        caleb.b6(4);
+        brevin.b5(3, "Good facility a few missed notes");
+        angela.b8(
+            4,
+            "Pro tip: Sometimes on the  last note of a slur your sound is funny. It is because you are slowing the bow down on that note. You want do to the opposite and move the bow more on the last note of a bow if possible to make smooth transition "
+        );
+        tristan.b4(4, "Basically Perfect");
+        brett.b6(4, "in tune");
+        amyr.b5(
+            3,
+            "Mostly very very good. Once in a while your 2nd or 3rd finger is low when it should be high or high when it should be low. Good facility "
+        );
+        brevin.b4(4);
+        brevin.b5(3, "Watch out for G natural on the E string. You played G#");
+        caleb.b5(4);
+        caleb.b4(4);
+        amyr.b4(4);
+        angela.b7(4);
+        brett.b4(4, "Very intune and nice vibrato");
+        brevin.b3(4);
+        olivia.b8(4);
+        caleb.b3(4);
+        amyr.b3(4);
+        angela.b6(4);
+        brett.b3(4);
+        connor.b6(4);
+        connor.b5(4, "Missed some notes but b6 was SO good you get a pass");
+        connor.b4(4);
+        jane.b6(2, "Eeek the Key signature has F#,C# and G#");
+        jane.b5(4);
+        jane.b4(4);
 
         // 9/23
-        rowan.a5(3,"Very good facility. Excellent. You played all the f's as f# though")
-        kamille.a7(4,"Great. Could be faster.")
-        natalia.a6(4,"Great facility")
-        ryann.a6(4,"YUP")
-        mackenzie.a6(3,"Watch out for that top note. It has to touch the 3rd finger. It was way too high. the rest was good")
-        jules.a8(4,"Lovely sound!")
-        walker.a2(4)
-        nicholas.a3(4)
-        lucca.a6(3,"Mostly very good. In the scale there should have been a low 2 on the A string in 1st position")
-        nicholas.a4(4)
-        thomas.a3(4,"BRAVO")
-        nicholas.a5(4,"Very nice playing")
-        tristan.b3(4)
-        rowan.a6(4,"Whoops you played C# in the G scale. Rest was very good")
-        matthew.a3(2,"Very close")
-        spencer.a6(4)
-        spencer.a7(4)
-        emmett.a8(4)
-        emmett.a6(4,"One note out of tune on 108. Otherwise great!")
-        emmett.a7(4)
-        grace.a6(4,"Watch our for f#. They were very low on the D string and E string")
-        lindsay.a1(4,"")
-        jade.a6(4)
-        jude.a9(3,"Very close. You were playing F#'s. That is why it sounded funny. There were no sharps no flats in this one")
-        kate.a4(3,"Very close. For 102 you last note was note high enough. Scale was pretty good")
-        angelica.a2(3,"Whoops the last two measures of #15 were the wrong notes. Be careful of 4th finger that it does not go too high.")
+        rowan.a5(3, "Very good facility. Excellent. You played all the f's as f# though");
+        kamille.a7(4, "Great. Could be faster.");
+        natalia.a6(4, "Great facility");
+        ryann.a6(4, "YUP");
+        mackenzie.a6(
+            3,
+            "Watch out for that top note. It has to touch the 3rd finger. It was way too high. the rest was good"
+        );
+        jules.a8(4, "Lovely sound!");
+        walker.a2(4);
+        nicholas.a3(4);
+        lucca.a6(
+            3,
+            "Mostly very good. In the scale there should have been a low 2 on the A string in 1st position"
+        );
+        nicholas.a4(4);
+        thomas.a3(4, "BRAVO");
+        nicholas.a5(4, "Very nice playing");
+        tristan.b3(4);
+        rowan.a6(4, "Whoops you played C# in the G scale. Rest was very good");
+        matthew.a3(2, "Very close");
+        spencer.a6(4);
+        spencer.a7(4);
+        emmett.a8(4);
+        emmett.a6(4, "One note out of tune on 108. Otherwise great!");
+        emmett.a7(4);
+        grace.a6(4, "Watch our for f#. They were very low on the D string and E string");
+        lindsay.a1(4, "");
+        jade.a6(4);
+        jude.a9(
+            3,
+            "Very close. You were playing F#'s. That is why it sounded funny. There were no sharps no flats in this one"
+        );
+        kate.a4(3, "Very close. For 102 you last note was note high enough. Scale was pretty good");
+        angelica.a2(
+            3,
+            "Whoops the last two measures of #15 were the wrong notes. Be careful of 4th finger that it does not go too high."
+        );
         // 9/22
-        isabella.a3(4,"Great High 3")
-        isabella.a1(4)
-        lauren.a1(4)
-        trinity.b2(4)
-        trinity.b3(4)
-        caleb.a10(4,"brilliant")
-        angela.b4(4)
-        brian.a7(4)
-        jane.b2(4)
-        jane.a9(4,"Your sound has really improved. It is more connected than last year")
-        brian.a5(4,"Heard in person")
-        brian.a4(4,"Heard in person")
-        amyr.b1(4, "You are crushing it!")
-        tristan.a1(4,"Confident!")
-        brian.a6(4,"Very good playing")
-        caleb.b1(4, "Correct. Your tone is great this year")
-        brett.b2(4)
-        brett.b1(4)
-        amyr.a10(4, "Excellent")
-        olivia.b7(4, "Going down was perfect. Going up was a little funny")
-        jane.b3(4)
-        angela.b3(3,"Whoops you misread the notes on 39 at the end. The last two measure you played everything a note too high. Rest was good. Excellent sound on all notes")
-        caleb.a10("Impressive!")
-        brett.a10(4)
-        olivia.b6(4, "Watch out for your 3rd finger. It is a hair too late. remember to stretch")
-        angela.b2(4, "Correct")
-        olivia.b5(4, "This is a great warmup piece")
-        angela.b1(4,"Yes")
-        brevin.b2(4, "I think your strings are out of tune")
-        brevin.b1(4)
-        trinity.b1(4)
-        brevin.a10(4, "Good rhythm")
-        angela.b5(4,"Perfect")
-        amyr.b2(4)
-        tristan.b3(4)
-        brian.a9(4, "Lots of character!")
-        tristan.b1(4)
-        brian.a8(4)
-        caleb.b2(4)
-        angela.b1(4)
-        olivia.a10(4)
-        jane.a10(4)
-        jane.b1(4)
-        connor.b3(4)
-        connor.b2(4)
-        connor.b1(4)
+        isabella.a3(4, "Great High 3");
+        isabella.a1(4);
+        lauren.a1(4);
+        trinity.b2(4);
+        trinity.b3(4);
+        caleb.a10(4, "brilliant");
+        angela.b4(4);
+        brian.a7(4);
+        jane.b2(4);
+        jane.a9(4, "Your sound has really improved. It is more connected than last year");
+        brian.a5(4, "Heard in person");
+        brian.a4(4, "Heard in person");
+        amyr.b1(4, "You are crushing it!");
+        tristan.a1(4, "Confident!");
+        brian.a6(4, "Very good playing");
+        caleb.b1(4, "Correct. Your tone is great this year");
+        brett.b2(4);
+        brett.b1(4);
+        amyr.a10(4, "Excellent");
+        olivia.b7(4, "Going down was perfect. Going up was a little funny");
+        jane.b3(4);
+        angela.b3(
+            3,
+            "Whoops you misread the notes on 39 at the end. The last two measure you played everything a note too high. Rest was good. Excellent sound on all notes"
+        );
+        caleb.a10("Impressive!");
+        brett.a10(4);
+        olivia.b6(4, "Watch out for your 3rd finger. It is a hair too late. remember to stretch");
+        angela.b2(4, "Correct");
+        olivia.b5(4, "This is a great warmup piece");
+        angela.b1(4, "Yes");
+        brevin.b2(4, "I think your strings are out of tune");
+        brevin.b1(4);
+        trinity.b1(4);
+        brevin.a10(4, "Good rhythm");
+        angela.b5(4, "Perfect");
+        amyr.b2(4);
+        tristan.b3(4);
+        brian.a9(4, "Lots of character!");
+        tristan.b1(4);
+        brian.a8(4);
+        caleb.b2(4);
+        angela.b1(4);
+        olivia.a10(4);
+        jane.a10(4);
+        jane.b1(4);
+        connor.b3(4);
+        connor.b2(4);
+        connor.b1(4);
         // 9/21
-        amy.a2(3,"Very good. We only need to fix a few notes")
-        lucca.a3(3,"Watch out for 3rd finger. It needs to be high for the F#s and B")
-        lucca.a4(4,"Great!")
-        lucca.a5(3,"Missed a few notes but mostly good")
-        grace.a4(3,"The other half of 101 is missing. Please submit the rest of it. 102 sounds good")
-        grace.a5(2,"Mostly good. I heard an F# on the E string when there should on be F natural. I didn't hear the second half of this piece. Please submit the rest of #130")
-    nicholas.a2(4,"Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts.")
-        walker.a5(4,"Good, Could be a little faster")
-        walker.a9(4,"Great attention to detail. It ave the music some character")
-        madeline.a1(4,"This is good stuff. Solid tone and intonation")
-        ryann.a4(4,"Wonderful sound Ryann")
-        natalia.a5(4,"Good")
-        mackenzie.a4(4,"Great.")
-        ryann.a5(4,"You forgot the rest of the song. But this sounded good I am sure you'd be fine on the rest of it")
-        kamille.a4(4,"Good. Could be a bit faster")
-        isabella.a2(4,"This is very good left hand playing. Don't worry about the sound. That will come, I promise.")
-        kamille.a5(4,"Good. Could be a bit faster")
-        kamille.a6(4,"Good. Could be a bit faster")
-        emily.a4(4)
-        mackenzie.a5(4,"A little on the slow side but intune")
-        emily.a5(4,"in third position your fingers were too spread out which is why they sounded funny")
-        jules.a5(4,"Good need to be a little faster")
-        jules.a7(4, "Good needs to be a little faster")
-        jules.a4(4,"Good the last shift to the top note try no to take a big break")
-        jules.a6(4,"Correct. Remember that your right hand elbow should lower as you go higher on the string. The will keep the bow from jumping")
-        jade.a5(2,"You forgot the rest of it. You can submit another recording")
-        jude.a5(4,"Tip when playing the E string. Rotate your bass counter clockwise a hair and it will be easier to get a great sound.")
-        jude.a6(4,"This is good. Keep working on shifting to the next note as late as possible. In fact I only shift when the note needs to be played, not a millisecond before. Your playing will go from good to magical. ")
-        spencer.a7(4,"Good. same comment as a5. And watch out for yanking the last notes(I have the same bad habit) It feels nice but sounds bad. Good Facility overall")
-        jude.a7(3,"Whoops you played some F naturals going up. Down was fine.")
-        kate.a2(2,"Those 3's need to be higher. you are playing low 3 by accident.Good Facility.")
-        spencer.a5(4,"Good, Try to dig in a little more an use less bow so the sound is not weak")
-        rowan.a4(3,"Whoops there should not have been an F# on the E string only F natural.")
-        jude.a8(4,"Great connection on all notes except on the half notes. A lot of this sounded quite nice, which is hard to do on bass")
-        emmett.a4(4,"Good")
-        emmett.a5(3,"A little on the slow side. Otherwise good")
-        madeline.a2(3,"Mostly good. A few out of tune notes and some funny rhythm in the last song. ")
-    //    before 9/21
-        jude.a4(4, "Great stuff for a freshman. The big thing you need to learn this year is create more beauty in your sound. Hard to do on the bass. But try to make the notes connect like someone is singing. This is easy to show in person but the trick is to shift as LATE as you possibly can and to make sure the bow is always in motion.   ")
-        trinity.a9(4,"Very fine playing Trinity. This is not the most interesting piece but you made it sound like something special")
-        trinity.a8(3, "Funny rhythm in measure 5. Otherwise good")
-        rowan.a3(4,"Very clean playing on every note")
-        amy.a1(4, "Good for a  first recording")
+        amy.a2(3, "Very good. We only need to fix a few notes");
+        lucca.a3(3, "Watch out for 3rd finger. It needs to be high for the F#s and B");
+        lucca.a4(4, "Great!");
+        lucca.a5(3, "Missed a few notes but mostly good");
+        grace.a4(
+            3,
+            "The other half of 101 is missing. Please submit the rest of it. 102 sounds good"
+        );
+        grace.a5(
+            2,
+            "Mostly good. I heard an F# on the E string when there should on be F natural. I didn't hear the second half of this piece. Please submit the rest of #130"
+        );
+        nicholas.a2(
+            4,
+            "Good just make sure you hold the half notes for 2 beats. You were playing a quarter note with a rest. WOW! incredible shifts."
+        );
+        walker.a5(4, "Good, Could be a little faster");
+        walker.a9(4, "Great attention to detail. It ave the music some character");
+        madeline.a1(4, "This is good stuff. Solid tone and intonation");
+        ryann.a4(4, "Wonderful sound Ryann");
+        natalia.a5(4, "Good");
+        mackenzie.a4(4, "Great.");
+        ryann.a5(
+            4,
+            "You forgot the rest of the song. But this sounded good I am sure you'd be fine on the rest of it"
+        );
+        kamille.a4(4, "Good. Could be a bit faster");
+        isabella.a2(
+            4,
+            "This is very good left hand playing. Don't worry about the sound. That will come, I promise."
+        );
+        kamille.a5(4, "Good. Could be a bit faster");
+        kamille.a6(4, "Good. Could be a bit faster");
+        emily.a4(4);
+        mackenzie.a5(4, "A little on the slow side but intune");
+        emily.a5(
+            4,
+            "in third position your fingers were too spread out which is why they sounded funny"
+        );
+        jules.a5(4, "Good need to be a little faster");
+        jules.a7(4, "Good needs to be a little faster");
+        jules.a4(4, "Good the last shift to the top note try no to take a big break");
+        jules.a6(
+            4,
+            "Correct. Remember that your right hand elbow should lower as you go higher on the string. The will keep the bow from jumping"
+        );
+        jade.a5(2, "You forgot the rest of it. You can submit another recording");
+        jude.a5(
+            4,
+            "Tip when playing the E string. Rotate your bass counter clockwise a hair and it will be easier to get a great sound."
+        );
+        jude.a6(
+            4,
+            "This is good. Keep working on shifting to the next note as late as possible. In fact I only shift when the note needs to be played, not a millisecond before. Your playing will go from good to magical. "
+        );
+        spencer.a7(
+            4,
+            "Good. same comment as a5. And watch out for yanking the last notes(I have the same bad habit) It feels nice but sounds bad. Good Facility overall"
+        );
+        jude.a7(3, "Whoops you played some F naturals going up. Down was fine.");
+        kate.a2(2, "Those 3's need to be higher. you are playing low 3 by accident.Good Facility.");
+        spencer.a5(4, "Good, Try to dig in a little more an use less bow so the sound is not weak");
+        rowan.a4(3, "Whoops there should not have been an F# on the E string only F natural.");
+        jude.a8(
+            4,
+            "Great connection on all notes except on the half notes. A lot of this sounded quite nice, which is hard to do on bass"
+        );
+        emmett.a4(4, "Good");
+        emmett.a5(3, "A little on the slow side. Otherwise good");
+        madeline.a2(
+            3,
+            "Mostly good. A few out of tune notes and some funny rhythm in the last song. "
+        );
+        //    before 9/21
+        jude.a4(
+            4,
+            "Great stuff for a freshman. The big thing you need to learn this year is create more beauty in your sound. Hard to do on the bass. But try to make the notes connect like someone is singing. This is easy to show in person but the trick is to shift as LATE as you possibly can and to make sure the bow is always in motion.   "
+        );
+        trinity.a9(
+            4,
+            "Very fine playing Trinity. This is not the most interesting piece but you made it sound like something special"
+        );
+        trinity.a8(3, "Funny rhythm in measure 5. Otherwise good");
+        rowan.a3(4, "Very clean playing on every note");
+        amy.a1(4, "Good for a  first recording");
         olivia.b2(4, "very convenient. excellent shifts");
         angela.a8(3, "There was funny rhythm on measure 5. Also you can ignore repeats");
         brevin.a8(
             4,
             "Great sustaining of tones. To make it even better crescendo the first 4 bars and do the opposite the next four bars"
         );
-        angela.a10(4)
-        jane.a8(4, "Great sound,intonation and rhyhtm")
-        jane.a7(3, "A bit too slow")
-        angela.a9(4, "Everything was correct")
-        trinity.a7(4)
+        angela.a10(4);
+        jane.a8(4, "Great sound,intonation and rhyhtm");
+        jane.a7(3, "A bit too slow");
+        angela.a9(4, "Everything was correct");
+        trinity.a7(4);
         brian.a2(2, "Lets go over this. The notes are not correct");
         brevin.a9(2, "There are no F sharps in the Key signature");
         olivia.b4(2, "Close. The f#s were very flat and sounded like f naturals");
@@ -197,7 +247,7 @@ window.onload = function () {
         amyr.a4(4, "The top C was a little sharp remember to keep it right next ot the B");
         brevin.a7(4);
         brett.a9(4);
-        amyr.a8(3,"Some of the rhythm was off but the intonation and sound exactly correct.")
+        amyr.a8(3, "Some of the rhythm was off but the intonation and sound exactly correct.");
         lucca.a2(
             3,
             "Pretty good. Only problem is your 3 needs to be higher. It should be touching the 4"
@@ -1568,8 +1618,11 @@ window.onload = function () {
             lvl8.classList.add("invisible");
             lvl9.classList.add("invisible");
             lvl10.classList.add("invisible");
-            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
-            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
+            if (this.instrument == "Bass") {
+                this.shifting = this.shifting + 2;
+            } else if (this.instrument == "Cello") {
+                this.shifting = this.shifting + 1;
+            }
         } else if (this.coins < 102) {
             this.level = 3;
 
@@ -1600,8 +1653,11 @@ window.onload = function () {
             lvl10.classList.add("invisible");
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
-            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
-            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
+            if (this.instrument == "Bass") {
+                this.shifting = this.shifting + 2;
+            } else if (this.instrument == "Cello") {
+                this.shifting = this.shifting + 1;
+            }
         } else if (this.coins < 142) {
             this.level = 4;
             lvl2.classList.remove("invisible");
@@ -1631,8 +1687,11 @@ window.onload = function () {
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
-            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
-            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
+            if (this.instrument == "Bass") {
+                this.shifting = this.shifting + 2;
+            } else if (this.instrument == "Cello") {
+                this.shifting = this.shifting + 1;
+            }
         } else if (this.coins < 182) {
             this.level = 5;
             lvl2.classList.remove("invisible");
@@ -1662,8 +1721,11 @@ window.onload = function () {
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
             lvl5.classList.add("lvl5");
-            if (this.instrument == "Bass") { this.shifting = this.shifting + 2 }
-            else if(this.instrument == "Cello"){this.shifting = this.shifting +  1}
+            if (this.instrument == "Bass") {
+                this.shifting = this.shifting + 2;
+            } else if (this.instrument == "Cello") {
+                this.shifting = this.shifting + 1;
+            }
         } else if (this.coins < 222) {
             this.level = 6;
             lvl2.classList.remove("invisible");
@@ -3433,7 +3495,7 @@ window.onload = function () {
     };
     Character.prototype.cavGrading = function () {
         this.grade = this.coins / cavDays;
-        console.log(this.grade)
+        console.log(this.grade);
 
         if (this.grade >= 3.66) {
             assign2.innerHTML = "Current Grade: A+";
@@ -3469,6 +3531,9 @@ window.onload = function () {
             var j = parseInt(localStorage.getItem("person"));
             personage = students[j];
             person = studentsString[j];
+            if (person == "angela") {
+                alert("Hi Angela. You were last to leave to google meet. You win 1,000,000XP(for a day)");
+            }
             clearAll();
             assignments();
             side.classList.remove("side");
@@ -3485,7 +3550,7 @@ window.onload = function () {
             for (i = 0; i < studentsString.length; i++) {
                 if (person == studentsString[i]) {
                     personage = students[i];
-                    personage;
+                    // personage;
                     localStorage.setItem("person", i);
                     clearAll();
                     assignments();
@@ -4084,7 +4149,7 @@ window.onload = function () {
             instrument: item.instrument,
             total_score: item.totalScore,
             level: item.level,
-            class: item.currentClass
+            class: item.currentClass,
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -4301,7 +4366,6 @@ window.onload = function () {
             instrumentHighScore = bassHighScore.indexOf(item) + 1;
         }
     }
-
 
     //RANK BY GRADE
 
