@@ -3532,7 +3532,7 @@ window.onload = function () {
             personage = students[j];
             person = studentsString[j];
             if (person == "angela") {
-                alert("Hi Angela. You were last to leave to google meet. You win 1,000,000XP(for a day)");
+                alert("Hi Angela. You were last to leave the google meet today. You win 1,000,000XP(for a weekend)");
             }
             clearAll();
             assignments();
