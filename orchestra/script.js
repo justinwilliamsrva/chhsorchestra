@@ -3845,7 +3845,7 @@ window.onload = function () {
 
     function leval4() {
         currentLevel.innerHTML = `Level 4`;
-        assign1.innerHTML = `Assignment 1: ${personage.level4[0]}`;
+        assign1.innerHTML = `Coming Soon ${personage.level4[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
@@ -3857,7 +3857,7 @@ window.onload = function () {
     }
     function leval5() {
         currentLevel.innerHTML = `Level 5`;
-        assign1.innerHTML = `Assignment 1:${personage.level5[0]}`;
+        assign1.innerHTML = `Coming Soon ${personage.level4[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
@@ -3869,7 +3869,7 @@ window.onload = function () {
     }
     function leval6() {
         currentLevel.innerHTML = `Level 6`;
-        assign1.innerHTML = `Assignment 1: ${personage.level6[0]}`;
+        assign1.innerHTML = `Coming Soon ${personage.level4[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
@@ -3881,7 +3881,7 @@ window.onload = function () {
     }
     function leval7() {
         currentLevel.innerHTML = `Level 7`;
-        assign1.innerHTML = `Assignment 1: ${personage.level7[0]}`;
+        assign1.innerHTML = `Coming Soon ${personage.level4[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
@@ -3893,7 +3893,7 @@ window.onload = function () {
     }
     function leval8() {
         currentLevel.innerHTML = `Level 8`;
-        assign1.innerHTML = `Assignment 1: ${personage.level8[0]}`;
+        assign1.innerHTML = `Coming Soon ${personage.level4[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
@@ -3905,7 +3905,7 @@ window.onload = function () {
     }
     function leval9() {
         currentLevel.innerHTML = `Level 9`;
-        assign1.innerHTML = `Assignment 1: ${personage.level9[0]}`;
+        assign1.innerHTML = `Coming Soon ${personage.level4[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
@@ -3917,7 +3917,7 @@ window.onload = function () {
     }
     function leval10() {
         currentLevel.innerHTML = `Level 10`;
-        assign1.innerHTML = `Assignment 1: ${personage.level10[0]}`;
+        assign1.innerHTML = `Hi Angela. You were last to leave to call. You win 1,000,000XP(for a day) ${personage.level10[0]}`;
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
         upload.style.cursor = "pointer";
