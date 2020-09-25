@@ -2,13 +2,22 @@ window.onload = function () {
     let days = 3;
     function assignments() {
     //    9/24
-        t
+        ken.a5(4)
+        ken.a6(4)
+        jamari.a6(2, "LH is perfect. I will help you with the RH")
+        jamari.a5(2, "LH is perfect but you rRH is in the wrong spot")
+        victoria.a5(3, "Very Close you skipped some LH notes")
+        rebecca.a5(4)
+        somros.a7(4)
+        rodrick.b7(4)
+        rodrick.b7("t")
+        rodrick.b7("c")
         tyler.a2(4)
         tyler.a1(4)
         josendo.a7(4)
         kyle.a9(4)
         melissa.a2(2,"You RH was on the wrong key. You thumb was on D and not C. B+")
-        melissa.a1()
+        melissa.a1(4)
 
         // 9.22
         ken.a4(4, "Great ken. Steady and secure playing");
@@ -2069,8 +2078,30 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[2] = this.level2[2] + ": t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[2] = this.level2[2] + ": f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[2] = this.level2[2] + ": c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+            }
         }
-    };
+
     Character.prototype.b4 = function (score, comments) {
         switch (score) {
             case 4:
@@ -2112,8 +2143,30 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[3] = this.level2[3] + ": t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[3] = this.level2[3] + ": f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[3] = this.level2[3] + ": c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+            }
         }
-    };
+
 
     Character.prototype.b5 = function (score, comments) {
         switch (score) {
@@ -2164,6 +2217,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[4] = this.level2[4] + " t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[4] = this.level2[4] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[4] = this.level2[4] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
         }
     };
     Character.prototype.b6 = function (score, comments) {
@@ -2207,6 +2281,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[5] = this.level2[5] + " t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[5] = this.level2[5] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[5] = this.level2[5] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
         }
     };
     Character.prototype.b7 = function (score, comments) {
@@ -2258,6 +2353,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[6] = this.level2[6] + " t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[6] = this.level2[6] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[6] = this.level2[6] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
         }
     };
     Character.prototype.b8 = function (score, comments) {
@@ -2314,6 +2430,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[7] = this.level2[7] + " t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[7] = this.level2[7] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[7] = this.level2[7] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
         }
     };
     Character.prototype.b9 = function (score, comments) {
@@ -2370,6 +2507,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[8] = this.level2[8] + " t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[8] = this.level2[8] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[8] = this.level2[8] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
         }
     };
     Character.prototype.b10 = function (score, comments) {
@@ -2427,6 +2585,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+                case "t":
+                    this.theory = this.theory + 4;
+                    this.level2[9] = this.level2[9] + " t";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "f":
+                    this.facility = this.facility + 4;
+                    this.level2[9] = this.level2[9] + "f";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
+                case "c":
+                    this.coordination = this.coordination + 4;
+                    this.level2[9] = this.level2[9] + "c";
+                    this.coins = this.coins + 2;
+                    this.evaluate();
+                    this.printStats();
+                    break;
         }
     };
     Character.prototype.c1 = function (score, comments) {
