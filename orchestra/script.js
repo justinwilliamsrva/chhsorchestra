@@ -808,7 +808,7 @@ window.onload = function () {
         "heretics",
         1,
         "",
-        1000000,
+        0,
         0,
         0,
         0,
