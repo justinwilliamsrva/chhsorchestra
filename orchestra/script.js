@@ -3,7 +3,11 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 9/24
-        
+        angelica.a3()
+        angelica.a4(3,"Arpeggio was a little funny. Scale as good")
+        angelica.a5(2,"Some funny notes. Let's go over it next class.")
+        angelica.a6(4)
+        angelica.a7(3,"Watch out for key signature. No c#'s")
         jude.b1(4,"Impressive speed to harmonics")
         jude.b2(4)
         jude.b3(4)
