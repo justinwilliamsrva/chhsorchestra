@@ -3,6 +3,11 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 9/24
+        
+        jude.b1(4,"Impressive speed to harmonics")
+        jude.b2(4)
+        jude.b3(4)
+        jude.b4(3,"The high D is a bit flat. Rule for string playing is if you have to be sharp or flat -> be sharp")
         emily.a6(4)
         mackenzie.a7(4)
         emily.a7(4)
