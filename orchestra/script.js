@@ -17,7 +17,6 @@ window.onload = function () {
         emily.a7(4)
         kamille.a8(4)
         isabella.a4(3,"Just a few notes out of slightly out of tune. but overall good")
-        kamille.a9
         natalia.a7(2,"Going up was fine. Not sure what happened going down")
         emily.a8(4)
         thomas.a4(4)
