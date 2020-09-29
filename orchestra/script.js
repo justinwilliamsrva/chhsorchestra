@@ -1,8 +1,9 @@
 window.onload = function () {
-    let days = 4;
+    let days = 5;
     let cavDays = 16;
     function assignments() {
         // 9/24
+        ally.a2(4)
         angelica.a3()
         angelica.a4(3,"Arpeggio was a little funny. Scale as good")
         angelica.a5(2,"Some funny notes. Let's go over it next class.")
