@@ -3,6 +3,9 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 9/24
+        ally.a5(4)
+        ally.a4(4)
+        ally.a3(4)
         ally.a2(4)
         angelica.a3()
         angelica.a4(3,"Arpeggio was a little funny. Scale as good")
@@ -26,11 +29,11 @@ window.onload = function () {
         kate.a6(2,"Watch out for those high twos on D and G. You played them a bit low")
         jude.a10(4,"Pro Tip: In a scale bringing out the top notes sounds more natural and pleasing. When up high you need more left hand pressure inot the string and the bow should be closer to the bridge. Your low notes are nearly perfect. ")
         spencer.a9(4)
-        kate.a7(2,"Watch out for the key signature. You played low f nautral on the D string. It should have been F#")
+        kate.a7(2,"Watch out for the key signature. You played low f natral on the D string. It should have been F#")
         rowan.a8()
         emmett.a9(3,"Good except the E needs to be much higher")
         matthew.a4(1,"Lets go over this one. This is hard for violin")
-        matthew.a5(1, "Lets go over this one next class. Chekc out the reocrdings ")
+        matthew.a5(1, "Lets go over this one next class. Check out the recordings ")
         matthew.a6(3,"The two should have been low twos not high two")
         emmett.a10(4,"fine playing indeed")
         jade.a7(4)
