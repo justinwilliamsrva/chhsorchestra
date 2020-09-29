@@ -3,6 +3,7 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     //    9/25
+        angelica.a8(4)
         thomas.a5(4,"Half position builds characters")
         isabella.a5(4,"Very good!")
         lucca.a8(3,"Look out for the sharps. THere were none in the key signature.")
@@ -17,7 +18,6 @@ window.onload = function () {
         emmett.b4(4)
         jude.b7(4)
         matthew.a7(2,"Check canvas")
-        spencer.a()
         grace.a7(3,"There was a C# in there. Watch out only sharp in G major is F#")
         rowan.a8(4,"Lovely Sound")
         emmett.b5(3,"Some out of tune notes going up. going down was fine")
