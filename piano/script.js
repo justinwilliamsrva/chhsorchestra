@@ -1,7 +1,13 @@
 window.onload = function () {
-    let days = 3;
+    let days = 4;
     function assignments() {
-    //    9/24
+        // 9/25
+        
+        jaden.b4(4)
+        kyle.b2(4,"played beautifully")
+        josendo.a9(4)
+        lauren.b1(4)
+        //    9/24
         jaden.b3(4)
         kyle.b1(4)
         josendo.a8(4)
