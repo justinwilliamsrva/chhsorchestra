@@ -2,7 +2,7 @@ window.onload = function () {
     let days = 4;
     function assignments() {
         // 9/25
-        
+
         jaden.b4(4)
         kyle.b2(4,"played beautifully")
         josendo.a9(4)
@@ -2642,11 +2642,15 @@ window.onload = function () {
                     break;
         }
     };
-    Character.prototype.c1 = function (score, comments) {
+    Character.prototype.a1 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 2;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination;
+                this.theory = this.theory + 2;
+                this.rhythm = this.rhythm + 4;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 4;
                 this.level3[0] = "A+";
                 this.level3COM[0] = comments;
@@ -2655,8 +2659,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 2;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination;
+                this.theory = this.theory + 1;
+                this.rhythm = this.rhythm + 3;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 3;
                 this.level3[0] = "A-";
                 this.level3COM[0] = comments;
@@ -2664,8 +2672,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 2;
-                this.coordination = this.coordination + 0;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy;
+                this.coordination = this.coordination;
+                this.theory = this.theory;
+                this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 2;
                 this.level3[0] = "B";
                 this.level3COM[0] = comments;
@@ -2673,25 +2685,50 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
-                this.coordination = this.coordination + 0;
+                this.facility = this.facility;
+                this.accuracy = this.accuracy;
+                this.coordination = this.coordination;
+                this.theory = this.theory;
+                this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality;
                 this.coins = this.coins + 1;
                 this.level3[0] = "C";
                 this.level3COM[0] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory = 4;
+                this.level3[0] = this.level3[0] + " t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility = 4;
+                this.level3[0] = this.level3[0] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination = 4;
+                this.level3[0] = this.level3[0] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c2 = function (score, comments) {
+    Character.prototype.a2 = function (score, comments) {
         switch (score) {
             case 4:
-                this.facility = this.facility + 0;
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 2;
-                this.theory = this.theory + 4;
-                this.rhythm = this.rhythm + 2;
-                this.musicality = this.musicality + 2;
+                this.facility = this.facility + 4;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 2;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 4;
                 this.level3[1] = "A+";
                 this.level3COM[1] = comments;
@@ -2700,12 +2737,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.facility = this.facility + 0;
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 1;
-                this.theory = this.theory + 3;
-                this.rhythm = this.rhythm + 1;
-                this.musicality = this.musicality + 1;
+                this.facility = this.facility + 3;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 1;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 3;
                 this.level3[1] = "A-";
                 this.level3COM[1] = comments;
@@ -2713,10 +2750,10 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.facility = this.facility + 0;
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 0;
-                this.theory = this.theory + 2;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 0;
                 this.musicality = this.musicality + 0;
                 this.coins = this.coins + 2;
@@ -2726,10 +2763,10 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.facility = this.facility + 0;
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 0;
-                this.theory = this.theory + 1;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 0;
                 this.musicality = this.musicality + 0;
                 this.coins = this.coins + 1;
@@ -2738,16 +2775,38 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[1] = this.level3[1] + " t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[1] = this.level3[1] + " f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[1] = this.level3[1] + " c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c3 = function (score, comments) {
+    Character.prototype.a3 = function (score, comments) {
         switch (score) {
             case 4:
-                this.facility = this.facility + 4;
+            case 4:
+                this.facility = this.facility + 2;
                 this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 2;
-                this.theory = this.theory + 4;
-                this.rhythm = this.rhythm + 0;
+                this.theory = this.theory + 2;
+                this.rhythm = this.rhythm + 2;
                 this.musicality = this.musicality + 0;
                 this.coins = this.coins + 4;
                 this.level3[2] = "A+";
@@ -2757,11 +2816,11 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.facility = this.facility + 3;
+                this.facility = this.facility + 1;
                 this.accuracy = this.accuracy + 1;
                 this.coordination = this.coordination + 1;
-                this.theory = this.theory + 3;
-                this.rhythm = this.rhythm + 0;
+                this.theory = this.theory + 1;
+                this.rhythm = this.rhythm + 1;
                 this.musicality = this.musicality + 0;
                 this.coins = this.coins + 3;
                 this.level3[2] = "A-";
@@ -2770,10 +2829,10 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.facility = this.facility + 2;
+                this.facility = this.facility + 0;
                 this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 0;
-                this.theory = this.theory + 2;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 0;
                 this.musicality = this.musicality + 0;
                 this.coins = this.coins + 2;
@@ -2783,10 +2842,10 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.facility = this.facility + 1;
+                this.facility = this.facility + 0;
                 this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 0;
-                this.theory = this.theory + 1;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 0;
                 this.musicality = this.musicality + 0;
                 this.coins = this.coins + 1;
@@ -2795,15 +2854,38 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[2] = this.level3[2] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[2] = this.level3[2] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[2] = this.level3[2] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c4 = function (score, comments) {
+    Character.prototype.a4 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 2;
                 this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination + 2;
+                this.theory = this.theory + 2;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 4;
                 this.level3[3] = "A+";
                 this.level3COM[3] = comments;
@@ -2812,10 +2894,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 1;
                 this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination + 1;
+                this.theory = this.theory + 1;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 3;
                 this.level3[3] = "A-";
                 this.level3COM[3] = comments;
@@ -2823,7 +2907,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 2;
                 this.level3[3] = "B";
                 this.level3COM[3] = comments;
@@ -2831,24 +2920,50 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 0;
                 this.coins = this.coins + 1;
                 this.level3[3] = "C";
                 this.level3COM[3] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[3] = this.level3[3] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[3] = this.level3[3] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[3] = this.level3[3] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-
-    Character.prototype.c5 = function (score, comments) {
+    Character.prototype.a5 = function (score, comments) {
         switch (score) {
             case 4:
-                this.facility = this.facility + 8;
-                this.theory = this.theory + 4;
-                this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 4;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 2;
+                this.coordination = this.coordination + 2;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 4;
                 this.coins = this.coins + 4;
                 this.level3[4] = "A+";
                 this.level3COM[4] = comments;
@@ -2857,11 +2972,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.facility = this.facility + 6;
-                this.theory = this.theory + 3;
-                this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 3;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 1;
+                this.coordination = this.coordination + 1;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 3;
                 this.level3[4] = "A-";
                 this.level3COM[4] = comments;
@@ -2869,10 +2985,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.facility = this.facility + 4;
-                this.theory = this.theory + 2;
-                this.accuracy = this.accuracy + 2;
-                this.coordination = this.coordination + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 2;
                 this.coins = this.coins + 2;
                 this.level3[4] = "B";
                 this.level3COM[4] = comments;
@@ -2880,25 +2998,50 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
-                this.theory = this.theory + 1;
-                this.coordination = this.coordination + 1;
-                this.facility = this.facility + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 1;
                 this.coins = this.coins + 1;
                 this.level3[4] = "C";
                 this.level3COM[4] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[4] = this.level3[4] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[4] = this.level3[4] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[4] = this.level3[4] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c6 = function (score, comments) {
+    Character.prototype.a6 = function (score, comments) {
         switch (score) {
             case 4:
-                this.accuracy = this.accuracy + 4;
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 2;
-                this.theory = this.theory + 2;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 4;
                 this.coins = this.coins + 4;
                 this.level3[5] = "A+";
                 this.level3COM[5] = comments;
@@ -2907,10 +3050,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
                 this.coordination = this.coordination + 1;
-                this.theory = this.theory + 1;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 3;
                 this.level3[5] = "A-";
                 this.level3COM[5] = comments;
@@ -2918,7 +3063,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 2;
                 this.coins = this.coins + 2;
                 this.level3[5] = "B";
                 this.level3COM[5] = comments;
@@ -2926,23 +3076,50 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
+                this.coordination = this.coordination + 0;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 1;
                 this.coins = this.coins + 1;
                 this.level3[5] = "C";
                 this.level3COM[5] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[5] = this.level3[5] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[5] = this.level3[5] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[5] = this.level3[5] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c7 = function (score, comments) {
+    Character.prototype.a7 = function (score, comments) {
         switch (score) {
             case 4:
-                this.facility = this.facility + 8;
-                this.theory = this.theory + 4;
-                this.accuracy = this.accuracy + 4;
+                this.facility = this.facility + 2;
+                this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 4;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 2;
+                this.musicality = this.musicality + 4;
                 this.coins = this.coins + 4;
                 this.level3[6] = "A+";
                 this.level3COM[6] = comments;
@@ -2951,11 +3128,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.facility = this.facility + 6;
-                this.theory = this.theory + 3;
-                this.accuracy = this.accuracy + 3;
+                this.facility = this.facility + 1;
+                this.accuracy = this.accuracy + 1;
                 this.coordination = this.coordination + 3;
+                this.theory = this.theory + 0;
                 this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 3;
                 this.level3[6] = "A-";
                 this.level3COM[6] = comments;
@@ -2963,10 +3141,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.facility = this.facility + 4;
-                this.theory = this.theory + 2;
-                this.accuracy = this.accuracy + 2;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 2;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 2;
                 this.level3[6] = "B";
                 this.level3COM[6] = comments;
@@ -2974,26 +3154,49 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
-                this.accuracy = this.accuracy + 1;
-                this.theory = this.theory + 1;
+                this.facility = this.facility + 0;
+                this.accuracy = this.accuracy + 0;
                 this.coordination = this.coordination + 1;
-                this.facility = this.facility + 2;
+                this.theory = this.theory + 0;
+                this.rhythm = this.rhythm + 1;
+                this.musicality = this.musicality + 3;
                 this.coins = this.coins + 1;
                 this.level3[6] = "C";
                 this.level3COM[6] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[6] = this.level3[6] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[6] = this.level3[6] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[6] = this.level3[6] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c8 = function (score, comments) {
+    Character.prototype.a8 = function (score, comments) {
         switch (score) {
             case 4:
                 this.theory = this.theory + 4;
                 this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 0;
+                this.coordination = this.coordination + 4;
                 this.musicality = this.musicality + 4;
-                this.rhythm = this.rhythm + 4;
+                this.rhythm = this.rhythm + 2;
                 this.coins = this.coins + 4;
                 this.level3[7] = "A+";
                 this.level3COM[7] = comments;
@@ -3004,8 +3207,8 @@ window.onload = function () {
             case 3:
                 this.theory = this.theory + 3;
                 this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 0;
-                this.rhythm = this.rhythm + 3;
+                this.coordination = this.coordination + 3;
+                this.rhythm = this.rhythm + 1;
                 this.musicality = this.musicality + 3;
 
                 this.coins = this.coins + 3;
@@ -3017,9 +3220,8 @@ window.onload = function () {
             case 2:
                 this.theory = this.theory + 2;
                 this.accuracy = this.accuracy + 2;
-                this.coordination = this.coordination + 0;
+                this.coordination = this.coordination + 2;
                 this.musicality = this.musicality + 2;
-                this.rhythm = this.rhythm + 2;
 
                 this.coins = this.coins + 2;
                 this.level3[7] = "B";
@@ -3031,25 +3233,46 @@ window.onload = function () {
                 this.accuracy = this.accuracy + 1;
                 this.theory = this.theory + 1;
                 this.musicality = this.musicality + 1;
-                this.rhythm = this.rhythm + 1;
 
-                this.coordination = this.coordination + 0;
+                this.coordination = this.coordination + 1;
                 this.coins = this.coins + 1;
                 this.level3[7] = "C";
                 this.level3COM[7] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[7] = this.level3[7] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[7] = this.level3[7] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[7] = this.level3[7] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c9 = function (score, comments) {
+    Character.prototype.a9 = function (score, comments) {
         switch (score) {
             case 4:
-                this.theory = this.theory + 4;
+                this.facility = this.facility + 0;
                 this.accuracy = this.accuracy + 4;
-                this.coordination = this.coordination + 0;
+                this.coordination = this.coordination + 2;
+                this.theory = this.theory + 4;
+                this.rhythm = this.rhythm + 2;
                 this.musicality = this.musicality + 4;
-                this.rhythm = this.rhythm + 4;
                 this.coins = this.coins + 4;
                 this.level3[8] = "A+";
                 this.level3COM[8] = comments;
@@ -3058,12 +3281,12 @@ window.onload = function () {
                 break;
 
             case 3:
-                this.theory = this.theory + 3;
+                this.facility = this.facility + 0;
                 this.accuracy = this.accuracy + 3;
-                this.coordination = this.coordination + 0;
-                this.rhythm = this.rhythm + 3;
+                this.coordination = this.coordination + 1;
+                this.theory = this.theory + 3;
+                this.rhythm = this.rhythm + 1;
                 this.musicality = this.musicality + 3;
-
                 this.coins = this.coins + 3;
                 this.level3[8] = "A-";
                 this.level3COM[8] = comments;
@@ -3071,12 +3294,12 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 2:
-                this.theory = this.theory + 2;
+                this.facility = this.facility + 0;
                 this.accuracy = this.accuracy + 2;
                 this.coordination = this.coordination + 0;
+                this.theory = this.theory + 2;
+                this.rhythm = this.rhythm + 0;
                 this.musicality = this.musicality + 2;
-                this.rhythm = this.rhythm + 2;
-
                 this.coins = this.coins + 2;
                 this.level3[8] = "B";
                 this.level3COM[8] = comments;
@@ -3084,21 +3307,42 @@ window.onload = function () {
                 this.printStats();
                 break;
             case 1:
+                this.facility = this.facility + 0;
                 this.accuracy = this.accuracy + 1;
-                this.theory = this.theory + 1;
-                this.musicality = this.musicality + 1;
-                this.rhythm = this.rhythm + 1;
-
                 this.coordination = this.coordination + 0;
+                this.theory = this.theory + 1;
+                this.rhythm = this.rhythm + 0;
+                this.musicality = this.musicality + 1;
                 this.coins = this.coins + 1;
                 this.level3[8] = "C";
                 this.level3COM[8] = comments;
                 this.evaluate();
                 this.printStats();
                 break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[8] = this.level3[8] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[8] = this.level3[8] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[8] = this.level3[8] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
-    Character.prototype.c10 = function (score, comments) {
+    Character.prototype.a10 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 0;
@@ -3150,6 +3394,29 @@ window.onload = function () {
                 this.coins = this.coins + 1;
                 this.level3[9] = "C";
                 this.level3COM[9] = comments;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level3[9] = this.level3[9] + ": t";
+                this.coins = this.coins + 2;
+
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level3[9] = this.level3[9] + "f";
+                this.coins = this.coins + 2;
+
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level3[9] = this.level3[9] + "c";
+                this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
@@ -3487,29 +3754,23 @@ window.onload = function () {
     function leval2() {
         clearAll();
         currentLevel.innerHTML = `Level 2`;
-        assign1.innerHTML = `Harmonics(b1): ${personage.level2[0]}`;
-        assign2.innerHTML = `coordination(b2): ${personage.level2[1]}`;
-        assign3.innerHTML = `Positions(b3): ${personage.level2[2]}`;
-        assign4.innerHTML = `DM scale and Arrpegio(b4): ${personage.level2[3]}`;
-        assign5.innerHTML = `DM in thirds(b5): ${personage.level2[4]}`;
-        assign6.innerHTML = `AM scale and Arrpegio(b6): ${personage.level2[5]}`;
-        assign7.innerHTML = `AM in thirds(b7): ${personage.level2[6]}`;
-        assign8.innerHTML = `SOLO-Shenandoah(b8): ${personage.level2[7]}`;
-        assign9.innerHTML = `SOLO-Yellow Rose of Texas(b9): ${personage.level2[8]}`;
-        assign10.innerHTML = `Rhythm+Scales(b10): ${personage.level2[9]}`;
+        assign1.innerHTML = `Campdown Races(b1): ${personage.level2[0]}`;
+        assign2.innerHTML = `Eine Kline(b2): ${personage.level2[1]}`;
+        assign3.innerHTML = `Jingle Bells(b3): ${personage.level2[2]}`;
+        assign4.innerHTML = `Bass Clef Melodies(b4): ${personage.level2[3]}`;
+        assign5.innerHTML = `Surprise Symphony(b5): ${personage.level2[4]}`;
+        assign6.innerHTML = `Shepherd Song(b6): ${personage.level2[5]}`;
+        assign7.innerHTML = `Morning(b7): ${personage.level2[6]}`;
+        assign8.innerHTML = `Taps + Happy Birthday(b8): ${personage.level2[7]}`;
+        assign9.innerHTML = `Simple Gifts(b9): ${personage.level2[8]}`;
+        assign10.innerHTML = `Scales A+E+B(b10): ${personage.level2[9]}`;
 
-        upload.innerHTML = "Upload a Recording";
-        upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
-        upload.style.cursor = "pointer";
-        upload.addEventListener("click", function () {
-            alert(
-                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
-            );
+
         });
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/141mC4xBmLgn16_9i40pf46FDhzudNNQH/view?usp=sharing'>Quest: Complete Numbers 19,21 and 23</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Campdown Races(b1)</a>";
             reward.innerHTML = "Reward: accuracy(4) + coordination(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[0]}`;
@@ -3517,7 +3778,7 @@ window.onload = function () {
         // A2
         assign2.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/145AaTXjEXIanK8zKwSqJl6kIh2Ts2imS/view?usp=sharing'>Quest: Complete Numbers 26,28 and 32</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Eine Kline(b2)</a>";
             reward.innerHTML = "Reward: accuracy(4) + coordination(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[1]}`;
@@ -3525,7 +3786,7 @@ window.onload = function () {
         // A3
         assign3.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/145G5iTT75NCMX5sfg1JDpzdMGf99EUOd/view?usp=sharing'>Quest: Complete Numbers 38,39 and 40</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Jingle Bells(b3)</a>";
             reward.innerHTML = "Reward: accuracy(4) + coordination(2) + XP(4) ";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level2COM[2]}`;
@@ -3533,7 +3794,7 @@ window.onload = function () {
         // A4
         assign4.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/14746t6pnImLyp3vsMtCi0B9cDbJLDjaR/view?usp=sharing'>Quest: Complete Numbers 113 and 114</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Bass Clef Melodies(b4)</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Facility(2) + Rhythm(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3542,7 +3803,7 @@ window.onload = function () {
         // A5
         assign5.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/148xNYk0avm6hypM3Wt3E6LHe8IqMW3Sp/view?usp=sharing'>Quest: Complete Number 115 at 120BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Surprise Symphony</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3552,7 +3813,7 @@ window.onload = function () {
         // A6
         assign6.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/14A0mfXa3s_nyCX6fzTHFEEsoI7_EQ3im/view?usp=sharing'>Quest: Complete Numbers 119 and 120</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Shepherd Song</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Facility(2) + Rhythm(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3561,7 +3822,7 @@ window.onload = function () {
         // A7
         assign7.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/14Nu17knHHcY28MAP71vll0tOUKL0avy2/view?usp=sharing'>Quest: Complete Numbers 121 at 120BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Morning</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3570,7 +3831,7 @@ window.onload = function () {
         // A8
         assign8.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/14RDUCip12CTEPZpOv6xYN5JUVuoXTZA6/view?usp=sharing'>Quest: Complete Number 116 at 70BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest:Taps + Happy Birthday</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3579,7 +3840,7 @@ window.onload = function () {
         // A9
         assign9.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/14W6pMeZBvavBFEcUQi4FoWuqpEwjOpcO/view?usp=sharing'>Quest: Complete Number 122 at 120BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Simple Gifts/a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3588,7 +3849,7 @@ window.onload = function () {
         // A10
         assign10.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/file/d/16hYXmV00RlTojF55RbwXdnmkf3ZThngU/view?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
+                "<a target='_blank' href='https://drive.google.com/file/d/1Ikyx9XaBl_HqKD0Ra8qg46joN-nCwb2u/view?usp=sharing'>Quest: Scales A+E+B/a>";
             reward.innerHTML =
                 "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Theory(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3598,16 +3859,16 @@ window.onload = function () {
     function leval3() {
         clearAll();
         currentLevel.innerHTML = `Level 3`;
-        assign1.innerHTML = `Positions(c1): ${personage.level3[0]}`;
-        assign2.innerHTML = `SOLO - French Folk Song(c2): ${personage.level3[1]}`;
-        assign3.innerHTML = `SOLO - Can Can(c3): ${personage.level3[2]}`;
-        assign4.innerHTML = `FM scale and Arrpegio(c4): ${personage.level3[3]}`;
-        assign5.innerHTML = `FM in thirds(c5): ${personage.level3[4]}`;
-        assign6.innerHTML = `BbM scale and Arrpegio(c6): ${personage.level3[5]}`;
-        assign7.innerHTML = `BbM in thirds(c7): ${personage.level3[6]}`;
-        assign8.innerHTML = `SOLO-Bella-Bocca Polka(c8): ${personage.level3[7]}`;
-        assign9.innerHTML = `SOLO-John Peel(c9): ${personage.level3[8]}`;
-        assign10.innerHTML = `Rhythm+Scales(c10): ${personage.level3[9]}`;
+        assign1.innerHTML = `Moon on the Water(c1): ${personage.level3[0]}`;
+        assign2.innerHTML = `500- Year Old Melody(c2): ${personage.level3[1]}`;
+        assign3.innerHTML = `Reveille(c3): ${personage.level3[2]}`;
+        assign4.innerHTML = `When the Saints Go Marching in: ${personage.level3[3]}`;
+        assign5.innerHTML = `African Celebration(c5): ${personage.level3[4]}`;
+        assign6.innerHTML = `Imitative Study(c6): ${personage.level3[5]}`;
+        assign7.innerHTML = `American Fiddle Tune(c7): ${personage.level3[6]}`;
+        assign8.innerHTML = `Theme by Mozart(c8): ${personage.level3[7]}`;
+        assign9.innerHTML = `Finger Fanfare(c9): ${personage.level3[8]}`;
+        assign10.innerHTML = `Scales F#,Gb,Db(c10): ${personage.level3[9]}`;
 
         upload.innerHTML = "Upload a Recording";
         upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
@@ -3620,7 +3881,7 @@ window.onload = function () {
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest:Merrily We Roll Along(DM,120)</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest:Moon on the Water</a>";
             reward.innerHTML = "Reward: Accuracy(2) + Theory(2) + Rhythm(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[0]}`;
@@ -3628,7 +3889,7 @@ window.onload = function () {
         // A2
         assign2.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 41</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: 500- Year Old Melody</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Theory(4) + Rhythm(2) + Musicality(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3637,7 +3898,7 @@ window.onload = function () {
         // A3
         assign3.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 42 at BPM 160</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest:Reveille</a>";
             reward.innerHTML =
                 "Reward: accuracy(2) + coordination(2) +  Facility(4) + Theory(4) + Musicality(2) + XP(4) ";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3646,7 +3907,7 @@ window.onload = function () {
         // A4
         assign4.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Numbers 125 and 126</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: When the Saints Go Marching in</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Facility(2) + Rhythm(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3655,7 +3916,7 @@ window.onload = function () {
         // A5
         assign5.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 127 at 120BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: African Celebration</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3665,7 +3926,7 @@ window.onload = function () {
         // A6
         assign6.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Numbers 131 and 132</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Imitative Study</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Facility(2) + Rhythm(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3674,7 +3935,7 @@ window.onload = function () {
         // A7
         assign7.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 133 at 120BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: American Fiddle Tune</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3683,7 +3944,7 @@ window.onload = function () {
         // A8
         assign8.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 128 at 100BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Theme by Mozart</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3692,7 +3953,7 @@ window.onload = function () {
         // A9
         assign9.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Complete Number 134 at 90BPM</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Finger Fanfare</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3701,7 +3962,7 @@ window.onload = function () {
         // A10
         assign10.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Apply the 6 rhythms to the assigned two octave scale</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Scales F#,Gb,Db</a>";
             reward.innerHTML =
                 "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Theory(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
