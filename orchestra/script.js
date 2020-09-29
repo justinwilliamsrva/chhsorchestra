@@ -3,7 +3,7 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     //    9/25
-            
+
         natalia.a9(3,"Some funny notes")
         emily.a9(4)
         walker.a4(4)
@@ -3767,13 +3767,7 @@ window.onload = function () {
         assign9.innerHTML = `SOLO-Yellow Rose of Texas(b9): ${personage.level2[8]}`;
         assign10.innerHTML = `Rhythm+Scales(b10): ${personage.level2[9]}`;
 
-        upload.innerHTML = "Upload a Recording";
-        upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
-        upload.style.cursor = "pointer";
-        upload.addEventListener("click", function () {
-            alert(
-                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
-            );
+       
         });
         // A1
         assign1.addEventListener("click", function () {
@@ -3878,13 +3872,7 @@ window.onload = function () {
         assign9.innerHTML = `SOLO-John Peel(c9): ${personage.level3[8]}`;
         assign10.innerHTML = `Rhythm+Scales(c10): ${personage.level3[9]}`;
 
-        upload.innerHTML = "Upload a Recording";
-        upload.href = "https://driveuploader.com/upload/rTIwDJGuu0/";
-        upload.style.cursor = "pointer";
-        upload.addEventListener("click", function () {
-            alert(
-                "Please include your 1. Real Name and 2. Assignment Number(s) in the Name Section"
-            );
+
         });
         // A1
         assign1.addEventListener("click", function () {
