@@ -3766,7 +3766,7 @@ window.onload = function () {
         assign10.innerHTML = `Scales A+E+B(b10): ${personage.level2[9]}`;
 
 
-        });
+       
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =

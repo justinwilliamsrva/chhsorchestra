@@ -3767,8 +3767,8 @@ window.onload = function () {
         assign9.innerHTML = `SOLO-Yellow Rose of Texas(b9): ${personage.level2[8]}`;
         assign10.innerHTML = `Rhythm+Scales(b10): ${personage.level2[9]}`;
 
-       
-        });
+
+
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
@@ -3873,7 +3873,7 @@ window.onload = function () {
         assign10.innerHTML = `Rhythm+Scales(c10): ${personage.level3[9]}`;
 
 
-        });
+      
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
