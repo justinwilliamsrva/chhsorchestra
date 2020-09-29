@@ -3,6 +3,12 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     //    9/25
+            
+        natalia.a9(3,"Some funny notes")
+        emily.a9(4)
+        walker.a4(4)
+        kamille.b1(4)
+        mackenzie.a9(4)
         angelica.a8(4)
         thomas.a5(4,"Half position builds characters")
         isabella.a5(4,"Very good!")
