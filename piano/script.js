@@ -1,8 +1,21 @@
 window.onload = function () {
     let days = 4;
     function assignments() {
-        // 9/25
+    // 10/1
+        lauren.b3(4)
+        lauren.b2(4)
+        kyle.b4(4)
+        kyle.b6(4)
+        kyle.b2(4)
+        josendo.b2(4)
+        ken.a7(4)
+        lauren.r1(4, "Nicely done!! I'll will put up the next one")
+        rodrick.r1(4, "Nicely done!! I'll will put up the next one")
 
+
+
+
+        // 9/25
         jaden.b4(4)
         kyle.b2(4,"played beautifully")
         josendo.a9(4)
@@ -2642,7 +2655,7 @@ window.onload = function () {
                     break;
         }
     };
-    Character.prototype.a1 = function (score, comments) {
+    Character.prototype.c1 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility;
@@ -2720,7 +2733,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a2 = function (score, comments) {
+    Character.prototype.c2 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 4;
@@ -2798,7 +2811,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a3 = function (score, comments) {
+    Character.prototype.c3 = function (score, comments) {
         switch (score) {
             case 4:
             case 4:
@@ -2877,7 +2890,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a4 = function (score, comments) {
+    Character.prototype.c4 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 2;
@@ -2955,7 +2968,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a5 = function (score, comments) {
+    Character.prototype.c5 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 0;
@@ -3033,7 +3046,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a6 = function (score, comments) {
+    Character.prototype.c6 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 2;
@@ -3111,7 +3124,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a7 = function (score, comments) {
+    Character.prototype.c7 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 2;
@@ -3189,7 +3202,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a8 = function (score, comments) {
+    Character.prototype.c8 = function (score, comments) {
         switch (score) {
             case 4:
                 this.theory = this.theory + 4;
@@ -3264,7 +3277,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a9 = function (score, comments) {
+    Character.prototype.c9 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 0;
@@ -3342,7 +3355,7 @@ window.onload = function () {
                 break;
         }
     };
-    Character.prototype.a10 = function (score, comments) {
+    Character.prototype.c10 = function (score, comments) {
         switch (score) {
             case 4:
                 this.facility = this.facility + 0;
@@ -3766,7 +3779,7 @@ window.onload = function () {
         assign10.innerHTML = `Scales A+E+B(b10): ${personage.level2[9]}`;
 
 
-       
+
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
