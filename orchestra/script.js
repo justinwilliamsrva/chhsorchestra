@@ -3,6 +3,7 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     // 10/1
+        
     mackenzie.b1(4"Good harmonics)
     lucca.b2(4)
     madeline.a4(4,"Good")
