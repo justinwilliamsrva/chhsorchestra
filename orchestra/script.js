@@ -2,7 +2,21 @@ window.onload = function () {
     let days = 5;
     let cavDays = 16;
     function assignments() {
-    //    9/25
+    // 10/1
+
+        ryann.a9(4,"Good")
+        kamille.a10(4,"Mostly very good. 5 was a little funny?")
+        kamille.b2(4,"Good")
+        kamille.b3(4,"I am so thrilled you are at CHHS. Great playing and tone!")
+        lucca.b1(4,"Good")
+        kamille.b4(4,"Very intune")
+        emily.b1(4,"We said 'woah' at the same")
+        ryann.a10(4,"This is wonderful playing. Just remember to give the top notes more sound")
+        thomas.a6(4,"Great Room")
+        walker.a6(4,"Good")
+        natalia.a10(4,"Good")
+        emily.b2(4,"Good. You can play a little faster")
+        //    9/25
 
         natalia.a9(3,"Some funny notes")
         emily.a9(4)
@@ -3873,7 +3887,7 @@ window.onload = function () {
         assign10.innerHTML = `Rhythm+Scales(c10): ${personage.level3[9]}`;
 
 
-      
+
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
