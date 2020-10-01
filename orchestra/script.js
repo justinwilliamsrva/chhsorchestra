@@ -3,6 +3,7 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     // 10/1
+    
     jules.a10(4,"Great playing jules")
     mackenzie.b1(4,"Good harmonics")
     lucca.b2(4)
@@ -84,8 +85,8 @@ window.onload = function () {
         kate.a7(2,"Watch out for the key signature. You played low f natural on the D string. It should have been F#")
         rowan.a8()
         emmett.a9(3,"Good except the E needs to be much higher")
-        matthew.a4(1,"Lets go over this one. This is hard for violin")
-        matthew.a5(1, "Lets go over this one next class. Check out the recordings ")
+        matthew.a4(3,"Good")
+        matthew.a5(3, "Bravo")
         matthew.a6(3,"The two should have been low twos not high two")
         emmett.a10(4,"fine playing indeed")
         jade.a7(4)
