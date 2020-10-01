@@ -3,7 +3,15 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     // 10/1
-
+        lucca.b2(4)
+        madeline.a4(4,"Good")
+        jules.a10(4,"Correct")
+        walker.a7(4,"Good. Try to play these a little faster")
+        mackenzie.b2(4,"Excellent")
+        rowan.a9(3,"Whoops watch out for F naturals. You played some F#'s")
+        angelica.a9(3,"Great. There were a few funny notes and rhyhtms ")
+        caroline.a1(4,"Beautiful sound!")
+        julia.a9(4,"A few funny rhythms but great playing")
         ryann.a9(4,"Good")
         kamille.a10(4,"Mostly very good. 5 was a little funny?")
         kamille.b2(4,"Good")
