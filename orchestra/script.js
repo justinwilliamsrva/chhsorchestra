@@ -3,7 +3,16 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     // 10/1
-
+        jules.a10
+        isabella.a8(3,"Good. rhythm is a bit off")
+        emmett.b6(4,"Very intune")
+spencer.b1(4)
+spencer.b2(4)
+kate.a9(3,"Watch out for 4th finger that it is high enough")
+        emmett.b7(4,"Coudl be a little faster but it's good")
+    lance.a2(4,"Great!")
+        grace.a9(4)
+    angelica.a10(3,"Rhyhtm was mostly good. 4-6 was little funny")
     jules.a10(4,"Great playing jules")
     mackenzie.b1(4,"Good harmonics")
     lucca.b2(4)
