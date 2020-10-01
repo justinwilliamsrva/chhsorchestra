@@ -11,6 +11,18 @@ window.onload = function () {
         ken.a7(4)
         lauren.r1(4, "Nicely done!! I'll will put up the next one")
         rodrick.r1(4, "Nicely done!! I'll will put up the next one")
+        jada.a5(4, "Very good playing Jada")
+        sierra.a5(3, "Played in class")
+        sierra.a4(4, "Perfect")
+        rebecca.a6(4, "Great rhythm")
+        somros.a8(4)
+        josendo.b1(4)
+        kyle.b3(4)
+        jaden.b5(4)
+        
+
+
+
 
 
 
@@ -1239,7 +1251,7 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory = 4;
-                this.level1[0] = this.level1[0] + " t";
+                this.level1[0] = this.level1[0] + ": t";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
@@ -1317,21 +1329,21 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory + 4;
-                this.level1[1] = this.level1[1] + " t";
+                this.level1[1] = this.level1[1] + ": t";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility + 4;
-                this.level1[1] = this.level1[1] + " f";
+                this.level1[1] = this.level1[1] + "f";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination + 4;
-                this.level1[1] = this.level1[1] + " c";
+                this.level1[1] = this.level1[1] + "c";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
@@ -2011,14 +2023,14 @@ window.onload = function () {
                 break;
             case "f":
                 this.facility = this.facility + 4;
-                this.level2[0] = this.level2[0] + ": f";
+                this.level2[0] = this.level2[0] + "f";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination + 4;
-                this.level2[0] = this.level2[0] + ": c";
+                this.level2[0] = this.level2[0] + "c";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
@@ -2074,14 +2086,14 @@ window.onload = function () {
                 break;
             case "f":
                 this.facility = this.facility + 4;
-                this.level2[1] = this.level2[1] + ": f";
+                this.level2[1] = this.level2[1] + "f";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination + 4;
-                this.level2[1] = this.level2[1] + ": c";
+                this.level2[1] = this.level2[1] + "c";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
@@ -2134,14 +2146,14 @@ window.onload = function () {
                     break;
                 case "f":
                     this.facility = this.facility + 4;
-                    this.level2[2] = this.level2[2] + ": f";
+                    this.level2[2] = this.level2[2] + "f";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
                     break;
                 case "c":
                     this.coordination = this.coordination + 4;
-                    this.level2[2] = this.level2[2] + ": c";
+                    this.level2[2] = this.level2[2] + "c";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2199,14 +2211,14 @@ window.onload = function () {
                     break;
                 case "f":
                     this.facility = this.facility + 4;
-                    this.level2[3] = this.level2[3] + ": f";
+                    this.level2[3] = this.level2[3] + "f";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
                     break;
                 case "c":
                     this.coordination = this.coordination + 4;
-                    this.level2[3] = this.level2[3] + ": c";
+                    this.level2[3] = this.level2[3] + "c";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2266,7 +2278,7 @@ window.onload = function () {
                 break;
                 case "t":
                     this.theory = this.theory + 4;
-                    this.level2[4] = this.level2[4] + " t";
+                    this.level2[4] = this.level2[4] + ": t";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2330,7 +2342,7 @@ window.onload = function () {
                 break;
                 case "t":
                     this.theory = this.theory + 4;
-                    this.level2[5] = this.level2[5] + " t";
+                    this.level2[5] = this.level2[5] + ": t";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2402,7 +2414,7 @@ window.onload = function () {
                 break;
                 case "t":
                     this.theory = this.theory + 4;
-                    this.level2[6] = this.level2[6] + " t";
+                    this.level2[6] = this.level2[6] + ": t";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2479,7 +2491,7 @@ window.onload = function () {
                 break;
                 case "t":
                     this.theory = this.theory + 4;
-                    this.level2[7] = this.level2[7] + " t";
+                    this.level2[7] = this.level2[7] + ": t";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2556,7 +2568,7 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory + 4;
-                this.level2[8] = this.level2[8] + " t";
+                this.level2[8] = this.level2[8] + ": t";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2634,7 +2646,7 @@ window.onload = function () {
                 break;
                 case "t":
                     this.theory = this.theory + 4;
-                    this.level2[9] = this.level2[9] + " t";
+                    this.level2[9] = this.level2[9] + ": t";
                     this.coins = this.coins + 2;
                     this.evaluate();
                     this.printStats();
@@ -2712,7 +2724,7 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory = 4;
-                this.level3[0] = this.level3[0] + " t";
+                this.level3[0] = this.level3[0] + ": t";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
@@ -2790,21 +2802,21 @@ window.onload = function () {
                 break;
             case "t":
                 this.theory = this.theory + 4;
-                this.level3[1] = this.level3[1] + " t";
+                this.level3[1] = this.level3[1] + ": t";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "f":
                 this.facility = this.facility + 4;
-                this.level3[1] = this.level3[1] + " f";
+                this.level3[1] = this.level3[1] + "f";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
                 break;
             case "c":
                 this.coordination = this.coordination + 4;
-                this.level3[1] = this.level3[1] + " c";
+                this.level3[1] = this.level3[1] + "c";
                 this.coins = this.coins + 2;
                 this.evaluate();
                 this.printStats();
