@@ -1,1 +1,1194 @@
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Orchestra Learning Activities</title>
+        <style>@media only screen and (min-width: 769px) {
+            body {
+                margin: 0;
+                border: 3px solid teal;
+            }
+            b {
+                color: yellow;
+            }
+            section {
+                width: 100%;
+                height: 98vh;
+                background-color: teal;
+                color: white;
+                box-sizing: border-box;
+            }
+
+            #header {
+                box-sizing: border-box;
+                text-align: center;
+                width: 100%;
+                height: 10%;
+            }
+
+            #flexb {
+                display: flex;
+                width: 98%;
+                height: 78%;
+            }
+
+            #taskList,
+            #instructions {
+                text-align: center;
+                flex: 0 0 50%;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                /* border: 2px solid aqua */
+            }
+
+            #topTenChild {
+                margin-bottom: 5px;
+                word-wrap: break-word;
+            }
+
+            #topscore1,#teamtopscore1 {
+                color: gold;
+                font-size: 13px;
+                word-wrap: break-word;
+            }
+
+            #topscore2,#teamtopscore2 {
+                color: silver;
+                font-size: 13px;
+                word-wrap: break-word;
+            }
+            #topscore3,#teamtopscore3 {
+                color: orangered;
+                font-size: 13px;
+                word-wrap: break-word;
+            }
+            #topscore4,#teamtopscore4 {
+                color: green;
+                font-size: 13px;
+                word-wrap: break-word;
+            }
+            #topscore5,#teamtopscore5 {
+                color: blue;
+                font-size: 13px;
+                word-wrap: break-word;
+            }
+
+            .topscores {
+                margin: 5px 0px;
+                height: 15%;
+            }
+
+            #taskList {
+                border-right: 2px dashed teal;
+            }
+
+            #taskList > p {
+                height: 8%;
+            }
+
+            h1,
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            a:visited {
+                color: teal;
+            }
+
+            #instructions {
+                overflow: auto;
+                font-size: 14px;
+            }
+
+            .assignments {
+                color: yellow;
+                cursor: pointer;
+                text-decoration: underline;
+                margin: 0;
+                padding: 0;
+                /* height: 10%; */
+            }
+
+            #console {
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            button {
+                width: 20%;
+                color: white;
+                display: inline;
+                background-color: black;
+                cursor: pointer;
+            }
+
+            button:hover {
+                border: 3px solid yellow;
+            }
+
+            button:focus {
+                border: 5px solid red;
+            }
+
+            #attackPng,
+            #levelPng,
+            #defensePng,
+            #coinPng{
+                height: 100%;
+                width: 40%;
+                /* display: inline; */
+            }
+
+
+            #instruct > p,
+            #reward > p,
+            #recording > p,
+            #comment > p {
+                margin: 0;
+            }
+
+            #lvl1 {
+                background-image: url("../assets/1.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl2 {
+                background-image: url("../assets/2.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl3 {
+                background-image: url("../assets/3.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl4 {
+                background-image: url("../assets/4.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl5 {
+                background-image: url("../assets/5.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl6 {
+                background-image: url("../assets/6.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl7 {
+                background-image: url("../assets/7.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl8 {
+                background-image: url("../assets/8.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl9 {
+                background-image: url("../assets/9.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .lvl10 {
+                background-image: url("../assets/10.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            #raids {
+                background-image: url("../assets/Raids.jpg");
+                background-repeat: no-repeat;
+                background-size: 150% 200%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            .side {
+                background-image: url("../assets/Side\ quests.png");
+                background-repeat: no-repeat;
+                background-size: 150% 200%;
+                background-position: center;
+                font-size: 20px;
+            }
+
+            #sideQuests:hover {
+                background-image: url("../assets/Side\ quests.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                /* font-size: 20px; */
+            }
+
+            #lvl2:hover {
+                background-image: url("../assets/2.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl3:hover {
+                background-image: url("../assets/3.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl4:hover {
+                background-image: url("../assets/4.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl5:hover {
+                background-image: url("../assets/5.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl6:hover {
+                background-image: url("../assets/6.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl7:hover {
+                background-image: url("../assets/7.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl8:hover {
+                background-image: url("../assets/8.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl9:hover {
+                background-image: url("../assets/9.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #lvl10:hover {
+                background-image: url("../assets/10.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* border: 1px solid yellow; */
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            #signout {
+                background-image: url("../assets/Log\ out.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 20px;
+            }
+            #options {
+                background-image: url("../assets/Options.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 200%;
+                background-position: center;
+                font-size: 20px;
+            }
+            #completeStats {
+                background-image: url("../assets/Stats.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 18px;
+            }
+
+            /* #signout:hover{
+
+                border: 3px solid yellow;
+                background-size: 150% 150%;
+                font-size: 30px;
+
+            } */
+
+            #level1,
+            #level2,
+            #level3 {
+                display: flex;
+                background-color: black;
+            }
+
+            #nameGame,
+            #topTen,
+            #name,
+            #image,
+            #console,
+            #teamRank {
+                border-bottom: 5px solid teal;
+                background-color: black;
+            }
+
+            #team {
+                border-bottom: 5px solid teal;
+            }
+
+            #nickName,
+            #topTen,
+            #teamRank {
+                text-align: center;
+            }
+
+            #nameGame {
+                /* background-color: teal; */
+                background-image: url("../assets/logo2.png");
+                background-color: royalblue;
+
+                background-repeat: no-repeat;
+                background-size: 100% 250%;
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+            .box3 {
+                overflow: hidden;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+                grid-column-gap: 5px;
+            }
+
+            #grid :nth-of-type(1) {
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+
+            #grid :nth-of-type(2) {
+                grid-column: 1/2;
+                grid-row: 5/6;
+            }
+
+            #grid :nth-of-type(3) {
+                grid-column: 1/2;
+                grid-row: 1/4;
+            }
+
+            #grid :nth-of-type(4) {
+                grid-column: 1/2;
+                grid-row: 6/9;
+                z-index: 10;
+            }
+
+            #grid :nth-of-type(5) {
+                grid-column: 2/4;
+                grid-row: 1/6;
+                z-index: 10;
+            }
+
+            #grid :nth-of-type(6) {
+                grid-column: 2/4;
+                grid-row: 6/7;
+            }
+
+            #grid :nth-of-type(7) {
+                grid-column: 2/4;
+                grid-row: 7/8;
+            }
+
+            #grid :nth-of-type(8) {
+                grid-column: 2/4;
+                grid-row: 8/9;
+            }
+
+            #grid :nth-of-type(9) {
+                grid-column: 4/5;
+                grid-row: 1/3;
+            }
+
+            #grid :nth-of-type(10) {
+                grid-column: 4/5;
+                grid-row: 3/6;
+            }
+
+            #grid :nth-of-type(11) {
+                grid-column: 4/5;
+                grid-row: 6/9;
+            }
+
+            /* StatGride */
+            #statGrid {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                overflow: hidden;
+            }
+
+            #statGrid > p {
+                /* text-align: center; */
+                flex: 0 0 50%;
+                /* padding: 0; */
+                margin: 0;
+                /* height: 20%; */
+            }
+
+            #level,
+            #coins {
+                height: 20%;
+            }
+
+            p#attack,
+            p#defense {
+                padding: 10px 0px;
+                height: 20%;
+                /* font-size: 50px; */
+                /* color:red; */
+            }
+
+            p#level,
+            p#coins,
+            p#attack,
+            p#defense {
+                font-size: 30px;
+                padding: 5px 0px;
+            }
+
+            #nickName {
+                /* font-size: x-large; */
+                color: yellow;
+            }
+
+            /* #statGrid :nth-of-type(1) {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-weight: bold;
+            }
+            #statGrid :nth-of-type(2) {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                text-align: center;
+                font-weight: bold;
+            }
+            #statGrid :nth-of-type(3) {
+                grid-column: 1/2;
+                grid-row: 5/6;
+            }
+            #statGrid :nth-of-type(4) {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            #statGrid :nth-of-type(5) {
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+            #statGrid :nth-of-type(6) {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-weight: bold;
+                display: inline;
+            }
+
+            #statGrid :nth-of-type(7) {
+                grid-column: 2/3;
+                grid-row: 5/6;
+            }
+            #statGrid :nth-of-type(8) {
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            #statGrid :nth-of-type(9) {
+                grid-column: 2/3;
+                grid-row: 4/5;
+            }
+            #statGrid :nth-of-type(10) {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                font-weight: bold;
+            } */
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .romantic {
+                background-color: gold;
+                background-image: url("../assets/teamRomantic.png");
+                background-repeat: no-repeat;
+                background-size: 60% 150%;
+                background-position: center;
+            }
+            .baroque {
+                background-color: maroon;
+                background-image: url("../assets/teamBaroque.png");
+                background-repeat: no-repeat;
+                background-size: 60% 200%;
+                background-position: center;
+            }
+            .classical {
+                background-color: lightgreen;
+                background-image: url("../assets/teamClassical.png");
+                background-repeat: no-repeat;
+                background-size: 50% 200%;
+                background-position: center;
+            }
+            .century {
+                background-color: lightblue;
+                background-image: url("../assets/team21.png");
+                background-repeat: no-repeat;
+                background-size: 40% 125%;
+                background-position: center;
+            }
+            .heretics {
+                background-color: firebrick;
+                background-image: url("../assets/teamHeretics.png");
+                background-repeat: repeat-x;
+                background-size: 35% 100%;
+                background-position: center;
+            }
+
+            #coinpicture {
+                width: 50%;
+                height: 50%;
+                position: relative;
+                right: 0;
+            }
+
+            #coinage {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .invisible {
+                opacity: 0.4;
+                cursor: not-allowed;
+                color: black;
+                /* background-color: black ; */
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: lightblue;
+                margin: 0;
+            }
+
+            p#level,
+            p#coins,
+            p#attack,
+            p#defense {
+                font-size: 50px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+                padding: 5px 0px;
+            }
+
+            #attackPng,
+            #levelPng,
+            #defensePng,
+            #coinPng {
+                height: 85%;
+                width: 35%;
+            }
+
+            .assignments {
+                color: yellow;
+                cursor: pointer;
+                text-decoration: underline;
+                margin: 0;
+                padding: 0;
+            }
+
+            #lvl1 {
+                background-image: url("../assets/1.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl2 {
+                background-image: url("../assets/2.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl3 {
+                background-image: url("../assets/3.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl4 {
+                background-image: url("../assets/4.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl5 {
+                background-image: url("../assets/5.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl6 {
+                background-image: url("../assets/6.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl7 {
+                background-image: url("../assets/7.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl8 {
+                background-image: url("../assets/8.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl9 {
+                background-image: url("../assets/9.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #lvl10 {
+                background-image: url("../assets/10.png");
+                background-repeat: no-repeat;
+                background-size: 175% 125%;
+
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #raids {
+                background-image: url("../assets/Raids.jpg");
+                background-repeat: no-repeat;
+                background-size: 250% 150%;
+                background-position: center;
+                font-size: 15px;
+            }
+            #signout {
+                background-image: url("../assets/Log\ out.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 15px;
+            }
+            #options {
+                background-image: url("../assets/Options.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 200%;
+                background-position: center;
+                font-size: 15px;
+            }
+            #completeStats {
+                background-image: url("../assets/Stats.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                font-size: 15px;
+            }
+
+            #flexb {
+                display: flex;
+                width: 98%;
+                height: 90%;
+            }
+
+            #taskList,
+            #instructions {
+                text-align: center;
+                flex: 0 0 50%;
+                padding: 0;
+                margin: 0;
+                height: 85%;
+                overflow: scroll;
+                /* border: 2px solid aqua */
+            }
+
+            #taskList > p {
+                height: 8%;
+                width: 100%;
+
+                font-size: 10px;
+            }
+
+            #taskList {
+                border-right: 2px dashed teal;
+            }
+
+            #assignment1 {
+                margin-top: 5px;
+            }
+
+            h1,
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            section {
+                width: 100%;
+                /* height: 96vh; */
+                background-color: teal;
+                color: white;
+                box-sizing: border-box;
+            }
+
+            #console {
+                text-align: center;
+            }
+
+            #header {
+                text-align: center;
+                width: 100%;
+                height: 10%;
+            }
+
+            #taskList,
+            #instructions {
+                float: left;
+                height: 90%;
+                width: 50%;
+            }
+
+            #instruct,
+            #reward,
+            #recording,
+            #comment {
+                margin: 0;
+            }
+
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(21, 10%);
+                grid-row-gap: 5px;
+            }
+
+            #grid :nth-of-type(1) {
+                grid-column: 1/3;
+                grid-row: 6/7;
+            }
+
+            #grid :nth-of-type(2) {
+                grid-column: 1/3;
+                grid-row: 7/8;
+            }
+
+            #grid :nth-of-type(3) {
+                grid-column: 1/3;
+                grid-row: 3/6;
+            }
+
+            #grid :nth-of-type(4) {
+                grid-column: 1/3;
+                grid-row: 8/11;
+                /* z-index: 10; */
+            }
+
+            #grid :nth-of-type(5) {
+                grid-column: 1/3;
+                grid-row: 11/15;
+                /* z-index: 10; */
+            }
+
+            #grid :nth-of-type(6) {
+                grid-column: 1/3;
+                grid-row: 15/16;
+            }
+
+            #grid :nth-of-type(7) {
+                grid-column: 1/3;
+                grid-row: 16/17;
+            }
+
+            #grid :nth-of-type(8) {
+                grid-column: 1/3;
+                grid-row: 17/18;
+            }
+
+            #grid :nth-of-type(9) {
+                grid-column: 1/3;
+                grid-row: 1/3;
+            }
+
+            #grid :nth-of-type(10) {
+                grid-column: 1/3;
+                grid-row: 18/20;
+            }
+
+            #grid :nth-of-type(11) {
+                grid-column: 1/3;
+                grid-row: 20/22;
+            }
+
+            #statGrid {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+            }
+
+            #statGrid > p {
+                /* text-align: center; */
+                flex: 0 0 50%;
+                padding: 0;
+                /* margin: 0; */
+                /* height: 20%; */
+            }
+
+            #level,
+            #coins,
+            #attack,
+            #defense {
+                font-size: large;
+            }
+
+            #nickName {
+                font-size: x-large;
+                color: yellow;
+            }
+
+            #nameGame {
+                /* background-color: teal; */
+                background-image: url("../assets/logo2.png");
+                background-color: royalblue;
+                background-repeat: no-repeat;
+                background-size: 75% 225%;
+                /* background-attachment: fixed; */
+                background-position: center;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .team1 {
+                background-color: blue;
+                background-image: url("../assets/logo3.png");
+                background-repeat: no-repeat;
+                background-size: 50% 200%;
+                background-position: center;
+            }
+
+            #coinpicture {
+                width: 50%;
+                height: 50%;
+                position: relative;
+                right: 0;
+            }
+
+            #coinage {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .invisible {
+                opacity: 0.2;
+                cursor: not-allowed;
+            }
+
+            button {
+                width: 20%;
+                color: white;
+                display: inline;
+                background-color: black;
+                cursor: pointer;
+            }
+
+            button:focus {
+                border: 5px solid red;
+            }
+
+            #level1,
+            #level2,
+            #level3 {
+                display: flex;
+                background-color: black;
+            }
+
+            #nameGame,
+            #topTen,
+            #name,
+            #image,
+            #console,
+            #teamRank {
+                border-bottom: 5px solid teal;
+                background-color: black;
+            }
+
+            #team {
+                border-bottom: 5px solid teal;
+            }
+
+            .stats {
+                background-color: black;
+            }
+
+            #nickName,
+            #topTen,
+            #teamRank {
+                text-align: center;
+            }
+
+            .romantic {
+                background-color: gold;
+                background-image: url("../assets/teamRomantic.png");
+                background-repeat: no-repeat;
+                background-size: 60% 150%;
+                background-position: center;
+            }
+            .baroque {
+                background-color: maroon;
+                background-image: url("../assets/teamBaroque.png");
+                background-repeat: no-repeat;
+                background-size: 60% 200%;
+                background-position: center;
+            }
+            .classical {
+                background-color: lightgreen;
+                background-image: url("../assets/teamClassical.png");
+                background-repeat: no-repeat;
+                background-size: 50% 200%;
+                background-position: center;
+            }
+            .century {
+                background-color: lightblue;
+                background-image: url("../assets/team21.png");
+                background-repeat: no-repeat;
+                background-size: 40% 125%;
+                background-position: center;
+            }
+            .heretics {
+                background-color: firebrick;
+                background-image: url("../assets/teamHeretics.png");
+                background-repeat: repeat-x;
+                background-size: 35% 75%;
+                background-position: center;
+            }
+        }
+        </style>
+        <link
+            rel="stylesheet"
+            media="screen"
+            href="https://fontlibrary.org/face/8bit-wonder"
+            type="text/css"
+        />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section id="grid">
+            <!-- 1 -->
+            <div id="name" class="box1">
+                <p id="nickName" class="box-content"></p>
+            </div>
+            <!-- 2 -->
+            <div id="team" class="box1">
+                <!-- <p id="nickName" class="box-content">Team: Evil Beamer</p> -->
+            </div>
+            <!-- 3 -->
+            <div id="image" class="box2"></div>
+            <!-- 4 -->
+            <div id="statGrid" class="box3">
+                <!-- <p id="stats">Character Stats</p> -->
+                <p id="level" class="stats"></p>
+                <p id="coins" class="stats"></p>
+                <p id="attack" class="stats"></p>
+                <p id="defense" class="stats"></p>
+                <p id="facility" class="stats"></p>
+                <p id="bowControl" class="stats"></p>
+                <p id="intonation" class="stats"></p>
+                <p id="rhythm" class="stats"></p>
+                <p id="shifting" class="stats"></p>
+                <p id="musicality" class="stats"></p>
+            </div>
+
+            <!-- 5 -->
+            <div id="console" class="box">
+                <div id="header">
+                    <h1 class="box-content" id="currentLevel">
+                        <!-- CHHS ORCHESTRA RPG<br />BETA Version 1.31 -->
+                    </h1>
+                    <h2><a id="upload" target="_blank"></a></h2>
+                </div>
+                <br />
+                <hr />
+                <div id="flexb">
+                    <div id="taskList">
+                        <h2>Quests</h2>
+                        <p id="assignment1" class="assignments"></p>
+                        <p id="assignment2" class="assignments"></p>
+                        <p id="assignment3" class="assignments"></p>
+                        <p id="assignment4" class="assignments"></p>
+                        <p id="assignment5" class="assignments"></p>
+                        <p id="assignment6" class="assignments"></p>
+                        <p id="assignment7" class="assignments"></p>
+                        <p id="assignment8" class="assignments"></p>
+                        <p id="assignment9" class="assignments"></p>
+                        <p id="assignment10" class="assignments"></p>
+                    </div>
+                    <div id="instructions">
+                        <h2>Instructions</h2>
+
+                        <div id="instruct"></div>
+                        <br />
+                        <div id="reward"></div>
+                        <br />
+                        <a id="recording" target="_blank"></a>
+                        <br />
+                        <br />
+                        <div id="comment"></div>
+                    </div>
+                </div>
+
+                <span id="a"></span>
+            </div>
+
+            <!-- 6 -->
+            <div id="level1" class="box">
+                <button id="lvl1">Level 1</button>
+                <button class="lvl2" id="lvl2" title="Unlocks at 22XP">Level 2</button>
+                <button class="lvl3" id="lvl3" title="Unlocks at 62XP">Level 3</button>
+                <button class="lvl4" id="lvl4" title="Unlocks at 102XP">Level 4</button>
+                <button class="lvl5" id="lvl5" title="Unlocks at 142XP">Level 5</button>
+            </div>
+            <!-- 7 -->
+            <div id="level2" class="box">
+                <button class="lvl6" id="lvl6">Level 6</button>
+                <button class="lvl7" id="lvl7">Level 7</button>
+                <button class="lvl8" id="lvl8">Level 8</button>
+                <button class="lvl9" id="lvl9">Level 9</button>
+                <button class="lvl10" id="lvl10">Level 10</button>
+            </div>
+            <!-- 8 -->
+            <div id="level3" class="box">
+                <button id="sideQuests" class="side invisible" title="Coming Soon">
+                    Side Quests
+                </button>
+                <button id="raids">Raids</button>
+                <button id="completeStats">
+                    Complete Stats
+                </button>
+                <button id="options">Options</button>
+                <button id="signout">Signout</button>
+            </div>
+            <!-- 9 -->
+            <div id="nameGame" class="box">
+                <!-- <img id="logo" src="../assets/logo2.png" alt="logo" /> -->
+            </div>
+            <!-- 10 -->
+            <div id="topTen" class="box">
+                <div id="topTenChild" class="box-content">Top 5 Players</div>
+                <p id="topscore1" class="topscores"></p>
+                <p id="topscore2" class="topscores"></p>
+                <p id="topscore3" class="topscores"></p>
+                <p id="topscore4" class="topscores"></p>
+                <p id="topscore5" class="topscores"></p>
+            </div>
+            <!-- 11 -->
+            <div id="teamRank" class="box">
+                <div class="box-content">Team Rankings</div>
+                <p id="teamtopscore1" class="topscores"></p>
+                <p id="teamtopscore2" class="topscores"></p>
+                <p id="teamtopscore3" class="topscores"></p>
+                <p id="teamtopscore4" class="topscores"></p>
+                <p id="teamtopscore5" class="topscores"></p>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- <script src="grades.js"></script> -->
+    </body>
+</html>
