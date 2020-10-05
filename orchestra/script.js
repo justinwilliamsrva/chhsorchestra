@@ -3,6 +3,7 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
 //    10/5
+        lucca.b4(4)
         caroline.a2(4)
         caroline.a3(4)
         lauren.a2(4)
@@ -20,7 +21,6 @@ natalia.b1(4)
 amy.a3(4,"Rest of ISB")
 amy.a2(4)
 isabella.a9(4,"Great work Isabella! The f's were in tune")
-lucca.b3(4)
        mackenzie.b3(4)
 mackenzie.b4(4)
         jules.b1(4)
