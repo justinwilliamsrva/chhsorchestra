@@ -4173,7 +4173,8 @@ mackenzie.b4(4)
     function completeStatsFunc() {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
-        assign1.innerHTML = `Total Score: ${personage.totalScore}`;
+        assign1.innerHTML = `Real Name: ${personage.realname}`
+        assign3.innerHTML = `Total Score: ${personage.totalScore}`;
         assign4.innerHTML = `Current Rank in Orchestra: ${myTotalRank}`;
 
         // personage.grading();
