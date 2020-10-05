@@ -1,5 +1,5 @@
 window.onload = function () {
-    let days = 4;
+    let days = 5;
     function assignments() {
     // 10/1
         lauren.b3(4)
@@ -19,7 +19,7 @@ window.onload = function () {
         josendo.b1(4)
         kyle.b3(4)
         jaden.b5(4)
-        
+
 
 
 
