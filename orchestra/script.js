@@ -3,6 +3,8 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 10/7
+        walker.b5(2,"Whoops you played these in the wrong key. Check our sharps and flats")
+        walker.b6(2,"Whoops you played these in the wrong key. Check our sharps and flats")
         jude.b9(4,"Your left hand is great. What to work on is to create a more singable sound.")
         rowan.a10(3,"Close. 4-6 were not correct in regards to the dotted quarter note. It needed the be the length of a 3 eigth notes but you made it the length of two eigth notes.")
         jude.c1(2,"Some missed notes. 58 has three flats")
