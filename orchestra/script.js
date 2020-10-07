@@ -1,5 +1,5 @@
 window.onload = function () {
-    let days = 6;
+    let days = 7;
     let cavDays = 16;
     function assignments() {
 //    10/5
