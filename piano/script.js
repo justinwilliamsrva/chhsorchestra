@@ -4046,28 +4046,16 @@ window.onload = function () {
     }
 
     function leval4() {
+        clearAll();
         currentLevel.innerHTML = `Level 4`;
-        assign1.innerHTML = `Assignment 1: ${personage.level4[0]}`;
-        upload.innerHTML = "Upload a Recording";
-        upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
-        upload.style.cursor = "pointer";
-        upload.addEventListener("click", function () {
-            alert(
-                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
-            );
-        });
+        assign1.innerHTML = `Coming soon`;
+
     }
     function leval5() {
+        clearAll();
         currentLevel.innerHTML = `Level 5`;
-        assign1.innerHTML = `Assignment 1:${personage.level5[0]}`;
-        upload.innerHTML = "Upload a Recording";
-        upload.href = "https://driveuploader.com/upload/ItgcnvBt3U/";
-        upload.style.cursor = "pointer";
-        upload.addEventListener("click", function () {
-            alert(
-                "Remember to include your Real Name and Assignment Number(s) in the Name Section"
-            );
-        });
+
+        assign1.innerHTML = `Coming soon`;
     }
     function leval6() {
         currentLevel.innerHTML = `Level 6`;
