@@ -2,7 +2,14 @@ window.onload = function () {
     let days = 7;
     let cavDays = 16;
     function assignments() {
-        // 10/7
+        // 10/7'
+        
+        madeline.a5(4)
+        mackenzie.b6(4)
+        isabella.a10(4,"Excellent!! Most people skipped this one. You took the challenge and played it nearly perfectly except for the missed note near the end")
+        walker.a10(3,"Good. Just don't repeat the top note")
+        lucca.b6(2,"Close. The key signature asks for FC and G sharp")
+        lucca.b5(2,"Close. The key signature asks for FC and G sharp")
         walker.b1(4)
         walker.b2(4)
         walker.b3(4)
