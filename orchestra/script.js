@@ -2,8 +2,10 @@ window.onload = function () {
     let days = 7;
     let cavDays = 16;
     function assignments() {
-        // 10/6
-        
+        // 10/7
+        jude.b9(4,"Your left hand is great. What to work on is to create a more singable sound.")
+        rowan.a10(3,"Close. 4-6 were not correct in regards to the dotted quarter note. It needed the be the length of a 3 eigth notes but you made it the length of two eigth notes.")
+        jude.c1(2,"Some missed notes. 58 has three flats")
         grace.b1(4)
         grace.b2(4)
         grace.b3(4)
