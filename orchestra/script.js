@@ -2,6 +2,23 @@ window.onload = function () {
     let days = 7;
     let cavDays = 16;
     function assignments() {
+        // 10/6
+        
+        grace.b1(4)
+        grace.b2(4)
+        grace.b3(4)
+        nicholas.a6(4)
+        nicholas.a7(4)
+        caroline.a5(4)
+        caroline.a6(4)
+        brian.b2(4)
+        emily.b5(3,"Some funny notes at the top")
+        emily.b6(4,"Very intune!")
+        mackenzie.b5(4)
+        natalia.b3(4)
+        ryann.b3(4)
+        ryann.b4(4)
+        natalia.b4(3,"Watch out for F# on the D string. Your 4th finger was low")
 //    10/5
         lucca.b4(4)
         caroline.a2(4)
