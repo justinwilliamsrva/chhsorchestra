@@ -653,15 +653,15 @@ mackenzie.b4(4)
         "matthew",
         "rowan",
         "lauren",
-        "cameryn",
-        "zack",
+        // "cameryn",
+        // "zack",
         "lucca",
         "emily",
         "jules",
         "mackenzie",
         "jade",
         "natalia",
-        "kyle",
+        // "kyle",
         "caleb",
         "thomas",
         "madeline",
@@ -676,7 +676,7 @@ mackenzie.b4(4)
         "angelica",
         "lindsay",
         "kimberly",
-        "abigail",
+        // "abigail",
         "tristan",
         "brian",
         "amy",
@@ -1685,15 +1685,15 @@ mackenzie.b4(4)
         matthew,
         rowan,
         lauren,
-        cameryn,
-        zack,
+        // cameryn,
+        // zack,
         lucca,
         emily,
         jules,
         mackenzie,
         jade,
         natalia,
-        kyle,
+        // kyle,
         caleb,
         thomas,
         madeline,
@@ -1708,7 +1708,7 @@ mackenzie.b4(4)
         angelica,
         lindsay,
         kimberly,
-        abigail,
+        // abigail,
         tristan,
         brian,
         amy,
@@ -1746,8 +1746,8 @@ mackenzie.b4(4)
         team.classList.remove("classical");
         team.classList.add(`${this.team}`);
         img.innerHTML = `<img src=${this.image}>`;
-        att.innerHTML = `<img id="attackPng" src="../assets/Attack-1.png"> ${this.attack}`;
-        def.innerHTML = `<img id="defensePng" src="../assets/Defense-1.png"> ${this.defense}`;
+        att.innerHTML = `<img id="attackPng" src="../assets/Defense-1.png"> ${this.attack}`;
+        def.innerHTML = `<img id="defensePng" src="../assets/Attack-1.png"> ${this.defense}`;
         coin.innerHTML = `<img id="coinPng" src="../assets/EXP_1.jpg"> ${this.coins}`;
         level.innerHTML = `<img id="levelPng" src="../assets/LEVEL.png"> ${this.level}`;
         fac.innerHTML = `Facility: ${this.facility}`;
@@ -3693,7 +3693,7 @@ mackenzie.b4(4)
     };
     Character.prototype.cavGrading = function () {
         this.grade = this.coins / cavDays;
-        console.log(this.grade);
+        // console.log(this.grade);
 
         if (this.grade >= 3.66) {
             assign2.innerHTML = "Current Grade: A+";
@@ -4337,6 +4337,8 @@ mackenzie.b4(4)
             total_score: item.totalScore,
             level: item.level,
             class: item.currentClass,
+            attack: item.defense,
+            defense: item.attack
 
         });
         // topScore.push(
@@ -4346,13 +4348,16 @@ mackenzie.b4(4)
         // console.log(jaden.coins);
     }
     students.forEach(topScoreFunc);
+    console.log("All Students");
     console.log(topScore);
+    console.log("---------------");
 
     var highScore = _.sortBy(topScore, function (people) {
         return people.total_score * -1;
     });
-
+    console.log("High Score");
     console.log(highScore);
+    console.log("---------------");
     top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level} - Total Score: ${highScore[0].total_score}`;
     top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level} - Total Score: ${highScore[1].total_score}`;
     top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].total_score}`;
