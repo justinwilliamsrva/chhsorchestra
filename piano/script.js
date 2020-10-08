@@ -3,7 +3,15 @@ window.onload = function () {
     function assignments() {
 // 10/8
         tyler.a3(3, "Played during class")
-        sierra.a6(3,"Played in class")
+        sierra.a6(3, "Played in class")
+        rebecca.a9(4,"Correct")
+        somros.b2(4, "Love your work ethic. This is a great start Somros")
+        timothy.a5()
+        kyle.b9(9)
+        josendo.b7(4)
+        jamari.a9(2, "The left hand is not correct. The RH is correct")
+        jamari.a8(3, "Close there were a few notes that were not correct")
+        jamari.a6(1,"The hands need to be played at the same time. It would be worth trying this one again")
 
 
 

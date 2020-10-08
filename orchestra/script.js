@@ -2,6 +2,11 @@ window.onload = function () {
     let days = 7;
     let cavDays = 16;
     function assignments() {
+        // 10/8
+        caroline.a8(4, "Try to add more vibrato")
+        lance.a3(4,"Great start Lance!")
+        amy.a3(4)
+
         // 10/7
 
         madeline.a5(4)
