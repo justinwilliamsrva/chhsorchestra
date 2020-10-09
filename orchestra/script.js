@@ -8,6 +8,8 @@ window.onload = function () {
         ramon.a4(4)
         ally.a6(4)
         ally.a8(4)
+        ally.a7(4)
+        
 
 
         // 10/8
