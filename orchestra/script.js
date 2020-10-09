@@ -9,6 +9,23 @@ window.onload = function () {
         ally.a6(4)
         ally.a8(4)
         ally.a7(4)
+        ally.a9(4)
+        jules.b3(4, "Watch out of 3rd finger. Make sure it is high enough")
+        mackenzie.b7(4, "Good intonation")
+        jules.b2(4, "Great shifting")
+        isabella.b1(4,"Your sound has really improved")
+        natalia.b6(4,"Correct")
+        ryann.b6(4, "Correct")
+        kamille.b6(4,"Very Intune")
+        emily.b8(4, "Beautiful playing")
+        ally.a10(4)
+
+
+
+
+
+
+
 
 
 
