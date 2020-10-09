@@ -2,10 +2,12 @@ window.onload = function () {
     let days = 8;
     let cavDays = 16;
     function assignments() {
-        // 10/10
+        // 10/9
         ramon.a2(4)
         ramon.a3(4)
         ramon.a4(4)
+        ally.a6(4)
+        ally.a8(4)
 
 
         // 10/8
@@ -1661,10 +1663,10 @@ mackenzie.b4(4)
         "Freshman"
     );
     const ally = new Character(
-        "Ally",
+        "Forceful Gale",
         "classical",
         1,
-        "",
+        "https://photos.google.com/share/AF1QipNT6Z54NURBuOrlxsQQLvo-y_gX1KeflLrFKia_8p5ja1Mo1wp0kl3v4LJS9dpQcw?key=M2QwRGJ5Uy0xTWc5Y1cteHNIXy1TZDdONW54LXZR",
         0,
         0,
         0,
