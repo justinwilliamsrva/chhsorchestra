@@ -9,7 +9,7 @@ window.onload = function () {
         ally.a6(4)
         ally.a8(4)
         ally.a7(4)
-        
+
 
 
         // 10/8
@@ -1668,7 +1668,7 @@ mackenzie.b4(4)
         "Forceful Gale",
         "classical",
         1,
-        "https://photos.google.com/share/AF1QipNT6Z54NURBuOrlxsQQLvo-y_gX1KeflLrFKia_8p5ja1Mo1wp0kl3v4LJS9dpQcw?key=M2QwRGJ5Uy0xTWc5Y1cteHNIXy1TZDdONW54LXZR",
+        "../assets/ally.png",
         0,
         0,
         0,
