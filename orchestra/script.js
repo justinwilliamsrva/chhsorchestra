@@ -23,7 +23,60 @@ window.onload = function () {
         emily.b8(4, "Beautiful playing")
         ally.a10(4)
         kate.b5(4)
-        
+        lindsay.a4(4)
+        angelica.b5(2, "Some wrong notes at the top")
+        emmett.c8(4)
+        angelica.b6(3, "A bit of hesitation but mostly correct")
+        jade.b4(4)
+        emmett.c5(4, "On the slow side but good")
+        angelica.b4(4, "Good")
+        emmett.c4(4, "On the slow side but good")
+        jade.b3(2, "A lot of wrong notes in the second example")
+        angelica.b3(2, "Wrong note in the 2nd excerpt")
+        kate.b6(1, "This is one we went over to with the high 3s")
+        rowan.b2(4)
+        grace.b7(1, "The 3 third fingers were not correct.")
+        emmett.c3(4)
+        grace.b6(1, "This is the one we went over in class. The 3's are not correct")
+        emmett.c1(4)
+        jules.b10(4, "Excellent! You are the first to try this one. #4 was a little of at time but but 9% of everything was good")
+        jules.b9(4)
+        lucca.b7
+        jules.b8(4,"intune and correct rhyhtm")
+        jules.b7(4, "could be a little faster")
+        jules.b6(3, "The arpeggio was not quite right. Scale was good until the end")
+        isabella.b2(4)
+        jules.b5(4)
+        jules.b4(4)
+        mackenzie.b8(4, "Well played")
+        kamille.b7(4, "Great job on the high 3's")
+        natalia.b5(3, "A few notes were out of tune")
+        ryann.b5(4)
+        kamille.b5(4)
+        emily.b7(4)
+        julia.b2(4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
