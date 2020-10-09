@@ -41,7 +41,8 @@ window.onload = function () {
         emmett.c1(4)
         jules.b10(4, "Excellent! You are the first to try this one. #4 was a little of at time but but 9% of everything was good")
         jules.b9(4)
-        lucca.b7
+        lucca.b7(2,"Let's go over this one. There are many sharps")
+        lucca.b6(3)
         jules.b8(4,"intune and correct rhyhtm")
         jules.b7(4, "could be a little faster")
         jules.b6(3, "The arpeggio was not quite right. Scale was good until the end")

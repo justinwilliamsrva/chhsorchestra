@@ -1,7 +1,12 @@
 window.onload = function () {
     let days = 5;
     function assignments() {
-// 10/8
+// 10/9
+        kyle.b10(4)
+        josendo.b8(4)
+        lauren.b9(4)
+        lauren.b8(4)
+        // 10/8
         tyler.a3(3, "Played during class")
         sierra.a6(3, "Played in class")
         rebecca.a9(4,"Correct")
