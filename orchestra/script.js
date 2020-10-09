@@ -2,6 +2,9 @@ window.onload = function () {
     let days = 8;
     let cavDays = 16;
     function assignments() {
+
+        // 10/10
+
         // 10/9
         ramon.a2(4)
         ramon.a3(4)
@@ -19,6 +22,8 @@ window.onload = function () {
         kamille.b6(4,"Very Intune")
         emily.b8(4, "Beautiful playing")
         ally.a10(4)
+        kate.b5(4)
+        
 
 
 
