@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    /* align-items: flex-end; */
+}
+
+#team1,
+#team2 {
+    flex: 1;
+    border: 1px solid black;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.players1 {
+    border: 1px solid black;
+    margin: 5px;
+    height: 10vh;
+    width: 10vw;
+    /* align-items: flex-end; */
+}
