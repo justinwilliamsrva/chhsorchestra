@@ -709,10 +709,6 @@ window.onload = function () {
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
         ally.a1(4);
-
-
-
-
     }
 
     var person = "";
@@ -2318,7 +2314,6 @@ window.onload = function () {
                 this.level2[2] = "A+";
                 this.level2COM[2] = comments;
 
-
                 break;
 
             case 3:
@@ -3257,15 +3252,19 @@ window.onload = function () {
     };
 
     Character.prototype.add = function () {
-        console.log(jane);
-        console.log(students[0]);
         this.attack = this.facility + this.intonation + this.shifting;
         this.defense = this.bowControl + this.rhythm + this.musicality;
         this.totalScore = this.attack + this.defense + this.coins;
     };
 
     assignments();
- jane.add();
+    students.forEach(adding);
+    function adding(person) {
+        person.add();
+    }
+
+    // students[0].add();
+    // olivia.add();
     function initialPrompt() {
         if (typeof localStorage.getItem("person") == "string") {
             var j = parseInt(localStorage.getItem("person"));
@@ -3609,14 +3608,58 @@ window.onload = function () {
     //
     //
 
-    function showTeam1(team) {
-        let team1one = document.getElementById("team1one");
-        let team1two = document.getElementById("team1two");
+    let teamOne = centuryHighScore;
+    let teamTwo = classicalHighScore;
 
-        team1one.innerHTML = `${team[0].realname}${team[0].defense}`;
-
-        team1two.innerHTML = `${team[1].realname}${team[1].defense}`;
+    function removeAllChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
     }
 
-    showTeam1(hereticHighScore);
+    function showTeam1(team) {
+        let team1 = document.getElementById("team1");
+        removeAllChildNodes(team1);
+        let teamname = document.createElement("h3");
+        teamname.innerHTML = `${team[0].team}`;
+        team1.appendChild(teamname);
+
+        for (i = 0; i < team.length; i++) {
+            let node = document.createElement("div");
+            node.classList.add("players1");
+            node.innerHTML = `${team[i].realname}${team[i].defense}${team[i].attack}`;
+
+            team1.appendChild(node);
+        }
+    }
+
+    function showTeam2(team) {
+        let team2 = document.getElementById("team2");
+        removeAllChildNodes(team2);
+        let teamname = document.createElement("h3");
+        teamname.innerHTML = `${team[0].team}`;
+        team2.appendChild(teamname);
+
+        for (i = 0; i < team.length; i++) {
+            let node = document.createElement("div");
+            node.classList.add("players1");
+            node.innerHTML = `${team[i].realname}${team[i].defense}`;
+
+            team2.appendChild(node);
+        }
+    }
+
+    function attack(p1, p2) {
+        p2.defense = p2.defense - p1.attack;
+    }
+
+    function timedAttack1() {
+        setTimeout(function () { attack(teamOne[0], teamTwo[0]); }, 2000);
+        showTeam2(teamTwo)
+        // setTimeout(attack(teamTwo[1], teamOne[1]), 9000);
+        // showTeam1(teamOne);
+    }
+    showTeam1(teamOne);
+    showTeam2(teamTwo);
+    timedAttack1();
 };
