@@ -40,7 +40,15 @@
     #topTenChild {
         margin-bottom: 5px;
         word-wrap: break-word;
+
     }
+
+.topscores{
+    font-size: 13px;
+    word-wrap: break-word;
+    color:green;
+
+}
 
     #topscore1,#teamtopscore1 {
         color: gold;
@@ -58,12 +66,12 @@
         font-size: 13px;
         word-wrap: break-word;
     }
-    #topscore4,#teamtopscore4 {
+    #teamtopscore4 {
         color: green;
         font-size: 13px;
         word-wrap: break-word;
     }
-    #topscore5,#teamtopscore5 {
+    #teamtopscore5 {
         color: blue;
         font-size: 13px;
         word-wrap: break-word;
@@ -374,6 +382,7 @@
     #teamRank {
         border-bottom: 5px solid teal;
         background-color: black;
+
     }
 
     #team {
@@ -384,6 +393,7 @@
     #topTen,
     #teamRank {
         text-align: center;
+        overflow: auto;
     }
 
     #nameGame {
@@ -1009,6 +1019,7 @@
     #topTen,
     #teamRank {
         text-align: center;
+        overflow: auto;
     }
 
     .romantic {

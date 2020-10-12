@@ -1,4 +1,5 @@
 window.onload = function () {
+
     let days = 8;
     let cavDays = 16;
     function assignments() {
@@ -780,6 +781,11 @@ mackenzie.b4(4)
     var top3 = document.getElementById("topscore3");
     var top4 = document.getElementById("topscore4");
     var top5 = document.getElementById("topscore5");
+    var top6 = document.getElementById("topscore6");
+    var top7 = document.getElementById("topscore7");
+    var top8 = document.getElementById("topscore8");
+    var top9 = document.getElementById("topscore9");
+    var top10 = document.getElementById("topscore10");
     var teamTop1 = document.getElementById("teamtopscore1");
     var teamTop2 = document.getElementById("teamtopscore2");
     var teamTop3 = document.getElementById("teamtopscore3");
@@ -4416,6 +4422,11 @@ mackenzie.b4(4)
     top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].total_score}`;
     top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
     top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
+    top6.innerHTML = `${highScore[5].name} - Level: ${highScore[5].level} - Total Score: ${highScore[5].total_score}`;
+    top7.innerHTML = `${highScore[6].name} - Level: ${highScore[6].level} - Total Score: ${highScore[6].total_score}`;
+    top8.innerHTML = `${highScore[7].name} - Level: ${highScore[7].level} - Total Score: ${highScore[7].total_score}`;
+    top9.innerHTML = `${highScore[8].name} - Level: ${highScore[8].level} - Total Score: ${highScore[8].total_score}`;
+    top10.innerHTML = `${highScore[9].name} - Level: ${highScore[9].level} - Total Score: ${highScore[9].total_score}`;
 
     // SCORE OF TEAMS
 
