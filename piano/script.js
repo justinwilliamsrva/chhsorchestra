@@ -1,5 +1,5 @@
 window.onload = function () {
-    let days = 5;
+    let days = 9;
     function assignments() {
 // 10/9
         kyle.b10(4)
@@ -3975,7 +3975,7 @@ window.onload = function () {
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest:Moon on the Water</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest:Moon on the Water</a>";
             reward.innerHTML = "Reward: Accuracy(2) + Theory(2) + Rhythm(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
             comment.innerHTML = `Teacher Comments: ${personage.level3COM[0]}`;
@@ -3983,7 +3983,7 @@ window.onload = function () {
         // A2
         assign2.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: 500- Year Old Melody</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: 500- Year Old Melody</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Theory(4) + Rhythm(2) + Musicality(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -3992,7 +3992,7 @@ window.onload = function () {
         // A3
         assign3.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest:Reveille</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest:Reveille</a>";
             reward.innerHTML =
                 "Reward: accuracy(2) + coordination(2) +  Facility(4) + Theory(4) + Musicality(2) + XP(4) ";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4001,7 +4001,7 @@ window.onload = function () {
         // A4
         assign4.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: When the Saints Go Marching in</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: When the Saints Go Marching in</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Facility(2) + Rhythm(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4010,7 +4010,7 @@ window.onload = function () {
         // A5
         assign5.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: African Celebration</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: African Celebration</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4020,7 +4020,7 @@ window.onload = function () {
         // A6
         assign6.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Imitative Study</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: Imitative Study</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(2) + Facility(2) + Rhythm(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4029,7 +4029,7 @@ window.onload = function () {
         // A7
         assign7.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: American Fiddle Tune</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: American Fiddle Tune</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + coordination(4) + Facility(8) + Theory(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4038,7 +4038,7 @@ window.onload = function () {
         // A8
         assign8.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Theme by Mozart</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: Theme by Mozart</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4047,7 +4047,7 @@ window.onload = function () {
         // A9
         assign9.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Finger Fanfare</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: Finger Fanfare</a>";
             reward.innerHTML =
                 "Reward: accuracy(4) + Theory(4) + Rhythm(4) + Musicality(4) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
@@ -4056,7 +4056,7 @@ window.onload = function () {
         // A10
         assign10.addEventListener("click", function () {
             instruct.innerHTML =
-                "<a target='_blank' href='https://drive.google.com/drive/folders/16C2EiRZnbAqLih0DMWXg6I7jDuuRqpA_?usp=sharing'>Quest: Scales F#,Gb,Db</a>";
+                "<a target='_blank' href='https://drive.google.com/drive/folders/1upa55B9scIridr3GlfUH5dZ9_trJy-mW?usp=sharing'>Quest: Scales F#,Gb,Db</a>";
             reward.innerHTML =
                 "Reward: Rhythm(12) + coordination(4) + accuracy(4) + Theory(2) + XP(4)";
             recording.innerHTML = " Recording: Coming Soon";
