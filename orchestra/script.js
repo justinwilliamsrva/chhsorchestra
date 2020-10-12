@@ -4,7 +4,8 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
 
-        // 10/10
+        // 10/12
+        rowan.b3(4)
 
         // 10/9
         ramon.a2(4)
@@ -44,7 +45,7 @@ window.onload = function () {
         jules.b9(4)
         lucca.b7(2,"Let's go over this one. There are many sharps")
         lucca.b6(3)
-        jules.b8(4,"intune and correct rhyhtm")
+        jules.b8(4,"intune and correct rhythm")
         jules.b7(4, "could be a little faster")
         jules.b6(3, "The arpeggio was not quite right. Scale was good until the end")
         isabella.b2(4)
@@ -4417,16 +4418,16 @@ mackenzie.b4(4)
     console.log("High Score");
     console.log(highScore);
     console.log("---------------");
-    top1.innerHTML = `${highScore[0].name} - Level: ${highScore[0].level} - Total Score: ${highScore[0].total_score}`;
-    top2.innerHTML = `${highScore[1].name} - Level: ${highScore[1].level} - Total Score: ${highScore[1].total_score}`;
-    top3.innerHTML = `${highScore[2].name} - Level: ${highScore[2].level} - Total Score: ${highScore[2].total_score}`;
-    top4.innerHTML = `${highScore[3].name} - Level: ${highScore[3].level} - Total Score: ${highScore[3].total_score}`;
-    top5.innerHTML = `${highScore[4].name} - Level: ${highScore[4].level} - Total Score: ${highScore[4].total_score}`;
-    top6.innerHTML = `${highScore[5].name} - Level: ${highScore[5].level} - Total Score: ${highScore[5].total_score}`;
-    top7.innerHTML = `${highScore[6].name} - Level: ${highScore[6].level} - Total Score: ${highScore[6].total_score}`;
-    top8.innerHTML = `${highScore[7].name} - Level: ${highScore[7].level} - Total Score: ${highScore[7].total_score}`;
-    top9.innerHTML = `${highScore[8].name} - Level: ${highScore[8].level} - Total Score: ${highScore[8].total_score}`;
-    top10.innerHTML = `${highScore[9].name} - Level: ${highScore[9].level} - Total Score: ${highScore[9].total_score}`;
+    top1.innerHTML = `1. ${highScore[0].name} - ${highScore[0].total_score}`;
+    top2.innerHTML = `2. ${highScore[1].name} - ${highScore[1].total_score}`;
+    top3.innerHTML = `3. ${highScore[2].name} - ${highScore[2].total_score}`;
+    top4.innerHTML = `4. ${highScore[3].name} - ${highScore[3].total_score}`;
+    top5.innerHTML = `5. ${highScore[4].name} - ${highScore[4].total_score}`;
+    top6.innerHTML = `6. ${highScore[5].name} - ${highScore[5].total_score}`;
+    top7.innerHTML = `7. ${highScore[6].name} - ${highScore[6].total_score}`;
+    top8.innerHTML = `8. ${highScore[7].name} - ${highScore[7].total_score}`;
+    top9.innerHTML = `9. ${highScore[8].name} - ${highScore[8].total_score}`;
+    top10.innerHTML = `10. ${highScore[9].name} - ${highScore[9].total_score}`;
 
     // SCORE OF TEAMS
 

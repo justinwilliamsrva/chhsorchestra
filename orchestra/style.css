@@ -393,9 +393,9 @@
     #topTen,
     #teamRank {
         text-align: center;
-        overflow: auto;
-    }
 
+    }
+    #topTen {overflow: auto;}
     #nameGame {
         /* background-color: teal; */
         background-image: url("../assets/logo2.png");

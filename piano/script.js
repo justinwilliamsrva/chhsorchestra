@@ -2,6 +2,21 @@ window.onload = function () {
     let nickDays = 1;
     let days = 9;
     function assignments() {
+
+// 10/12
+
+        victoria.a8(4)
+        somros.b3(4)
+        rodrick.c1(4)
+        rodrick.c1("t")
+        rodrick.c1("c")
+        josendo.b9(4, "Great playing as always")
+        kyle.a10(4)
+
+
+
+
+
 // 10/9
         kyle.b10(4)
         josendo.b8(4)
