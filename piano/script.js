@@ -11,7 +11,7 @@ window.onload = function () {
         sierra.a6(3, "Played in class")
         rebecca.a9(4,"Correct")
         somros.b2(4, "Love your work ethic. This is a great start Somros")
-        timothy.a5()
+        timothy.a5(4)
         kyle.b9(9)
         josendo.b7(4)
         jamari.a9(2, "The left hand is not correct. The RH is correct")
