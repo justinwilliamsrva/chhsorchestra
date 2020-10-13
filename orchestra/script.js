@@ -3,6 +3,8 @@ window.onload = function () {
     let days = 9;
     let cavDays = 16;
     function assignments() {
+// 10/13
+
 
         // 10/12
         rowan.b3(4)
@@ -26,6 +28,13 @@ window.onload = function () {
         lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
         mackenzie.b10(3,"some out of tune notes with the high threes")
         matthew.a2(4)
+        kate.b8(3,"Your 2nd finger was just a little low")
+        lance.a4(4, "Facility")
+
+
+
+
+
 
 
 
@@ -1759,7 +1768,38 @@ mackenzie.b4(4)
         "ally",
         "Junior"
     );
-
+    const averageCentury = new Character(
+        "average",
+        "century",
+        1,
+        "../assets/baroque.png",
+        153,
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "",
+        "average",
+        ""
+    );
+    const averageBaroque = new Character(
+        "average",
+        "baroque",
+        1,
+        "../assets/baroque.png",
+        138,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "",
+        "average",
+        ""
+    );
     let students = [
         jane,
         olivia,
@@ -1807,6 +1847,8 @@ mackenzie.b4(4)
         ramon,
         kamille,
         ally,
+        averageCentury,
+        averageBaroque
     ];
 
     Character.prototype.printStats = function () {

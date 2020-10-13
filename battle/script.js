@@ -3,8 +3,8 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 10/13
-        kamille.b9(4, "Try to connect the sound more")
-        emily.b9()
+        kamille.b9(4, "Try to connect the sound more");
+        emily.b9();
 
         // 10/9
         ramon.a2(4);
@@ -1744,7 +1744,38 @@ window.onload = function () {
         "ally",
         "Junior"
     );
-
+    const averageCentury = new Character(
+        "average",
+        "century",
+        1,
+        "../assets/baroque.png",
+        153,
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "",
+        "average",
+        ""
+    );
+    const averageBaroque = new Character(
+        "average",
+        "baroque",
+        1,
+        "../assets/baroque.png",
+        138,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "",
+        "average",
+        ""
+    );
     let students = [
         jane,
         olivia,
@@ -1792,6 +1823,8 @@ window.onload = function () {
         ramon,
         kamille,
         ally,
+        averageCentury,
+        averageBaroque,
     ];
 
     Character.prototype.a1 = function (score, comments) {
@@ -3611,42 +3644,38 @@ window.onload = function () {
     //
 
     function shuffle(array) {
-        var currentIndex = array.length, temporaryValue, randomIndex;
+        var currentIndex = array.length,
+            temporaryValue,
+            randomIndex;
 
         // While there remain elements to shuffle...
         while (0 !== currentIndex) {
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
 
-          // Pick a remaining element...
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex -= 1;
-
-          // And swap it with the current element.
-          temporaryValue = array[currentIndex];
-          array[currentIndex] = array[randomIndex];
-          array[randomIndex] = temporaryValue;
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
         }
 
         return array;
-      }
+    }
 
-      // Used like so
+    // Used like so
 
     shuffle(teamCentury);
-    shuffle(teamClassical)
+    shuffle(teamClassical);
     shuffle(teamRomantic);
-    shuffle(teamBaroque)
+    shuffle(teamBaroque);
     shuffle(teamHeretic);
 
-
-
-
-
-
-
-
-
     let teamOne = teamCentury;
-    let teamTwo = teamClassical;
+    let teamTwo = teamRomantic;
+
+    let teamOnescore;
+    let teamTwoscore;
 
     function removeAllChildNodes(parent) {
         while (parent.firstChild) {
@@ -3655,16 +3684,21 @@ window.onload = function () {
     }
 
     function showTeam1(team) {
+        teamOnescore = 0;
+        teamOne.map((player) => (teamOnescore += player.total_score));
         let team1 = document.getElementById("team1");
         removeAllChildNodes(team1);
+        let scoring = document.createElement("h2");
+        scoring.innerHTML = `${teamOnescore}`;
         let teamname = document.createElement("h3");
         teamname.innerHTML = `${team[0].team}`;
         team1.appendChild(teamname);
+        team1.appendChild(scoring);
 
         for (i = 0; i < team.length; i++) {
             let node = document.createElement("div");
             node.classList.add("players1");
-            node.setAttribute("id","teamone"+i)
+            node.setAttribute("id", "teamone" + i);
             node.innerHTML = `${team[i].realname}${team[i].total_score}`;
 
             team1.appendChild(node);
@@ -3672,16 +3706,21 @@ window.onload = function () {
     }
 
     function showTeam2(team) {
+        teamTwoscore = 0;
+    teamTwo.map((player) => (teamTwoscore += player.total_score));
         let team2 = document.getElementById("team2");
         removeAllChildNodes(team2);
+        let scoring = document.createElement("h2");
+        scoring.innerHTML = `${teamTwoscore}`;
         let teamname = document.createElement("h3");
         teamname.innerHTML = `${team[0].team}`;
         team2.appendChild(teamname);
+        team2.appendChild(scoring);
 
         for (i = 0; i < team.length; i++) {
             let node = document.createElement("div");
             node.classList.add("players1");
-            node.setAttribute("id","teamtwo"+i)
+            node.setAttribute("id", "teamtwo" + i);
             node.innerHTML = `${team[i].realname}${team[i].total_score}`;
 
             team2.appendChild(node);
@@ -3689,37 +3728,59 @@ window.onload = function () {
     }
 
     function attack(p1, p2) {
+
+
+        if (p1.team == teamOne[0].team){
+
+            team1.style.backgroundColor = "green";
+             team2.style.backgroundColor = "red";
+
+
+        }else if(p2.team == teamOne[0].team){
+
+        team1.style.backgroundColor = "red";
+         team2.style.backgroundColor = "green";
+
+
+    }  else if (p1.total_score <= 0) {
+            team1.style.backgroundColor = "white";
+             team2.style.backgroundColor = "white";
+            showTeam1(teamOne);
+            showTeam2(teamTwo);
+            return;
+        }
+
         p2.total_score = p2.total_score - p1.attack;
+
         showTeam1(teamOne);
-        showTeam2(teamTwo)
-    }
+        showTeam2(teamTwo);
+        if (teamOnescore <= 0) { alert(`${teamTwo[0].team} wins!!`) }
+        else if(teamTwoscore <= 0){alert(`${teamOne[0].team} wins!!`)}
+    };
 
 
-function teamAttack(playerone, playertwo){
+    function teamAttack(playerone, playertwo) {
+        attack(playerone[0], playertwo[0]);
+        setTimeout(attack, 500, playertwo[1], playerone[1]);
+        setTimeout(attack, 1000, playerone[2], playertwo[2]);
+        setTimeout(attack, 1500, playertwo[3], playerone[3]);
+        setTimeout(attack, 2000, playerone[4], playertwo[4]);
+        setTimeout(attack, 2500, playertwo[5], playerone[5]);
+        setTimeout(attack, 3000, playerone[6], playertwo[6]);
+        setTimeout(attack, 3500, playertwo[7], playerone[7]);
 
-    setTimeout(attack, 1000, playerone[0], playertwo[0]);
-    setTimeout(attack, 2000, playertwo[1], playerone[1]);
-    setTimeout(attack, 3000, playerone[2], playertwo[2]);
-    setTimeout(attack, 4000, playertwo[3], playerone[3]);
-    setTimeout(attack, 5000, playerone[4], playertwo[4]);
-    setTimeout(attack, 6000, playertwo[5], playerone[5]);
-    setTimeout(attack, 7000, playerone[6], playertwo[6]);
-
-
-
-
-
-
-
-}
-
-
+    };
     showTeam1(teamOne);
     showTeam2(teamTwo);
     teamAttack(teamOne, teamTwo);
-    setTimeout(teamAttack, 8000, teamTwo, teamOne);
+    setTimeout(teamAttack, 4000, teamTwo, teamOne);
+    setTimeout(teamAttack, 8000, teamOne, teamTwo);
+    setTimeout(teamAttack, 12000, teamTwo, teamOne);
     setTimeout(teamAttack, 16000, teamOne, teamTwo);
-    setTimeout(teamAttack, 24000, teamTwo, teamOne);
+    setTimeout(teamAttack, 20000, teamTwo, teamOne);
+    setTimeout(teamAttack, 24000, teamOne, teamTwo);
+    setTimeout(teamAttack, 28000, teamTwo, teamOne);
     setTimeout(teamAttack, 32000, teamOne, teamTwo);
-
+    setTimeout(teamAttack, 36000, teamTwo, teamOne);
+    setTimeout(teamAttack, 000, teamOne, teamTwo);
 };
