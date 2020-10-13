@@ -18,6 +18,9 @@ window.onload = function () {
         kyle.c1(4)
         nick.a2(4)
         nick.a1(4)
+        lauren.c1(4)
+        lauren.b10(4)
+
 
 
 
@@ -937,7 +940,7 @@ window.onload = function () {
         "Junior"
     );
 
-    
+
     let students = [
         nick,
         victoria,

@@ -3633,6 +3633,11 @@ window.onload = function () {
 
     shuffle(teamCentury);
     shuffle(teamClassical)
+    shuffle(teamRomantic);
+    shuffle(teamBaroque)
+    shuffle(teamHeretic);
+
+
 
 
 
