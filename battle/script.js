@@ -3671,8 +3671,8 @@ window.onload = function () {
     shuffle(teamBaroque);
     shuffle(teamHeretic);
 
-    let teamOne = teamCentury;
-    let teamTwo = teamRomantic;
+    let teamOne = teamRomantic;
+    let teamTwo = teamCentury;
 
     let teamOnescore;
     let teamTwoscore;
@@ -3707,7 +3707,7 @@ window.onload = function () {
 
     function showTeam2(team) {
         teamTwoscore = 0;
-    teamTwo.map((player) => (teamTwoscore += player.total_score));
+        teamTwo.map((player) => (teamTwoscore += player.total_score));
         let team2 = document.getElementById("team2");
         removeAllChildNodes(team2);
         let scoring = document.createElement("h2");
@@ -3728,23 +3728,22 @@ window.onload = function () {
     }
 
     function attack(p1, p2) {
-
-
-        if (p1.team == teamOne[0].team){
-
+        if (p1.team == teamOne[0].team) {
             team1.style.backgroundColor = "green";
-             team2.style.backgroundColor = "red";
-
-
-        }else if(p2.team == teamOne[0].team){
-
-        team1.style.backgroundColor = "red";
-         team2.style.backgroundColor = "green";
-
-
-    }  else if (p1.total_score <= 0) {
+            team2.style.backgroundColor = "red";
+        } else if (p2.team == teamOne[0].team) {
+            team1.style.backgroundColor = "red";
+            team2.style.backgroundColor = "green";
+        }
+        if (p1.total_score <= 0 && p1.team == teamOne[0].team) {
             team1.style.backgroundColor = "white";
-             team2.style.backgroundColor = "white";
+            team2.style.backgroundColor = "blue";
+            showTeam1(teamOne);
+            showTeam2(teamTwo);
+            return;
+        } else if (p1.total_score <= 0 && p2.team == teamOne[0].team) {
+            team1.style.backgroundColor = "blue";
+            team2.style.backgroundColor = "white";
             showTeam1(teamOne);
             showTeam2(teamTwo);
             return;
@@ -3754,10 +3753,12 @@ window.onload = function () {
 
         showTeam1(teamOne);
         showTeam2(teamTwo);
-        if (teamOnescore <= 0) { alert(`${teamTwo[0].team} wins!!`) }
-        else if(teamTwoscore <= 0){alert(`${teamOne[0].team} wins!!`)}
-    };
-
+        if (teamOnescore <= 0) {
+            alert(`${teamTwo[0].team} wins!!`);
+        } else if (teamTwoscore <= 0) {
+            alert(`${teamOne[0].team} wins!!`);
+        }
+    }
 
     function teamAttack(playerone, playertwo) {
         attack(playerone[0], playertwo[0]);
@@ -3768,19 +3769,22 @@ window.onload = function () {
         setTimeout(attack, 2500, playertwo[5], playerone[5]);
         setTimeout(attack, 3000, playerone[6], playertwo[6]);
         setTimeout(attack, 3500, playertwo[7], playerone[7]);
-
-    };
+    }
     showTeam1(teamOne);
     showTeam2(teamTwo);
-    teamAttack(teamOne, teamTwo);
-    setTimeout(teamAttack, 4000, teamTwo, teamOne);
-    setTimeout(teamAttack, 8000, teamOne, teamTwo);
-    setTimeout(teamAttack, 12000, teamTwo, teamOne);
-    setTimeout(teamAttack, 16000, teamOne, teamTwo);
-    setTimeout(teamAttack, 20000, teamTwo, teamOne);
-    setTimeout(teamAttack, 24000, teamOne, teamTwo);
-    setTimeout(teamAttack, 28000, teamTwo, teamOne);
-    setTimeout(teamAttack, 32000, teamOne, teamTwo);
-    setTimeout(teamAttack, 36000, teamTwo, teamOne);
-    setTimeout(teamAttack, 40000, teamOne, teamTwo);
+    window.addEventListener("click", finalBattle);
+
+    function finalBattle() {
+        teamAttack(teamOne, teamTwo);
+        setTimeout(teamAttack, 4000, teamTwo, teamOne);
+        setTimeout(teamAttack, 8000, teamOne, teamTwo);
+        setTimeout(teamAttack, 12000, teamTwo, teamOne);
+        setTimeout(teamAttack, 16000, teamOne, teamTwo);
+        setTimeout(teamAttack, 20000, teamTwo, teamOne);
+        setTimeout(teamAttack, 24000, teamOne, teamTwo);
+        setTimeout(teamAttack, 28000, teamTwo, teamOne);
+        setTimeout(teamAttack, 32000, teamOne, teamTwo);
+        setTimeout(teamAttack, 36000, teamTwo, teamOne);
+        setTimeout(teamAttack, 40000, teamOne, teamTwo);
+    }
 };
