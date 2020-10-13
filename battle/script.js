@@ -3782,5 +3782,5 @@ window.onload = function () {
     setTimeout(teamAttack, 28000, teamTwo, teamOne);
     setTimeout(teamAttack, 32000, teamOne, teamTwo);
     setTimeout(teamAttack, 36000, teamTwo, teamOne);
-    setTimeout(teamAttack, 000, teamOne, teamTwo);
+    setTimeout(teamAttack, 40000, teamOne, teamTwo);
 };
