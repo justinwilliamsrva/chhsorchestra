@@ -3651,15 +3651,15 @@ window.onload = function () {
 
     function attack(p1, p2) {
         p2.defense = p2.defense - p1.attack;
+        showTeam2(teamTwo)
     }
 
-    function timedAttack1() {
-        setTimeout(function () { attack(teamOne[0], teamTwo[0]); }, 2000);
-        showTeam2(teamTwo)
-        // setTimeout(attack(teamTwo[1], teamOne[1]), 9000);
-        // showTeam1(teamOne);
-    }
+
+
+
+
     showTeam1(teamOne);
     showTeam2(teamTwo);
-    timedAttack1();
+    setTimeout(attack, 2000, teamOne[0],teamTwo[0]);
+
 };
