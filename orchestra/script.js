@@ -24,7 +24,7 @@ window.onload = function () {
         jude.c3(4, "Excellent")
         lucca.b9(2, "Watch out for C#'s")
         lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
-        mackenzie.b10(4,"Great playing Mackenzie!")
+        mackenzie.b10(3,"some out of tune notes with the high threes")
 
 
 
