@@ -25,6 +25,7 @@ window.onload = function () {
         lucca.b9(2, "Watch out for C#'s")
         lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
         mackenzie.b10(3,"some out of tune notes with the high threes")
+        matthew.a2(4)
 
 
 
@@ -108,7 +109,7 @@ window.onload = function () {
         spencer.b5(1,"Woah a lot of out of tune notes.")
         jude.c2(4,"Bravo!")
         grace.b4(4)
-        matthew.a9(2,"Let's go over this one Friday. You just need to fix one finger")
+        matthew.a9(4)
         emmett.b3(4)
         rowan.b1(4)
         jade.a9(4,"Wonderfully played!! Lots of style")
