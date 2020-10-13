@@ -22,6 +22,9 @@ window.onload = function () {
         isabella.b5(4)
         jude.c4(4)
         jude.c3(4, "Excellent")
+        lucca.b9(2, "Watch out for C#'s")
+        lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
+        mackenzie.b10(4,"Great playing Mackenzie!")
 
 
 
