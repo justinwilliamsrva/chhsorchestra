@@ -3,7 +3,7 @@ window.onload = function () {
     let days = 9;
     function assignments() {
 
-// 10/12
+// 10/12 + 13
 
         victoria.a8(4)
         somros.b3(4)
@@ -12,6 +12,15 @@ window.onload = function () {
         rodrick.c1("c")
         josendo.b9(4, "Great playing as always")
         kyle.a10(4)
+        jaden.c3(4)
+        jaden.c2(4)
+        jaden.c1(4)
+        kyle.c1(4)
+        nick.a2(4)
+        nick.a1(4)
+
+
+
 
 
 
@@ -335,7 +344,7 @@ window.onload = function () {
         "sierra",
         "timothy",
         "joseph",
-        "lauren",
+        "lauren"
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -927,6 +936,8 @@ window.onload = function () {
         "lauren",
         "Junior"
     );
+
+    
     let students = [
         nick,
         victoria,
@@ -951,6 +962,7 @@ window.onload = function () {
         timothy,
         joseph,
         lauren,
+
     ];
 
     Character.prototype.printStats = function () {

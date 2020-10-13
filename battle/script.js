@@ -2,7 +2,9 @@ window.onload = function () {
     let days = 8;
     let cavDays = 16;
     function assignments() {
-        // 10/10
+        // 10/13
+        kamille.b9(4, "Try to connect the sound more")
+        emily.b9()
 
         // 10/9
         ramon.a2(4);
@@ -3608,8 +3610,38 @@ window.onload = function () {
     //
     //
 
-    let teamOne = centuryHighScore;
-    let teamTwo = classicalHighScore;
+    function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      // Used like so
+
+    shuffle(teamCentury);
+    shuffle(teamClassical)
+
+
+
+
+
+
+
+    let teamOne = teamCentury;
+    let teamTwo = teamClassical;
 
     function removeAllChildNodes(parent) {
         while (parent.firstChild) {
@@ -3627,7 +3659,8 @@ window.onload = function () {
         for (i = 0; i < team.length; i++) {
             let node = document.createElement("div");
             node.classList.add("players1");
-            node.innerHTML = `${team[i].realname}${team[i].defense}${team[i].attack}`;
+            node.setAttribute("id","teamone"+i)
+            node.innerHTML = `${team[i].realname}${team[i].total_score}`;
 
             team1.appendChild(node);
         }
@@ -3643,23 +3676,45 @@ window.onload = function () {
         for (i = 0; i < team.length; i++) {
             let node = document.createElement("div");
             node.classList.add("players1");
-            node.innerHTML = `${team[i].realname}${team[i].defense}`;
+            node.setAttribute("id","teamtwo"+i)
+            node.innerHTML = `${team[i].realname}${team[i].total_score}`;
 
             team2.appendChild(node);
         }
     }
 
     function attack(p1, p2) {
-        p2.defense = p2.defense - p1.attack;
+        p2.total_score = p2.total_score - p1.attack;
+        showTeam1(teamOne);
         showTeam2(teamTwo)
     }
 
 
+function teamAttack(playerone, playertwo){
 
+    setTimeout(attack, 1000, playerone[0], playertwo[0]);
+    setTimeout(attack, 2000, playertwo[1], playerone[1]);
+    setTimeout(attack, 3000, playerone[2], playertwo[2]);
+    setTimeout(attack, 4000, playertwo[3], playerone[3]);
+    setTimeout(attack, 5000, playerone[4], playertwo[4]);
+    setTimeout(attack, 6000, playertwo[5], playerone[5]);
+    setTimeout(attack, 7000, playerone[6], playertwo[6]);
+
+
+
+
+
+
+
+}
 
 
     showTeam1(teamOne);
     showTeam2(teamTwo);
-    setTimeout(attack, 2000, teamOne[0],teamTwo[0]);
+    teamAttack(teamOne, teamTwo);
+    setTimeout(teamAttack, 8000, teamTwo, teamOne);
+    setTimeout(teamAttack, 16000, teamOne, teamTwo);
+    setTimeout(teamAttack, 24000, teamTwo, teamOne);
+    setTimeout(teamAttack, 32000, teamOne, teamTwo);
 
 };

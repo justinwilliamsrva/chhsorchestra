@@ -1,11 +1,32 @@
 window.onload = function () {
 
-    let days = 8;
+    let days = 9;
     let cavDays = 16;
     function assignments() {
 
         // 10/12
         rowan.b3(4)
+        kamille.b9(4, "Try to connect the sound more")
+        emily.b9(3, "Some funny rhythm but the notes were good")
+        kamille.b8(4,"Good")
+        ryann.b7(4)
+        walker.b9(1,"There are many C#'s and G#'s you missed. ")
+        walker.b8(4)
+        isabella.b4(3,"Some funny notes at the top of scale")
+        emily.b10(3,"Yikes!! No just kidding. The rhythm was mostly very good. Some sharps were missed at first but you fixed them as you went on. This was fun to listen to!")
+        ryann.b9(4)
+        isabella.b3(3, "Mostly very good. Sometimes your 4th finger is too high")
+        natalia.b8(2,"Some very funny notes in beginning")
+        natalia.b7(4)
+        mackenzie.b9(4)
+        isabella.b5(4)
+        jude.c4(4)
+        jude.c3(4, "Excellent")
+
+
+
+
+
 
         // 10/9
         ramon.a2(4)
@@ -103,7 +124,7 @@ window.onload = function () {
         walker.b6(2,"Whoops you played these in the wrong key. Check your sharps and flats")
         jude.b9(4,"Your left hand is great. What to work on is to create a more singable sound.")
         rowan.a10(3,"Close. 4-6 were not correct in regards to the dotted quarter note. It needed the be the length of a 3 eigth notes but you made it the length of two eigth notes.")
-        jude.c1(2,"Some missed notes. 58 has three flats")
+        jude.c1(4,"")
         grace.b1(4)
         grace.b2(4)
         grace.b3(4)
@@ -1916,9 +1937,9 @@ mackenzie.b4(4)
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
             if (this.instrument == "Bass") {
-                this.shifting = this.shifting + 2;
+                this.shifting = this.shifting + 4;
             } else if (this.instrument == "Cello") {
-                this.shifting = this.shifting + 1;
+                this.shifting = this.shifting + 2;
             }
         } else if (this.coins < 142) {
             this.level = 4;
@@ -1950,9 +1971,9 @@ mackenzie.b4(4)
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
             if (this.instrument == "Bass") {
-                this.shifting = this.shifting + 2;
+                this.shifting = this.shifting + 8;
             } else if (this.instrument == "Cello") {
-                this.shifting = this.shifting + 1;
+                this.shifting = this.shifting + 3;
             }
         } else if (this.coins < 182) {
             this.level = 5;
