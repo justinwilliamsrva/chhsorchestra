@@ -3825,8 +3825,10 @@ window.onload = function () {
         showTeam2(teamTwo);
         if (teamOnescore <= 0) {
             alert(`${teamTwo[0].team} wins!!`);
+            location.reload();
         } else if (teamTwoscore <= 0) {
             alert(`${teamOne[0].team} wins!!`);
+            location.reload();
         }
     }
 
