@@ -3741,8 +3741,8 @@ window.onload = function () {
     shuffle(teamBaroque);
     shuffle(teamHeretic);
 
-    let teamOne = teamRomantic;
-    let teamTwo = teamCentury;
+    let teamOne = teamCentury;
+    let teamTwo = teamRomantic;
 
     let teamOnescore;
     let teamTwoscore;
@@ -3769,7 +3769,7 @@ window.onload = function () {
             let node = document.createElement("div");
             node.classList.add("players1");
             node.setAttribute("id", "teamone" + i);
-            node.innerHTML = `${team[i].realname}${team[i].total_score}`;
+            node.innerHTML = `${team[i].realname} ${team[i].total_score}`;
 
             team1.appendChild(node);
         }
@@ -3791,20 +3791,31 @@ window.onload = function () {
             let node = document.createElement("div");
             node.classList.add("players1");
             node.setAttribute("id", "teamtwo" + i);
-            node.innerHTML = `${team[i].realname}${team[i].total_score}`;
+            node.innerHTML = `${team[i].realname} ${team[i].total_score}`;
 
             team2.appendChild(node);
         }
     }
 
     function attack(p1, p2) {
-        if (p1.team == teamOne[0].team) {
-            team1.style.backgroundColor = "green";
-            team2.style.backgroundColor = "red";
-        } else if (p2.team == teamOne[0].team) {
+
+        if (p2.total_score <= 0 && p2.team == teamOne[0].team) {
             team1.style.backgroundColor = "red";
             team2.style.backgroundColor = "green";
         }
+        else if (p2.total_score <= 0 && p2.team == teamTwo[0].team) {
+            team2.style.backgroundColor = "red";
+            team1.style.backgroundColor = "green";
+        }
+         else if (p2.team == teamOne[0].team) {
+            team1.style.backgroundColor ="indianred";
+            team2.style.backgroundColor = "lightgreen";
+        }
+        else if (p2.team == teamTwo[0].team) {
+            team1.style.backgroundColor = "lightgreen";
+            team2.style.backgroundColor = "indianred";
+        }
+
         if (p1.total_score <= 0 && p1.team == teamOne[0].team) {
             team1.style.backgroundColor = "white";
             team2.style.backgroundColor = "blue";
