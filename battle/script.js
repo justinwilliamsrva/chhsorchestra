@@ -3822,6 +3822,8 @@ window.onload = function () {
             showTeam1(teamOne);
             showTeam2(teamTwo);
             return;
+
+
         } else if (p1.total_score <= 0 && p2.team == teamOne[0].team) {
             team1.style.backgroundColor = "blue";
             team2.style.backgroundColor = "white";
@@ -3853,10 +3855,24 @@ window.onload = function () {
         setTimeout(attack, 3000, playerone[6], playertwo[6]);
         setTimeout(attack, 3500, playertwo[7], playerone[7]);
     }
+
     showTeam1(teamOne);
     showTeam2(teamTwo);
     window.addEventListener("click", finalBattle);
 
+    // function finalBattle() {
+    //     teamAttack(teamOne, teamTwo);
+    //     setTimeout(teamAttack, 4000, teamTwo, teamOne);
+    //     setTimeout(teamAttack, 8000, teamOne, teamTwo);
+    //     setTimeout(teamAttack, 12000, teamTwo, teamOne);
+    //     setTimeout(teamAttack, 16000, teamOne, teamTwo);
+    //     setTimeout(teamAttack, 20000, teamTwo, teamOne);
+    //     setTimeout(teamAttack, 24000, teamOne, teamTwo);
+    //     setTimeout(teamAttack, 28000, teamTwo, teamOne);
+    //     setTimeout(teamAttack, 32000, teamOne, teamTwo);
+    //     setTimeout(teamAttack, 36000, teamTwo, teamOne);
+    //     setTimeout(teamAttack, 40000, teamOne, teamTwo);
+    // }
     function finalBattle() {
         teamAttack(teamOne, teamTwo);
         setTimeout(teamAttack, 4000, teamTwo, teamOne);
