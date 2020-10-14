@@ -2,10 +2,51 @@ window.onload = function () {
     let days = 8;
     let cavDays = 16;
     function assignments() {
-        // 10/13
-        kamille.b9(4, "Try to connect the sound more");
-        emily.b9();
+       // 10/13
+ kamille.b9(4, "Try to connect the sound more");
+ emily.b9(4);
+ jude.c7(4)
+ jude.c6(4, "two octaves!")
+ julia.a4(4)
+ rowan.b6(4)
+ lance.a5(4)
+ emmett.c9(4, "Great job with second position. Just make your last note beautiful")
+ rowan.b5(4)
+ angelica.b8(4)
+ emmett.c2(4)
+ lance.a4(4)
+ lindsay.a5(4)
+ spencer.c2(3, "You played a C natural instead of C# at beginning")
+ rowan.b4(4)
+ angelica.b7(3,"One g# was missed")
+ spencer.c1(4)
 
+
+
+        // 10/12
+        rowan.b3(4)
+        kamille.b9(4, "Try to connect the sound more")
+        emily.b9(3, "Some funny rhythm but the notes were good")
+        kamille.b8(4,"Good")
+        ryann.b7(4)
+        walker.b9(1,"There are many C#'s and G#'s you missed. ")
+        walker.b8(4)
+        isabella.b4(3,"Some funny notes at the top of scale")
+        emily.b10(3,"Yikes!! No just kidding. The rhythm was mostly very good. Some sharps were missed at first but you fixed them as you went on. This was fun to listen to!")
+        ryann.b9(4)
+        isabella.b3(3, "Mostly very good. Sometimes your 4th finger is too high")
+        natalia.b8(2,"Some very funny notes in beginning")
+        natalia.b7(4)
+        mackenzie.b9(4)
+        isabella.b5(4)
+        jude.c4(4)
+        jude.c3(4, "Excellent")
+        lucca.b9(2, "Watch out for C#'s")
+        lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
+        mackenzie.b10(3,"some out of tune notes with the high threes")
+        matthew.a2(4)
+        kate.b8(3,"Your 2nd finger was just a little low")
+        lance.a4(4, "Facility")
         // 10/9
         ramon.a2(4);
         ramon.a3(4);
@@ -711,6 +752,7 @@ window.onload = function () {
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
         ally.a1(4);
+        students.forEach(adding);
     }
 
     var person = "";
@@ -1011,7 +1053,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1108,7 +1150,7 @@ window.onload = function () {
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1124,7 +1166,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1141,7 +1183,7 @@ window.onload = function () {
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1157,7 +1199,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1205,7 +1247,7 @@ window.onload = function () {
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1238,7 +1280,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1367,7 +1409,7 @@ window.onload = function () {
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1383,7 +1425,7 @@ window.onload = function () {
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1415,7 +1457,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1431,7 +1473,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1479,7 +1521,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1559,7 +1601,7 @@ window.onload = function () {
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1640,7 +1682,7 @@ window.onload = function () {
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -3287,53 +3329,81 @@ window.onload = function () {
     };
 
     Character.prototype.add = function () {
+
+        if (this.coins < 22) {
+            this.level = 1;
+        } else if (this.coins < 62) {
+            this.level = 2;
+        } else if (this.coins < 102) {
+            this.level = 3;
+        } else if (this.coins < 142) {
+            this.level = 4;
+        }
+
+        if (this.instrument == "Bass" && this.level == 3) {
+            this.shifting = this.shifting + 30;
+        } else if (this.instrument == "Cello" && this.level == 3) {
+            this.shifting = this.shifting + 15;
+        } else if (this.instrument == "Bass" && this.level == 2) {
+            this.shifting = this.shifting + 20;
+        } else if (this.instrument == "Cello" && this.level == 2) {
+            this.shifting = this.shifting + 10;
+        } else if (this.instrument == "Bass" && this.level == 1) {
+            this.shifting = this.shifting + 10;
+        } else if (this.instrument == "Cello" && this.level == 1) {
+            this.shifting = this.shifting + 5;
+        } else if (this.instrument == "Bass" && this.level == 4) {
+            this.shifting = this.shifting + 40;
+        } else if (this.instrument == "Cello" && this.level == 4) {
+            this.shifting = this.shifting + 20;
+        }
+
+
         this.attack = this.facility + this.intonation + this.shifting;
         this.defense = this.bowControl + this.rhythm + this.musicality;
         this.totalScore = this.attack + this.defense + this.coins;
     };
 
     assignments();
-    students.forEach(adding);
+
     function adding(person) {
         person.add();
     }
 
-    // students[0].add();
-    // olivia.add();
-    function initialPrompt() {
-        if (typeof localStorage.getItem("person") == "string") {
-            var j = parseInt(localStorage.getItem("person"));
-            personage = students[j];
-            person = studentsString[j];
-            if (person == "angela") {
-                alert(
-                    "Hi Angela. You were last to leave the google meet today. You win 1,000,000XP(for a weekend)"
-                );
-            }
-            assignments();
+    // function initialPrompt() {
+    //     if (typeof localStorage.getItem("person") == "string") {
+    //         var j = parseInt(localStorage.getItem("person"));
+    //         personage = students[j];
+    //         person = studentsString[j];
+    //         if (person == "angela") {
+    //             alert(
+    //                 "Hi Angela. You were last to leave the google meet today. You win 1,000,000XP(for a weekend)"
+    //             );
+    //         }
+    //         assignments();
 
-            // alert("Your 4 week FREE trial of Orchestra RPG will come to an end on September 30, 201")
-        } else {
-            // if (confirm("Do you need to create a new character?")) {
-            //     window.location.href =
-            //         "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
-            // } else {
-            person = prompt("Please enter your name", "name");
-            // var password = prompt("What is your password");
-            for (i = 0; i < studentsString.length; i++) {
-                if (person == studentsString[i]) {
-                    personage = students[i];
-                    // personage;
-                    localStorage.setItem("person", i);
+    //         // alert("Your 4 week FREE trial of Orchestra RPG will come to an end on September 30, 201")
+    //     } else {
+    //         // if (confirm("Do you need to create a new character?")) {
+    //         //     window.location.href =
+    //         //         "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
+    //         // } else {
+    //         person = prompt("Please enter your name", "name");
+    //         // var password = prompt("What is your password");
+    //         for (i = 0; i < studentsString.length; i++) {
+    //             if (person == studentsString[i]) {
+    //                 personage = students[i];
+    //                 // personage;
+    //                 localStorage.setItem("person", i);
 
-                    assignments();
-                    side.classList.remove("side");
+    //                 assignments();
+    //                 side.classList.remove("side");
 
-                    location.reload();
-                }
-            }
-        }
-    }
+    //                 location.reload();
+    //             }
+    //         }
+    //     }
+    // }
 
     // Level Click Event Listeners
 
@@ -3401,9 +3471,9 @@ window.onload = function () {
             baroque_Score = item.total_score + baroque_Score;
         } else if (item.team == "classical") {
             classical_Score = item.total_score + classical_Score;
-        } else if (item.team == "century") {
-            romantic_Score = item.total_score + romantic_Score;
         } else if (item.team == "romantic") {
+            romantic_Score = item.total_score + romantic_Score;
+        } else if (item.team == "century") {
             century_Score = item.total_score + century_Score;
         } else if (item.team == "heretics") {
             heretic_Score = item.total_score + heretic_Score;

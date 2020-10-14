@@ -1,299 +1,326 @@
 window.onload = function () {
-
     let days = 9;
     let cavDays = 16;
     function assignments() {
-// 10/13
-
+        // 10/13
+        kamille.b9(4, "Try to connect the sound more");
+        emily.b9(4);
+        jude.c7(4);
+        jude.c6(4, "two octaves!");
+        julia.a4(4);
+        rowan.b6(4);
+        lance.a5(4);
+        emmett.c9(4, "Great job with second position. Just make your last note beautiful");
+        rowan.b5(4);
+        angelica.b8(4);
+        emmett.c2(4);
+        lance.a4(4);
+        lindsay.a5(4);
+        spencer.c2(3, "You played a C natural instead of C# at beginning");
+        rowan.b4(4);
+        angelica.b7(3, "One g# was missed");
+        spencer.c1(4);
 
         // 10/12
-        rowan.b3(4)
-        kamille.b9(4, "Try to connect the sound more")
-        emily.b9(3, "Some funny rhythm but the notes were good")
-        kamille.b8(4,"Good")
-        ryann.b7(4)
-        walker.b9(1,"There are many C#'s and G#'s you missed. ")
-        walker.b8(4)
-        isabella.b4(3,"Some funny notes at the top of scale")
-        emily.b10(3,"Yikes!! No just kidding. The rhythm was mostly very good. Some sharps were missed at first but you fixed them as you went on. This was fun to listen to!")
-        ryann.b9(4)
-        isabella.b3(3, "Mostly very good. Sometimes your 4th finger is too high")
-        natalia.b8(2,"Some very funny notes in beginning")
-        natalia.b7(4)
-        mackenzie.b9(4)
-        isabella.b5(4)
-        jude.c4(4)
-        jude.c3(4, "Excellent")
-        lucca.b9(2, "Watch out for C#'s")
-        lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
-        mackenzie.b10(3,"some out of tune notes with the high threes")
-        matthew.a2(4)
-        kate.b8(3,"Your 2nd finger was just a little low")
-        lance.a4(4, "Facility")
-
-
-
-
-
-
-
-
-
-
+        rowan.b3(4);
+        kamille.b9(4, "Try to connect the sound more");
+        emily.b9(3, "Some funny rhythm but the notes were good");
+        kamille.b8(4, "Good");
+        ryann.b7(4);
+        walker.b9(1, "There are many C#'s and G#'s you missed. ");
+        walker.b8(4);
+        isabella.b4(3, "Some funny notes at the top of scale");
+        emily.b10(
+            3,
+            "Yikes!! No just kidding. The rhythm was mostly very good. Some sharps were missed at first but you fixed them as you went on. This was fun to listen to!"
+        );
+        ryann.b9(4);
+        isabella.b3(3, "Mostly very good. Sometimes your 4th finger is too high");
+        natalia.b8(2, "Some very funny notes in beginning");
+        natalia.b7(4);
+        mackenzie.b9(4);
+        isabella.b5(4);
+        jude.c4(4);
+        jude.c3(4, "Excellent");
+        lucca.b9(2, "Watch out for C#'s");
+        lucca.b10(2, "Some out of tune notes.Check the key signatures. Rhythm is not bad");
+        mackenzie.b10(3, "some out of tune notes with the high threes");
+        matthew.a2(4);
+        kate.b8(3, "Your 2nd finger was just a little low");
+        lance.a4(4, "Facility");
 
         // 10/9
-        ramon.a2(4)
-        ramon.a3(4)
-        ramon.a4(4)
-        ally.a6(4)
-        ally.a8(4)
-        ally.a7(4)
-        ally.a9(4)
-        jules.b3(4, "Watch out of 3rd finger. Make sure it is high enough")
-        mackenzie.b7(4, "Good intonation")
-        jules.b2(4, "Great shifting")
-        isabella.b1(4,"Your sound has really improved")
-        natalia.b6(4,"Correct")
-        ryann.b6(4, "Correct")
-        kamille.b6(4,"Very Intune")
-        emily.b8(4, "Beautiful playing")
-        ally.a10(4)
-        kate.b5(4)
-        lindsay.a4(4)
-        angelica.b5(2, "Some wrong notes at the top")
-        emmett.c8(4)
-        angelica.b6(3, "A bit of hesitation but mostly correct")
-        jade.b4(4)
-        emmett.c5(4, "On the slow side but good")
-        angelica.b4(4, "Good")
-        emmett.c4(4, "On the slow side but good")
-        jade.b3(2, "A lot of wrong notes in the second example")
-        angelica.b3(2, "Wrong note in the 2nd excerpt")
-        kate.b6(1, "This is one we went over to with the high 3s")
-        rowan.b2(4)
-        grace.b7(1, "The 3 third fingers were not correct.")
-        emmett.c3(4)
-        grace.b6(1, "This is the one we went over in class. The 3's are not correct")
-        emmett.c1(4)
-        jules.b10(4, "Excellent! You are the first to try this one. #4 was a little of at time but but 9% of everything was good")
-        jules.b9(4)
-        lucca.b7(2,"Let's go over this one. There are many sharps")
-        lucca.b6(3)
-        jules.b8(4,"intune and correct rhythm")
-        jules.b7(4, "could be a little faster")
-        jules.b6(3, "The arpeggio was not quite right. Scale was good until the end")
-        isabella.b2(4)
-        jules.b5(4)
-        jules.b4(4)
-        mackenzie.b8(4, "Well played")
-        kamille.b7(4, "Great job on the high 3's")
-        natalia.b5(3, "A few notes were out of tune")
-        ryann.b5(4)
-        kamille.b5(4)
-        emily.b7(4)
-        julia.b2(4)
-
-
+        ramon.a2(4);
+        ramon.a3(4);
+        ramon.a4(4);
+        ally.a6(4);
+        ally.a8(4);
+        ally.a7(4);
+        ally.a9(4);
+        jules.b3(4, "Watch out of 3rd finger. Make sure it is high enough");
+        mackenzie.b7(4, "Good intonation");
+        jules.b2(4, "Great shifting");
+        isabella.b1(4, "Your sound has really improved");
+        natalia.b6(4, "Correct");
+        ryann.b6(4, "Correct");
+        kamille.b6(4, "Very Intune");
+        emily.b8(4, "Beautiful playing");
+        ally.a10(4);
+        kate.b5(4);
+        lindsay.a4(4);
+        angelica.b5(2, "Some wrong notes at the top");
+        emmett.c8(4);
+        angelica.b6(3, "A bit of hesitation but mostly correct");
+        jade.b4(4);
+        emmett.c5(4, "On the slow side but good");
+        angelica.b4(4, "Good");
+        emmett.c4(4, "On the slow side but good");
+        jade.b3(2, "A lot of wrong notes in the second example");
+        angelica.b3(2, "Wrong note in the 2nd excerpt");
+        kate.b6(1, "This is one we went over to with the high 3s");
+        rowan.b2(4);
+        grace.b7(1, "The 3 third fingers were not correct.");
+        emmett.c3(4);
+        grace.b6(1, "This is the one we went over in class. The 3's are not correct");
+        emmett.c1(4);
+        jules.b10(
+            4,
+            "Excellent! You are the first to try this one. #4 was a little of at time but but 9% of everything was good"
+        );
+        jules.b9(4);
+        lucca.b7(2, "Let's go over this one. There are many sharps");
+        lucca.b6(3);
+        jules.b8(4, "intune and correct rhythm");
+        jules.b7(4, "could be a little faster");
+        jules.b6(3, "The arpeggio was not quite right. Scale was good until the end");
+        isabella.b2(4);
+        jules.b5(4);
+        jules.b4(4);
+        mackenzie.b8(4, "Well played");
+        kamille.b7(4, "Great job on the high 3's");
+        natalia.b5(3, "A few notes were out of tune");
+        ryann.b5(4);
+        kamille.b5(4);
+        emily.b7(4);
+        julia.b2(4);
 
         // 10/8
-        caroline.a8(4, "Try to add more vibrato")
-        lance.a3(4,"Great start Lance!")
-        amy.a3(4)
+        caroline.a8(4, "Try to add more vibrato");
+        lance.a3(4, "Great start Lance!");
+        amy.a3(4);
 
         // 10/7
 
-        madeline.a5(4)
-        mackenzie.b6(4)
-        isabella.a10(4,"Excellent!! Most people skipped this one. You took the challenge and played it nearly perfectly except for the missed note near the end")
-        walker.a10(3,"Good. Just don't repeat the top note")
-        lucca.b6(2,"Close. The key signature asks for FC and G sharp")
-        lucca.b5(2,"Close. The key signature asks for FC and G sharp")
-        walker.b1(4)
-        walker.b2(4)
-        walker.b3(4)
-        walker.b4(3,"Some out of tune notes")
-        walker.b7(4)
-        jacob.a1(4,"Great vibrato")
-        jacob.a2(4,"Lovely Playing")
-        spencer.b5(1,"Woah a lot of out of tune notes.")
-        jude.c2(4,"Bravo!")
-        grace.b4(4)
-        matthew.a9(4)
-        emmett.b3(4)
-        rowan.b1(4)
-        jade.a9(4,"Wonderfully played!! Lots of style")
-        spencer.b6(3,"Sometimes your G# was very flat")
-        kate.b3(4,"Nicely done!")
-        emmett.b2(4)
-        grace.b5(3,"Good facility but you played a G# on the E string")
-        lauren.a5(4)
-        kate.b1(4)
-        kate.b4(3,"Good tempo. Just make sure when in third position you 4th finger touches your 3rd finger")
-        jade.b2(4)
-        kimberly.a2(4,"Good intonation")
-        kimberly.a1(3,"Good performance of #10")
-        lindsay.a3(3,"Work on rhythm")
-        walker.b5(3,"Whoops you played these in the wrong key. Check your sharps and flats")
-        walker.b6(2,"Whoops you played these in the wrong key. Check your sharps and flats")
-        jude.b9(4,"Your left hand is great. What to work on is to create a more singable sound.")
-        rowan.a10(3,"Close. 4-6 were not correct in regards to the dotted quarter note. It needed the be the length of a 3 eigth notes but you made it the length of two eigth notes.")
-        jude.c1(4,"")
-        grace.b1(4)
-        grace.b2(4)
-        grace.b3(4)
-        nicholas.a6(4)
-        nicholas.a7(4)
-        caroline.a5(4)
-        caroline.a6(4)
-        brian.b2(4)
-        emily.b5(3,"Some funny notes at the top")
-        emily.b6(4,"Very intune!")
-        mackenzie.b5(4)
-        natalia.b3(4)
-        ryann.b3(4)
-        ryann.b4(4)
-        natalia.b4(3,"Watch out for F# on the D string. Your 4th finger was low")
-//    10/5
-        lucca.b4(4)
-        caroline.a2(4)
-        caroline.a3(4)
-        lauren.a2(4)
-            lauren.a4(4)
-        lauren.a6(4)
-natalia.b1(4)
-        ryann.b2(4)
-        emily.b4(4,"Lovely!")
-        walker.a8(4,"Fine playing Walker!")
-        emily.b4(4)
-        madeline.a3(4,"Some funny rhythm")
-        natalia.b2(4)
-        ryann.b1(4)
-        madeline.a6(4)
-amy.a3(4,"Rest of ISB")
-amy.a2(4)
-isabella.a9(4,"Great work Isabella! The f's were in tune")
-       mackenzie.b3(4)
-mackenzie.b4(4)
-        jules.b1(4)
-        kate.a8(2,"What out when to use high 2 or low 2")
-        kate.a5(2,"E string notes were out of tune. Lets go over this one")
-        emmett.b8(4,"Great job connecting the notes")
-        jude.b8(4,"Good intonation. You just need connect the notes ")
-        spencer.b3(4)
-        emmett.b9(4)
-        spencer.b4(4,"Might need some rosin")
-        angelica.b1(4,"I bet you could play these at the beach an attract birds")
-        angelica.b2(4)
-        jade.a8(4)
-        matthew.a8(4)
-        kate.b2(4)
-        kate.b1(4)
+        madeline.a5(4);
+        mackenzie.b6(4);
+        isabella.a10(
+            4,
+            "Excellent!! Most people skipped this one. You took the challenge and played it nearly perfectly except for the missed note near the end"
+        );
+        walker.a10(3, "Good. Just don't repeat the top note");
+        lucca.b6(2, "Close. The key signature asks for FC and G sharp");
+        lucca.b5(2, "Close. The key signature asks for FC and G sharp");
+        walker.b1(4);
+        walker.b2(4);
+        walker.b3(4);
+        walker.b4(3, "Some out of tune notes");
+        walker.b7(4);
+        jacob.a1(4, "Great vibrato");
+        jacob.a2(4, "Lovely Playing");
+        spencer.b5(1, "Woah a lot of out of tune notes.");
+        jude.c2(4, "Bravo!");
+        grace.b4(4);
+        matthew.a9(4);
+        emmett.b3(4);
+        rowan.b1(4);
+        jade.a9(4, "Wonderfully played!! Lots of style");
+        spencer.b6(3, "Sometimes your G# was very flat");
+        kate.b3(4, "Nicely done!");
+        emmett.b2(4);
+        grace.b5(3, "Good facility but you played a G# on the E string");
+        lauren.a5(4);
+        kate.b1(4);
+        kate.b4(
+            3,
+            "Good tempo. Just make sure when in third position you 4th finger touches your 3rd finger"
+        );
+        jade.b2(4);
+        kimberly.a2(4, "Good intonation");
+        kimberly.a1(3, "Good performance of #10");
+        lindsay.a3(3, "Work on rhythm");
+        walker.b5(3, "Whoops you played these in the wrong key. Check your sharps and flats");
+        walker.b6(2, "Whoops you played these in the wrong key. Check your sharps and flats");
+        jude.b9(4, "Your left hand is great. What to work on is to create a more singable sound.");
+        rowan.a10(
+            3,
+            "Close. 4-6 were not correct in regards to the dotted quarter note. It needed the be the length of a 3 eigth notes but you made it the length of two eigth notes."
+        );
+        jude.c1(4, "");
+        grace.b1(4);
+        grace.b2(4);
+        grace.b3(4);
+        nicholas.a6(4);
+        nicholas.a7(4);
+        caroline.a5(4);
+        caroline.a6(4);
+        brian.b2(4);
+        emily.b5(3, "Some funny notes at the top");
+        emily.b6(4, "Very intune!");
+        mackenzie.b5(4);
+        natalia.b3(4);
+        ryann.b3(4);
+        ryann.b4(4);
+        natalia.b4(3, "Watch out for F# on the D string. Your 4th finger was low");
+        //    10/5
+        lucca.b4(4);
+        caroline.a2(4);
+        caroline.a3(4);
+        lauren.a2(4);
+        lauren.a4(4);
+        lauren.a6(4);
+        natalia.b1(4);
+        ryann.b2(4);
+        emily.b4(4, "Lovely!");
+        walker.a8(4, "Fine playing Walker!");
+        emily.b4(4);
+        madeline.a3(4, "Some funny rhythm");
+        natalia.b2(4);
+        ryann.b1(4);
+        madeline.a6(4);
+        amy.a3(4, "Rest of ISB");
+        amy.a2(4);
+        isabella.a9(4, "Great work Isabella! The f's were in tune");
+        mackenzie.b3(4);
+        mackenzie.b4(4);
+        jules.b1(4);
+        kate.a8(2, "What out when to use high 2 or low 2");
+        kate.a5(2, "E string notes were out of tune. Lets go over this one");
+        emmett.b8(4, "Great job connecting the notes");
+        jude.b8(4, "Good intonation. You just need connect the notes ");
+        spencer.b3(4);
+        emmett.b9(4);
+        spencer.b4(4, "Might need some rosin");
+        angelica.b1(4, "I bet you could play these at the beach an attract birds");
+        angelica.b2(4);
+        jade.a8(4);
+        matthew.a8(4);
+        kate.b2(4);
+        kate.b1(4);
         // 10/1
-        jules.a10
-        isabella.a8(3,"Good. rhythm is a bit off")
-        emmett.b6(4,"Very intune")
-        spencer.b1(4)
-     spencer.b2(4)
-        kate.a9(3,"Watch out for 4th finger that it is high enough")
-        emmett.b7(4,"Could be a little faster but it's good")
-     lance.a2(4,"Great!")
-        grace.a9(4)
-    angelica.a10(3,"Rhythm was mostly good. 4-6 was little funny")
-    jules.a10(4,"Great playing jules")
-    mackenzie.b1(4,"Good harmonics")
-    lucca.b2(4)
-    madeline.a4(4,"Good")
-    jules.a10(4,"Correct")
-    walker.a7(4,"Good. Try to play these a little faster")
-    mackenzie.b2(4,"Excellent")
-    rowan.a9(3,"Whoops watch out for F naturals. You played some F#'s")
-    angelica.a9(3,"Great. There were a few funny notes and rhyhtms ")
-    caroline.a1(4,"Beautiful sound!")
-    julia.a9(4,"A few funny rhythms but great playing")
-    ryann.a9(4,"Good")
-    kamille.a10(4,"Mostly very good. 5 was a little funny?")
-    kamille.b2(4,"Good")
-    kamille.b3(4,"I am so thrilled you are at CHHS. Great playing and tone!")
-    lucca.b1(4,"Good")
-    kamille.b4(4,"Very intune")
-    emily.b1(4,"We said 'woah' at the same")
-    ryann.a10(4,"This is wonderful playing. Just remember to give the top notes more sound")
-    thomas.a6(4,"Great Room")
-    walker.a6(4,"Good")
-    natalia.a10(4,"Good")
-    emily.b2(4,"Good. You can play a little faster")
+        jules.a10;
+        isabella.a8(3, "Good. rhythm is a bit off");
+        emmett.b6(4, "Very intune");
+        spencer.b1(4);
+        spencer.b2(4);
+        kate.a9(3, "Watch out for 4th finger that it is high enough");
+        emmett.b7(4, "Could be a little faster but it's good");
+        lance.a2(4, "Great!");
+        grace.a9(4);
+        angelica.a10(3, "Rhythm was mostly good. 4-6 was little funny");
+        jules.a10(4, "Great playing jules");
+        mackenzie.b1(4, "Good harmonics");
+        lucca.b2(4);
+        madeline.a4(4, "Good");
+        jules.a10(4, "Correct");
+        walker.a7(4, "Good. Try to play these a little faster");
+        mackenzie.b2(4, "Excellent");
+        rowan.a9(3, "Whoops watch out for F naturals. You played some F#'s");
+        angelica.a9(3, "Great. There were a few funny notes and rhyhtms ");
+        caroline.a1(4, "Beautiful sound!");
+        julia.a9(4, "A few funny rhythms but great playing");
+        ryann.a9(4, "Good");
+        kamille.a10(4, "Mostly very good. 5 was a little funny?");
+        kamille.b2(4, "Good");
+        kamille.b3(4, "I am so thrilled you are at CHHS. Great playing and tone!");
+        lucca.b1(4, "Good");
+        kamille.b4(4, "Very intune");
+        emily.b1(4, "We said 'woah' at the same");
+        ryann.a10(4, "This is wonderful playing. Just remember to give the top notes more sound");
+        thomas.a6(4, "Great Room");
+        walker.a6(4, "Good");
+        natalia.a10(4, "Good");
+        emily.b2(4, "Good. You can play a little faster");
 
         //    9/25
 
-        natalia.a9(3,"Some funny notes")
-        emily.a9(4)
-        walker.a4(4)
-        kamille.b1(4)
-        mackenzie.a9(4)
-        angelica.a8(4)
-        thomas.a5(4,"Half position builds characters")
-        isabella.a5(4,"Very good!")
-        lucca.a8(3,"Look out for the sharps. THere were none in the key signature.")
-        mackenzie.a10(4,"Great stuff. Way better than Emily's or Lucca's")
-        isabella.a6(3,"Good facility but watch out for C naturals")
-        emily.a10(4,"I appreciate the honesty. It was fine.Great sound")
-        lucca.a10(4,"It was supposed to be two octaves but this is fine. Rhythm is good")
-        isabella.a7(3,"Watch our for c naturals. You played a C# on the A string. Good sound")
-        jude.b5(4)
-        grace.a8(4,"excellent Rhythm")
-        jude.b6(4)
-        emmett.b4(4)
-        jude.b7(4)
-        matthew.a7(3,"Good")
-        grace.a7(3,"There was a C# in there. Watch out only sharp in G major is F#")
-        rowan.a8(4,"Lovely Sound")
-        emmett.b5(3,"Some out of tune notes going up. going down was fine")
+        natalia.a9(3, "Some funny notes");
+        emily.a9(4);
+        walker.a4(4);
+        kamille.b1(4);
+        mackenzie.a9(4);
+        angelica.a8(4);
+        thomas.a5(4, "Half position builds characters");
+        isabella.a5(4, "Very good!");
+        lucca.a8(3, "Look out for the sharps. THere were none in the key signature.");
+        mackenzie.a10(4, "Great stuff. Way better than Emily's or Lucca's");
+        isabella.a6(3, "Good facility but watch out for C naturals");
+        emily.a10(4, "I appreciate the honesty. It was fine.Great sound");
+        lucca.a10(4, "It was supposed to be two octaves but this is fine. Rhythm is good");
+        isabella.a7(3, "Watch our for c naturals. You played a C# on the A string. Good sound");
+        jude.b5(4);
+        grace.a8(4, "excellent Rhythm");
+        jude.b6(4);
+        emmett.b4(4);
+        jude.b7(4);
+        matthew.a7(3, "Good");
+        grace.a7(3, "There was a C# in there. Watch out only sharp in G major is F#");
+        rowan.a8(4, "Lovely Sound");
+        emmett.b5(3, "Some out of tune notes going up. going down was fine");
         // 9/24
-        kate.a3(4)
-        lindsay.a2(4)
-        ally.a5(4)
-        ally.a4(4)
-        ally.a3(4)
-        ally.a2(4)
-        angelica.a3(3,"Some funny rhythm. Check recording")
-        angelica.a4(3,"Arpeggio was a little funny. Scale as good")
-        angelica.a5(2,"Some funny notes. Let's go over it next class.")
-        angelica.a6(4)
-        angelica.a7(3,"Watch out for key signature. No c#'s")
-        jude.b1(4,"Impressive speed to harmonics")
-        jude.b2(4)
-        jude.b3(4)
-        jude.b4(3,"The high D is a bit flat. Rule for string playing is if you have to be sharp or flat -> be sharp")
-        emily.a6(4)
-        mackenzie.a7(4)
-        emily.a7(4)
-        kamille.a8(4)
-        isabella.a4(3,"Just a few notes out of slightly out of tune. but overall good")
-        natalia.a7(2,"Going up was fine. Not sure what happened going down")
-        emily.a8(4)
-        thomas.a4(4)
-        rowan.a7(4)
-        spencer.a8(3,"Rhythm was a little funny on the longer notes.")
-        kate.a6(2,"Watch out for those high twos on D and G. You played them a bit low")
-        jude.a10(4,"Pro Tip: In a scale bringing out the top notes sounds more natural and pleasing. When up high you need more left hand pressure in the string and the bow should be closer to the bridge. Your low notes are nearly perfect. ")
-        spencer.a9(4)
-        kate.a7(2,"Watch out for the key signature. You played low f natural on the D string. It should have been F#")
-        rowan.a8()
-        emmett.a9(3,"Good except the E needs to be much higher")
-        matthew.a4(3,"Good")
-        matthew.a5(3, "Bravo")
-        matthew.a6(3,"The two should have been low twos not high two")
-        emmett.a10(4,"fine playing indeed")
-        jade.a7(4)
-        lindsay.a1(4)
-        natalia.a8(4)
-        jules.a9(4)
-        mackenzie.a9(4)
-        mackenzie.a8(4)
-        lucca.a6(3,"Great intonation but the rhythm was off. Always check the recordings")
-        ryann.a7(4)
-        lucca.a7(3,"Watch out for high 3's. They should be a little higher")
-        ryann.a8(4)
+        kate.a3(4);
+        lindsay.a2(4);
+        ally.a5(4);
+        ally.a4(4);
+        ally.a3(4);
+        ally.a2(4);
+        angelica.a3(3, "Some funny rhythm. Check recording");
+        angelica.a4(3, "Arpeggio was a little funny. Scale as good");
+        angelica.a5(2, "Some funny notes. Let's go over it next class.");
+        angelica.a6(4);
+        angelica.a7(3, "Watch out for key signature. No c#'s");
+        jude.b1(4, "Impressive speed to harmonics");
+        jude.b2(4);
+        jude.b3(4);
+        jude.b4(
+            3,
+            "The high D is a bit flat. Rule for string playing is if you have to be sharp or flat -> be sharp"
+        );
+        emily.a6(4);
+        mackenzie.a7(4);
+        emily.a7(4);
+        kamille.a8(4);
+        isabella.a4(3, "Just a few notes out of slightly out of tune. but overall good");
+        natalia.a7(2, "Going up was fine. Not sure what happened going down");
+        emily.a8(4);
+        thomas.a4(4);
+        rowan.a7(4);
+        spencer.a8(3, "Rhythm was a little funny on the longer notes.");
+        kate.a6(2, "Watch out for those high twos on D and G. You played them a bit low");
+        jude.a10(
+            4,
+            "Pro Tip: In a scale bringing out the top notes sounds more natural and pleasing. When up high you need more left hand pressure in the string and the bow should be closer to the bridge. Your low notes are nearly perfect. "
+        );
+        spencer.a9(4);
+        kate.a7(
+            2,
+            "Watch out for the key signature. You played low f natural on the D string. It should have been F#"
+        );
+        rowan.a8();
+        emmett.a9(3, "Good except the E needs to be much higher");
+        matthew.a4(3, "Good");
+        matthew.a5(3, "Bravo");
+        matthew.a6(3, "The two should have been low twos not high two");
+        emmett.a10(4, "fine playing indeed");
+        jade.a7(4);
+        lindsay.a1(4);
+        natalia.a8(4);
+        jules.a9(4);
+        mackenzie.a9(4);
+        mackenzie.a8(4);
+        lucca.a6(3, "Great intonation but the rhythm was off. Always check the recordings");
+        ryann.a7(4);
+        lucca.a7(3, "Watch out for high 3's. They should be a little higher");
+        ryann.a8(4);
         lance.a1(4, "Good Start");
         julia.a5(4);
         trinity.b6(4);
@@ -727,6 +754,10 @@ mackenzie.b4(4)
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
         ally.a1(4);
+
+        console.log(jude.shifting);
+        students.forEach(adding);
+        console.log(jude.shifting);
     }
 
     var person = "";
@@ -1132,7 +1163,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1165,7 +1196,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1181,7 +1212,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1229,7 +1260,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1262,7 +1293,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1391,7 +1422,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1407,7 +1438,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1423,7 +1454,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1439,7 +1470,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1455,7 +1486,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1503,7 +1534,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1583,7 +1614,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1664,7 +1695,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        10,
+        0,
         0,
         0,
         0,
@@ -1696,7 +1727,7 @@ mackenzie.b4(4)
         0,
         0,
         0,
-        5,
+        0,
         0,
         0,
         0,
@@ -1848,7 +1879,7 @@ mackenzie.b4(4)
         kamille,
         ally,
         averageCentury,
-        averageBaroque
+        averageBaroque,
     ];
 
     Character.prototype.printStats = function () {
@@ -1947,11 +1978,6 @@ mackenzie.b4(4)
             lvl8.classList.add("invisible");
             lvl9.classList.add("invisible");
             lvl10.classList.add("invisible");
-            if (this.instrument == "Bass") {
-                this.shifting = this.shifting + 2;
-            } else if (this.instrument == "Cello") {
-                this.shifting = this.shifting + 1;
-            }
         } else if (this.coins < 102) {
             this.level = 3;
 
@@ -1982,11 +2008,6 @@ mackenzie.b4(4)
             lvl10.classList.add("invisible");
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
-            if (this.instrument == "Bass") {
-                this.shifting = this.shifting + 4;
-            } else if (this.instrument == "Cello") {
-                this.shifting = this.shifting + 2;
-            }
         } else if (this.coins < 142) {
             this.level = 4;
             lvl2.classList.remove("invisible");
@@ -2016,11 +2037,6 @@ mackenzie.b4(4)
             lvl2.classList.add("lvl2");
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
-            if (this.instrument == "Bass") {
-                this.shifting = this.shifting + 8;
-            } else if (this.instrument == "Cello") {
-                this.shifting = this.shifting + 3;
-            }
         } else if (this.coins < 182) {
             this.level = 5;
             lvl2.classList.remove("invisible");
@@ -2050,11 +2066,6 @@ mackenzie.b4(4)
             lvl3.classList.add("lvl3");
             lvl4.classList.add("lvl4");
             lvl5.classList.add("lvl5");
-            if (this.instrument == "Bass") {
-                this.shifting = this.shifting + 2;
-            } else if (this.instrument == "Cello") {
-                this.shifting = this.shifting + 1;
-            }
         } else if (this.coins < 222) {
             this.level = 6;
             lvl2.classList.remove("invisible");
@@ -3854,6 +3865,9 @@ mackenzie.b4(4)
             assign2.innerHTML = "Current Grade: F";
         }
     };
+    function adding(person) {
+        person.add();
+    }
 
     function initialPrompt() {
         if (typeof localStorage.getItem("person") == "string") {
@@ -3861,10 +3875,13 @@ mackenzie.b4(4)
             personage = students[j];
             person = studentsString[j];
             if (person == "angela") {
-                alert("Hi Angela. You were last to leave the google meet today. You win 1,000,000XP(for a weekend)");
+                alert(
+                    "Hi Angela. You were last to leave the google meet today. You win 1,000,000XP(for a weekend)"
+                );
             }
             clearAll();
             assignments();
+
             side.classList.remove("side");
             personage.evaluate();
             personage.printStats();
@@ -3883,6 +3900,7 @@ mackenzie.b4(4)
                     localStorage.setItem("person", i);
                     clearAll();
                     assignments();
+
                     side.classList.remove("side");
                     personage.evaluate();
                     personage.printStats();
@@ -4026,8 +4044,6 @@ mackenzie.b4(4)
         assign9.innerHTML = `SOLO-Yellow Rose of Texas(b9): ${personage.level2[8]}`;
         assign10.innerHTML = `Rhythm+Scales(b10): ${personage.level2[9]}`;
 
-
-
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
@@ -4130,8 +4146,6 @@ mackenzie.b4(4)
         assign8.innerHTML = `SOLO-Bella-Bocca Polka(c8): ${personage.level3[7]}`;
         assign9.innerHTML = `SOLO-John Peel(c9): ${personage.level3[8]}`;
         assign10.innerHTML = `Rhythm+Scales(c10): ${personage.level3[9]}`;
-
-
 
         // A1
         assign1.addEventListener("click", function () {
@@ -4362,7 +4376,7 @@ mackenzie.b4(4)
     function completeStatsFunc() {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
-        assign1.innerHTML = `Real Name: ${personage.realname}`
+        assign1.innerHTML = `Real Name: ${personage.realname}`;
         assign3.innerHTML = `Total Score: ${personage.totalScore}`;
         assign4.innerHTML = `Current Rank in Orchestra: ${myTotalRank}`;
 
@@ -4441,6 +4455,36 @@ mackenzie.b4(4)
         alert("You created a character!");
     }
 
+    Character.prototype.add = function () {
+        if (this.coins < 22) {
+            this.level = 1;
+        } else if (this.coins < 62) {
+            this.level = 2;
+        } else if (this.coins < 102) {
+            this.level = 3;
+        } else if (this.coins < 142) {
+            this.level = 4;
+        }
+
+        if (this.instrument == "Bass" && this.level == 3) {
+            this.shifting = this.shifting + 30;
+        } else if (this.instrument == "Cello" && this.level == 3) {
+            this.shifting = this.shifting + 15;
+        } else if (this.instrument == "Bass" && this.level == 2) {
+            this.shifting = this.shifting + 20;
+        } else if (this.instrument == "Cello" && this.level == 2) {
+            this.shifting = this.shifting + 10;
+        } else if (this.instrument == "Bass" && this.level == 1) {
+            this.shifting = this.shifting + 10;
+        } else if (this.instrument == "Cello" && this.level == 1) {
+            this.shifting = this.shifting + 5;
+        } else if (this.instrument == "Bass" && this.level == 4) {
+            this.shifting = this.shifting + 40;
+        } else if (this.instrument == "Cello" && this.level == 4) {
+            this.shifting = this.shifting + 20;
+        }
+    };
+
     // Level Click Event Listeners
     lvl.addEventListener("click", leval1);
     lvl2.addEventListener("click", leval2);
@@ -4456,8 +4500,11 @@ mackenzie.b4(4)
     options.addEventListener("click", optionFunc);
     completeStats.addEventListener("click", completeStatsFunc);
     raidBtn.addEventListener("click", raidFunc);
+    console.log(jude.shifting);
     initialPrompt();
+    console.log(jude.shifting);
 
+    // Scoring
     let topScore = [];
     function topScoreFunc(item) {
         topScore.push({
@@ -4469,10 +4516,8 @@ mackenzie.b4(4)
             level: item.level,
             class: item.currentClass,
             attack: item.defense,
-            defense: item.attack
-
+            defense: item.attack,
         });
-
     }
     students.forEach(topScoreFunc);
     console.log("All Students");
@@ -4532,9 +4577,9 @@ mackenzie.b4(4)
             baroque_Score = item.total_score + baroque_Score;
         } else if (item.team == "classical") {
             classical_Score = item.total_score + classical_Score;
-        } else if (item.team == "century") {
-            romantic_Score = item.total_score + romantic_Score;
         } else if (item.team == "romantic") {
+            romantic_Score = item.total_score + romantic_Score;
+        } else if (item.team == "century") {
             century_Score = item.total_score + century_Score;
         } else if (item.team == "heretics") {
             heretic_Score = item.total_score + heretic_Score;
@@ -4751,13 +4796,12 @@ mackenzie.b4(4)
         }
     }
 
-
     let topGrade = [];
     function gradeFunc(item) {
         topGrade.push({
             realname: item.realname,
-            grade: (item.coins / days),
-            grade1: (item.coins / cavDays)
+            grade: item.coins / days,
+            grade1: item.coins / cavDays,
         });
         // topScore.push(
         //     { jaden: jaden.totalScore, instrument: jaden.instrument,team: jaden.team },
@@ -4768,15 +4812,9 @@ mackenzie.b4(4)
     students.forEach(gradeFunc);
     console.log(topGrade);
 
-//
-//
-//
-//
-//
-
-
-
-
-
-
+    //
+    //
+    //
+    //
+    //
 };
