@@ -18,8 +18,12 @@ window.onload = function () {
         ramon.a7(4)
         ryann.c1(4)
         kamille.c4(3, "A little issue coming down. But mostly very good")
-        kamille.c4(4,"Sometimes third finger was not high enough/not touching the 4th finger")
-        
+        kamille.c3(4,"Sometimes third finger was not high enough/not touching the 4th finger")
+        mackenzie.c2()
+        lucca.c2(4, "excellent! Way better than Mackenzie")
+        ryann.b8(4)
+
+
 
 
 
@@ -5443,6 +5447,7 @@ window.onload = function () {
     }
     students.forEach(gradeFunc);
     console.log(topGrade);
+    
 
     //
     //
