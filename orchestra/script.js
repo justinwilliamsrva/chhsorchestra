@@ -1,7 +1,11 @@
 window.onload = function () {
-    let days = 9;
+    let days = 10;
     let cavDays = 16;
     function assignments() {
+    //    10/15
+
+
+
         // 10/13
         kamille.b9(4, "Try to connect the sound more");
         emily.b9(4);

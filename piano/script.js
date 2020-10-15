@@ -2,179 +2,167 @@ window.onload = function () {
     let nickDays = 1;
     let days = 9;
     function assignments() {
+        // 10/15
+        melissa.a7(4, "Baby free");
 
-// 10/12 + 13
+        // 10/12 + 13
 
-        victoria.a8(4)
-        somros.b3(4)
-        rodrick.c1(4)
-        rodrick.c1("t")
-        rodrick.c1("c")
-        josendo.b9(4, "Great playing as always")
-        kyle.a10(4)
-        jaden.c3(4)
-        jaden.c2(4)
-        jaden.c1(4)
-        kyle.c1(4)
-        nick.a2(4)
-        nick.a1(4)
-        lauren.c1(4)
-        lauren.b10(4)
+        victoria.a8(4);
+        somros.b3(4);
+        rodrick.c1(4);
+        rodrick.c1("t");
+        rodrick.c1("c");
+        josendo.b9(4, "Great playing as always");
+        kyle.a10(4);
+        jaden.c3(4);
+        jaden.c2(4);
+        jaden.c1(4);
+        kyle.c1(4);
+        nick.a2(4);
+        nick.a1(4);
+        lauren.c1(4);
+        lauren.b10(4);
 
-
-
-
-
-
-
-
-
-// 10/9
-        kyle.b10(4)
-        josendo.b8(4)
-        lauren.b9(4)
-        lauren.b8(4)
+        // 10/9
+        kyle.b10(4);
+        josendo.b8(4);
+        lauren.b9(4);
+        lauren.b8(4);
         // 10/8
-        tyler.a3(3, "Played during class")
-        sierra.a6(3, "Played in class")
-        rebecca.a9(4,"Correct")
-        somros.b2(4, "Love your work ethic. This is a great start Somros")
-        timothy.a5(4)
-        kyle.b9(4)
-        josendo.b7(4)
-        jamari.a9(2, "The left hand is not correct. The RH is correct")
-        jamari.a8(3, "Close there were a few notes that were not correct")
-        jamari.a6(1,"The hands need to be played at the same time. It would be worth trying this one again")
-
-
+        tyler.a3(3, "Played during class");
+        sierra.a6(3, "Played in class");
+        rebecca.a9(4, "Correct");
+        somros.b2(4, "Love your work ethic. This is a great start Somros");
+        timothy.a5(4);
+        kyle.b9(4);
+        josendo.b7(4);
+        jamari.a9(2, "The left hand is not correct. The RH is correct");
+        jamari.a8(3, "Close there were a few notes that were not correct");
+        jamari.a6(
+            1,
+            "The hands need to be played at the same time. It would be worth trying this one again"
+        );
 
         // 10/7
-        lauren.b7(4)
-        lauren.b6(4)
-            kyle.b8(4)
-        josendo.b6(3,"A little on the slow side. But correct!")
-        ken.a9(4, "Great Ken")
-        ken.a8(4, "Correct")
-        jaden.b9(4)
-        jacob.a7(4)
-        victoria.a7(4, "Great work Victoria")
-        rebecca.a8(4)
-        rodrick.b10(4)
-        somros.b1(4)
-        rodrick.b9(4)
-        rodrick.b9("t")
-        rodrick.b9("c")
-        kyle.b7(4)
-        josendo.b5(3, "Some notes in the left hand were off")
-        jaden.b8(4)
-        jaden.b5(4)
-        jaden.b10(4)
-
-
-
-
-
-
-
+        lauren.b7(4);
+        lauren.b6(4);
+        kyle.b8(4);
+        josendo.b6(3, "A little on the slow side. But correct!");
+        ken.a9(4, "Great Ken");
+        ken.a8(4, "Correct");
+        jaden.b9(4);
+        jacob.a7(4);
+        victoria.a7(4, "Great work Victoria");
+        rebecca.a8(4);
+        rodrick.b10(4);
+        somros.b1(4);
+        rodrick.b9(4);
+        rodrick.b9("t");
+        rodrick.b9("c");
+        kyle.b7(4);
+        josendo.b5(3, "Some notes in the left hand were off");
+        jaden.b8(4);
+        jaden.b5(4);
+        jaden.b10(4);
 
         // 10/5
-        lauren.b5(4)
-        lauren.b5("t")
-        lauren.b4(4)
-        josendo.b4(4)
-        jaden.b7(4)
-        victoria.a6(2,"Close. you right hand was one note too high")
-        rebecca.a7(4)
-        rodrick.b8(4,"Great stuff")
-        rodrick.b8("t")
-        rodrick.b8("c")
-        somros.a9(4)
-        jacob.a6(4)
-        josendo.b3(4)
-        kyle.b5(4)
-
-
-
-
-
+        lauren.b5(4);
+        lauren.b5("t");
+        lauren.b4(4);
+        josendo.b4(4);
+        jaden.b7(4);
+        victoria.a6(2, "Close. you right hand was one note too high");
+        rebecca.a7(4);
+        rodrick.b8(4, "Great stuff");
+        rodrick.b8("t");
+        rodrick.b8("c");
+        somros.a9(4);
+        jacob.a6(4);
+        josendo.b3(4);
+        kyle.b5(4);
 
         // 10/1
-        lauren.b3(4)
-        lauren.b2(4)
-        kyle.b4(4)
-        kyle.b6(4)
-        kyle.b2(4)
-        josendo.b2(4)
-        ken.a7(4)
-        lauren.r1(4, "Nicely done!! I'll will put up the next one")
-        rodrick.r1(4, "Nicely done!! I'll will put up the next one")
-        jada.a5(4, "Very good playing Jada")
-        sierra.a5(3, "Played in class")
-        sierra.a4(4, "Perfect")
-        rebecca.a6(4, "Great rhythm")
-        somros.a8(4)
-        josendo.b1(4)
-        kyle.b3(4)
-        jaden.b5(4)
-
-
-
-
-
-
-
+        lauren.b3(4);
+        lauren.b2(4);
+        kyle.b4(4);
+        kyle.b6(4);
+        kyle.b2(4);
+        josendo.b2(4);
+        ken.a7(4);
+        lauren.r1(4, "Nicely done!! I'll will put up the next one");
+        rodrick.r1(4, "Nicely done!! I'll will put up the next one");
+        jada.a5(4, "Very good playing Jada");
+        sierra.a5(3, "Played in class");
+        sierra.a4(4, "Perfect");
+        rebecca.a6(4, "Great rhythm");
+        somros.a8(4);
+        josendo.b1(4);
+        kyle.b3(4);
+        jaden.b5(4);
 
         // 9/25
-        jaden.b4(4)
-        kyle.b2(4,"played beautifully")
-        josendo.a9(4)
-        lauren.b1(4)
+        jaden.b4(4);
+        kyle.b2(4, "played beautifully");
+        josendo.a9(4);
+        lauren.b1(4);
         //    9/24
-        jaden.b3(4)
-        kyle.b1(4)
-        josendo.a8(4)
-        timothy.a4(4,"Very very close. The rhythm was just a little off.")
-        lauren.a8(4)
-        lauren.a9(4)
-        ken.a5(4)
-        ken.a6(4)
-        jamari.a6(2, "LH is perfect. I will help you with the RH")
-        jamari.a5(2, "LH is perfect but you rRH is in the wrong spot")
-        victoria.a5(3, "Very Close you skipped some LH notes")
-        rebecca.a5(4)
-        somros.a7(4)
-        rodrick.b7(4)
-        rodrick.b7("t")
-        rodrick.b7("c")
-        tyler.a2(4)
-        tyler.a1(4)
-        josendo.a7(4)
-        kyle.a9(4)
-        melissa.a2(2,"You RH was on the wrong key. You thumb was on D and not C. B+")
-        melissa.a1(4)
-        rodrick.b6(4)
-        rodrick.b6("t")
-        rodrick.b6("c")
-        sam.a8(4)
-        brady.a6(4, "Correct")
-        reuben.a9(3, "Very Good except you played quarter notes 2x as fast as they need to")
-        somros.a6(3, "Great facility but the rhythm is funny. I will put up some recordings over the weekend of how each should sound")
-        brady.a5(4)
-        sam.a7(2, "This is good for not being taught the song. I will put up some recordings over the weekend of how each should sound. ")
-        brady.a4(4)
-        jaden.b2(4)
-        jacob.a2(4)
-        jacob.a4(4)
-        reuben.a8(3,"Very Good except you played quarter notes 2x as fast as they need to.I will put up some recordings over the weekend of how each should sound. ")
-        reuben.a7(4)
-        lauren.a7(4)
-        lauren.a6(4)
-        lauren.a5(4)
-        jaden.b1(4)
-        timothy.a3(4,"VERY IMPRESSED. I have not helped you at all and you are playing these songs perfectly. I will put up some recordings over the weekend of how the next set of songs should sound. ")
-        kyle.a8(4)
-        josendo.a6(4, "Well played. Good Rhythm")
-        ken.a4(4)
+        jaden.b3(4);
+        kyle.b1(4);
+        josendo.a8(4);
+        timothy.a4(4, "Very very close. The rhythm was just a little off.");
+        lauren.a8(4);
+        lauren.a9(4);
+        ken.a5(4);
+        ken.a6(4);
+        jamari.a6(2, "LH is perfect. I will help you with the RH");
+        jamari.a5(2, "LH is perfect but you rRH is in the wrong spot");
+        victoria.a5(3, "Very Close you skipped some LH notes");
+        rebecca.a5(4);
+        somros.a7(4);
+        rodrick.b7(4);
+        rodrick.b7("t");
+        rodrick.b7("c");
+        tyler.a2(4);
+        tyler.a1(4);
+        josendo.a7(4);
+        kyle.a9(4);
+        melissa.a2(2, "You RH was on the wrong key. You thumb was on D and not C. B+");
+        melissa.a1(4);
+        rodrick.b6(4);
+        rodrick.b6("t");
+        rodrick.b6("c");
+        sam.a8(4);
+        brady.a6(4, "Correct");
+        reuben.a9(3, "Very Good except you played quarter notes 2x as fast as they need to");
+        somros.a6(
+            3,
+            "Great facility but the rhythm is funny. I will put up some recordings over the weekend of how each should sound"
+        );
+        brady.a5(4);
+        sam.a7(
+            2,
+            "This is good for not being taught the song. I will put up some recordings over the weekend of how each should sound. "
+        );
+        brady.a4(4);
+        jaden.b2(4);
+        jacob.a2(4);
+        jacob.a4(4);
+        reuben.a8(
+            3,
+            "Very Good except you played quarter notes 2x as fast as they need to.I will put up some recordings over the weekend of how each should sound. "
+        );
+        reuben.a7(4);
+        lauren.a7(4);
+        lauren.a6(4);
+        lauren.a5(4);
+        jaden.b1(4);
+        timothy.a3(
+            4,
+            "VERY IMPRESSED. I have not helped you at all and you are playing these songs perfectly. I will put up some recordings over the weekend of how the next set of songs should sound. "
+        );
+        kyle.a8(4);
+        josendo.a6(4, "Well played. Good Rhythm");
+        ken.a4(4);
         // 9.22
         ken.a4(4, "Great ken. Steady and secure playing");
         sierra.a3(4, "Great work Sierra. You are getting it!");
@@ -347,7 +335,7 @@ window.onload = function () {
         "sierra",
         "timothy",
         "joseph",
-        "lauren"
+        "lauren",
     ];
     let personage = "";
     var lvl = document.getElementById("lvl1");
@@ -395,7 +383,6 @@ window.onload = function () {
     var teamTop3 = document.getElementById("teamtopscore3");
     var teamTop4 = document.getElementById("teamtopscore4");
     var teamTop5 = document.getElementById("teamtopscore5");
-
 
     let myHighScore = 0;
     let myTotalRank = 0;
@@ -940,7 +927,6 @@ window.onload = function () {
         "Junior"
     );
 
-
     let students = [
         nick,
         victoria,
@@ -965,7 +951,6 @@ window.onload = function () {
         timothy,
         joseph,
         lauren,
-
     ];
 
     Character.prototype.printStats = function () {
@@ -2244,29 +2229,29 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[2] = this.level2[2] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[2] = this.level2[2] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[2] = this.level2[2] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-            }
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[2] = this.level2[2] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[2] = this.level2[2] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[2] = this.level2[2] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
+    };
 
     Character.prototype.b4 = function (score, comments) {
         switch (score) {
@@ -2309,30 +2294,29 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[3] = this.level2[3] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[3] = this.level2[3] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[3] = this.level2[3] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-            }
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[3] = this.level2[3] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[3] = this.level2[3] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[3] = this.level2[3] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
-
+    };
 
     Character.prototype.b5 = function (score, comments) {
         switch (score) {
@@ -2383,27 +2367,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[4] = this.level2[4] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[4] = this.level2[4] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[4] = this.level2[4] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[4] = this.level2[4] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[4] = this.level2[4] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[4] = this.level2[4] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.b6 = function (score, comments) {
@@ -2447,27 +2431,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[5] = this.level2[5] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[5] = this.level2[5] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[5] = this.level2[5] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[5] = this.level2[5] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[5] = this.level2[5] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[5] = this.level2[5] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.b7 = function (score, comments) {
@@ -2519,27 +2503,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[6] = this.level2[6] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[6] = this.level2[6] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[6] = this.level2[6] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[6] = this.level2[6] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[6] = this.level2[6] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[6] = this.level2[6] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.b8 = function (score, comments) {
@@ -2596,27 +2580,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[7] = this.level2[7] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[7] = this.level2[7] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[7] = this.level2[7] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[7] = this.level2[7] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[7] = this.level2[7] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[7] = this.level2[7] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.b9 = function (score, comments) {
@@ -2676,24 +2660,24 @@ window.onload = function () {
             case "t":
                 this.theory = this.theory + 4;
                 this.level2[8] = this.level2[8] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[8] = this.level2[8] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[8] = this.level2[8] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[8] = this.level2[8] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[8] = this.level2[8] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.b10 = function (score, comments) {
@@ -2751,27 +2735,27 @@ window.onload = function () {
                 this.evaluate();
                 this.printStats();
                 break;
-                case "t":
-                    this.theory = this.theory + 4;
-                    this.level2[9] = this.level2[9] + ": t";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "f":
-                    this.facility = this.facility + 4;
-                    this.level2[9] = this.level2[9] + "f";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
-                case "c":
-                    this.coordination = this.coordination + 4;
-                    this.level2[9] = this.level2[9] + "c";
-                    this.coins = this.coins + 2;
-                    this.evaluate();
-                    this.printStats();
-                    break;
+            case "t":
+                this.theory = this.theory + 4;
+                this.level2[9] = this.level2[9] + ": t";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "f":
+                this.facility = this.facility + 4;
+                this.level2[9] = this.level2[9] + "f";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
+            case "c":
+                this.coordination = this.coordination + 4;
+                this.level2[9] = this.level2[9] + "c";
+                this.coins = this.coins + 2;
+                this.evaluate();
+                this.printStats();
+                break;
         }
     };
     Character.prototype.c1 = function (score, comments) {
@@ -3679,9 +3663,9 @@ window.onload = function () {
             assign5.innerHTML = "Current Grade: A";
         } else if (this.grade >= 5.6) {
             assign5.innerHTML = "Current Grade: A-";
-        } else if (this.grade >+ 4.8) {
+        } else if (this.grade > +4.8) {
             assign5.innerHTML = "Current Grade: B+";
-        } else if (this.grade >+ 4.0) {
+        } else if (this.grade > +4.0) {
             assign5.innerHTML = "Current Grade: B";
         } else if (this.grade >= 3.33) {
             assign5.innerHTML = "Current Grade: B-";
@@ -3897,8 +3881,6 @@ window.onload = function () {
         assign9.innerHTML = `Simple Gifts(b9): ${personage.level2[8]}`;
         assign10.innerHTML = `Scales A+E+B(b10): ${personage.level2[9]}`;
 
-
-
         // A1
         assign1.addEventListener("click", function () {
             instruct.innerHTML =
@@ -4106,7 +4088,6 @@ window.onload = function () {
         clearAll();
         currentLevel.innerHTML = `Level 4`;
         assign1.innerHTML = `Coming soon`;
-
     }
     function leval5() {
         clearAll();
@@ -4228,7 +4209,7 @@ window.onload = function () {
     function completeStatsFunc() {
         clearAll();
         currentLevel.innerHTML = `Complete Stats`;
-        assign1.innerHTML = `Real Name: ${personage.realname}`
+        assign1.innerHTML = `Real Name: ${personage.realname}`;
         assign3.innerHTML = `Total Score: ${personage.totalScore}`;
         assign4.innerHTML = `Current Rank: ${myTotalRank}`;
         personage.freshGrading();
@@ -4536,10 +4517,8 @@ window.onload = function () {
     function gradeFunc(item) {
         topGrade.push({
             realname: item.realname,
-            grade: (item.coins / days),
-
+            grade: item.coins / days,
         });
-
     }
     students.forEach(gradeFunc);
     console.log(topGrade);
