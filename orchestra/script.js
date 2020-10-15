@@ -2,10 +2,27 @@ window.onload = function () {
     let days = 10;
     let cavDays = 16;
     function assignments() {
-    //    10/15
+        // 10/14
+        kamille.c2(4)
+        mackenzie.c1(4)
+        kamille.c1(4)
+        kamille.b10(2,"The first three were close but not the last three. This is my fault I should have gone over this with the class")
+        natalia.b9(4,"Great job with all the sharps")
+        isabella.b7(4,"Good. watch out for normal 3rd fingers a few where just a tiny tiny bit too high ")
+        isabella.b6(4,"Very intune")
+        jude.c8(4,"Great playing. Lots of character. Reminder- In half position your two will need to strech further than it feels in first position. The lower the position the bigger your hand needs to be")
+        jude.c9(4,"Good but not quite beautiful. Still needs more connection on separate bows.")
+        //    10/15
         ramon.a5(4)
         ramon.a6(4)
         ramon.a7(4)
+        ryann.c1(4)
+        kamille.c4(3, "A little issue coming down. But mostly very good")
+        kamille.c4(4,"Sometimes third finger was not high enough/not touching the 4th finger")
+        
+
+
+
 
 
         // 10/13

@@ -4,7 +4,16 @@ window.onload = function () {
     function assignments() {
         // 10/15
         melissa.a7(4, "Baby free");
-
+        josendo.c2(4)
+        kyle.c3(4)
+        jaden.c4(4)
+        josendo.c1(4)
+        rebecca.a10(4)
+        jada.a6(4)
+        victoria.a9(4)
+        rodrick.c2(4)
+        rodrick.c2("t")
+        rodrick.c2("c")
         // 10/12 + 13
 
         victoria.a8(4);
