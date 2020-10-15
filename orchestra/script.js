@@ -23,7 +23,9 @@ window.onload = function () {
         lucca.c2(4, "excellent! Way better than Mackenzie")
         ryann.b8(4)
         kate.a6(4)
-
+        kimberly.a3(4)
+        matthew.a10(4)
+        
 
 
 
