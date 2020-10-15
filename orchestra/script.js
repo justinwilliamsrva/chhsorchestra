@@ -22,6 +22,7 @@ window.onload = function () {
         mackenzie.c2()
         lucca.c2(4, "excellent! Way better than Mackenzie")
         ryann.b8(4)
+        kate.a6(4)
 
 
 
@@ -104,7 +105,7 @@ window.onload = function () {
         emmett.c4(4, "On the slow side but good");
         jade.b3(2, "A lot of wrong notes in the second example");
         angelica.b3(2, "Wrong note in the 2nd excerpt");
-        kate.b6(1, "This is one we went over to with the high 3s");
+        kate.b6(3, "Much improved");
         rowan.b2(4);
         grace.b7(1, "The 3 third fingers were not correct.");
         emmett.c3(4);
@@ -5447,7 +5448,7 @@ window.onload = function () {
     }
     students.forEach(gradeFunc);
     console.log(topGrade);
-    
+
 
     //
     //
