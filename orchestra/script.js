@@ -3,6 +3,15 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
         // 10/14
+        spencer.b7(4)
+        lance.a6(4)
+        spencer.b8(4)
+        emmett.c6(3,"Mostly Good. some funny notes coming down")
+        rowan.b7(4,"Fantastic")
+        kate.b9(1,"Still the 3rd and 2nd fingers are too low. Let's try it in class")
+        emmett.c7(3,"Good but way too slow")
+        rowan.b8(4,"Lovely!")
+        lauren.a7(4)
         kamille.c2(4)
         mackenzie.c1(4)
         kamille.c1(4)
@@ -25,7 +34,7 @@ window.onload = function () {
         kate.a6(4)
         kimberly.a3(4)
         matthew.a10(4)
-        
+
 
 
 

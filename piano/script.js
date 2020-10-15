@@ -3,6 +3,10 @@ window.onload = function () {
     let days = 9;
     function assignments() {
         // 10/15
+        lauren.c2(4)
+        lauren.c3(4)
+        kyle.c2(4,"One missed note")
+
         melissa.a7(4, "Baby free");
         josendo.c2(4)
         kyle.c3(4)
@@ -14,9 +18,9 @@ window.onload = function () {
         rodrick.c2(4)
         rodrick.c2("t")
         rodrick.c2("c")
-        samuel.b1(4, "Correct")
+        sam.b1(4, "Correct")
         somros.b4(4)
-        andrew.a2()
+
 
         // 10/12 + 13
 
