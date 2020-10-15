@@ -3,7 +3,9 @@ window.onload = function () {
     let cavDays = 16;
     function assignments() {
     //    10/15
-
+        ramon.a5(4)
+        ramon.a6(4)
+        ramon.a7(4)
 
 
         // 10/13
