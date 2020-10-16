@@ -5,7 +5,7 @@ window.onload = function () {
         // 10/16
         jada.a7(4);
         somros.b5(4)
-        sam.b2(3,"Needs to be a little  faster for an A+ But i aplaud your for pressing on with these more complex songs.")
+        sam.b2(3,"Needs to be a little  faster for an A+ But i applaudd your for pressing on with these more complex songs.")
 josendo.c3(3,"A littel to slow for an A+ but all the notes were correct.")
 timothy.a7(4)
         kyle.c4(4)
