@@ -793,7 +793,7 @@ window.onload = function () {
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
         ally.a1(4);
-        
+
 
     }
 
@@ -4435,7 +4435,7 @@ window.onload = function () {
             clearAll();
             assignments();
             side.classList.remove("side");
-            students.map(item => item.evaluate());
+            personage.evaluate();
 
             students.map(item => item.add());
 
@@ -4457,7 +4457,7 @@ window.onload = function () {
                     assignments();
 
                     side.classList.remove("side");
-                    students.map(item => item.evaluate());
+                    personage.evaluate();
 
                     students.map(item => item.add());
 
