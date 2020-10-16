@@ -2,6 +2,16 @@ window.onload = function () {
     let nickDays = 1;
     let days = 9;
     function assignments() {
+        // 10/16
+        jada.a7(4);
+        somros.b5(4)
+        sam.b2(3,"Needs to be a little  faster for an A+ But i aplaud your for pressing on with these more complex songs.")
+josendo.c3(3,"A littel to slow for an A+ but all the notes were correct.")
+timothy.a7(4)
+        kyle.c4(4)
+        jada.a8(4)
+
+
         // 10/15
         lauren.c2(4)
         lauren.c3(4)
@@ -20,7 +30,7 @@ window.onload = function () {
         rodrick.c2("c")
         sam.b1(4, "Correct")
         somros.b4(4)
-
+        ken.a10(4)
 
         // 10/12 + 13
 
