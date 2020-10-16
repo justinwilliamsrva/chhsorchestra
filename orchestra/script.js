@@ -793,10 +793,8 @@ window.onload = function () {
         kamille.a3(3, "Good but it could be a little faster");
         julia.a1(2, "Close. Let's go over this next class. I will start with cellos");
         ally.a1(4);
+        
 
-        console.log(jude.shifting);
-        students.forEach(adding);
-        console.log(jude.shifting);
     }
 
     var person = "";
@@ -4436,9 +4434,11 @@ window.onload = function () {
             }
             clearAll();
             assignments();
-
             side.classList.remove("side");
-            personage.evaluate();
+            students.map(item => item.evaluate());
+
+            students.map(item => item.add());
+
             personage.printStats();
             // alert("Your 4 week FREE trial of Orchestra RPG will come to an end on September 30, 201")
         } else {
@@ -4457,7 +4457,10 @@ window.onload = function () {
                     assignments();
 
                     side.classList.remove("side");
-                    personage.evaluate();
+                    students.map(item => item.evaluate());
+
+                    students.map(item => item.add());
+
                     personage.printStats();
                     location.reload();
                 }
@@ -5131,6 +5134,13 @@ window.onload = function () {
         } else if (this.instrument == "Cello" && this.level == 4) {
             this.shifting = this.shifting + 20;
         }
+        if (true) {
+            this.attack = this.facility + this.intonation + this.shifting;
+            this.defense = this.bowControl + this.rhythm + this.musicality;
+            this.totalScore = this.attack + this.defense + this.coins;
+        }
+
+
     };
 
     // Level Click Event Listeners
@@ -5148,11 +5158,12 @@ window.onload = function () {
     options.addEventListener("click", optionFunc);
     completeStats.addEventListener("click", completeStatsFunc);
     raidBtn.addEventListener("click", raidFunc);
-    console.log(jude.shifting);
+    // console.log(jude.shifting);
     initialPrompt();
-    console.log(jude.shifting);
+    // console.log(jude.shifting);
 
     // Scoring
+
     let topScore = [];
     function topScoreFunc(item) {
         topScore.push({

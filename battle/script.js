@@ -2,51 +2,94 @@ window.onload = function () {
     let days = 8;
     let cavDays = 16;
     function assignments() {
-       // 10/13
- kamille.b9(4, "Try to connect the sound more");
- emily.b9(4);
- jude.c7(4)
- jude.c6(4, "two octaves!")
- julia.a4(4)
- rowan.b6(4)
- lance.a5(4)
- emmett.c9(4, "Great job with second position. Just make your last note beautiful")
- rowan.b5(4)
- angelica.b8(4)
- emmett.c2(4)
- lance.a4(4)
- lindsay.a5(4)
- spencer.c2(3, "You played a C natural instead of C# at beginning")
- rowan.b4(4)
- angelica.b7(3,"One g# was missed")
- spencer.c1(4)
+        // 10/14
+        spencer.b7(4);
+        lance.a6(4);
+        spencer.b8(4);
+        emmett.c6(3, "Mostly Good. some funny notes coming down");
+        rowan.b7(4, "Fantastic");
+        kate.b9(1, "Still the 3rd and 2nd fingers are too low. Let's try it in class");
+        emmett.c7(3, "Good but way too slow");
+        rowan.b8(4, "Lovely!");
+        lauren.a7(4);
+        kamille.c2(4);
+        mackenzie.c1(4);
+        kamille.c1(4);
+        kamille.b10(
+            2,
+            "The first three were close but not the last three. This is my fault I should have gone over this with the class"
+        );
+        natalia.b9(4, "Great job with all the sharps");
+        isabella.b7(
+            4,
+            "Good. watch out for normal 3rd fingers a few where just a tiny tiny bit too high "
+        );
+        isabella.b6(4, "Very intune");
+        jude.c8(
+            4,
+            "Great playing. Lots of character. Reminder- In half position your two will need to strech further than it feels in first position. The lower the position the bigger your hand needs to be"
+        );
+        jude.c9(4, "Good but not quite beautiful. Still needs more connection on separate bows.");
+        //    10/15
+        ramon.a5(4);
+        ramon.a6(4);
+        ramon.a7(4);
+        ryann.c1(4);
+        kamille.c4(3, "A little issue coming down. But mostly very good");
+        kamille.c3(4, "Sometimes third finger was not high enough/not touching the 4th finger");
+        mackenzie.c2();
+        lucca.c2(4, "excellent! Way better than Mackenzie");
+        ryann.b8(4);
+        kate.a6(4);
+        kimberly.a3(4);
+        matthew.a10(4);
 
-
+        // 10/13
+        kamille.b9(4, "Try to connect the sound more");
+        emily.b9(4);
+        jude.c7(4);
+        jude.c6(4, "two octaves!");
+        julia.a4(4);
+        rowan.b6(4);
+        lance.a5(4);
+        emmett.c9(4, "Great job with second position. Just make your last note beautiful");
+        rowan.b5(4);
+        angelica.b8(4);
+        emmett.c2(4);
+        lance.a4(4);
+        lindsay.a5(4);
+        spencer.c2(3, "You played a C natural instead of C# at beginning");
+        rowan.b4(4);
+        angelica.b7(3, "One g# was missed");
+        spencer.c1(4);
 
         // 10/12
-        rowan.b3(4)
-        kamille.b9(4, "Try to connect the sound more")
-        emily.b9(3, "Some funny rhythm but the notes were good")
-        kamille.b8(4,"Good")
-        ryann.b7(4)
-        walker.b9(1,"There are many C#'s and G#'s you missed. ")
-        walker.b8(4)
-        isabella.b4(3,"Some funny notes at the top of scale")
-        emily.b10(3,"Yikes!! No just kidding. The rhythm was mostly very good. Some sharps were missed at first but you fixed them as you went on. This was fun to listen to!")
-        ryann.b9(4)
-        isabella.b3(3, "Mostly very good. Sometimes your 4th finger is too high")
-        natalia.b8(2,"Some very funny notes in beginning")
-        natalia.b7(4)
-        mackenzie.b9(4)
-        isabella.b5(4)
-        jude.c4(4)
-        jude.c3(4, "Excellent")
-        lucca.b9(2, "Watch out for C#'s")
-        lucca.b10(2,"Some out of tune notes.Check the key signatures. Rhythm is not bad")
-        mackenzie.b10(3,"some out of tune notes with the high threes")
-        matthew.a2(4)
-        kate.b8(3,"Your 2nd finger was just a little low")
-        lance.a4(4, "Facility")
+        rowan.b3(4);
+        kamille.b9(4, "Try to connect the sound more");
+        emily.b9(3, "Some funny rhythm but the notes were good");
+        kamille.b8(4, "Good");
+        ryann.b7(4);
+        walker.b9(1, "There are many C#'s and G#'s you missed. ");
+        walker.b8(4);
+        isabella.b4(3, "Some funny notes at the top of scale");
+        emily.b10(
+            3,
+            "Yikes!! No just kidding. The rhythm was mostly very good. Some sharps were missed at first but you fixed them as you went on. This was fun to listen to!"
+        );
+        ryann.b9(4);
+        isabella.b3(3, "Mostly very good. Sometimes your 4th finger is too high");
+        natalia.b8(2, "Some very funny notes in beginning");
+        natalia.b7(4);
+        mackenzie.b9(4);
+        isabella.b5(4);
+        jude.c4(4);
+        jude.c3(4, "Excellent");
+        lucca.b9(2, "Watch out for C#'s");
+        lucca.b10(2, "Some out of tune notes.Check the key signatures. Rhythm is not bad");
+        mackenzie.b10(3, "some out of tune notes with the high threes");
+        matthew.a2(4);
+        kate.b8(3, "Your 2nd finger was just a little low");
+        lance.a4(4, "Facility");
         // 10/9
         ramon.a2(4);
         ramon.a3(4);
@@ -3329,7 +3372,6 @@ window.onload = function () {
     };
 
     Character.prototype.add = function () {
-
         if (this.coins < 22) {
             this.level = 1;
         } else if (this.coins < 62) {
@@ -3357,7 +3399,6 @@ window.onload = function () {
         } else if (this.instrument == "Cello" && this.level == 4) {
             this.shifting = this.shifting + 20;
         }
-
 
         this.attack = this.facility + this.intonation + this.shifting;
         this.defense = this.bowControl + this.rhythm + this.musicality;
@@ -3798,20 +3839,16 @@ window.onload = function () {
     }
 
     function attack(p1, p2) {
-
         if (p2.total_score <= 0 && p2.team == teamOne[0].team) {
             team1.style.backgroundColor = "red";
             team2.style.backgroundColor = "green";
-        }
-        else if (p2.total_score <= 0 && p2.team == teamTwo[0].team) {
+        } else if (p2.total_score <= 0 && p2.team == teamTwo[0].team) {
             team2.style.backgroundColor = "red";
             team1.style.backgroundColor = "green";
-        }
-         else if (p2.team == teamOne[0].team) {
-            team1.style.backgroundColor ="indianred";
+        } else if (p2.team == teamOne[0].team) {
+            team1.style.backgroundColor = "indianred";
             team2.style.backgroundColor = "lightgreen";
-        }
-        else if (p2.team == teamTwo[0].team) {
+        } else if (p2.team == teamTwo[0].team) {
             team1.style.backgroundColor = "lightgreen";
             team2.style.backgroundColor = "indianred";
         }
@@ -3822,8 +3859,6 @@ window.onload = function () {
             showTeam1(teamOne);
             showTeam2(teamTwo);
             return;
-
-
         } else if (p1.total_score <= 0 && p2.team == teamOne[0].team) {
             team1.style.backgroundColor = "blue";
             team2.style.backgroundColor = "white";
