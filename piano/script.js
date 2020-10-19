@@ -2,10 +2,15 @@ window.onload = function () {
     let nickDays = 1;
     let days = 9;
     function assignments() {
+// 10/19
+
+lauren.c5(4)
+        lauren.c4(4)
+        victoria.a10(3,"One wrong note. But great work for your first ")
         // 10/16
         jada.a7(4);
         somros.b5(4)
-        sam.b2(3,"Needs to be a little  faster for an A+ But i applaudd your for pressing on with these more complex songs.")
+        sam.b2(3,"Needs to be a little  faster for an A+ But i applaud your for pressing on with these more complex songs.")
 josendo.c3(3,"A littel to slow for an A+ but all the notes were correct.")
 timothy.a7(4)
         kyle.c4(4)
@@ -16,7 +21,6 @@ timothy.a7(4)
         lauren.c2(4)
         lauren.c3(4)
         kyle.c2(4,"One missed note")
-
         melissa.a7(4, "Baby free");
         josendo.c2(4)
         kyle.c3(4)
