@@ -16,7 +16,8 @@ window.onload = function () {
         isabella.b8(4)
         emily.c2(4)
         emily.c1(4)
-        
+        lindsay.a6(4)
+        lindsay.a7(3)
 
 
 
