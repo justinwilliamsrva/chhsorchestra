@@ -2,6 +2,19 @@ window.onload = function () {
     let nickDays = 1;
     let days = 9;
     function assignments() {
+// 1024
+        lauren.c9(4)
+        lauren.c8(4)
+        timothy.a8(4)
+        ken.b1(4)
+        lauren.c7(4)
+        lauren.c6(4)
+
+
+
+
+
+
 // 10/19
 
 lauren.c5(4)
