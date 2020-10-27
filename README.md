@@ -1,7 +1,7 @@
 # Welcome to the CHHS Orchestra Website
 
 ## URL
-cavorch.org
+https://www.cavorch.org
 
 ## Home Page
 
