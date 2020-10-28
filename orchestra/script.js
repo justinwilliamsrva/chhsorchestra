@@ -2,10 +2,17 @@ window.onload = function () {
     let days = 10;
     let cavDays = 16;
     function assignments() {
-// 10/24
+// 10/27
+        jules.c7(4)
+        jules.c6(4)
+        jules.c5(4)
+        jules.c3(4)
+        jules.c1(4)
+
+        // 10/24
         lauren.b1(4)
         lauren.a8(4)
-        
+
 
 
 
