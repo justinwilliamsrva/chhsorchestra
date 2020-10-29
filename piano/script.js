@@ -3,6 +3,8 @@ window.onload = function () {
     let days = 9;
     function assignments() {
 // 1024
+lauren.c10(4)
+lauren.a10(4)
         lauren.c9(4)
         lauren.c8(4)
         timothy.a8(4)
