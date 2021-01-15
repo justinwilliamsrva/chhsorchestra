@@ -2,6 +2,52 @@ window.onload = function () {
     let days = 10;
     let cavDays = 16;
     function assignments() {
+        // 1/15
+kate.c1(4);
+kate.c2(4);
+kate.c3(4);
+kate.c4(4);
+kate.c5(4);
+kate.c6(4);
+kate.c7(4);
+kate.c8(4);
+kate.c9(4);
+kate.d1(4);
+kate.d2(4);
+kate.d3(4);
+kate.d4(4);
+kate.d5(4);
+kate.d6(4);
+kate.b7(4);
+
+
+
+
+lindsay.a8(4);
+lindsay.a9(4);
+lindsay.b1(4);
+lindsay.b2(4);
+lindsay.b3(4);
+lindsay.b4(4);
+lindsay.b5(4);
+lindsay.b6(4);
+lindsay.b7(4);
+lindsay.b8(4);
+lindsay.b9(4);
+lindsay.c1(4);
+lindsay.c2(4);
+lindsay.c3(4);
+lindsay.c4(4);
+lindsay.c5(4);
+lindsay.c6(4);
+lindsay.c7(4);
+lindsay.c8(4);
+lindsay.c9(4);
+lindsay.d1(4);
+lindsay.d2(4);
+
+
+
 // 10/27
         jules.c7(4)
         jules.c6(4)
