@@ -2,6 +2,44 @@ window.onload = function () {
     let days = 8;
     let cavDays = 16;
     function assignments() {
+// 10/27
+jules.c7(4)
+jules.c6(4)
+jules.c5(4)
+jules.c3(4)
+jules.c1(4)
+
+// 10/24
+lauren.b1(4)
+lauren.a8(4)
+
+
+
+
+// 10/20
+nicholas.a10(4)
+
+
+
+// 10/19
+ramon.a8(4)
+ramon.a9(4)
+ramon.a10(4)
+lauren.a3(3, "A few wrong notes. But mostly good")
+lance.a7(3,"F sharp was missed on teh D string")
+rowan.c2(3, "Third finger as a bit too low")
+rowan.c1(4)
+rowan.b9(4,"Great job with the Sharps")
+nicholas.a9(4)
+nicholas.a8(4)
+isabella.b8(4)
+emily.c2(4)
+emily.c1(4)
+lindsay.a6(4)
+lindsay.a7(3)
+
+
+
         // 10/14
         spencer.b7(4);
         lance.a6(4);
@@ -3782,8 +3820,22 @@ window.onload = function () {
     shuffle(teamBaroque);
     shuffle(teamHeretic);
 
-    let teamOne = teamCentury;
-    let teamTwo = teamRomantic;
+    function pickTeams(){
+
+        var teamPickOne = prompt("Pick Team 1");
+        switch(teamPickOne){
+
+            case century"
+
+        }
+
+
+    }
+
+
+
+    let teamOne;
+    let teamTwo;
 
     let teamOnescore;
     let teamTwoscore;
