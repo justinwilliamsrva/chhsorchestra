@@ -36,11 +36,17 @@ body {
 
 .link {
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
     list-style-position: outside;
+    padding-left: 20px;
+    /* text-decoration: inherit; */
 }
-a {
+a:link {
     color: #054900;
+    text-decoration: none;
+}
+a:hover{
+    color: gold;
 }
 
 #heading {
