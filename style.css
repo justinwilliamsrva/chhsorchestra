@@ -9,13 +9,13 @@ body {
 
 .sidebar {
     flex: 1;
-    background-color: gold;
+    background-color: whitesmoke;
     height: 100vh;
 }
 
 .content {
     flex: 4;
-    background-color: white;
+    background-color:gold;
     height: 100vh;
     overflow: scroll;
 }
@@ -49,6 +49,8 @@ a:hover{
     color: gold;
 }
 
+
+
 #heading {
     height: 20%;
     text-align: center;
@@ -63,6 +65,8 @@ h2 {
 
 .content {
     text-align: center;
+    padding:0px 10px 0px 10px;
+
 }
 
 .content :nth-of-type(even) {
