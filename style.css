@@ -14,19 +14,17 @@ body {
   height: 100vh;
 }
 
+#aboutUs,
+#orchestraInfo {
+  background-color: rgba(255, 215, 0, 0.5);
 
-#aboutUs,#orchestraInfo{
-
-    background-color: gold;
   padding: 10px 10px 20px 10px;
-
-
 }
-#heading,#calendar,#meetDirector{
-    background-color: #248a1d;
+#heading,
+#calendar,
+#meetDirector {
+  background-color: rgba(36, 138, 29, 0.5);
   padding: 10px 10px 20px 10px;
-
-
 }
 
 .content {
@@ -34,8 +32,6 @@ body {
   /* background-color: gold; */
   height: 100vh;
   overflow-x: scroll;
-
-
 }
 
 #logo {
@@ -61,25 +57,28 @@ body {
   /* text-align: center; */
   list-style-position: outside;
   padding-left: 20px;
-  /* text-decoration: inherit; */
+  /* text-decor: inherit; */
 }
 a:link {
   color: #054900;
   text-decoration: none;
 }
+a:visited {
+    color: #054900;
+  }
 a:hover {
   color: gold;
 }
 
-#heading {
-  height: 20%;
-  text-align: center;
 
+#heading {
+  /* box-sizing: border-box; */
+  /* height: 20%; */
+  text-align: center;
 }
 h2 {
   margin-top: 0;
 }
-
 
 .content {
   text-align: center;
@@ -97,6 +96,13 @@ h2 {
 .grid fieldset {
   flex: 1;
   border-radius: 5%;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.grid fieldset:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  cursor: context-menu;
 }
 
 @media only screen and (max-width: 768px) {
