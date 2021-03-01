@@ -60,13 +60,11 @@ body {
   /* text-decor: inherit; */
 }
 
-img{
+img.create {
   float: left;
   margin: 0px 10px 3px 0px;
   height: 100px;
-
 }
-
 
 a:link {
   color: #054900;
@@ -130,5 +128,10 @@ h2 {
   .grid fieldset {
     width: 90%;
     margin: auto;
+  }
+  img.create {
+    float: none;
+    margin: 0px 0px 0px 0px;
+    height: 100px;
   }
 }
