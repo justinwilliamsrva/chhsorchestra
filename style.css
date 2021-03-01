@@ -64,13 +64,18 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-    color: #054900;
-  }
+  color: #054900;
+}
 a:hover {
   color: gold;
 }
+li {
+  list-style: none;
+}
 
-
+li::before {
+  content: "\02C3";
+}
 #heading {
   /* box-sizing: border-box; */
   /* height: 20%; */
