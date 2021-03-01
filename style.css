@@ -59,6 +59,15 @@ body {
   padding-left: 20px;
   /* text-decor: inherit; */
 }
+
+img{
+  float: left;
+  margin: 0px 10px 3px 0px;
+  height: 100px;
+
+}
+
+
 a:link {
   color: #054900;
   text-decoration: none;
