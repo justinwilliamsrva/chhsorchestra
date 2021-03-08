@@ -22,8 +22,8 @@ img {
 }
 
 .slideshow-img {
-  height: 50%;
-  width: 50%;
+  height: 90vh;
+  width: 30vw;
 }
 /* Next & previous buttons */
 .prev,
@@ -31,6 +31,8 @@ img {
   cursor: pointer;
   position: absolute;
   top: 50%;
+
+  right: 90%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -244,8 +246,8 @@ h2 {
     display: none;
   }
 .slideshow-img {
-    height: 5%;
-    width: 5%;
+    height: 75%;
+    width: 75%;
   }
   .grid {
     display: block;
