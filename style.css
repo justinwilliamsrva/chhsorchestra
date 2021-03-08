@@ -243,9 +243,9 @@ h2 {
   .sidebar {
     display: none;
   }
-  .slideshow-img {
-    height: 75%;
-    width: 50%;
+.slideshow-img {
+    height: 5%;
+    width: 5%;
   }
   .grid {
     display: block;
