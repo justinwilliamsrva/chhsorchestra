@@ -36,7 +36,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -136,13 +136,15 @@ img {
   flex: 1;
   background-color: whitesmoke;
   height: 100vh;
+  border-right: 1px ridge grey;
 }
 
 #aboutUs,
-#orchestraInfo {
+#orchestraInfo,#links {
   background-color: rgba(255, 215, 0, 0.5);
 
   padding: 10px 10px 20px 10px;
+  border-top: 1px ridge grey;
 }
 #heading,
 #calendar,
@@ -150,7 +152,10 @@ img {
   background-color: rgba(36, 138, 29, 0.5);
   padding: 10px 10px 20px 10px;
 }
-
+#calendar,
+#meetDirector {
+  border-top: 1px ridge grey;
+}
 .content {
   flex: 4;
   /* background-color: gold; */
@@ -245,7 +250,7 @@ h2 {
   .sidebar {
     display: none;
   }
-.slideshow-img {
+  .slideshow-img {
     height: 75%;
     width: 75%;
   }
