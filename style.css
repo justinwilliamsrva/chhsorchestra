@@ -3,8 +3,10 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .mySlides {
@@ -130,6 +132,7 @@ img {
 
 .wrapper {
   display: flex;
+  max-width: 1200px;
 }
 
 .sidebar {
@@ -160,7 +163,8 @@ img {
   flex: 4;
   /* background-color: gold; */
   height: 100vh;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #logo {
