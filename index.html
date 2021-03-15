@@ -65,8 +65,8 @@
               Cathedral for the Sacred Heart.
               <p>
                 <b
-                  >Audition Requirements: First 8 measures of Bach Brandenburg Concerto No.
-                  3: 3rd Movement</b
+                  >Audition Requirements: First 8 measures of Bach Brandenburg
+                  Concerto No. 3: 3rd Movement</b
                 >
               </p>
             </fieldset>
@@ -92,8 +92,8 @@
 
               <p>
                 <b
-                  >Audition Requirements: Bach Brandenburg Concert No. 3: 3rd Movement and 12
-                  Major scales: two octaves.</b
+                  >Audition Requirements: Bach Brandenburg Concert No. 3: 3rd
+                  Movement and 12 Major scales: two octaves.</b
                 >
               </p>
             </fieldset>
@@ -142,57 +142,90 @@
         <div id="orchestraInfo" class="section">
           <h2>Orchestra News</h2>
           <div class="slideshow-container">
-
             <div class="mySlides fade">
-              <img class="slideshow-img"src="assets/Orchestra Newsletter 1 2020-2021-1.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-1.jpg"
+              />
             </div>
 
             <div class="mySlides fade">
-              <img  class="slideshow-img" src="assets/Orchestra Newsletter 1 2020-2021-2.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-2.jpg"
+              />
             </div>
 
             <div class="mySlides fade">
-              <img  class="slideshow-img" src="assets/Orchestra Newsletter 1 2020-2021-3.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-3.jpg"
+              />
             </div>
             <div class="mySlides fade">
-              <img  class="slideshow-img" src="assets/Orchestra Newsletter 1 2020-2021-4.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-4.jpg"
+              />
             </div>
             <div class="mySlides fade">
-              <img  class="slideshow-img" src="assets/Orchestra Newsletter 1 2020-2021-5.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-5.jpg"
+              />
             </div>
             <div class="mySlides fade">
-              <img  class="slideshow-img" src="assets/Orchestra Newsletter 1 2020-2021-6.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-6.jpg"
+              />
             </div>
             <div class="mySlides fade">
-              <img  class="slideshow-img" src="assets/Orchestra Newsletter 1 2020-2021-7.jpg" >
+              <img
+                class="slideshow-img"
+                src="assets/Orchestra Newsletter 1 2020-2021-7.jpg"
+              />
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
 
-            </div>
-            <br>
-
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-              <span class="dot" onclick="currentSlide(5)"></span>
-              <span class="dot" onclick="currentSlide(6)"></span>
-              <span class="dot" onclick="currentSlide(7)"></span>
-
-            </div>
-
-
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
         </div>
         <div id="calendar" class="section">
           <h2>Calendar</h2>
-          <h4>First Nine-Weeks</h4>
-
-          <h4>Second Nine-Weeks</h4>
-          <h4>Third Nine-Weeks</h4>
-          <h4>Fourth Nine-Weeks</h4>
+          <div id="calendarSections">
+            <div class="calendarList">
+              <h4>First Nine-Weeks</h4>
+              <p>October 5: Orchestra Council Meeting</p>
+              <p>October 30: Fall Orchestra Concert</p>
+            </div>
+            <div class="calendarList">
+              <h4>Second Nine-Weeks</h4>
+              <p>November 2: Orchestra Breakfast</p>
+              <p>November 11: Orchestra Council Meeting</p>
+              <p>January 13: Orchestra Council Meeting</p>
+            </div>
+            <div class="calendarList">
+              <h4>Third Nine-Weeks</h4>
+              <p>February 17: Orchestra Council Meeting</p>
+              <p>March 10: Orchestra Council Meeting</p>
+            </div>
+            <div class="calendarList">
+              <h4>Fourth Nine-Weeks</h4>
+              <p>April 17: Fine Arts Festival</p>
+            </div>
+          </div>
         </div>
 
         <div id="links" class="section">
@@ -202,33 +235,36 @@
       </div>
     </div>
     <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
     </script>
   </body>
 </html>
