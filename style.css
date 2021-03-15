@@ -170,7 +170,7 @@ img {
   /* display: flex; */
   margin-top: 0;
   /* list-style-type: square; */
-  /* border: 1px solid #94c474; */
+  border: 1px solid #94c474;
   /* justify-content: center; */
 }
 .calendarList > h4 {
