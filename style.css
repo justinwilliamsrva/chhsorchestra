@@ -7,8 +7,13 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  background-color: lemonchiffon;
+  z-index: 1;
 }
 
+#calendar {
+  visibility: ;
+}
 .mySlides {
   display: none;
 }
@@ -133,6 +138,8 @@ img {
 .wrapper {
   display: flex;
   max-width: 1200px;
+  z-index: 10;
+  border: ;
 }
 
 .sidebar {
@@ -142,7 +149,20 @@ img {
   border-right: 1px ridge grey;
 }
 
-#aboutUs,
+.section:nth-child(odd) {
+  background-color: rgba(36, 138, 29, 0.5);
+  padding: 10px 10px 20px 10px;
+}
+
+.section:nth-child(even) {
+  background-color: rgba(255, 215, 0, 0.5);
+
+  padding: 10px 10px 20px 10px;
+  border-top: 1px ridge grey;
+  border-bottom: 1px ridge grey;
+}
+
+/* #aboutUs,
 #orchestraInfo,
 #links {
   background-color: rgba(255, 215, 0, 0.5);
@@ -155,7 +175,7 @@ img {
 #meetDirector {
   background-color: rgba(36, 138, 29, 0.5);
   padding: 10px 10px 20px 10px;
-}
+} */
 #calendar,
 #meetDirector {
   border-top: 1px ridge grey;
@@ -273,26 +293,17 @@ h2 {
   }
 }
 
-@media only screen
-  and (min-width: 1024px)
-  and (max-height: 1366px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .slideshow-img {
-      height: 40vh;
-      width: 30vw;
-    }
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .slideshow-img {
+    height: 40vh;
+    width: 30vw;
+  }
 }
 
 /* Landscape */
-@media only screen
-  and (min-width: 1024px)
-  and (max-height: 1366px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .slideshow-img {
-      height: 60vh;
-      width: 30vw;
-    }
-
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .slideshow-img {
+    height: 60vh;
+    width: 30vw;
+  }
 }
