@@ -147,6 +147,14 @@ img {
   border-right: 1px ridge grey;
 }
 
+#meetDirector > h2 > span::before{
+
+  content:"\003A";
+
+  }
+
+
+
 .section:nth-child(odd) {
   background-color: #94c474;
   padding: 10px 10px 20px 10px;
@@ -311,6 +319,12 @@ h2 {
     flex-direction: column;
     text-align: center;
   }
+  #meetDirector > h2 > span::before{
+
+    content:"\003A";
+
+    }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
