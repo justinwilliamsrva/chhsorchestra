@@ -327,7 +327,10 @@ margin: 5px;
   color: white;
 }
 
+#footer{
 
+max-height: 5vh;
+}
 
 
 
