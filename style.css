@@ -11,7 +11,6 @@ body {
   z-index: 1;
 }
 
-
 .mySlides {
   display: none;
 }
@@ -124,14 +123,6 @@ img {
   }
 }
 
-
-
-
-
-
-
-
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
@@ -155,13 +146,9 @@ img {
   border-right: 1px ridge grey;
 }
 
-#meetDirector > h2 > span::before{
-
-  content:"\003A";
-
-  }
-
-
+#meetDirector > h2 > span::before {
+  content: "\003A";
+}
 
 .section:nth-child(odd) {
   background-color: #94c474;
@@ -192,21 +179,13 @@ img {
 .calendarList > h4 {
   margin-top: 0;
   margin-bottom: 0;
-
 }
 .calendarList > p {
-
-/* text-align: start; */
-
-
+  /* text-align: start; */
 }
 .calendarList > p:before {
-
   content: "\25C8";
-
-
 }
-
 
 .content {
   flex: 4;
@@ -248,14 +227,14 @@ img.create {
   height: 100px;
 }
 
-a:link {
+.link>a:link {
   color: #054900;
   text-decoration: none;
 }
-a:visited {
+.link > a:visited {
   color: #054900;
 }
-a:hover {
+.link > a:hover {
   color: gold;
 }
 /* li {
@@ -273,7 +252,6 @@ li::before {
 h2 {
   margin-top: 0;
   /* margin-bottom: 0; */
-
 }
 
 .content {
@@ -300,16 +278,14 @@ h2 {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
   cursor: context-menu;
 }
-#links-page{
-
+#links-page {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px
-
-
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-#links-page > a:link, a:visited {
+#links-page > a:link,
+#links-page > a:visited {
   background-color: white;
   color: black;
   border: 2px solid #94c474;
@@ -319,27 +295,33 @@ h2 {
   /* display: inline-block; */
   border-radius: 5%;
   width: 100%;
-margin: 5px;
+  margin: 5px;
 }
 
-#links-page > a:hover, a:active {
+#links-page > a:hover,
+#links-page > a:active {
   background-color: #94c474;
   color: white;
 }
 
-#footer{
-
-max-height: 5vh;
+#footer {
+  max-height: 5vh;
+  padding: 0;
+  margin: 0;
 }
-
-
-
-
-
-
-
-
-
+#footer > p {
+  padding: 0;
+  margin: 0;
+}
+#footer >p> a:link {
+  color:blue
+}
+#footer >p> a:visited {
+  color:blue
+}
+#footer >p> a:hover {
+  color:#fcec64
+}
 @media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
@@ -366,27 +348,15 @@ max-height: 5vh;
     flex-direction: column;
     text-align: center;
   }
-  #meetDirector > h2 > span::before{
+  #meetDirector > h2 > span::before {
+    content: "\003A";
+  }
 
-    content:"\003A";
-
-    }
-
-    #links-page{
-
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-
-
-    }
-
-
+  #links-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-
-
-
-
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .slideshow-img {
