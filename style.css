@@ -304,6 +304,7 @@ h2 {
 
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  gap: 10px
 
 
 }
@@ -318,7 +319,7 @@ h2 {
   /* display: inline-block; */
   border-radius: 5%;
   width: 100%;
-/* margin: 5px; */
+margin: 5px;
 }
 
 #links-page > a:hover, a:active {
