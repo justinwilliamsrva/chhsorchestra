@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   margin: auto;
@@ -12,7 +10,7 @@ body {
   justify-content: center;
   background-color: lemonchiffon;
   z-index: 1;
-  scroll-behavior: smooth;
+
 }
 
 .mySlides {
@@ -140,7 +138,7 @@ img {
   display: flex;
   max-width: 1200px;
   z-index: 10;
-  scroll-behavior: smooth;
+
 }
 
 .sidebar {
