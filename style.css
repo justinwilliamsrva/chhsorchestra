@@ -335,6 +335,9 @@ h2 {
   display: none;
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
@@ -382,7 +385,12 @@ h2 {
   }
 
   .mobile-break {
-    display: block;
+    display: inline;
+  }
+
+  hr {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
