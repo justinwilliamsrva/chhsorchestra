@@ -152,9 +152,6 @@ img {
   content: "\003A";
 }
 
-.section:before {
-  content: attr(data-text);
-}
 
 .section:nth-child(odd) {
   background-color: #94c474;
@@ -187,7 +184,7 @@ img {
   margin-bottom: 0;
 }
 .calendarList > p {
-  /* text-align: start; */
+  text-align: start;
 }
 .calendarList > p:before {
   content: "\25C8";
