@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: auto;
   padding: 0;
@@ -10,7 +9,6 @@ body {
   justify-content: center;
   background-color: lemonchiffon;
   z-index: 1;
-
 }
 
 .mySlides {
@@ -138,7 +136,6 @@ img {
   display: flex;
   max-width: 1200px;
   z-index: 10;
-
 }
 
 .sidebar {
@@ -151,7 +148,6 @@ img {
 #meetDirector > h2 > span::before {
   content: "\003A";
 }
-
 
 .section:nth-child(odd) {
   background-color: #94c474;
@@ -283,6 +279,25 @@ h2 {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
   cursor: context-menu;
 }
+
+#aboutUs > a:link,
+#aboutUs > :visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #94c474;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  border-radius: 5%;
+  width: 100%;
+  margin: 5px;
+}
+#aboutUs> a:hover,
+#aboutUs > a:active {
+  background-color: #94c474;
+  color: white;
+}
 #links-page {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -331,9 +346,6 @@ h2 {
 .mobile-break {
   display: none;
 }
-
-
-
 
 @media only screen and (max-width: 768px) {
   .sidebar {
