@@ -4641,7 +4641,7 @@ window.onload = function () {
       //         "https://docs.google.com/forms/d/e/1FAIpQLSdMgHuUOYFiue00Kd5yFfabSDPas3xhPv7RwRTG89foIbhjYg/viewform?usp=sf_link";
       // } else {
       alert(
-        `Want to see how the RPG works? Enter "jude" when promoted for your name.`
+        `Want to see how the RPG works? Enter "Jude" or "Matthew" when promoted for your name.`
       );
       person = prompt("Please enter your name", "name");
       // var password = prompt("What is your password");
