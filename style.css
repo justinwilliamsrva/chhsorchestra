@@ -138,6 +138,8 @@ img.create {
   height: 100px;
 }
 
+/* INFO */
+
 .mySlides {
   display: none;
 }
@@ -256,6 +258,7 @@ img.create {
   }
 }
 
+/* CALENDAR */
 #calendarSections {
   display: flex;
   flex-direction: row;
@@ -279,6 +282,8 @@ img.create {
 .calendarList > p:before {
   content: "\25C8";
 }
+
+/* LINKS */
 
 #links-page {
   display: grid;
@@ -305,6 +310,8 @@ img.create {
   background-color: #94c474;
   color: white;
 }
+
+/* FOOTER */
 
 #footer {
   max-height: 5vh;
