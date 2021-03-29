@@ -35,6 +35,20 @@ body {
   height: 100vh;
   border-right: 1px ridge grey;
 }
+
+.section:nth-child(odd) {
+  background-color: #94c474;
+  padding: 10px 10px 20px 10px;
+}
+
+.section:nth-child(even) {
+  background-color: #fcec64;
+
+  padding: 10px 10px 20px 10px;
+  border-top: 1px ridge grey;
+  border-bottom: 1px ridge grey;
+}
+
 /* SIDEBAR */
 
 .link {
@@ -116,6 +130,12 @@ body {
 
 #meetDirector > h2 > span::before {
   content: "\003A";
+}
+
+img.create {
+  float: left;
+  margin: 0px 10px 3px 0px;
+  height: 100px;
 }
 
 .mySlides {
@@ -236,19 +256,6 @@ body {
   }
 }
 
-.section:nth-child(odd) {
-  background-color: #94c474;
-  padding: 10px 10px 20px 10px;
-}
-
-.section:nth-child(even) {
-  background-color: #fcec64;
-
-  padding: 10px 10px 20px 10px;
-  border-top: 1px ridge grey;
-  border-bottom: 1px ridge grey;
-}
-
 #calendarSections {
   display: flex;
   flex-direction: row;
@@ -271,12 +278,6 @@ body {
 }
 .calendarList > p:before {
   content: "\25C8";
-}
-
-img.create {
-  float: left;
-  margin: 0px 10px 3px 0px;
-  height: 100px;
 }
 
 #links-page {
