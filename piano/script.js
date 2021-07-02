@@ -3,6 +3,7 @@ window.onload = function () {
     let days = 9;
     function assignments() {
 // 1024
+        sierra.a7(4)
         melissa.a9(4)
         melissa.a8(4)
     melissa.a10(4)
