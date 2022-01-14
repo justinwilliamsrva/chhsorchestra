@@ -1,7 +1,7 @@
 # Welcome to the CHHS Orchestra Website
 
 ## URL
-https://www.cavorch.org
+https://justinwilliamsrva.github.io/chhsorchestra/
 
 ## Home Page
 
